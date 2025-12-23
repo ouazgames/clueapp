@@ -5,7 +5,7 @@ This project wraps the existing web game into native mobile apps using Capacitor
 ## Prerequisites
 
 ### For Android:
-- Node.js 18+ and npm
+- Node.js 20+ and npm (Node 22+ required for Capacitor CLI v8)
 - Java JDK 17+
 - Android Studio with SDK 33+
 - Gradle (usually bundled with Android Studio)

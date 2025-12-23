@@ -10,7 +10,7 @@ This is the original "Clues by Sam" web game converted into Android and iOS mobi
 
 ```
 ├── www/                    # Web game files (source for mobile apps)
-│   ├── index.html          # Main game page with Capacitor integration
+│   ├── index.html          # Main game page with mobile-optimized UI
 │   ├── assets/             # CSS and JS assets  
 │   ├── game/assets/        # 50 puzzle scripts (obfuscated filenames)
 │   └── common.css          # Shared styles
@@ -25,7 +25,7 @@ This is the original "Clues by Sam" web game converted into Android and iOS mobi
 
 ## Running in Replit
 
-The project includes a web preview via static server on port 5000:
+The project runs on port 5000 using a Node.js static file server:
 ```
 node server.js
 ```
@@ -49,12 +49,23 @@ npx cap open ios             # Open Xcode
 - **Orientation**: Portrait only
 - **Offline**: Fully functional offline
 
+## Mobile UI Features
+
+The app has a mobile-optimized UI including:
+- Gradient header showing current level
+- Fixed bottom navigation bar with Previous/Next buttons
+- Touch-optimized button styling with press feedback
+- Safe area handling for notched devices
+- Responsive sizing for different screen sizes
+
 ## Mobile-Specific Modifications
 
-Only minimal changes were made for mobile packaging:
+Changes made for mobile packaging:
 1. Updated viewport meta for mobile scaling
 2. Added safe-area CSS for notched devices
 3. Added Capacitor back button handler (Android)
 4. Locked orientation to portrait
+5. Added mobile-friendly navigation bar UI
+6. Gradient header styling
 
-**No gameplay, UI, or logic was modified.**
+**No gameplay, puzzles, or game logic was modified.**

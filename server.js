@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = 5000;
-const BASE_DIR = path.join(__dirname, 'cluesbysam(2)');
+const BASE_DIR = path.join(__dirname, 'www');
 
 const mimeTypes = {
   '.html': 'text/html',

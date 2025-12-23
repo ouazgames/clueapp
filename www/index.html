@@ -138,36 +138,82 @@
     }
     
     /* ==========================================
-       HEADER WITH LEVEL AND PROGRESS
+       HEADER WITH LEVEL AND PROGRESS - REFERENCE STYLE
        ========================================== */
     .game-header {
-      background: transparent;
-      padding: 15px 20px 10px;
-      text-align: center;
+      background: linear-gradient(180deg, #7B2D8E 0%, #5B1D6E 100%);
+      padding: 12px 15px 15px;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 15px rgba(91, 29, 110, 0.4);
       position: relative;
     }
     
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .settings-btn {
+      width: 40px;
+      height: 40px;
+      background: rgba(0,0,0,0.3);
+      border: none;
+      border-radius: 50%;
+      font-size: 22px;
+      color: #aaa;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .level-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      color: #fff;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
     .coins-display {
-      position: absolute;
-      top: 15px;
-      right: 20px;
       display: flex;
       align-items: center;
       gap: 6px;
       background: linear-gradient(180deg, #F4D03F 0%, #F39C12 100%);
-      padding: 8px 14px;
+      padding: 6px 12px;
       border-radius: 20px;
       box-shadow: 0 3px 10px rgba(243, 156, 18, 0.4);
       cursor: pointer;
       transition: transform 0.2s ease;
+      position: relative;
     }
     
     .coins-display:active {
       transform: scale(0.95);
     }
     
+    .coins-plus {
+      position: absolute;
+      right: -8px;
+      bottom: -4px;
+      width: 22px;
+      height: 22px;
+      background: linear-gradient(180deg, #27AE60 0%, #1E8449 100%);
+      border-radius: 50%;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    
     .coins-icon {
-      font-size: 18px;
+      font-size: 20px;
     }
     
     .coins-amount {
@@ -177,20 +223,95 @@
       color: #2C3E50;
     }
     
-    .level-title {
+    .header-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .devil-counter {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #1a1a2e;
+      padding: 6px 12px;
+      border-radius: 15px;
+      flex-shrink: 0;
+    }
+    
+    .devil-icon {
+      font-size: 20px;
+    }
+    
+    .devil-count {
       font-family: 'Nunito', sans-serif;
-      font-weight: 900;
-      font-size: 32px;
-      color: #2C3E50;
-      margin: 0 0 8px 0;
-      text-shadow: 1px 1px 0 #fff;
+      font-weight: 800;
+      font-size: 18px;
+      color: #fff;
     }
     
     .progress-container {
+      flex: 1;
+      min-width: 0;
       display: flex;
-      justify-content: center;
       align-items: center;
-      gap: 10px;
+      background: #3a3a5a;
+      border-radius: 12px;
+      padding: 6px 12px;
+      gap: 8px;
+    }
+    
+    .progress-fill {
+      min-width: 18px;
+      width: 18px;
+      height: 18px;
+      background: linear-gradient(180deg, #2ECC71 0%, #27AE60 100%);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+      flex-shrink: 0;
+    }
+    
+    .progress-text {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      color: #fff;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    
+    .hearts-container {
+      display: flex;
+      gap: 2px;
+      flex-shrink: 0;
+    }
+    
+    .heart-icon {
+      font-size: 22px;
+      filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3));
+    }
+    
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 400px) {
+      .header-bottom {
+        gap: 5px;
+      }
+      .devil-counter {
+        padding: 5px 10px;
+      }
+      .devil-icon, .devil-count {
+        font-size: 16px;
+      }
+      .progress-container {
+        padding: 5px 10px;
+      }
+      .progress-text {
+        font-size: 14px;
+      }
+      .heart-icon {
+        font-size: 18px;
+      }
     }
     
     /* ==========================================
@@ -819,18 +940,28 @@
     }
 
     // ==========================================
-    // PROGRESS TRACKING
+    // PROGRESS TRACKING - REFERENCE STYLE
     // ==========================================
     let totalCards = 0;
     let clearedCards = 0;
+    let criminalCount = 0;
 
     function updateProgress() {
-      const progressFill = document.querySelector('.progress-bar-fill');
-      const progressText = document.querySelector('.progress-text');
-      if (progressFill && progressText) {
-        const percent = totalCards > 0 ? (clearedCards / totalCards) * 100 : 0;
-        progressFill.style.width = percent + '%';
+      const progressFill = document.getElementById('progress-fill');
+      const progressText = document.getElementById('progress-text');
+      const devilCount = document.getElementById('devil-count');
+      
+      if (progressText) {
         progressText.textContent = `${clearedCards}/${totalCards}`;
+      }
+      
+      if (progressFill && totalCards > 0) {
+        const percent = (clearedCards / totalCards) * 100;
+        progressFill.style.width = Math.max(25, percent * 2) + 'px';
+      }
+      
+      if (devilCount) {
+        devilCount.textContent = criminalCount;
       }
     }
 
@@ -838,6 +969,7 @@
       const cards = document.querySelectorAll('.card');
       totalCards = cards.length;
       clearedCards = document.querySelectorAll('.card.innocent, .card.criminal').length;
+      criminalCount = document.querySelectorAll('.card.criminal').length;
       updateProgress();
     }
 
@@ -1373,19 +1505,31 @@
 
   <!-- NEW HEADER -->
   <div class="game-header">
-    <h1 class="level-title">Level 1</h1>
-    <div class="progress-container">
-      <div class="progress-bar-wrapper">
-        <div class="progress-bar-inner">
-          <div class="progress-bar-fill"></div>
-          <div class="progress-text">0/0</div>
-        </div>
+    <!-- TOP ROW: Settings, Level, Coins -->
+    <div class="header-top">
+      <button class="settings-btn">⚙️</button>
+      <h1 class="level-title">Level 1</h1>
+      <div class="coins-display" onclick="showShop()">
+        <span class="coins-icon">🪙</span>
+        <span class="coins-amount" id="coins-amount">0</span>
+        <span class="coins-plus">+</span>
       </div>
     </div>
-    <!-- COINS DISPLAY -->
-    <div class="coins-display" onclick="showShop()">
-      <span class="coins-icon">🪙</span>
-      <span class="coins-amount" id="coins-amount">0</span>
+    <!-- BOTTOM ROW: Devil, Progress, Hearts -->
+    <div class="header-bottom">
+      <div class="devil-counter">
+        <span class="devil-icon">😈</span>
+        <span class="devil-count" id="devil-count">0</span>
+      </div>
+      <div class="progress-container">
+        <div class="progress-fill" id="progress-fill"></div>
+        <span class="progress-text" id="progress-text">0/0</span>
+      </div>
+      <div class="hearts-container">
+        <span class="heart-icon">❤️</span>
+        <span class="heart-icon">❤️</span>
+        <span class="heart-icon">❤️</span>
+      </div>
     </div>
   </div>
 

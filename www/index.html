@@ -224,169 +224,46 @@
       transition: all 0.2s ease !important;
     }
     
-    /* Male cards - Blue */
-    .card.gender-male,
-    div.card.gender-male,
-    .card-container .card.gender-male {
-      background: linear-gradient(180deg, #5DADE2 0%, #3498DB 100%) !important;
-      --background-color: #5DADE2 !important;
-    }
-    
-    /* Female cards - Pink */
-    .card.gender-female,
-    div.card.gender-female,
-    .card-container .card.gender-female {
-      background: linear-gradient(180deg, #F8A5C2 0%, #E91E9C 50%, #D63384 100%) !important;
-      --background-color: #F8A5C2 !important;
-    }
-    
-    /* Override all card backgrounds */
-    .card[class*="gender-"] {
-      background-color: transparent !important;
-    }
-    
     .card-container {
       position: relative;
     }
     
-    /* Position badge (A1, B1, etc) - styled */
-    .card-container::before {
-      content: attr(data-position);
-      position: absolute;
-      top: 8px;
-      left: 8px;
-      background: rgba(44, 62, 80, 0.9);
+    /* ==========================================
+       ACTION BUTTONS STYLING
+       ========================================== */
+    .bottom {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+    
+    .bottom button,
+    .bottom input {
+      background: linear-gradient(180deg, #2C3E50 0%, #1a252f 100%);
       color: #fff;
-      font-family: 'Nunito', sans-serif;
-      font-weight: 800;
-      font-size: 11px;
-      padding: 2px 6px;
-      border-radius: 6px;
-      z-index: 20;
-    }
-    
-    /* Gender symbol badge */
-    .card-container::after {
-      content: attr(data-gender-symbol);
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      font-size: 14px;
-      z-index: 20;
-      background: rgba(255,255,255,0.8);
-      padding: 2px 5px;
-      border-radius: 50%;
-    }
-    
-    /* Criminal card - red background */
-    .card.criminal,
-    .card[data-criminal="true"] {
-      background: linear-gradient(180deg, #E74C3C 0%, #C0392B 100%) !important;
-      border-color: #922B21 !important;
-    }
-    
-    /* Innocent/cleared card styling */
-    .card.innocent {
-      opacity: 0.85;
-    }
-    
-    .card.innocent::after {
-      content: "CLEARED";
-      position: absolute;
-      bottom: 8px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #27AE60;
-      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
       font-family: 'Nunito', sans-serif;
       font-weight: 700;
-      font-size: 9px;
-      padding: 3px 10px;
-      border-radius: 12px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      z-index: 15;
-    }
-    
-    /* Selected card - green glow */
-    .card.selected,
-    .card:focus {
-      box-shadow: 0 0 0 5px #2ECC71, 0 6px 20px rgba(46, 204, 113, 0.5) !important;
-      transform: scale(1.03) !important;
-      z-index: 100;
-    }
-    
-    /* Card name styling */
-    .card .name {
-      font-family: 'Nunito', sans-serif !important;
-      font-weight: 700 !important;
-      font-size: 15px !important;
-      color: #fff !important;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.3) !important;
-    }
-    
-    /* Card job styling */
-    .card .job {
-      font-family: 'Nunito', sans-serif !important;
-      font-size: 11px !important;
-      color: rgba(255,255,255,0.9) !important;
-    }
-    
-    /* ==========================================
-       GOOD/BAD TOGGLE
-       ========================================== */
-    .toggle-container {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: transparent;
-      padding: 20px;
-      padding-bottom: calc(20px + env(safe-area-inset-bottom));
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-    
-    .toggle-pill {
-      display: flex;
-      align-items: center;
-      background: linear-gradient(180deg, #BDC3C7 0%, #95A5A6 100%);
-      border-radius: 30px;
-      padding: 6px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      gap: 0;
-    }
-    
-    .toggle-option {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      padding: 12px 24px;
-      border-radius: 24px;
+      font-size: 14px;
       cursor: pointer;
-      transition: all 0.3s ease;
-      font-family: 'Nunito', sans-serif;
-      font-weight: 800;
-      font-size: 18px;
-      color: #7F8C8D;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: all 0.2s ease;
+      touch-action: manipulation;
     }
     
-    .toggle-option.active-good {
-      background: linear-gradient(180deg, #3498DB 0%, #2980B9 100%);
-      color: #fff;
-      box-shadow: 0 4px 10px rgba(52, 152, 219, 0.4);
+    .bottom button:active,
+    .bottom input:active {
+      transform: scale(0.95);
     }
     
-    .toggle-option.active-bad {
-      background: linear-gradient(180deg, #E74C3C 0%, #C0392B 100%);
-      color: #fff;
-      box-shadow: 0 4px 10px rgba(231, 76, 60, 0.4);
-    }
-    
-    .toggle-emoji {
-      font-size: 24px;
+    .bottom button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
     }
     
     /* ==========================================
@@ -402,7 +279,7 @@
       display: none;
       justify-content: center;
       align-items: center;
-      z-index: 10000;
+      z-index: 50000;
     }
     
     #win-popup.show {
@@ -472,7 +349,7 @@
       display: none;
       justify-content: center;
       align-items: center;
-      z-index: 10000;
+      z-index: 50000;
     }
     
     #lose-popup.show {
@@ -707,86 +584,7 @@
       updateProgress();
     }
 
-    // ==========================================
-    // CARD GENDER COLORING
-    // ==========================================
-    const maleNames = ['Alex', 'Frank', 'Keith', 'Chris', 'Isaac', 'Olof', 'Ryan', 'Terry', 'Wally', 'Xavi', 
-                       'Eugene', 'Juan', 'Philip', 'Jerry', 'Tyler', 'Ben', 'Albert', 'Matthew'];
-    const femaleNames = ['Bonnie', 'Ellie', 'Helen', 'Julie', 'Megan', 'Nancy', 'Paula', 'Sofia', 'Vicky', 'Zara',
-                         'Dorothy', 'Alexis', 'Sara', 'Amber', 'Kimberly', 'Danielle', 'Eliza', 'Abigail'];
-    
-    function applyCardColors() {
-      const cards = document.querySelectorAll('.card');
-      cards.forEach(card => {
-        if (card.getAttribute('data-colored') === 'true') {
-          return;
-        }
-        
-        const nameEl = card.querySelector('.name');
-        if (nameEl) {
-          const name = nameEl.textContent.trim();
-          let isMale = maleNames.includes(name);
-          let isFemale = femaleNames.includes(name);
-          
-          if (!isMale && !isFemale) {
-            const cardText = card.textContent;
-            if (cardText.includes('♂')) {
-              isMale = true;
-            } else if (cardText.includes('♀')) {
-              isFemale = true;
-            } else {
-              isMale = true;
-            }
-          }
-          
-          if (isMale) {
-            card.style.setProperty('background', 'linear-gradient(180deg, #5DADE2 0%, #3498DB 100%)', 'important');
-            card.classList.add('gender-male');
-          } else if (isFemale) {
-            card.style.setProperty('background', 'linear-gradient(180deg, #F8A5C2 0%, #E91E9C 50%, #D63384 100%)', 'important');
-            card.classList.add('gender-female');
-          }
-          card.setAttribute('data-colored', 'true');
-        }
-      });
-      
-      const containers = document.querySelectorAll('.card-container');
-      const positions = ['A', 'B', 'C', 'D', 'E'];
-      containers.forEach((container, index) => {
-        if (!container.getAttribute('data-position')) {
-          const row = Math.floor(index / 4) + 1;
-          const col = index % 4;
-          if (col < positions.length) {
-            container.setAttribute('data-position', positions[col] + row);
-          }
-        }
-      });
-    }
 
-    // ==========================================
-    // GOOD/BAD TOGGLE
-    // ==========================================
-    let currentMode = 'good'; // 'good' or 'bad'
-
-    function setMode(mode) {
-      currentMode = mode;
-      const goodOption = document.querySelector('.toggle-good');
-      const badOption = document.querySelector('.toggle-bad');
-      
-      if (mode === 'good') {
-        goodOption.classList.add('active-good');
-        goodOption.classList.remove('active-bad');
-        badOption.classList.remove('active-good');
-        badOption.classList.remove('active-bad');
-        document.body.style.background = 'linear-gradient(180deg, #A8E6CF 0%, #D4EFFF 30%, #D4EFFF 100%)';
-      } else {
-        badOption.classList.add('active-bad');
-        badOption.classList.remove('active-good');
-        goodOption.classList.remove('active-good');
-        goodOption.classList.remove('active-bad');
-        document.body.style.background = 'linear-gradient(180deg, #FFCDD2 0%, #FFE4EC 30%, #FFE4EC 100%)';
-      }
-    }
 
     // ==========================================
     // WIN/LOSE POPUPS
@@ -843,13 +641,9 @@
         levelTitle.textContent = `Level ${totalLevel}`;
       }
 
-      // Initialize toggle
-      setMode('good');
-      
-      // Monitor for card changes to update progress and apply colors
+      // Monitor for card changes to update progress
       setInterval(() => {
         countCards();
-        applyCardColors();
       }, 500);
 
       // Replace "Puzzle #X" text in the game with actual level number
@@ -933,19 +727,6 @@
   <!-- GAME CONTAINER -->
   <div id="root"></div>
 
-  <!-- GOOD/BAD TOGGLE -->
-  <div class="toggle-container">
-    <div class="toggle-pill">
-      <div class="toggle-option toggle-good active-good" onclick="setMode('good')">
-        <span class="toggle-emoji">😐</span>
-        <span>Good</span>
-      </div>
-      <div class="toggle-option toggle-bad" onclick="setMode('bad')">
-        <span class="toggle-emoji">😈</span>
-        <span>Bad</span>
-      </div>
-    </div>
-  </div>
 
   <!-- WIN POPUP -->
   <div id="win-popup">

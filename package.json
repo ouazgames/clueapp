@@ -1,0 +1,29 @@
+{
+  "name": "cluesbysam-mobile",
+  "version": "1.0.0",
+  "description": "Clues by Sam - Mobile App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "cap:sync": "npx cap sync",
+    "cap:open:android": "npx cap open android",
+    "cap:open:ios": "npx cap open ios",
+    "build:android": "npx cap sync android && cd android && ./gradlew assembleDebug",
+    "build:android:release": "npx cap sync android && cd android && ./gradlew assembleRelease"
+  },
+  "keywords": [
+    "game",
+    "puzzle",
+    "logic"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/app": "^8.0.0",
+    "@capacitor/cli": "^7.4.4",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "@capacitor/status-bar": "^8.0.0"
+  }
+}

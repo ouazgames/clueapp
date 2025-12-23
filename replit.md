@@ -1,31 +1,60 @@
-# Clues by Sam
+# Clues by Sam - Mobile App
 
-A logic puzzle game where players deduce who is a criminal based on clues.
+A logic puzzle game wrapped as a native mobile app using Capacitor.
 
 ## Overview
 
-This is a static website game with 50 logic puzzles. Players progress through levels, with the game cycling back through puzzles after level 50.
+This is the original "Clues by Sam" web game converted into Android and iOS mobile apps. The game contains 50 logic puzzles where players deduce who is a criminal based on clues.
 
 ## Project Structure
 
-- `cluesbysam(2)/` - Main game directory containing all static assets
-  - `index.html` - Main game page
-  - `assets/` - CSS and JS assets
-  - `game/assets/` - Individual puzzle scripts (50 puzzles with obfuscated filenames)
-  - `common.css` - Shared styles
+```
+├── www/                    # Web game files (source for mobile apps)
+│   ├── index.html          # Main game page with Capacitor integration
+│   ├── assets/             # CSS and JS assets  
+│   ├── game/assets/        # 50 puzzle scripts (obfuscated filenames)
+│   └── common.css          # Shared styles
+├── android/                # Android native project (Gradle)
+├── ios/                    # iOS native project (Xcode)
+├── cluesbysam(2)/          # Original web game files (backup)
+├── capacitor.config.json   # Capacitor configuration
+├── server.js               # Static file server for web preview
+├── BUILD_INSTRUCTIONS.md   # Complete build instructions
+└── VERIFICATION_CHECKLIST.md # QA verification checklist
+```
 
-- `server.js` - Simple Node.js static file server
+## Running in Replit
 
-## Running the Project
-
-The project runs on port 5000 using a Node.js static file server:
+The project includes a web preview via static server on port 5000:
 ```
 node server.js
 ```
 
-## Game Features
+## Building Mobile Apps
 
-- 50 unique logic puzzles
-- Level progression system (stored in localStorage)
-- Theme support
-- Navigation buttons to move between levels
+See `BUILD_INSTRUCTIONS.md` for complete instructions.
+
+### Quick Commands:
+```bash
+npm install                  # Install dependencies
+npx cap sync                 # Sync web assets to native projects
+npx cap open android         # Open Android Studio
+npx cap open ios             # Open Xcode
+```
+
+## Configuration
+
+- **App ID**: com.cluesbysam.app
+- **App Name**: Clues by Sam
+- **Orientation**: Portrait only
+- **Offline**: Fully functional offline
+
+## Mobile-Specific Modifications
+
+Only minimal changes were made for mobile packaging:
+1. Updated viewport meta for mobile scaling
+2. Added safe-area CSS for notched devices
+3. Added Capacitor back button handler (Android)
+4. Locked orientation to portrait
+
+**No gameplay, UI, or logic was modified.**

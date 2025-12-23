@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-120x120.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon-152x152.png" />
   <link rel="apple-touch-icon" sizes="167x167" href="/images/favicon-167x167.png" />
@@ -31,6 +31,20 @@
     href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet" />
   <title>Clues By Sam</title>
+  <style>
+    :root {
+      --safe-area-inset-top: env(safe-area-inset-top);
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      --safe-area-inset-left: env(safe-area-inset-left);
+      --safe-area-inset-right: env(safe-area-inset-right);
+    }
+    body {
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
+  </style>
   <script>
     // ==========================================
     // LEVEL PROGRESSION SYSTEM
@@ -171,6 +185,18 @@
     <button onclick="goToNextLevel()" style="padding: 10px 20px; font-size: 16px; cursor: pointer; margin: 5px;">Next
       →</button>
   </div>
+
+  <script type="module">
+    import { App } from '@capacitor/app';
+    
+    App.addListener('backButton', ({ canGoBack }) => {
+      if (canGoBack) {
+        window.history.back();
+      } else {
+        App.exitApp();
+      }
+    });
+  </script>
 </body>
 
 </html>

@@ -224,10 +224,10 @@
     }
     
     .header-bottom {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
     
     .devil-counter {
@@ -235,9 +235,8 @@
       align-items: center;
       gap: 5px;
       background: #1a1a2e;
-      padding: 6px 12px;
-      border-radius: 15px;
-      flex-shrink: 0;
+      padding: 8px 14px;
+      border-radius: 20px;
     }
     
     .devil-icon {
@@ -252,65 +251,55 @@
     }
     
     .progress-container {
-      flex: 1;
-      min-width: 0;
       display: flex;
       align-items: center;
+      justify-content: center;
       background: #3a3a5a;
-      border-radius: 12px;
-      padding: 6px 12px;
-      gap: 8px;
+      border-radius: 15px;
+      padding: 8px 16px;
+      gap: 10px;
     }
     
     .progress-fill {
-      min-width: 18px;
-      width: 18px;
-      height: 18px;
+      width: 22px;
+      height: 22px;
       background: linear-gradient(180deg, #2ECC71 0%, #27AE60 100%);
-      border-radius: 4px;
-      transition: width 0.3s ease;
-      flex-shrink: 0;
+      border-radius: 5px;
     }
     
     .progress-text {
       font-family: 'Nunito', sans-serif;
       font-weight: 800;
-      font-size: 16px;
+      font-size: 18px;
       color: #fff;
-      white-space: nowrap;
-      flex-shrink: 0;
     }
     
     .hearts-container {
       display: flex;
-      gap: 2px;
-      flex-shrink: 0;
+      gap: 3px;
     }
     
     .heart-icon {
-      font-size: 22px;
-      filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3));
+      font-size: 28px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
     }
     
     /* Responsive adjustments for smaller screens */
-    @media (max-width: 400px) {
+    @media (max-width: 380px) {
       .header-bottom {
-        gap: 5px;
+        gap: 6px;
       }
       .devil-counter {
-        padding: 5px 10px;
-      }
-      .devil-icon, .devil-count {
-        font-size: 16px;
+        padding: 6px 10px;
       }
       .progress-container {
-        padding: 5px 10px;
+        padding: 6px 12px;
       }
       .progress-text {
-        font-size: 14px;
+        font-size: 16px;
       }
       .heart-icon {
-        font-size: 18px;
+        font-size: 24px;
       }
     }
     

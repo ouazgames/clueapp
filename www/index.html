@@ -966,6 +966,7 @@
     // COINS SYSTEM
     // ==========================================
     const HINT_COST = 10;
+    const MORE_HINT_COST = 15;
     const REWARDED_AD_COINS = 25;
     
     function getCoins() {
@@ -1321,39 +1322,50 @@
     // ==========================================
     // HINT SYSTEM WITH COINS
     // ==========================================
-    let originalHintFunction = null;
+    const SHOW_HINT_COST = 10;
+    const SHOW_MORE_COST = 15;
     
     function setupHintCostSystem() {
-      if (typeof window.hint === 'function' && !originalHintFunction) {
-        originalHintFunction = window.hint;
-        window.hint = function(...args) {
-          const coins = getCoins();
-          if (coins >= HINT_COST) {
-            spendCoins(HINT_COST);
-            return originalHintFunction.apply(this, args);
-          } else {
-            showCoinsPopup();
-            return false;
-          }
-        };
-        console.log('Hint cost system activated');
-      }
+      const allButtons = document.querySelectorAll('button, input[type="button"], .btn, [onclick]');
       
-      const hintButtons = document.querySelectorAll('button, input[type="button"]');
-      hintButtons.forEach(btn => {
-        const text = btn.textContent || btn.value || '';
-        if (text.toLowerCase().includes('hint') && !btn.dataset.coinBadge) {
-          btn.dataset.coinBadge = 'true';
+      allButtons.forEach(btn => {
+        const text = (btn.textContent || btn.value || btn.innerText || '').toLowerCase();
+        
+        if ((text.includes('hint') || text.includes('show')) && !btn.dataset.coinified) {
+          btn.dataset.coinified = 'true';
+          
+          let cost = SHOW_HINT_COST;
+          if (text.includes('more')) {
+            cost = SHOW_MORE_COST;
+          }
+          
           const costBadge = document.createElement('span');
           costBadge.style.cssText = 'margin-left: 5px; font-size: 11px; opacity: 0.9;';
-          costBadge.textContent = `(${HINT_COST}🪙)`;
+          costBadge.textContent = `(${cost}🪙)`;
           btn.appendChild(costBadge);
+          
+          btn.addEventListener('click', function(e) {
+            const currentCoins = getCoins();
+            
+            if (currentCoins < cost) {
+              e.preventDefault();
+              e.stopPropagation();
+              e.stopImmediatePropagation();
+              showCoinsPopup();
+              console.log('Not enough coins for hint');
+              return false;
+            } else {
+              spendCoins(cost);
+              console.log(`Spent ${cost} coins on hint. Remaining: ${getCoins()}`);
+            }
+          }, true);
         }
       });
     }
     
     function interceptHintButton() {
-      setInterval(setupHintCostSystem, 1000);
+      setupHintCostSystem();
+      setInterval(setupHintCostSystem, 2000);
     }
 
 

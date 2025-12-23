@@ -27,6 +27,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     rel="stylesheet" />
@@ -37,6 +38,15 @@
       --safe-area-inset-bottom: env(safe-area-inset-bottom);
       --safe-area-inset-left: env(safe-area-inset-left);
       --safe-area-inset-right: env(safe-area-inset-right);
+      --bg-light-blue: #D4EFFF;
+      --bg-pink: #FFE4EC;
+      --card-blue: #5DADE2;
+      --card-pink: #F8A5C2;
+      --card-red: #E74C3C;
+      --card-green-glow: #2ECC71;
+      --header-blue: #3498DB;
+      --progress-gold: #F1C40F;
+      --progress-bg: #2C3E50;
     }
     
     * {
@@ -48,38 +58,147 @@
       height: 100%;
       overflow-x: hidden;
       overscroll-behavior: none;
+      margin: 0;
+      padding: 0;
     }
     
     body {
+      background: linear-gradient(180deg, #A8E6CF 0%, #D4EFFF 30%, #D4EFFF 100%);
       padding-top: env(safe-area-inset-top);
-      padding-bottom: calc(env(safe-area-inset-bottom) + 70px);
+      padding-bottom: calc(env(safe-area-inset-bottom) + 100px);
       padding-left: env(safe-area-inset-left);
       padding-right: env(safe-area-inset-right);
       display: flex;
       flex-direction: column;
       min-height: 100vh;
       min-height: -webkit-fill-available;
+      font-family: 'Nunito', sans-serif;
     }
     
-    #level-display {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-      color: white !important;
-      font-family: 'Ribeye', cursive !important;
-      font-size: 28px !important;
-      padding: 16px 20px !important;
-      margin: 0 !important;
-      text-align: center !important;
-      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4) !important;
-      position: sticky !important;
-      top: 0 !important;
-      z-index: 100 !important;
-      letter-spacing: 1px !important;
+    /* ==========================================
+       SPLASH SCREEN
+       ========================================== */
+    #splash-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, #87CEEB 0%, #9B59B6 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease-out;
     }
     
-    #level-display b {
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    #splash-screen.hidden {
+      opacity: 0;
+      pointer-events: none;
     }
     
+    .splash-logo {
+      font-family: 'Ribeye', cursive;
+      font-size: 48px;
+      color: #fff;
+      text-shadow: 3px 3px 0 #8E44AD, 5px 5px 10px rgba(0,0,0,0.3);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .splash-icon {
+      font-size: 80px;
+      margin-bottom: 30px;
+    }
+    
+    .splash-text {
+      font-family: 'Nunito', sans-serif;
+      font-size: 18px;
+      color: #fff;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    
+    .splash-progress {
+      width: 200px;
+      height: 20px;
+      background: #2C3E50;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+    }
+    
+    .splash-progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #27AE60 0%, #2ECC71 100%);
+      border-radius: 10px;
+      transition: width 0.3s ease;
+    }
+    
+    /* ==========================================
+       HEADER WITH LEVEL AND PROGRESS
+       ========================================== */
+    .game-header {
+      background: transparent;
+      padding: 15px 20px 10px;
+      text-align: center;
+    }
+    
+    .level-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 32px;
+      color: #2C3E50;
+      margin: 0 0 8px 0;
+      text-shadow: 1px 1px 0 #fff;
+    }
+    
+    .progress-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .progress-bar-wrapper {
+      width: 180px;
+      height: 28px;
+      background: linear-gradient(180deg, #34495E 0%, #2C3E50 100%);
+      border-radius: 14px;
+      padding: 4px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3), inset 0 2px 3px rgba(0,0,0,0.2);
+    }
+    
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(180deg, #F4D03F 0%, #F39C12 100%);
+      border-radius: 10px;
+      width: 0%;
+      transition: width 0.3s ease;
+      box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+    }
+    
+    .progress-text {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+      position: absolute;
+      width: 180px;
+      text-align: center;
+      line-height: 28px;
+    }
+    
+    .progress-bar-inner {
+      position: relative;
+    }
+    
+    /* ==========================================
+       GAME CONTAINER
+       ========================================== */
     #root {
       flex: 1;
       display: flex;
@@ -90,102 +209,353 @@
       -webkit-overflow-scrolling: touch;
     }
     
-    .nav-container {
+    /* ==========================================
+       CARD STYLING OVERRIDES
+       ========================================== */
+    .card-grid {
+      background-color: transparent !important;
+    }
+    
+    .card {
+      border-radius: 16px !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.1) !important;
+      border: 3px solid rgba(255,255,255,0.5) !important;
+      overflow: visible !important;
+    }
+    
+    .card-container {
+      position: relative;
+    }
+    
+    /* Position badge (A1, B1, etc) */
+    .card .position-label,
+    .card-container .cell-label {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background: #2C3E50;
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 6px;
+      z-index: 10;
+    }
+    
+    /* Gender symbol styling */
+    .card .gender-symbol {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 16px;
+      z-index: 10;
+    }
+    
+    /* Criminal card - red background */
+    .card.criminal,
+    .card[data-criminal="true"] {
+      background: linear-gradient(180deg, #E74C3C 0%, #C0392B 100%) !important;
+      border-color: #922B21 !important;
+    }
+    
+    /* Innocent card - keep original but add green check */
+    .card.innocent::after {
+      content: "CLEARED";
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #27AE60;
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+    
+    /* Selected card - green glow */
+    .card.selected,
+    .card:focus {
+      box-shadow: 0 0 0 4px #2ECC71, 0 4px 12px rgba(46, 204, 113, 0.4) !important;
+      transform: scale(1.02);
+    }
+    
+    /* ==========================================
+       GOOD/BAD TOGGLE
+       ========================================== */
+    .toggle-container {
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(to top, rgba(26, 29, 36, 0.98) 0%, rgba(26, 29, 36, 0.95) 100%);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      padding: 12px 20px;
-      padding-bottom: calc(12px + env(safe-area-inset-bottom));
+      background: transparent;
+      padding: 20px;
+      padding-bottom: calc(20px + env(safe-area-inset-bottom));
       display: flex;
       justify-content: center;
-      gap: 15px;
-      box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+      align-items: center;
       z-index: 1000;
     }
     
-    .nav-btn {
-      flex: 1;
-      max-width: 160px;
-      padding: 14px 24px;
-      font-size: 17px;
-      font-weight: 600;
-      font-family: 'Comic Neue', cursive;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: all 0.2s ease;
+    .toggle-pill {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(180deg, #BDC3C7 0%, #95A5A6 100%);
+      border-radius: 30px;
+      padding: 6px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      gap: 0;
+    }
+    
+    .toggle-option {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      touch-action: manipulation;
+      gap: 6px;
+      padding: 12px 24px;
+      border-radius: 24px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+      color: #7F8C8D;
     }
     
-    .nav-btn-prev {
-      background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
-      color: #e2e8f0;
-      box-shadow: 0 4px 12px rgba(45, 55, 72, 0.4);
+    .toggle-option.active-good {
+      background: linear-gradient(180deg, #3498DB 0%, #2980B9 100%);
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(52, 152, 219, 0.4);
     }
     
-    .nav-btn-next {
-      background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
-      color: white;
-      box-shadow: 0 4px 12px rgba(72, 187, 120, 0.4);
+    .toggle-option.active-bad {
+      background: linear-gradient(180deg, #E74C3C 0%, #C0392B 100%);
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(231, 76, 60, 0.4);
     }
     
-    .nav-btn:active {
+    .toggle-emoji {
+      font-size: 24px;
+    }
+    
+    /* ==========================================
+       WIN POPUP
+       ========================================== */
+    #win-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    }
+    
+    #win-popup.show {
+      display: flex;
+    }
+    
+    .win-content {
+      background: linear-gradient(180deg, #5DADE2 0%, #3498DB 100%);
+      border-radius: 30px;
+      padding: 30px 40px;
+      text-align: center;
+      max-width: 320px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      border: 4px solid rgba(255,255,255,0.3);
+    }
+    
+    .win-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      color: #fff;
+      margin: 0 0 20px 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .win-icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+    
+    .win-message {
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+    
+    .win-button {
+      background: linear-gradient(180deg, #27AE60 0%, #1E8449 100%);
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
+      transition: transform 0.2s ease;
+    }
+    
+    .win-button:active {
       transform: scale(0.95);
     }
     
-    .nav-btn-prev:active {
-      background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    /* ==========================================
+       LOSE POPUP
+       ========================================== */
+    #lose-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
     }
     
-    .nav-btn-next:active {
-      background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+    #lose-popup.show {
+      display: flex;
     }
     
-    .nav-btn:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-      transform: none;
+    .lose-content {
+      background: linear-gradient(180deg, #E74C3C 0%, #C0392B 100%);
+      border-radius: 30px;
+      padding: 30px 40px;
+      text-align: center;
+      max-width: 320px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      border: 4px solid rgba(255,255,255,0.3);
     }
     
-    .nav-icon {
+    .lose-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      color: #fff;
+      margin: 0 0 20px 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .lose-button {
+      background: linear-gradient(180deg, #95A5A6 0%, #7F8C8D 100%);
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
       font-size: 20px;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
     }
     
+    .lose-button:active {
+      transform: scale(0.95);
+    }
+    
+    /* ==========================================
+       BANNER MESSAGES
+       ========================================== */
+    .game-banner {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(180deg, #3498DB 0%, #2980B9 100%);
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 24px;
+      padding: 20px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      z-index: 5000;
+      display: none;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .game-banner.show {
+      display: block;
+      animation: bannerPop 0.3s ease;
+    }
+    
+    @keyframes bannerPop {
+      0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0; }
+      100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    }
+    
+    /* ==========================================
+       NAVIGATION (HIDDEN - using toggle instead)
+       ========================================== */
+    .nav-container {
+      display: none;
+    }
+    
+    /* ==========================================
+       RESPONSIVE ADJUSTMENTS
+       ========================================== */
     @media (max-width: 380px) {
-      #level-display {
-        font-size: 24px;
-        padding: 14px 15px;
+      .level-title {
+        font-size: 26px;
       }
       
-      .nav-btn {
-        padding: 12px 16px;
-        font-size: 15px;
+      .progress-bar-wrapper {
+        width: 150px;
+        height: 24px;
+      }
+      
+      .progress-text {
+        font-size: 16px;
+        width: 150px;
+        line-height: 24px;
+      }
+      
+      .toggle-option {
+        padding: 10px 18px;
+        font-size: 16px;
+      }
+      
+      .toggle-emoji {
+        font-size: 20px;
       }
     }
     
     @media (min-width: 768px) {
-      #level-display {
-        font-size: 32px;
-        padding: 20px;
+      .level-title {
+        font-size: 40px;
       }
       
-      .nav-container {
-        padding: 16px 40px;
+      .progress-bar-wrapper {
+        width: 250px;
+        height: 35px;
       }
       
-      .nav-btn {
-        max-width: 200px;
-        padding: 16px 32px;
-        font-size: 18px;
+      .progress-text {
+        font-size: 24px;
+        width: 250px;
+        line-height: 35px;
       }
+    }
+    
+    /* Hide old level display */
+    #level-display {
+      display: none !important;
     }
   </style>
   <script>
@@ -237,6 +607,107 @@
     }
 
     // ==========================================
+    // SPLASH SCREEN
+    // ==========================================
+    function hideSplash() {
+      const splash = document.getElementById('splash-screen');
+      if (splash) {
+        splash.classList.add('hidden');
+        setTimeout(() => {
+          splash.style.display = 'none';
+        }, 500);
+      }
+    }
+
+    function animateSplashProgress() {
+      const progressBar = document.querySelector('.splash-progress-bar');
+      if (progressBar) {
+        let progress = 0;
+        const interval = setInterval(() => {
+          progress += Math.random() * 35 + 25;
+          if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+            setTimeout(hideSplash, 100);
+          }
+          progressBar.style.width = progress + '%';
+        }, 80);
+      }
+    }
+
+    // ==========================================
+    // PROGRESS TRACKING
+    // ==========================================
+    let totalCards = 0;
+    let clearedCards = 0;
+
+    function updateProgress() {
+      const progressFill = document.querySelector('.progress-bar-fill');
+      const progressText = document.querySelector('.progress-text');
+      if (progressFill && progressText) {
+        const percent = totalCards > 0 ? (clearedCards / totalCards) * 100 : 0;
+        progressFill.style.width = percent + '%';
+        progressText.textContent = `${clearedCards}/${totalCards}`;
+      }
+    }
+
+    function countCards() {
+      const cards = document.querySelectorAll('.card');
+      totalCards = cards.length;
+      clearedCards = document.querySelectorAll('.card.innocent, .card.criminal').length;
+      updateProgress();
+    }
+
+    // ==========================================
+    // GOOD/BAD TOGGLE
+    // ==========================================
+    let currentMode = 'good'; // 'good' or 'bad'
+
+    function setMode(mode) {
+      currentMode = mode;
+      const goodOption = document.querySelector('.toggle-good');
+      const badOption = document.querySelector('.toggle-bad');
+      
+      if (mode === 'good') {
+        goodOption.classList.add('active-good');
+        goodOption.classList.remove('active-bad');
+        badOption.classList.remove('active-good');
+        badOption.classList.remove('active-bad');
+        document.body.style.background = 'linear-gradient(180deg, #A8E6CF 0%, #D4EFFF 30%, #D4EFFF 100%)';
+      } else {
+        badOption.classList.add('active-bad');
+        badOption.classList.remove('active-good');
+        goodOption.classList.remove('active-good');
+        goodOption.classList.remove('active-bad');
+        document.body.style.background = 'linear-gradient(180deg, #FFCDD2 0%, #FFE4EC 30%, #FFE4EC 100%)';
+      }
+    }
+
+    // ==========================================
+    // WIN/LOSE POPUPS
+    // ==========================================
+    function showWinPopup() {
+      const popup = document.getElementById('win-popup');
+      if (popup) popup.classList.add('show');
+    }
+
+    function hideWinPopup() {
+      const popup = document.getElementById('win-popup');
+      if (popup) popup.classList.remove('show');
+      goToNextLevel();
+    }
+
+    function showLosePopup() {
+      const popup = document.getElementById('lose-popup');
+      if (popup) popup.classList.add('show');
+    }
+
+    function hideLosePopup() {
+      const popup = document.getElementById('lose-popup');
+      if (popup) popup.classList.remove('show');
+    }
+
+    // ==========================================
     // THEME SYSTEM
     // ==========================================
     function callShare() {
@@ -253,21 +724,27 @@
 
     document.addEventListener("DOMContentLoaded", () => {
       console.log("Load");
+      
+      // Start splash animation
+      animateSplashProgress();
+      
       const themePreference = convert(localStorage.getItem("theme"));
       document.body.className = `${THEMES[themePreference.theme]} ${themePreference.dark ? "light" : "light"}`;
 
       // Update level display
       const totalLevel = getTotalLevel();
-      const levelDisplay = document.getElementById('level-display');
-      if (levelDisplay) {
-        levelDisplay.innerHTML = `<b>Level ${totalLevel}</b>`;
+      const levelTitle = document.querySelector('.level-title');
+      if (levelTitle) {
+        levelTitle.textContent = `Level ${totalLevel}`;
       }
+
+      // Initialize toggle
+      setMode('good');
       
-      // Disable Previous button at level 1
-      const prevBtn = document.getElementById('prev-btn');
-      if (prevBtn && totalLevel <= 1) {
-        prevBtn.disabled = true;
-      }
+      // Monitor for card changes to update progress
+      setInterval(() => {
+        countCards();
+      }, 500);
 
       // Replace "Puzzle #X" text in the game with actual level number
       replacePuzzleText(totalLevel);
@@ -317,25 +794,71 @@
 </head>
 
 <body class="theme-default">
+  <!-- SPLASH SCREEN -->
+  <div id="splash-screen">
+    <div class="splash-icon">🔍</div>
+    <div class="splash-logo">Clues<br>by Sam</div>
+    <div class="splash-text">Preparing clues for you, please wait...</div>
+    <div class="splash-progress">
+      <div class="splash-progress-bar"></div>
+    </div>
+  </div>
+
   <div id="fontPreload" style="position: absolute; top: -9999px; font-family: 'Ribeye'">Loading...</div>
   <div id="fontPreload" style="position: absolute; top: -9999px; font-family: 'Comic Neue'">Loading...</div>
+  <div id="fontPreload" style="position: absolute; top: -9999px; font-family: 'Nunito'">Loading...</div>
 
-  <!-- LEVEL DISPLAY -->
+  <!-- NEW HEADER -->
+  <div class="game-header">
+    <h1 class="level-title">Level 1</h1>
+    <div class="progress-container">
+      <div class="progress-bar-wrapper">
+        <div class="progress-bar-inner">
+          <div class="progress-bar-fill"></div>
+          <div class="progress-text">0/0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OLD LEVEL DISPLAY (HIDDEN) -->
   <div id="level-display"><b>Level 1</b></div>
 
   <!-- GAME CONTAINER -->
   <div id="root"></div>
 
-  <!-- NAVIGATION BUTTONS -->
-  <div class="nav-container">
-    <button onclick="goToPrevLevel()" class="nav-btn nav-btn-prev" id="prev-btn">
-      <span class="nav-icon">&#8592;</span>
-      <span>Previous</span>
-    </button>
-    <button onclick="goToNextLevel()" class="nav-btn nav-btn-next">
-      <span>Next</span>
-      <span class="nav-icon">&#8594;</span>
-    </button>
+  <!-- GOOD/BAD TOGGLE -->
+  <div class="toggle-container">
+    <div class="toggle-pill">
+      <div class="toggle-option toggle-good active-good" onclick="setMode('good')">
+        <span class="toggle-emoji">😐</span>
+        <span>Good</span>
+      </div>
+      <div class="toggle-option toggle-bad" onclick="setMode('bad')">
+        <span class="toggle-emoji">😈</span>
+        <span>Bad</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- WIN POPUP -->
+  <div id="win-popup">
+    <div class="win-content">
+      <div class="win-icon">🎉</div>
+      <h2 class="win-title">Level Complete!</h2>
+      <p class="win-message">Great job solving the puzzle!</p>
+      <button class="win-button" onclick="hideWinPopup()">Next Level</button>
+    </div>
+  </div>
+
+  <!-- LOSE POPUP -->
+  <div id="lose-popup">
+    <div class="lose-content">
+      <div class="win-icon">😢</div>
+      <h2 class="lose-title">Try Again!</h2>
+      <p class="win-message">Don't worry, you can retry this level.</p>
+      <button class="lose-button" onclick="hideLosePopup()">Retry</button>
+    </div>
   </div>
 
   <script>

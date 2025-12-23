@@ -144,6 +144,37 @@
       background: transparent;
       padding: 15px 20px 10px;
       text-align: center;
+      position: relative;
+    }
+    
+    .coins-display {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(180deg, #F4D03F 0%, #F39C12 100%);
+      padding: 8px 14px;
+      border-radius: 20px;
+      box-shadow: 0 3px 10px rgba(243, 156, 18, 0.4);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    
+    .coins-display:active {
+      transform: scale(0.95);
+    }
+    
+    .coins-icon {
+      font-size: 18px;
+    }
+    
+    .coins-amount {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      color: #2C3E50;
     }
     
     .level-title {
@@ -160,6 +191,240 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
+    }
+    
+    /* ==========================================
+       SHOP POPUP
+       ========================================== */
+    #shop-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 60000;
+    }
+    
+    #shop-popup.show {
+      display: flex;
+    }
+    
+    .shop-content {
+      background: linear-gradient(180deg, #3498DB 0%, #2980B9 100%);
+      border-radius: 25px;
+      padding: 25px 20px;
+      max-width: 340px;
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+      border: 4px solid rgba(255,255,255,0.3);
+      position: relative;
+    }
+    
+    .shop-close {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 40px;
+      height: 40px;
+      background: #E74C3C;
+      border: none;
+      border-radius: 50%;
+      font-size: 20px;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(231, 76, 60, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .shop-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .shop-coins-display {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(180deg, #F4D03F 0%, #F39C12 100%);
+      padding: 8px 16px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .shop-coins-display .coins-amount {
+      font-size: 18px;
+    }
+    
+    .shop-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      color: #fff;
+      margin: 10px 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .shop-items {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .shop-item {
+      background: linear-gradient(180deg, #FCF3CF 0%, #F9E79F 100%);
+      border-radius: 15px;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+    
+    .shop-item-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .shop-item-icon {
+      font-size: 28px;
+    }
+    
+    .shop-item-amount {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      color: #2C3E50;
+    }
+    
+    .shop-item-btn {
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: none;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    
+    .shop-item-btn:active {
+      transform: scale(0.95);
+    }
+    
+    .shop-item-btn.free {
+      background: linear-gradient(180deg, #F4D03F 0%, #D4AC0D 100%);
+      color: #2C3E50;
+    }
+    
+    .shop-item-btn.buy {
+      background: linear-gradient(180deg, #27AE60 0%, #1E8449 100%);
+      color: #fff;
+    }
+    
+    /* ==========================================
+       NOT ENOUGH COINS POPUP
+       ========================================== */
+    #coins-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 65000;
+    }
+    
+    #coins-popup.show {
+      display: flex;
+    }
+    
+    .coins-popup-content {
+      background: linear-gradient(180deg, #E74C3C 0%, #C0392B 100%);
+      border-radius: 25px;
+      padding: 30px;
+      text-align: center;
+      max-width: 300px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      border: 4px solid rgba(255,255,255,0.3);
+    }
+    
+    .coins-popup-icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+    
+    .coins-popup-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    
+    .coins-popup-message {
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 20px;
+    }
+    
+    .coins-popup-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .coins-popup-btn {
+      padding: 12px 24px;
+      border-radius: 20px;
+      border: none;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    
+    .coins-popup-btn.watch {
+      background: linear-gradient(180deg, #F4D03F 0%, #D4AC0D 100%);
+      color: #2C3E50;
+    }
+    
+    .coins-popup-btn.shop {
+      background: linear-gradient(180deg, #27AE60 0%, #1E8449 100%);
+      color: #fff;
+    }
+    
+    .coins-popup-btn.close {
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+    }
+    
+    /* ==========================================
+       BANNER AD SPACE
+       ========================================== */
+    .banner-ad-space {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background: rgba(0,0,0,0.1);
+      z-index: 100;
     }
     
     .progress-bar-wrapper {
@@ -427,7 +692,7 @@
     }
     
     /* ==========================================
-       NAVIGATION (HIDDEN - using toggle instead)
+       NAVIGATION (HIDDEN)
        ========================================== */
     .nav-container {
       display: none;
@@ -452,14 +717,6 @@
         line-height: 24px;
       }
       
-      .toggle-option {
-        padding: 10px 18px;
-        font-size: 16px;
-      }
-      
-      .toggle-emoji {
-        font-size: 20px;
-      }
     }
     
     @media (min-width: 768px) {
@@ -584,6 +841,400 @@
       updateProgress();
     }
 
+    // ==========================================
+    // COINS SYSTEM
+    // ==========================================
+    const HINT_COST = 10;
+    const REWARDED_AD_COINS = 25;
+    
+    function getCoins() {
+      return parseInt(localStorage.getItem('cluesbysam_coins') || '50');
+    }
+    
+    function setCoins(amount) {
+      localStorage.setItem('cluesbysam_coins', amount.toString());
+      updateCoinsDisplay();
+    }
+    
+    function addCoins(amount) {
+      const current = getCoins();
+      setCoins(current + amount);
+    }
+    
+    function spendCoins(amount) {
+      const current = getCoins();
+      if (current >= amount) {
+        setCoins(current - amount);
+        return true;
+      }
+      return false;
+    }
+    
+    function updateCoinsDisplay() {
+      const coins = getCoins();
+      const displays = document.querySelectorAll('#coins-amount, #shop-coins-amount');
+      displays.forEach(d => {
+        if (d) d.textContent = coins.toLocaleString();
+      });
+    }
+    
+    // ==========================================
+    // SHOP FUNCTIONS
+    // ==========================================
+    function showShop() {
+      updateCoinsDisplay();
+      const popup = document.getElementById('shop-popup');
+      if (popup) popup.classList.add('show');
+    }
+    
+    function hideShop() {
+      const popup = document.getElementById('shop-popup');
+      if (popup) popup.classList.remove('show');
+    }
+    
+    function showCoinsPopup() {
+      const popup = document.getElementById('coins-popup');
+      if (popup) popup.classList.add('show');
+    }
+    
+    function hideCoinsPopup() {
+      const popup = document.getElementById('coins-popup');
+      if (popup) popup.classList.remove('show');
+    }
+    
+    // ==========================================
+    // ADMOB INTEGRATION
+    // ==========================================
+    let admobInitialized = false;
+    let interstitialReady = false;
+    let rewardedReady = false;
+    
+    // AdMob Ad Unit IDs (Replace with your actual IDs for production)
+    const AD_IDS = {
+      banner: 'ca-app-pub-3940256099942544/6300978111',
+      interstitial: 'ca-app-pub-3940256099942544/1033173712',
+      rewarded: 'ca-app-pub-3940256099942544/5224354917',
+      appOpen: 'ca-app-pub-3940256099942544/9257395921'
+    };
+    
+    async function initializeAdMob() {
+      if (typeof window.Capacitor === 'undefined' || !window.Capacitor.isNativePlatform()) {
+        console.log('AdMob: Not running on native platform');
+        return;
+      }
+      
+      try {
+        const { AdMob } = await import('@capacitor-community/admob');
+        if (!AdMob) {
+          console.log('AdMob plugin not available');
+          return;
+        }
+        
+        await AdMob.initialize({
+          initializeForTesting: true
+        });
+        admobInitialized = true;
+        console.log('AdMob initialized');
+        
+        setTimeout(() => showBannerAd(), 500);
+        setTimeout(() => prepareInterstitial(), 1000);
+        setTimeout(() => prepareRewarded(), 1500);
+        setTimeout(() => showAppOpenAd(), 2000);
+      } catch (e) {
+        console.log('AdMob init error:', e);
+      }
+    }
+    
+    async function showBannerAd() {
+      if (!admobInitialized) return;
+      
+      try {
+        const { AdMob, BannerAdSize, BannerAdPosition } = await import('@capacitor-community/admob');
+        await AdMob.showBanner({
+          adId: AD_IDS.banner,
+          adSize: BannerAdSize.BANNER,
+          position: BannerAdPosition.BOTTOM_CENTER,
+          margin: 0,
+          isTesting: true
+        });
+      } catch (e) {
+        console.log('Banner ad error:', e);
+      }
+    }
+    
+    async function prepareInterstitial() {
+      if (!admobInitialized) return;
+      
+      try {
+        const { AdMob, InterstitialAdPluginEvents } = await import('@capacitor-community/admob');
+        
+        AdMob.addListener(InterstitialAdPluginEvents.Loaded, () => {
+          interstitialReady = true;
+          console.log('Interstitial ready');
+        });
+        
+        AdMob.addListener(InterstitialAdPluginEvents.Dismissed, () => {
+          interstitialReady = false;
+          prepareInterstitial();
+        });
+        
+        await AdMob.prepareInterstitial({
+          adId: AD_IDS.interstitial,
+          isTesting: true
+        });
+      } catch (e) {
+        console.log('Interstitial prep error:', e);
+      }
+    }
+    
+    async function showInterstitialAd() {
+      if (!admobInitialized || !interstitialReady) return;
+      
+      try {
+        const { AdMob } = await import('@capacitor-community/admob');
+        await AdMob.showInterstitial();
+      } catch (e) {
+        console.log('Interstitial show error:', e);
+      }
+    }
+    
+    async function prepareRewarded() {
+      if (!admobInitialized) return;
+      
+      try {
+        const { AdMob, RewardAdPluginEvents } = await import('@capacitor-community/admob');
+        
+        AdMob.addListener(RewardAdPluginEvents.Loaded, () => {
+          rewardedReady = true;
+          console.log('Rewarded ad ready');
+        });
+        
+        AdMob.addListener(RewardAdPluginEvents.Rewarded, (reward) => {
+          console.log('User earned reward:', reward);
+          addCoins(REWARDED_AD_COINS);
+          alert(`You earned ${REWARDED_AD_COINS} coins!`);
+        });
+        
+        AdMob.addListener(RewardAdPluginEvents.Dismissed, () => {
+          rewardedReady = false;
+          prepareRewarded();
+        });
+        
+        await AdMob.prepareRewardVideoAd({
+          adId: AD_IDS.rewarded,
+          isTesting: true
+        });
+      } catch (e) {
+        console.log('Rewarded prep error:', e);
+      }
+    }
+    
+    async function watchRewardedAd() {
+      if (typeof window.Capacitor === 'undefined') {
+        addCoins(REWARDED_AD_COINS);
+        alert(`You earned ${REWARDED_AD_COINS} coins! (Web demo)`);
+        hideShop();
+        return;
+      }
+      
+      if (!rewardedReady) {
+        alert('Ad not ready yet. Please try again in a moment.');
+        return;
+      }
+      
+      try {
+        const { AdMob } = await import('@capacitor-community/admob');
+        await AdMob.showRewardVideoAd();
+        hideShop();
+      } catch (e) {
+        console.log('Rewarded show error:', e);
+      }
+    }
+    
+    async function showAppOpenAd() {
+      if (!admobInitialized) return;
+      
+      try {
+        const { AdMob } = await import('@capacitor-community/admob');
+        await AdMob.prepareAppOpenAd({
+          adId: AD_IDS.appOpen,
+          isTesting: true
+        });
+        await AdMob.showAppOpenAd();
+      } catch (e) {
+        console.log('App open ad error:', e);
+      }
+    }
+    
+    // ==========================================
+    // REVENUECAT IN-APP PURCHASES
+    // ==========================================
+    let revenueCatInitialized = false;
+    
+    const COIN_PRODUCTS = {
+      'coins_150': 150,
+      'coins_450': 450,
+      'coins_1500': 1500,
+      'coins_4000': 4000,
+      'coins_7500': 7500,
+      'coins_15000': 15000
+    };
+    
+    async function initializeRevenueCat() {
+      if (typeof window.Capacitor === 'undefined' || !window.Capacitor.isNativePlatform()) {
+        console.log('RevenueCat: Not running on native platform');
+        return;
+      }
+      
+      const REVENUECAT_API_KEY = 'YOUR_REVENUECAT_API_KEY';
+      if (REVENUECAT_API_KEY === 'YOUR_REVENUECAT_API_KEY') {
+        console.log('RevenueCat: API key not configured');
+        return;
+      }
+      
+      try {
+        const { Purchases, LOG_LEVEL } = await import('@revenuecat/purchases-capacitor');
+        
+        await Purchases.setLogLevel({ level: LOG_LEVEL.DEBUG });
+        await Purchases.configure({
+          apiKey: REVENUECAT_API_KEY
+        });
+        
+        revenueCatInitialized = true;
+        console.log('RevenueCat initialized');
+      } catch (e) {
+        console.log('RevenueCat init error:', e);
+      }
+    }
+    
+    async function purchaseCoins(productId) {
+      if (typeof window.Capacitor === 'undefined') {
+        const coins = COIN_PRODUCTS[productId] || 0;
+        addCoins(coins);
+        alert(`You purchased ${coins} coins! (Web demo)`);
+        updateCoinsDisplay();
+        return;
+      }
+      
+      if (!revenueCatInitialized) {
+        alert('Store not ready. Please try again.');
+        return;
+      }
+      
+      try {
+        const { Purchases } = await import('@revenuecat/purchases-capacitor');
+        
+        const offerings = await Purchases.getOfferings();
+        console.log('Offerings:', offerings);
+        
+        const result = await Purchases.purchaseStoreProduct({
+          product: { identifier: productId }
+        });
+        
+        if (result.customerInfo) {
+          const coins = COIN_PRODUCTS[productId] || 0;
+          addCoins(coins);
+          alert(`You purchased ${coins} coins!`);
+          updateCoinsDisplay();
+        }
+      } catch (e) {
+        if (e.code !== 'PURCHASE_CANCELLED') {
+          console.log('Purchase error:', e);
+          alert('Purchase failed. Please try again.');
+        }
+      }
+    }
+    
+    // ==========================================
+    // PUSH NOTIFICATIONS
+    // ==========================================
+    async function initializePushNotifications() {
+      if (typeof window.Capacitor === 'undefined' || !window.Capacitor.isNativePlatform()) {
+        console.log('Push: Not running on native platform');
+        return;
+      }
+      
+      try {
+        const { PushNotifications } = await import('@capacitor/push-notifications');
+        
+        const checkPerm = await PushNotifications.checkPermissions();
+        if (checkPerm.receive === 'prompt') {
+          const permStatus = await PushNotifications.requestPermissions();
+          if (permStatus.receive !== 'granted') {
+            console.log('Push notification permission denied');
+            return;
+          }
+        } else if (checkPerm.receive !== 'granted') {
+          console.log('Push notification permission not granted');
+          return;
+        }
+        
+        await PushNotifications.register();
+        
+        PushNotifications.addListener('registration', async (token) => {
+          console.log('Push registration token:', token.value);
+          
+          try {
+            const { FCM } = await import('@capacitor-community/fcm');
+            const fcmToken = await FCM.getToken();
+            console.log('FCM Token:', fcmToken.token);
+            await FCM.subscribeTo({ topic: 'cluesbysam' });
+            console.log('Subscribed to push topic');
+          } catch (e) {
+            console.log('FCM token error:', e);
+          }
+        });
+        
+        PushNotifications.addListener('pushNotificationReceived', (notification) => {
+          console.log('Push received:', notification);
+        });
+        
+        PushNotifications.addListener('pushNotificationActionPerformed', (notification) => {
+          console.log('Push action:', notification);
+        });
+      } catch (e) {
+        console.log('Push init error:', e);
+      }
+    }
+    
+    // ==========================================
+    // HINT SYSTEM WITH COINS
+    // ==========================================
+    let originalHintFunction = null;
+    
+    function setupHintCostSystem() {
+      if (typeof window.hint === 'function' && !originalHintFunction) {
+        originalHintFunction = window.hint;
+        window.hint = function(...args) {
+          const coins = getCoins();
+          if (coins >= HINT_COST) {
+            spendCoins(HINT_COST);
+            return originalHintFunction.apply(this, args);
+          } else {
+            showCoinsPopup();
+            return false;
+          }
+        };
+        console.log('Hint cost system activated');
+      }
+      
+      const hintButtons = document.querySelectorAll('button, input[type="button"]');
+      hintButtons.forEach(btn => {
+        const text = btn.textContent || btn.value || '';
+        if (text.toLowerCase().includes('hint') && !btn.dataset.coinBadge) {
+          btn.dataset.coinBadge = 'true';
+          const costBadge = document.createElement('span');
+          costBadge.style.cssText = 'margin-left: 5px; font-size: 11px; opacity: 0.9;';
+          costBadge.textContent = `(${HINT_COST}🪙)`;
+          btn.appendChild(costBadge);
+        }
+      });
+    }
+    
+    function interceptHintButton() {
+      setInterval(setupHintCostSystem, 1000);
+    }
+
 
 
     // ==========================================
@@ -597,6 +1248,7 @@
     function hideWinPopup() {
       const popup = document.getElementById('win-popup');
       if (popup) popup.classList.remove('show');
+      showInterstitialAd();
       goToNextLevel();
     }
 
@@ -630,6 +1282,17 @@
       
       // Start splash animation
       animateSplashProgress();
+      
+      // Initialize coins display
+      updateCoinsDisplay();
+      
+      // Initialize monetization systems
+      initializeAdMob();
+      initializeRevenueCat();
+      initializePushNotifications();
+      
+      // Start hint button interception
+      interceptHintButton();
       
       const themePreference = convert(localStorage.getItem("theme"));
       document.body.className = `${THEMES[themePreference.theme]} ${themePreference.dark ? "light" : "light"}`;
@@ -719,6 +1382,11 @@
         </div>
       </div>
     </div>
+    <!-- COINS DISPLAY -->
+    <div class="coins-display" onclick="showShop()">
+      <span class="coins-icon">🪙</span>
+      <span class="coins-amount" id="coins-amount">0</span>
+    </div>
   </div>
 
   <!-- OLD LEVEL DISPLAY (HIDDEN) -->
@@ -747,6 +1415,88 @@
       <button class="lose-button" onclick="hideLosePopup()">Retry</button>
     </div>
   </div>
+
+  <!-- SHOP POPUP -->
+  <div id="shop-popup">
+    <div class="shop-content">
+      <button class="shop-close" onclick="hideShop()">✕</button>
+      <div class="shop-header">
+        <div class="shop-coins-display">
+          <span class="coins-icon">🪙</span>
+          <span class="coins-amount" id="shop-coins-amount">0</span>
+        </div>
+        <h2 class="shop-title">SHOP</h2>
+      </div>
+      <div class="shop-items">
+        <div class="shop-item">
+          <div class="shop-item-left">
+            <span class="shop-item-icon">🪙</span>
+            <span class="shop-item-amount">25</span>
+          </div>
+          <button class="shop-item-btn free" onclick="watchRewardedAd()">📺 FREE</button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-left">
+            <span class="shop-item-icon">🪙</span>
+            <span class="shop-item-amount">150</span>
+          </div>
+          <button class="shop-item-btn buy" onclick="purchaseCoins('coins_150')">AED 7.99</button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-left">
+            <span class="shop-item-icon">💰</span>
+            <span class="shop-item-amount">450</span>
+          </div>
+          <button class="shop-item-btn buy" onclick="purchaseCoins('coins_450')">AED 29.99</button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-left">
+            <span class="shop-item-icon">💰</span>
+            <span class="shop-item-amount">1,500</span>
+          </div>
+          <button class="shop-item-btn buy" onclick="purchaseCoins('coins_1500')">AED 59.99</button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-left">
+            <span class="shop-item-icon">💰</span>
+            <span class="shop-item-amount">4,000</span>
+          </div>
+          <button class="shop-item-btn buy" onclick="purchaseCoins('coins_4000')">AED 99.99</button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-left">
+            <span class="shop-item-icon">💎</span>
+            <span class="shop-item-amount">7,500</span>
+          </div>
+          <button class="shop-item-btn buy" onclick="purchaseCoins('coins_7500')">AED 199.99</button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-left">
+            <span class="shop-item-icon">💎</span>
+            <span class="shop-item-amount">15,000</span>
+          </div>
+          <button class="shop-item-btn buy" onclick="purchaseCoins('coins_15000')">AED 399.99</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOT ENOUGH COINS POPUP -->
+  <div id="coins-popup">
+    <div class="coins-popup-content">
+      <div class="coins-popup-icon">😢</div>
+      <div class="coins-popup-title">Not Enough Coins!</div>
+      <div class="coins-popup-message">You need more coins to use this hint.</div>
+      <div class="coins-popup-buttons">
+        <button class="coins-popup-btn watch" onclick="hideCoinsPopup(); watchRewardedAd();">📺 Watch Ad</button>
+        <button class="coins-popup-btn shop" onclick="hideCoinsPopup(); showShop();">🛒 Shop</button>
+        <button class="coins-popup-btn close" onclick="hideCoinsPopup()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BANNER AD SPACE -->
+  <div class="banner-ad-space" id="banner-ad-space"></div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {

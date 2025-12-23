@@ -9,6 +9,13 @@
     "StatusBar": {
       "style": "dark",
       "backgroundColor": "#1a1a2e"
+    },
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    },
+    "AdMob": {
+      "appIdAndroid": "ca-app-pub-3940256099942544~3347511713",
+      "appIdIos": "ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX"
     }
   },
   "android": {

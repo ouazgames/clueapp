@@ -1588,6 +1588,9 @@
 
       // Replace "Puzzle #X" text in the game with actual level number
       replacePuzzleText(totalLevel);
+      
+      // Watch for game's built-in popup and inject Next Level button
+      injectNextLevelButton();
     });
 
     // Replace "Puzzle #X" text in the game
@@ -1608,6 +1611,86 @@
           }
         }
       }, 500);
+    }
+
+    // ==========================================
+    // INJECT NEXT LEVEL BUTTON INTO GAME'S POPUP
+    // ==========================================
+    function injectNextLevelButton() {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          mutation.addedNodes.forEach((node) => {
+            if (node.nodeType === 1) {
+              checkAndInjectButton(node);
+            }
+          });
+        });
+      });
+      
+      observer.observe(document.body, { childList: true, subtree: true });
+      
+      setInterval(() => {
+        const popups = document.querySelectorAll('[class*="modal"], [class*="popup"], [class*="dialog"], [role="dialog"]');
+        popups.forEach(popup => checkAndInjectButton(popup));
+        
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(btn => {
+          const text = btn.textContent.toLowerCase();
+          if ((text.includes('play again') || text.includes('close')) && !btn.parentElement.querySelector('.next-level-injected')) {
+            injectButtonNear(btn);
+          }
+        });
+      }, 1000);
+    }
+    
+    function checkAndInjectButton(element) {
+      const text = element.textContent || '';
+      if (text.includes('Solved in') || text.includes('Play again')) {
+        const buttons = element.querySelectorAll('button');
+        buttons.forEach(btn => {
+          if ((btn.textContent.includes('Play again') || btn.textContent.includes('Close')) && 
+              !btn.parentElement.querySelector('.next-level-injected')) {
+            injectButtonNear(btn);
+          }
+        });
+      }
+    }
+    
+    function injectButtonNear(existingButton) {
+      if (existingButton.parentElement.querySelector('.next-level-injected')) return;
+      
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'next-level-injected';
+      nextBtn.textContent = 'Next Level →';
+      nextBtn.style.cssText = `
+        display: block;
+        width: 100%;
+        background: linear-gradient(180deg, #27AE60 0%, #1E8449 100%);
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+      `;
+      
+      nextBtn.onclick = function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        const current = getTotalLevel();
+        if (current < 50) {
+          showInterstitialAd();
+          setTotalLevel(current + 1);
+          location.reload();
+        }
+      };
+      
+      const parent = existingButton.parentElement;
+      parent.insertBefore(nextBtn, parent.firstChild);
     }
 
     // ==========================================

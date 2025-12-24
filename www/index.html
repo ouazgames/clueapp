@@ -1878,16 +1878,6 @@
         
         PushNotifications.addListener('registration', async (token) => {
           console.log('Push registration token:', token.value);
-          
-          try {
-            const { FCM } = await import('@capacitor-community/fcm');
-            const fcmToken = await FCM.getToken();
-            console.log('FCM Token:', fcmToken.token);
-            await FCM.subscribeTo({ topic: 'cluesbysam' });
-            console.log('Subscribed to push topic');
-          } catch (e) {
-            console.log('FCM token error:', e);
-          }
         });
         
         PushNotifications.addListener('pushNotificationReceived', (notification) => {

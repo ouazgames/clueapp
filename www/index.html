@@ -891,6 +891,155 @@
     #level-display {
       display: none !important;
     }
+    
+    /* ==========================================
+       RTL SUPPORT (ARABIC)
+       ========================================== */
+    [dir="rtl"] .header-top {
+      flex-direction: row-reverse;
+    }
+    
+    [dir="rtl"] .coins-display {
+      flex-direction: row-reverse;
+    }
+    
+    [dir="rtl"] .coins-plus {
+      right: auto;
+      left: -8px;
+    }
+    
+    [dir="rtl"] .shop-close {
+      left: auto;
+      right: 15px;
+    }
+    
+    [dir="rtl"] .shop-item {
+      flex-direction: row-reverse;
+    }
+    
+    [dir="rtl"] .shop-item-left {
+      flex-direction: row-reverse;
+    }
+    
+    [dir="rtl"] .coins-popup-buttons {
+      flex-direction: row-reverse;
+    }
+    
+    [dir="rtl"] .win-buttons {
+      direction: rtl;
+    }
+    
+    /* ==========================================
+       LANGUAGE SELECTOR POPUP
+       ========================================== */
+    #language-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 70000;
+    }
+    
+    #language-popup.show {
+      display: flex;
+    }
+    
+    .language-popup-content {
+      background: linear-gradient(180deg, #3498DB 0%, #2980B9 100%);
+      border-radius: 25px;
+      padding: 25px 20px;
+      max-width: 320px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+      border: 4px solid rgba(255,255,255,0.3);
+    }
+    
+    .language-popup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .language-popup-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      margin: 0;
+    }
+    
+    .language-popup-close {
+      width: 36px;
+      height: 36px;
+      background: #E74C3C;
+      border: none;
+      border-radius: 50%;
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 3px 10px rgba(231, 76, 60, 0.4);
+    }
+    
+    .language-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .language-btn {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px 20px;
+      background: rgba(255,255,255,0.15);
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .language-btn:hover,
+    .language-btn.active {
+      background: rgba(255,255,255,0.3);
+      border-color: rgba(255,255,255,0.6);
+    }
+    
+    .language-btn.active {
+      border-color: #27AE60;
+      box-shadow: 0 0 15px rgba(39, 174, 96, 0.4);
+    }
+    
+    .language-flag {
+      font-size: 32px;
+    }
+    
+    .language-name {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #fff;
+    }
+    
+    .language-check {
+      margin-left: auto;
+      font-size: 20px;
+      color: #27AE60;
+      display: none;
+    }
+    
+    .language-btn.active .language-check {
+      display: block;
+    }
   </style>
   <script>
     // ==========================================
@@ -1231,6 +1380,7 @@
     }
 
     function showLanguagePopup() {
+      updateLanguageButtonStates();
       const popup = document.getElementById('language-popup');
       if (popup) popup.classList.add('show');
     }
@@ -1238,6 +1388,31 @@
     function hideLanguagePopup() {
       const popup = document.getElementById('language-popup');
       if (popup) popup.classList.remove('show');
+    }
+    
+    function setupLanguageButtons() {
+      const langBtns = document.querySelectorAll('.language-btn');
+      langBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const lang = btn.dataset.lang;
+          if (lang) {
+            setLanguage(lang);
+            location.reload();
+          }
+        });
+      });
+    }
+    
+    function updateLanguageButtonStates() {
+      const currentLang = getCurrentLanguage();
+      const langBtns = document.querySelectorAll('.language-btn');
+      langBtns.forEach(btn => {
+        if (btn.dataset.lang === currentLang) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
     }
 
     // ==========================================
@@ -1904,6 +2079,9 @@
     document.addEventListener("DOMContentLoaded", () => {
       console.log("Load");
       
+      // Apply translations first
+      applyTranslations();
+      
       // Start splash animation
       animateSplashProgress();
       
@@ -1921,11 +2099,12 @@
       const themePreference = convert(localStorage.getItem("theme"));
       document.body.className = `${THEMES[themePreference.theme]} ${themePreference.dark ? "light" : "light"}`;
 
-      // Update level display
+      // Update level display with translation
       const totalLevel = getTotalLevel();
+      const tr = TRANSLATIONS[getCurrentLanguage()];
       const levelTitle = document.querySelector('.level-title');
       if (levelTitle) {
-        levelTitle.textContent = `Level ${totalLevel}`;
+        levelTitle.textContent = `${tr.level} ${totalLevel}`;
       }
 
       // Monitor for card changes to update progress
@@ -1938,6 +2117,9 @@
       
       // Watch for game's built-in popup and inject Next Level button
       injectNextLevelButton();
+      
+      // Setup language selector buttons
+      setupLanguageButtons();
     });
 
     // Replace "Puzzle #X" text in the game
@@ -2082,7 +2264,7 @@
   <div class="game-header">
     <!-- TOP ROW: Settings, Level, Coins -->
     <div class="header-top">
-      <button class="settings-btn">⚙️</button>
+      <button class="settings-btn" onclick="showLanguagePopup()">⚙️</button>
       <h1 class="level-title">Level 1</h1>
       <div class="coins-display" onclick="showShop()">
         <span class="coins-icon">🪙</span>
@@ -2206,6 +2388,43 @@
         <button class="coins-popup-btn watch" onclick="hideCoinsPopup(); watchRewardedAd();">📺 Watch Ad</button>
         <button class="coins-popup-btn shop" onclick="hideCoinsPopup(); showShop();">🛒 Shop</button>
         <button class="coins-popup-btn close" onclick="hideCoinsPopup()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LANGUAGE SELECTOR POPUP -->
+  <div id="language-popup">
+    <div class="language-popup-content">
+      <div class="language-popup-header">
+        <h2 class="language-popup-title">Select Language</h2>
+        <button class="language-popup-close" onclick="hideLanguagePopup()">✕</button>
+      </div>
+      <div class="language-list">
+        <button class="language-btn active" data-lang="en">
+          <span class="language-flag">🇬🇧</span>
+          <span class="language-name">English</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="ar">
+          <span class="language-flag">🇸🇦</span>
+          <span class="language-name">العربية</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="es">
+          <span class="language-flag">🇪🇸</span>
+          <span class="language-name">Español</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="it">
+          <span class="language-flag">🇮🇹</span>
+          <span class="language-name">Italiano</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="ru">
+          <span class="language-flag">🇷🇺</span>
+          <span class="language-name">Русский</span>
+          <span class="language-check">✓</span>
+        </button>
       </div>
     </div>
   </div>

@@ -1294,18 +1294,24 @@
     const SHOW_HINT_COST = 10;
     const SHOW_MORE_COST = 15;
     let hintClickLock = false;
+    let lastHintClickTime = 0;
     
     function setupHintCostSystem() {
-      const allButtons = document.querySelectorAll('button, input[type="button"], .btn, [onclick]');
+      const allButtons = document.querySelectorAll('button, input[type="button"], .btn');
       
       allButtons.forEach(btn => {
-        const text = (btn.textContent || btn.value || btn.innerText || '').toLowerCase();
+        if (btn.dataset.hintHandled === 'true') return;
         
-        if ((text.includes('hint') || text.includes('show')) && !btn.dataset.coinified) {
-          btn.dataset.coinified = 'true';
+        const originalText = (btn.textContent || btn.value || '').toLowerCase();
+        
+        const isHintBtn = originalText.includes('hint') && !originalText.includes('🪙');
+        const isShowBtn = originalText.includes('show') && !originalText.includes('🪙') && !originalText.includes('shop');
+        
+        if (isHintBtn || isShowBtn) {
+          btn.dataset.hintHandled = 'true';
           
           let cost = SHOW_HINT_COST;
-          if (text.includes('more')) {
+          if (originalText.includes('more')) {
             cost = SHOW_MORE_COST;
           }
           btn.dataset.hintCost = cost;
@@ -1316,15 +1322,17 @@
           costBadge.textContent = `(${cost}🪙)`;
           btn.appendChild(costBadge);
           
-          btn.addEventListener('click', function(e) {
-            if (hintClickLock) {
+          function handleHintClick(e) {
+            const now = Date.now();
+            
+            if (hintClickLock || (now - lastHintClickTime) < 1000) {
               e.preventDefault();
               e.stopPropagation();
               e.stopImmediatePropagation();
               return false;
             }
             
-            const btnCost = parseInt(this.dataset.hintCost) || SHOW_HINT_COST;
+            const btnCost = parseInt(btn.dataset.hintCost) || SHOW_HINT_COST;
             const currentCoins = getCoins();
             
             if (currentCoins < btnCost) {
@@ -1334,27 +1342,26 @@
               showCoinsPopup();
               console.log('Not enough coins for hint');
               return false;
-            } else {
-              hintClickLock = true;
-              spendCoins(btnCost);
-              console.log(`Spent ${btnCost} coins on hint. Remaining: ${getCoins()}`);
-              setTimeout(() => { hintClickLock = false; }, 500);
             }
-          }, true);
+            
+            hintClickLock = true;
+            lastHintClickTime = now;
+            spendCoins(btnCost);
+            console.log(`Spent ${btnCost} coins on hint. Remaining: ${getCoins()}`);
+            
+            setTimeout(() => { hintClickLock = false; }, 1000);
+            
+            // Allow the original hint action to proceed (do NOT block the event)
+          }
           
-          btn.addEventListener('touchstart', function(e) {
-            if (hintClickLock) {
-              e.preventDefault();
-              return false;
-            }
-          }, { passive: false, capture: true });
+          btn.addEventListener('click', handleHintClick, false);
         }
       });
     }
     
     function interceptHintButton() {
       setupHintCostSystem();
-      setInterval(setupHintCostSystem, 2000);
+      setInterval(setupHintCostSystem, 3000);
     }
 
 

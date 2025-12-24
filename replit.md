@@ -85,15 +85,7 @@ Coin packs available:
 3. Configure products in RevenueCat dashboard
 
 ### Push Notifications
-- Uses Firebase Cloud Messaging (FCM)
-- Auto-subscribes to "cluesbysam" topic
-- Requires Firebase project setup
-
-**Setup Required:**
-1. Create Firebase project
-2. Download `google-services.json` for Android
-3. Download `GoogleService-Info.plist` for iOS
-4. Upload APNs certificate to Firebase (iOS)
+Push notifications have been removed to simplify the app. The app works fully offline without Firebase configuration.
 
 ## Production Checklist
 
@@ -130,10 +122,9 @@ Changes made for mobile packaging:
 8. Added coins system with localStorage persistence
 9. Integrated AdMob for all ad types
 10. Integrated RevenueCat for in-app purchases
-11. Added push notification support
-12. Hints now cost coins (10 per use)
-13. Multi-language support (English, Arabic, Spanish, Italian, Russian)
-14. RTL (right-to-left) layout for Arabic
+11. Hints now cost coins (10 per use)
+12. Multi-language support (English, Arabic, Spanish, Italian, Russian)
+13. RTL (right-to-left) layout for Arabic
 
 **No gameplay, puzzles, or game logic was modified. Only UI presentation, monetization, and localization added.**
 

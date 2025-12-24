@@ -1850,47 +1850,6 @@
       }
     }
     
-    // ==========================================
-    // PUSH NOTIFICATIONS
-    // ==========================================
-    async function initializePushNotifications() {
-      if (typeof window.Capacitor === 'undefined' || !window.Capacitor.isNativePlatform()) {
-        console.log('Push: Not running on native platform');
-        return;
-      }
-      
-      try {
-        const { PushNotifications } = await import('@capacitor/push-notifications');
-        
-        const checkPerm = await PushNotifications.checkPermissions();
-        if (checkPerm.receive === 'prompt') {
-          const permStatus = await PushNotifications.requestPermissions();
-          if (permStatus.receive !== 'granted') {
-            console.log('Push notification permission denied');
-            return;
-          }
-        } else if (checkPerm.receive !== 'granted') {
-          console.log('Push notification permission not granted');
-          return;
-        }
-        
-        await PushNotifications.register();
-        
-        PushNotifications.addListener('registration', async (token) => {
-          console.log('Push registration token:', token.value);
-        });
-        
-        PushNotifications.addListener('pushNotificationReceived', (notification) => {
-          console.log('Push received:', notification);
-        });
-        
-        PushNotifications.addListener('pushNotificationActionPerformed', (notification) => {
-          console.log('Push action:', notification);
-        });
-      } catch (e) {
-        console.log('Push init error:', e);
-      }
-    }
     
     // ==========================================
     // HINT SYSTEM WITH COINS (WITH CLICK LOCK)
@@ -2107,7 +2066,6 @@
       // Initialize monetization systems
       initializeAdMob();
       initializeRevenueCat();
-      initializePushNotifications();
       
       // Start hint button interception
       interceptHintButton();

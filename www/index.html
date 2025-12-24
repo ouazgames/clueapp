@@ -1082,7 +1082,12 @@
         selectLanguage: 'Select Language',
         // Alerts
         earnedCoins: 'You earned {coins} coins!',
-        adNotReady: 'Ad not ready yet. Please try again in a moment.'
+        adNotReady: 'Ad not ready yet. Please try again in a moment.',
+        purchasedCoins: 'You purchased {coins} coins!',
+        storeNotReady: 'Store not ready. Please try again.',
+        purchaseFailed: 'Purchase failed. Please try again.',
+        allLevelsComplete: 'All levels complete!',
+        expert: 'Expert'
       },
       ar: {
         lang: 'العربية',
@@ -1110,7 +1115,12 @@
         seeResults: 'عرض النتائج',
         selectLanguage: 'اختر اللغة',
         earnedCoins: 'لقد ربحت {coins} عملة!',
-        adNotReady: 'الإعلان غير جاهز بعد. يرجى المحاولة بعد قليل.'
+        adNotReady: 'الإعلان غير جاهز بعد. يرجى المحاولة بعد قليل.',
+        purchasedCoins: 'لقد اشتريت {coins} عملة!',
+        storeNotReady: 'المتجر غير جاهز. يرجى المحاولة مرة أخرى.',
+        purchaseFailed: 'فشلت عملية الشراء. يرجى المحاولة مرة أخرى.',
+        allLevelsComplete: 'تم إكمال جميع المستويات!',
+        expert: 'خبير'
       },
       es: {
         lang: 'Español',
@@ -1138,7 +1148,12 @@
         seeResults: 'Ver resultados',
         selectLanguage: 'Seleccionar idioma',
         earnedCoins: '¡Ganaste {coins} monedas!',
-        adNotReady: 'El anuncio no está listo. Por favor, inténtalo en un momento.'
+        adNotReady: 'El anuncio no está listo. Por favor, inténtalo en un momento.',
+        purchasedCoins: '¡Compraste {coins} monedas!',
+        storeNotReady: 'La tienda no está lista. Por favor, inténtalo de nuevo.',
+        purchaseFailed: 'La compra falló. Por favor, inténtalo de nuevo.',
+        allLevelsComplete: '¡Todos los niveles completados!',
+        expert: 'Experto'
       },
       it: {
         lang: 'Italiano',
@@ -1166,7 +1181,12 @@
         seeResults: 'Vedi risultati',
         selectLanguage: 'Seleziona lingua',
         earnedCoins: 'Hai guadagnato {coins} monete!',
-        adNotReady: "L'annuncio non è ancora pronto. Riprova tra un momento."
+        adNotReady: "L'annuncio non è ancora pronto. Riprova tra un momento.",
+        purchasedCoins: 'Hai acquistato {coins} monete!',
+        storeNotReady: 'Il negozio non è pronto. Riprova.',
+        purchaseFailed: "L'acquisto non è riuscito. Riprova.",
+        allLevelsComplete: 'Tutti i livelli completati!',
+        expert: 'Esperto'
       },
       ru: {
         lang: 'Русский',
@@ -1194,7 +1214,12 @@
         seeResults: 'Посмотреть результаты',
         selectLanguage: 'Выбрать язык',
         earnedCoins: 'Вы заработали {coins} монет!',
-        adNotReady: 'Реклама ещё не готова. Попробуйте через мгновение.'
+        adNotReady: 'Реклама ещё не готова. Попробуйте через мгновение.',
+        purchasedCoins: 'Вы купили {coins} монет!',
+        storeNotReady: 'Магазин не готов. Попробуйте ещё раз.',
+        purchaseFailed: 'Покупка не удалась. Попробуйте ещё раз.',
+        allLevelsComplete: 'Все уровни пройдены!',
+        expert: 'Эксперт'
       }
     };
 
@@ -1692,7 +1717,7 @@
         AdMob.addListener(RewardAdPluginEvents.Rewarded, (reward) => {
           console.log('User earned reward:', reward);
           addCoins(REWARDED_AD_COINS);
-          alert(`You earned ${REWARDED_AD_COINS} coins!`);
+          alert(t('earnedCoins', {coins: REWARDED_AD_COINS}));
         });
         
         AdMob.addListener(RewardAdPluginEvents.Dismissed, () => {
@@ -1712,13 +1737,13 @@
     async function watchRewardedAd() {
       if (typeof window.Capacitor === 'undefined') {
         addCoins(REWARDED_AD_COINS);
-        alert(`You earned ${REWARDED_AD_COINS} coins! (Web demo)`);
+        alert(t('earnedCoins', {coins: REWARDED_AD_COINS}));
         hideShop();
         return;
       }
       
       if (!rewardedReady) {
-        alert('Ad not ready yet. Please try again in a moment.');
+        alert(t('adNotReady'));
         return;
       }
       
@@ -1791,13 +1816,13 @@
       if (typeof window.Capacitor === 'undefined') {
         const coins = COIN_PRODUCTS[productId] || 0;
         addCoins(coins);
-        alert(`You purchased ${coins} coins! (Web demo)`);
+        alert(t('purchasedCoins', {coins: coins}));
         updateCoinsDisplay();
         return;
       }
       
       if (!revenueCatInitialized) {
-        alert('Store not ready. Please try again.');
+        alert(t('storeNotReady'));
         return;
       }
       
@@ -1814,13 +1839,13 @@
         if (result.customerInfo) {
           const coins = COIN_PRODUCTS[productId] || 0;
           addCoins(coins);
-          alert(`You purchased ${coins} coins!`);
+          alert(t('purchasedCoins', {coins: coins}));
           updateCoinsDisplay();
         }
       } catch (e) {
         if (e.code !== 'PURCHASE_CANCELLED') {
           console.log('Purchase error:', e);
-          alert('Purchase failed. Please try again.');
+          alert(t('purchaseFailed'));
         }
       }
     }
@@ -1965,24 +1990,25 @@
       const popup = document.getElementById('win-popup');
       if (!popup) return;
       
+      const tr = TRANSLATIONS[getCurrentLanguage()];
       const currentLevel = getTotalLevel();
       const elapsedMs = Date.now() - levelStartTime;
       const elapsedMins = Math.ceil(elapsedMs / 60000);
       
       const levelTitle = document.getElementById('win-level-title');
-      if (levelTitle) levelTitle.textContent = `Level ${currentLevel}`;
+      if (levelTitle) levelTitle.textContent = `${tr.level} ${currentLevel}`;
       
       const difficulty = document.getElementById('win-difficulty');
       if (difficulty) {
-        if (currentLevel <= 10) difficulty.textContent = 'Easy';
-        else if (currentLevel <= 25) difficulty.textContent = 'Medium';
-        else if (currentLevel <= 40) difficulty.textContent = 'Hard';
-        else difficulty.textContent = 'Expert';
+        if (currentLevel <= 10) difficulty.textContent = tr.easy;
+        else if (currentLevel <= 25) difficulty.textContent = tr.medium;
+        else if (currentLevel <= 40) difficulty.textContent = tr.hard;
+        else difficulty.textContent = tr.expert;
       }
       
       const timeMsg = document.getElementById('win-time-message');
       if (timeMsg) {
-        timeMsg.textContent = `Solved in less than ${elapsedMins} minutes!`;
+        timeMsg.textContent = tr.solvedIn.replace('{min}', elapsedMins);
       }
       
       generateWinGrid();
@@ -1990,11 +2016,11 @@
       const nextBtn = document.getElementById('next-level-btn');
       if (nextBtn) {
         if (currentLevel >= TOTAL_LEVELS) {
-          nextBtn.textContent = 'All levels complete!';
+          nextBtn.textContent = tr.allLevelsComplete;
           nextBtn.disabled = true;
           nextBtn.style.opacity = '0.5';
         } else {
-          nextBtn.textContent = 'Next Level →';
+          nextBtn.textContent = tr.nextLevel;
           nextBtn.disabled = false;
           nextBtn.style.opacity = '1';
         }
@@ -2125,6 +2151,7 @@
     // Replace "Puzzle #X" text in the game
     function replacePuzzleText(totalLevel) {
       setInterval(() => {
+        const tr = TRANSLATIONS[getCurrentLanguage()];
         // Find all text nodes and elements containing "Puzzle #"
         const walker = document.createTreeWalker(
           document.body,
@@ -2136,7 +2163,7 @@
         let node;
         while (node = walker.nextNode()) {
           if (node.nodeValue && node.nodeValue.match(/Puzzle #\d+/)) {
-            node.nodeValue = node.nodeValue.replace(/Puzzle #\d+/, `Level ${totalLevel}`);
+            node.nodeValue = node.nodeValue.replace(/Puzzle #\d+/, `${tr.level} ${totalLevel}`);
           }
         }
       }, 500);

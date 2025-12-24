@@ -616,7 +616,7 @@
     }
     
     /* ==========================================
-       WIN POPUP
+       WIN POPUP - MATCHES REFERENCE SCREENSHOT
        ========================================== */
     #win-popup {
       position: fixed;
@@ -624,11 +624,12 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0,0,0,0.7);
+      background: rgba(0,0,0,0.6);
       display: none;
       justify-content: center;
       align-items: center;
       z-index: 50000;
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     }
     
     #win-popup.show {
@@ -636,53 +637,119 @@
     }
     
     .win-content {
-      background: linear-gradient(180deg, #5DADE2 0%, #3498DB 100%);
-      border-radius: 30px;
-      padding: 30px 40px;
+      background: #f5f5f5;
+      border-radius: 20px;
+      padding: 25px 30px;
       text-align: center;
-      max-width: 320px;
-      width: 90%;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-      border: 4px solid rgba(255,255,255,0.3);
+      max-width: 300px;
+      width: 85%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.4);
     }
     
-    .win-title {
+    .win-level-title {
       font-family: 'Nunito', sans-serif;
       font-weight: 900;
-      font-size: 28px;
-      color: #fff;
-      margin: 0 0 20px 0;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      font-size: 22px;
+      color: #2c3e50;
+      margin: 0 0 5px 0;
     }
     
-    .win-icon {
-      font-size: 60px;
-      margin-bottom: 15px;
+    .win-difficulty {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: #7f8c8d;
+      margin: 0 0 20px 0;
     }
+    
+    .win-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 20px;
+    }
+    
+    .win-grid-row {
+      display: flex;
+      gap: 4px;
+    }
+    
+    .win-grid-cell {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+    }
+    
+    .win-grid-cell.green { background: #27AE60; }
+    .win-grid-cell.yellow { background: #F1C40F; }
+    .win-grid-cell.orange { background: #E67E22; }
     
     .win-message {
       font-family: 'Nunito', sans-serif;
+      font-weight: 800;
       font-size: 16px;
-      color: #fff;
-      margin-bottom: 25px;
+      color: #2c3e50;
+      margin: 0 0 25px 0;
     }
     
-    .win-button {
+    .win-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .win-button-next {
       background: linear-gradient(180deg, #27AE60 0%, #1E8449 100%);
       color: #fff;
       font-family: 'Nunito', sans-serif;
       font-weight: 800;
-      font-size: 20px;
-      padding: 15px 40px;
+      font-size: 18px;
+      padding: 14px 30px;
       border: none;
-      border-radius: 25px;
+      border-radius: 12px;
       cursor: pointer;
       box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
       transition: transform 0.2s ease;
     }
     
-    .win-button:active {
+    .win-button-next:active {
       transform: scale(0.95);
+    }
+    
+    .win-button-secondary {
+      background: transparent;
+      color: #2c3e50;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 12px 25px;
+      border: 2px solid #2c3e50;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .win-button-secondary:active {
+      transform: scale(0.95);
+      background: rgba(0,0,0,0.05);
+    }
+    
+    .win-button-close {
+      background: transparent;
+      color: #7f8c8d;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 10px 20px;
+      border: 1px solid #bdc3c7;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .win-button-close:active {
+      background: rgba(0,0,0,0.05);
     }
     
     /* ==========================================
@@ -1369,16 +1436,97 @@
     // ==========================================
     // WIN/LOSE POPUPS
     // ==========================================
+    const TOTAL_LEVELS = 50;
+    let levelStartTime = Date.now();
+    
     function showWinPopup() {
       const popup = document.getElementById('win-popup');
-      if (popup) popup.classList.add('show');
+      if (!popup) return;
+      
+      const currentLevel = getTotalLevel();
+      const elapsedMs = Date.now() - levelStartTime;
+      const elapsedMins = Math.ceil(elapsedMs / 60000);
+      
+      const levelTitle = document.getElementById('win-level-title');
+      if (levelTitle) levelTitle.textContent = `Level ${currentLevel}`;
+      
+      const difficulty = document.getElementById('win-difficulty');
+      if (difficulty) {
+        if (currentLevel <= 10) difficulty.textContent = 'Easy';
+        else if (currentLevel <= 25) difficulty.textContent = 'Medium';
+        else if (currentLevel <= 40) difficulty.textContent = 'Hard';
+        else difficulty.textContent = 'Expert';
+      }
+      
+      const timeMsg = document.getElementById('win-time-message');
+      if (timeMsg) {
+        timeMsg.textContent = `Solved in less than ${elapsedMins} minutes!`;
+      }
+      
+      generateWinGrid();
+      
+      const nextBtn = document.getElementById('next-level-btn');
+      if (nextBtn) {
+        if (currentLevel >= TOTAL_LEVELS) {
+          nextBtn.textContent = 'All levels complete!';
+          nextBtn.disabled = true;
+          nextBtn.style.opacity = '0.5';
+        } else {
+          nextBtn.textContent = 'Next Level →';
+          nextBtn.disabled = false;
+          nextBtn.style.opacity = '1';
+        }
+      }
+      
+      popup.classList.add('show');
+    }
+    
+    function generateWinGrid() {
+      const grid = document.getElementById('win-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+      
+      const colors = ['green', 'yellow', 'orange'];
+      for (let row = 0; row < 4; row++) {
+        const rowDiv = document.createElement('div');
+        rowDiv.className = 'win-grid-row';
+        for (let col = 0; col < 4; col++) {
+          const cell = document.createElement('div');
+          cell.className = 'win-grid-cell ' + colors[Math.floor(Math.random() * 3)];
+          rowDiv.appendChild(cell);
+        }
+        grid.appendChild(rowDiv);
+      }
+    }
+
+    function goToNextLevelFromPopup() {
+      const popup = document.getElementById('win-popup');
+      if (popup) popup.classList.remove('show');
+      
+      const currentLevel = getTotalLevel();
+      if (currentLevel < TOTAL_LEVELS) {
+        showInterstitialAd();
+        setTotalLevel(currentLevel + 1);
+        levelStartTime = Date.now();
+        location.reload();
+      }
+    }
+    
+    function playAgain() {
+      const popup = document.getElementById('win-popup');
+      if (popup) popup.classList.remove('show');
+      levelStartTime = Date.now();
+      location.reload();
+    }
+    
+    function closeWinPopup() {
+      const popup = document.getElementById('win-popup');
+      if (popup) popup.classList.remove('show');
     }
 
     function hideWinPopup() {
       const popup = document.getElementById('win-popup');
       if (popup) popup.classList.remove('show');
-      showInterstitialAd();
-      goToNextLevel();
     }
 
     function showLosePopup() {
@@ -1531,10 +1679,15 @@
   <!-- WIN POPUP -->
   <div id="win-popup">
     <div class="win-content">
-      <div class="win-icon">🎉</div>
-      <h2 class="win-title">Level Complete!</h2>
-      <p class="win-message">Great job solving the puzzle!</p>
-      <button class="win-button" onclick="hideWinPopup()">Next Level</button>
+      <h2 class="win-level-title" id="win-level-title">Level 1</h2>
+      <p class="win-difficulty" id="win-difficulty">Easy</p>
+      <div class="win-grid" id="win-grid"></div>
+      <p class="win-message" id="win-time-message">Solved in less than 70 minutes!</p>
+      <div class="win-buttons">
+        <button class="win-button-next" id="next-level-btn" onclick="goToNextLevelFromPopup()">Next Level →</button>
+        <button class="win-button-secondary" onclick="playAgain()">↻ Play again</button>
+        <button class="win-button-close" onclick="closeWinPopup()">Close</button>
+      </div>
     </div>
   </div>
 

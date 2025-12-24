@@ -224,82 +224,56 @@
     }
     
     .header-bottom {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      align-items: center;
-      gap: 10px;
-    }
-    
-    .devil-counter {
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 5px;
-      background: #1a1a2e;
-      padding: 8px 14px;
-      border-radius: 20px;
-    }
-    
-    .devil-icon {
-      font-size: 20px;
-    }
-    
-    .devil-count {
-      font-family: 'Nunito', sans-serif;
-      font-weight: 800;
-      font-size: 18px;
-      color: #fff;
+      padding: 0 15px;
     }
     
     .progress-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #3a3a5a;
-      border-radius: 15px;
-      padding: 8px 16px;
-      gap: 10px;
+      position: relative;
+      width: 100%;
+      max-width: 280px;
+      height: 36px;
+      background: #4a4a6a;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
     }
     
     .progress-fill {
-      width: 22px;
-      height: 22px;
-      background: linear-gradient(180deg, #2ECC71 0%, #27AE60 100%);
-      border-radius: 5px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background: linear-gradient(180deg, #4CAF50 0%, #388E3C 100%);
+      border-radius: 18px 0 0 18px;
+      transition: width 0.3s ease;
     }
     
     .progress-text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-family: 'Nunito', sans-serif;
       font-weight: 800;
       font-size: 18px;
       color: #fff;
-    }
-    
-    .hearts-container {
-      display: flex;
-      gap: 3px;
-    }
-    
-    .heart-icon {
-      font-size: 28px;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      z-index: 1;
     }
     
     /* Responsive adjustments for smaller screens */
     @media (max-width: 380px) {
-      .header-bottom {
-        gap: 6px;
-      }
-      .devil-counter {
-        padding: 6px 10px;
-      }
       .progress-container {
-        padding: 6px 12px;
+        max-width: 240px;
+        height: 32px;
       }
       .progress-text {
         font-size: 16px;
-      }
-      .heart-icon {
-        font-size: 24px;
       }
     }
     
@@ -938,7 +912,6 @@
     function updateProgress() {
       const progressFill = document.getElementById('progress-fill');
       const progressText = document.getElementById('progress-text');
-      const devilCount = document.getElementById('devil-count');
       
       if (progressText) {
         progressText.textContent = `${clearedCards}/${totalCards}`;
@@ -946,11 +919,7 @@
       
       if (progressFill && totalCards > 0) {
         const percent = (clearedCards / totalCards) * 100;
-        progressFill.style.width = Math.max(25, percent * 2) + 'px';
-      }
-      
-      if (devilCount) {
-        devilCount.textContent = criminalCount;
+        progressFill.style.width = percent + '%';
       }
     }
 
@@ -1320,10 +1289,11 @@
     }
     
     // ==========================================
-    // HINT SYSTEM WITH COINS
+    // HINT SYSTEM WITH COINS (WITH CLICK LOCK)
     // ==========================================
     const SHOW_HINT_COST = 10;
     const SHOW_MORE_COST = 15;
+    let hintClickLock = false;
     
     function setupHintCostSystem() {
       const allButtons = document.querySelectorAll('button, input[type="button"], .btn, [onclick]');
@@ -1338,16 +1308,26 @@
           if (text.includes('more')) {
             cost = SHOW_MORE_COST;
           }
+          btn.dataset.hintCost = cost;
           
           const costBadge = document.createElement('span');
+          costBadge.className = 'hint-cost-badge';
           costBadge.style.cssText = 'margin-left: 5px; font-size: 11px; opacity: 0.9;';
           costBadge.textContent = `(${cost}🪙)`;
           btn.appendChild(costBadge);
           
           btn.addEventListener('click', function(e) {
+            if (hintClickLock) {
+              e.preventDefault();
+              e.stopPropagation();
+              e.stopImmediatePropagation();
+              return false;
+            }
+            
+            const btnCost = parseInt(this.dataset.hintCost) || SHOW_HINT_COST;
             const currentCoins = getCoins();
             
-            if (currentCoins < cost) {
+            if (currentCoins < btnCost) {
               e.preventDefault();
               e.stopPropagation();
               e.stopImmediatePropagation();
@@ -1355,10 +1335,19 @@
               console.log('Not enough coins for hint');
               return false;
             } else {
-              spendCoins(cost);
-              console.log(`Spent ${cost} coins on hint. Remaining: ${getCoins()}`);
+              hintClickLock = true;
+              spendCoins(btnCost);
+              console.log(`Spent ${btnCost} coins on hint. Remaining: ${getCoins()}`);
+              setTimeout(() => { hintClickLock = false; }, 500);
             }
           }, true);
+          
+          btn.addEventListener('touchstart', function(e) {
+            if (hintClickLock) {
+              e.preventDefault();
+              return false;
+            }
+          }, { passive: false, capture: true });
         }
       });
     }
@@ -1516,20 +1505,11 @@
         <span class="coins-plus">+</span>
       </div>
     </div>
-    <!-- BOTTOM ROW: Devil, Progress, Hearts -->
+    <!-- BOTTOM ROW: Progress Bar Only -->
     <div class="header-bottom">
-      <div class="devil-counter">
-        <span class="devil-icon">😈</span>
-        <span class="devil-count" id="devil-count">0</span>
-      </div>
       <div class="progress-container">
         <div class="progress-fill" id="progress-fill"></div>
         <span class="progress-text" id="progress-text">0/0</span>
-      </div>
-      <div class="hearts-container">
-        <span class="heart-icon">❤️</span>
-        <span class="heart-icon">❤️</span>
-        <span class="heart-icon">❤️</span>
       </div>
     </div>
   </div>

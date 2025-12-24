@@ -894,6 +894,353 @@
   </style>
   <script>
     // ==========================================
+    // MULTI-LANGUAGE TRANSLATION SYSTEM
+    // Supports: English, Arabic, Spanish, Italian, Russian
+    // ==========================================
+    const TRANSLATIONS = {
+      en: {
+        lang: 'English',
+        flag: '🇬🇧',
+        rtl: false,
+        // Splash screen
+        splashText: 'Preparing clues for you, please wait...',
+        // Header
+        level: 'Level',
+        // Shop
+        shop: 'SHOP',
+        free: 'FREE',
+        // Not enough coins popup
+        notEnoughCoins: 'Not Enough Coins!',
+        needMoreCoins: 'You need more coins to use this hint.',
+        watchAd: 'Watch Ad',
+        close: 'Close',
+        // Win popup
+        easy: 'Easy',
+        medium: 'Medium',
+        hard: 'Hard',
+        solvedIn: 'Solved in less than {min} minutes!',
+        nextLevel: 'Next Level →',
+        playAgain: '↻ Play again',
+        // Lose popup
+        tryAgain: 'Try Again!',
+        dontWorry: "Don't worry, you can retry this level.",
+        retry: 'Retry',
+        // Game buttons (from original game)
+        showHint: 'Show Hint',
+        showMore: 'Show More',
+        seeResults: 'See results',
+        // Settings
+        selectLanguage: 'Select Language',
+        // Alerts
+        earnedCoins: 'You earned {coins} coins!',
+        adNotReady: 'Ad not ready yet. Please try again in a moment.'
+      },
+      ar: {
+        lang: 'العربية',
+        flag: '🇸🇦',
+        rtl: true,
+        splashText: 'جاري تحضير الأدلة، يرجى الانتظار...',
+        level: 'المستوى',
+        shop: 'المتجر',
+        free: 'مجاني',
+        notEnoughCoins: 'لا توجد عملات كافية!',
+        needMoreCoins: 'تحتاج إلى المزيد من العملات لاستخدام هذا التلميح.',
+        watchAd: 'شاهد إعلان',
+        close: 'إغلاق',
+        easy: 'سهل',
+        medium: 'متوسط',
+        hard: 'صعب',
+        solvedIn: 'تم الحل في أقل من {min} دقيقة!',
+        nextLevel: '← المستوى التالي',
+        playAgain: '↻ إعادة اللعب',
+        tryAgain: 'حاول مرة أخرى!',
+        dontWorry: 'لا تقلق، يمكنك إعادة هذا المستوى.',
+        retry: 'إعادة المحاولة',
+        showHint: 'إظهار تلميح',
+        showMore: 'إظهار المزيد',
+        seeResults: 'عرض النتائج',
+        selectLanguage: 'اختر اللغة',
+        earnedCoins: 'لقد ربحت {coins} عملة!',
+        adNotReady: 'الإعلان غير جاهز بعد. يرجى المحاولة بعد قليل.'
+      },
+      es: {
+        lang: 'Español',
+        flag: '🇪🇸',
+        rtl: false,
+        splashText: 'Preparando pistas para ti, por favor espera...',
+        level: 'Nivel',
+        shop: 'TIENDA',
+        free: 'GRATIS',
+        notEnoughCoins: '¡No hay suficientes monedas!',
+        needMoreCoins: 'Necesitas más monedas para usar esta pista.',
+        watchAd: 'Ver anuncio',
+        close: 'Cerrar',
+        easy: 'Fácil',
+        medium: 'Medio',
+        hard: 'Difícil',
+        solvedIn: '¡Resuelto en menos de {min} minutos!',
+        nextLevel: 'Siguiente Nivel →',
+        playAgain: '↻ Jugar de nuevo',
+        tryAgain: '¡Inténtalo de nuevo!',
+        dontWorry: 'No te preocupes, puedes reintentar este nivel.',
+        retry: 'Reintentar',
+        showHint: 'Mostrar pista',
+        showMore: 'Mostrar más',
+        seeResults: 'Ver resultados',
+        selectLanguage: 'Seleccionar idioma',
+        earnedCoins: '¡Ganaste {coins} monedas!',
+        adNotReady: 'El anuncio no está listo. Por favor, inténtalo en un momento.'
+      },
+      it: {
+        lang: 'Italiano',
+        flag: '🇮🇹',
+        rtl: false,
+        splashText: 'Preparando gli indizi per te, attendere prego...',
+        level: 'Livello',
+        shop: 'NEGOZIO',
+        free: 'GRATIS',
+        notEnoughCoins: 'Monete insufficienti!',
+        needMoreCoins: 'Hai bisogno di più monete per usare questo suggerimento.',
+        watchAd: 'Guarda annuncio',
+        close: 'Chiudi',
+        easy: 'Facile',
+        medium: 'Medio',
+        hard: 'Difficile',
+        solvedIn: 'Risolto in meno di {min} minuti!',
+        nextLevel: 'Livello Successivo →',
+        playAgain: '↻ Gioca ancora',
+        tryAgain: 'Riprova!',
+        dontWorry: 'Non preoccuparti, puoi riprovare questo livello.',
+        retry: 'Riprova',
+        showHint: 'Mostra suggerimento',
+        showMore: 'Mostra altro',
+        seeResults: 'Vedi risultati',
+        selectLanguage: 'Seleziona lingua',
+        earnedCoins: 'Hai guadagnato {coins} monete!',
+        adNotReady: "L'annuncio non è ancora pronto. Riprova tra un momento."
+      },
+      ru: {
+        lang: 'Русский',
+        flag: '🇷🇺',
+        rtl: false,
+        splashText: 'Подготовка подсказок, пожалуйста подождите...',
+        level: 'Уровень',
+        shop: 'МАГАЗИН',
+        free: 'БЕСПЛАТНО',
+        notEnoughCoins: 'Недостаточно монет!',
+        needMoreCoins: 'Вам нужно больше монет, чтобы использовать эту подсказку.',
+        watchAd: 'Смотреть рекламу',
+        close: 'Закрыть',
+        easy: 'Легко',
+        medium: 'Средне',
+        hard: 'Сложно',
+        solvedIn: 'Решено менее чем за {min} минут!',
+        nextLevel: 'Следующий уровень →',
+        playAgain: '↻ Играть снова',
+        tryAgain: 'Попробуйте снова!',
+        dontWorry: 'Не волнуйтесь, вы можете повторить этот уровень.',
+        retry: 'Повторить',
+        showHint: 'Показать подсказку',
+        showMore: 'Показать ещё',
+        seeResults: 'Посмотреть результаты',
+        selectLanguage: 'Выбрать язык',
+        earnedCoins: 'Вы заработали {coins} монет!',
+        adNotReady: 'Реклама ещё не готова. Попробуйте через мгновение.'
+      }
+    };
+
+    function getCurrentLanguage() {
+      return localStorage.getItem('cluesbysam_language') || 'en';
+    }
+
+    function setLanguage(langCode) {
+      localStorage.setItem('cluesbysam_language', langCode);
+      applyTranslations();
+      hideLanguagePopup();
+    }
+
+    function t(key, replacements = {}) {
+      const lang = getCurrentLanguage();
+      let text = TRANSLATIONS[lang][key] || TRANSLATIONS['en'][key] || key;
+      for (const [k, v] of Object.entries(replacements)) {
+        text = text.replace(`{${k}}`, v);
+      }
+      return text;
+    }
+
+    function applyTranslations() {
+      const lang = getCurrentLanguage();
+      const tr = TRANSLATIONS[lang];
+      
+      // Apply RTL for Arabic
+      if (tr.rtl) {
+        document.body.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('dir', 'rtl');
+      } else {
+        document.body.removeAttribute('dir');
+        document.documentElement.removeAttribute('dir');
+      }
+      
+      // Splash screen
+      const splashText = document.querySelector('.splash-text');
+      if (splashText) splashText.textContent = tr.splashText;
+      
+      // Level title
+      const levelTitle = document.querySelector('.level-title');
+      if (levelTitle) {
+        const totalLevel = getTotalLevel();
+        levelTitle.textContent = `${tr.level} ${totalLevel}`;
+      }
+      
+      // Shop
+      const shopTitle = document.querySelector('.shop-title');
+      if (shopTitle) shopTitle.textContent = tr.shop;
+      
+      const freeBtn = document.querySelector('.shop-item-btn.free');
+      if (freeBtn) freeBtn.innerHTML = `📺 ${tr.free}`;
+      
+      // Not enough coins popup
+      const coinsPopupTitle = document.querySelector('.coins-popup-title');
+      if (coinsPopupTitle) coinsPopupTitle.textContent = tr.notEnoughCoins;
+      
+      const coinsPopupMessage = document.querySelector('.coins-popup-message');
+      if (coinsPopupMessage) coinsPopupMessage.textContent = tr.needMoreCoins;
+      
+      const watchAdBtn = document.querySelector('.coins-popup-btn.watch');
+      if (watchAdBtn) watchAdBtn.innerHTML = `📺 ${tr.watchAd}`;
+      
+      const shopBtn = document.querySelector('.coins-popup-btn.shop');
+      if (shopBtn) shopBtn.innerHTML = `🛒 ${tr.shop}`;
+      
+      const closeBtns = document.querySelectorAll('.coins-popup-btn.close, .win-button-close');
+      closeBtns.forEach(btn => { if (btn) btn.textContent = tr.close; });
+      
+      // Win popup
+      const nextLevelBtn = document.getElementById('next-level-btn');
+      if (nextLevelBtn) nextLevelBtn.textContent = tr.nextLevel;
+      
+      const playAgainBtn = document.querySelector('.win-button-secondary');
+      if (playAgainBtn) playAgainBtn.textContent = tr.playAgain;
+      
+      // Lose popup
+      const loseTitle = document.querySelector('.lose-title');
+      if (loseTitle) loseTitle.textContent = tr.tryAgain;
+      
+      const loseMessage = document.querySelector('#lose-popup .win-message');
+      if (loseMessage) loseMessage.textContent = tr.dontWorry;
+      
+      const retryBtn = document.querySelector('.lose-button');
+      if (retryBtn) retryBtn.textContent = tr.retry;
+      
+      // Language popup title
+      const langTitle = document.querySelector('.language-popup-title');
+      if (langTitle) langTitle.textContent = tr.selectLanguage;
+      
+      // Translate game buttons with interval (since they load dynamically)
+      translateGameButtons();
+    }
+
+    function translateGameButtons() {
+      const lang = getCurrentLanguage();
+      const tr = TRANSLATIONS[lang];
+      
+      setInterval(() => {
+        // Find and translate game buttons
+        document.querySelectorAll('button, input[type="button"]').forEach(btn => {
+          const text = btn.textContent.trim().toLowerCase();
+          const value = btn.value ? btn.value.trim().toLowerCase() : '';
+          
+          // Show Hint button
+          if (text.includes('show hint') || text.includes('hint') || 
+              value.includes('show hint') || value.includes('hint')) {
+            if (!btn.dataset.translated) {
+              if (btn.value) btn.value = tr.showHint;
+              else btn.textContent = tr.showHint;
+              btn.dataset.translated = lang;
+            }
+          }
+          
+          // Show More button
+          if (text.includes('show more') || text.includes('more') ||
+              value.includes('show more') || value.includes('more')) {
+            if (!btn.dataset.translated) {
+              if (btn.value) btn.value = tr.showMore;
+              else btn.textContent = tr.showMore;
+              btn.dataset.translated = lang;
+            }
+          }
+          
+          // See results button
+          if (text.includes('see results') || text.includes('results') ||
+              value.includes('see results') || value.includes('results')) {
+            if (!btn.dataset.translated) {
+              if (btn.value) btn.value = tr.seeResults;
+              else btn.textContent = tr.seeResults;
+              btn.dataset.translated = lang;
+            }
+          }
+          
+          // Play again (in game's built-in popup)
+          if (text.includes('play again')) {
+            if (!btn.dataset.translated) {
+              btn.textContent = tr.playAgain;
+              btn.dataset.translated = lang;
+            }
+          }
+          
+          // Close button
+          if (text === 'close') {
+            if (!btn.dataset.translated) {
+              btn.textContent = tr.close;
+              btn.dataset.translated = lang;
+            }
+          }
+        });
+        
+        // Translate difficulty text
+        document.querySelectorAll('*').forEach(el => {
+          if (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) {
+            const text = el.textContent.trim();
+            if (text === 'Easy' && !el.dataset.translated) {
+              el.textContent = tr.easy;
+              el.dataset.translated = lang;
+            }
+            if (text === 'Medium' && !el.dataset.translated) {
+              el.textContent = tr.medium;
+              el.dataset.translated = lang;
+            }
+            if (text === 'Hard' && !el.dataset.translated) {
+              el.textContent = tr.hard;
+              el.dataset.translated = lang;
+            }
+          }
+        });
+        
+        // Translate "Solved in..." text
+        document.querySelectorAll('*').forEach(el => {
+          if (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) {
+            const text = el.textContent.trim();
+            const match = text.match(/Solved in less than (\d+) minutes!/);
+            if (match && !el.dataset.translated) {
+              el.textContent = tr.solvedIn.replace('{min}', match[1]);
+              el.dataset.translated = lang;
+            }
+          }
+        });
+      }, 500);
+    }
+
+    function showLanguagePopup() {
+      const popup = document.getElementById('language-popup');
+      if (popup) popup.classList.add('show');
+    }
+
+    function hideLanguagePopup() {
+      const popup = document.getElementById('language-popup');
+      if (popup) popup.classList.remove('show');
+    }
+
+    // ==========================================
     // LEVEL PROGRESSION SYSTEM
     // Total levels played tracking - continues past 50
     // ==========================================

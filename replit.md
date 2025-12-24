@@ -132,8 +132,10 @@ Changes made for mobile packaging:
 10. Integrated RevenueCat for in-app purchases
 11. Added push notification support
 12. Hints now cost coins (10 per use)
+13. Multi-language support (English, Arabic, Spanish, Italian, Russian)
+14. RTL (right-to-left) layout for Arabic
 
-**No gameplay, puzzles, or game logic was modified. Only UI presentation and monetization added.**
+**No gameplay, puzzles, or game logic was modified. Only UI presentation, monetization, and localization added.**
 
 ## Level System
 

@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-019",
+  "level_number": 19,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Adam",
+      "name_en": "adam",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "Zacharie et Adam ont le même nombre de voisins innocents",
+      "hint_en": "Zach and Adam have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Barbara",
+      "name_en": "barb",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "There's an odd number of innocents neighboring Barbara",
+      "hint_en": "There's an odd number of innocents neighboring Barb"
+    },
+    {
+      "name": "Caroline",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Henri a plus de voisins criminels que Victoire",
+      "hint_en": "Hank has more criminal neighbors than Vicky"
+    },
+    {
+      "name": "Déborah",
+      "name_en": "debra",
+      "criminal": true,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "Only 1 of the 2 criminals neighboring Linda is in row 4",
+      "hint_en": "Only 1 of the 2 criminals neighboring Linda is in row 4"
+    },
+    {
+      "name": "Erwin",
+      "name_en": "erwin",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "All innocents between Karine and Nancy are connected",
+      "hint_en": "All innocents between Karen and Nancy are connected"
+    },
+    {
+      "name": "Florent",
+      "name_en": "floyd",
+      "criminal": true,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "There are 6 criminals in total",
+      "hint_en": "There are 6 criminals in total"
+    },
+    {
+      "name": "Henri",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "Adam's only criminal neighbor is between Erwin and Henri",
+      "hint_en": "Adam's only criminal neighbor is between Erwin and Hank"
+    },
+    {
+      "name": "Jean",
+      "name_en": "john",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Il y a exactement 2 innocents entre Caroline et Marie",
+      "hint_en": "There are exactly 2 innocents between Carol and Mary"
+    },
+    {
+      "name": "Karine",
+      "name_en": "karen",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "Column B has more innocents than any other column",
+      "hint_en": "Column B has more innocents than any other column"
+    },
+    {
+      "name": "Linda",
+      "name_en": "linda",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "Il y a exactement 2 innocents entre Caroline et Sébastien",
+      "hint_en": "There are exactly 2 innocents between Carol and Scott"
+    },
+    {
+      "name": "Marie",
+      "name_en": "mary",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "Déborah's only innocent neighbor is Barbara's neighbor",
+      "hint_en": "Debra's only innocent neighbor is Barb's neighbor"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Adam et Xavier ont le même nombre de voisins criminels",
+      "hint_en": "Adam and Xavi have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Pauline",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "There are more innocents than criminals in column D",
+      "hint_en": "There are more innocents than criminals in column D"
+    },
+    {
+      "name": "Rose",
+      "name_en": "rose",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "Karine and Linda share an odd number of innocent neighbors",
+      "hint_en": "Karen and Linda share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Sébastien",
+      "name_en": "scott",
+      "criminal": true,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "There's an equal number of criminals in rows 1 and 2",
+      "hint_en": "There's an equal number of criminals in rows 1 and 2"
+    },
+    {
+      "name": "Thor",
+      "name_en": "thor",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Barbara a plus de voisins criminels que Barb7",
+      "hint_en": "Barb has more criminal neighbors than Barb7"
+    },
+    {
+      "name": "Victoire",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "All innocents between Caroline and Sébastien are connected",
+      "hint_en": "All innocents between Carol and Scott are connected"
+    },
+    {
+      "name": "Guillaume",
+      "name_en": "will",
+      "criminal": false,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "Pauline is one of two or more innocents in row 4",
+      "hint_en": "Pam is one of two or more innocents in row 4"
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zacharie",
+      "name_en": "zach",
+      "criminal": false,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 6,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-es-009",
+  "level_number": 9,
+  "language": "es",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Ana",
+      "name_en": "anna",
+      "criminal": true,
+      "profession": "Juez",
+      "profession_en": "judge",
+      "hint": "There are 7 criminals in total",
+      "hint_en": "There are 7 criminals in total"
+    },
+    {
+      "name": "Beatriz",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "There are more innocents in row 4 than row 5",
+      "hint_en": "There are more innocents in row 4 than row 5"
+    },
+    {
+      "name": "Carolina",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "Both innocents in row 5 are Paloma's neighbors",
+      "hint_en": "Both innocents in row 5 are Pam's neighbors"
+    },
+    {
+      "name": "Débora",
+      "name_en": "debra",
+      "criminal": true,
+      "profession": "Juez",
+      "profession_en": "judge",
+      "hint": "Fernando y Zara tienen el mismo número de vecinos criminales",
+      "hint_en": "Frank and Zara have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Erico",
+      "name_en": "eric",
+      "criminal": false,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "Todos los inocentes entre Beatriz y Teodoro están conectados",
+      "hint_en": "All innocents between Bonnie and Terry are connected"
+    },
+    {
+      "name": "Fernando",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "Nicolás is one of 4 innocents in column C",
+      "hint_en": "Nick is one of 4 innocents in column C"
+    },
+    {
+      "name": "Gabriel",
+      "name_en": "gabe",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "An odd number of innocents between Helena and Zara neighbor Kyle",
+      "hint_en": "An odd number of innocents between Helen and Zara neighbor Kyle"
+    },
+    {
+      "name": "Helena",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "Todos los inocentes entre Fernando y Teodoro están conectados",
+      "hint_en": "All innocents between Frank and Terry are connected"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Hay un número impar de inocentes entre Samuel y Victoria",
+      "hint_en": "There's an odd number of innocents between Sam and Vicky"
+    },
+    {
+      "name": "Jasón",
+      "name_en": "jason",
+      "criminal": false,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "Kyle and Victoria have 2 innocent neighbors in common",
+      "hint_en": "Kyle and Vicky have 2 innocent neighbors in common"
+    },
+    {
+      "name": "Kyle",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "There are more criminals among #PROFS:judge than any other profession",
+      "hint_en": "There are more criminals among #PROFS:judge than any other profession"
+    },
+    {
+      "name": "Laura",
+      "name_en": "laura",
+      "criminal": false,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "Victoria is one of Paloma's 2 criminal neighbors",
+      "hint_en": "Vicky is one of Pam's 2 criminal neighbors"
+    },
+    {
+      "name": "Martín",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "Empleado",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Nicolás",
+      "name_en": "nick",
+      "criminal": false,
+      "profession": "Juez",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Paloma",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ruth",
+      "name_en": "ruth",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Samuel",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Teodoro",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "Empleado",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Victoria",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zara",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 7,
+  "ui": {
+    "level": "Nivel",
+    "criminal_status": "Criminal",
+    "innocent_status": "Inocente",
+    "hint": "Pista",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Siguiente Nivel",
+    "congratulations": "¡Felicitaciones!",
+    "total_criminals": "Total de Criminales"
+  }
+}

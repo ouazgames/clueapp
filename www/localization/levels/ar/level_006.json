@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-006",
+  "level_number": 6,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "بهية",
+      "name_en": "barb",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "كل الأبرياء بين دانيال وبولس متصلون",
+      "hint_en": "All innocents between Daniel and Paul are connected"
+    },
+    {
+      "name": "شيرين",
+      "name_en": "cheryl",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "واحد فقط من الـ2 مجرمين المجاورين لـنور بين شيرين ووائل",
+      "hint_en": "Only 1 of the 2 criminals neighboring Nancy is between Cheryl and Wally"
+    },
+    {
+      "name": "دانيال",
+      "name_en": "daniel",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "واحد فقط من الـ3 مجرمين المجاورين لـعليا بين بهية وطارق",
+      "hint_en": "Only 1 of the 3 criminals neighboring Olive is between Barb and Terry"
+    },
+    {
+      "name": "أميرة",
+      "name_en": "emily",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد عدد فردي من المجرمين بين إسحاق وزينب",
+      "hint_en": "There's an odd number of criminals between Isaac and Zoe"
+    },
+    {
+      "name": "فؤاد",
+      "name_en": "floyd",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "لؤي واحد من جيران روز الـ3 الأبرياء",
+      "hint_en": "Logan is one of Rose's 3 innocent neighbors"
+    },
+    {
+      "name": "غسان",
+      "name_en": "gabe",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "وائل وأميرة لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Wally and Emily have an equal number of innocent neighbors"
+    },
+    {
+      "name": "هلال",
+      "name_en": "hal",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد بالضبط 4 أبرياء في العمود E",
+      "hint_en": "There are exactly 4 innocents in column E"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "بالضبط 1 بريء في الصف 3 يجاور لؤي",
+      "hint_en": "Exactly 1 innocent in row 3 is neighboring Logan"
+    },
+    {
+      "name": "جوليا",
+      "name_en": "julie",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "روز واحد من 7 أبرياء على الحواف",
+      "hint_en": "Rose is one of 7 innocents on the edges"
+    },
+    {
+      "name": "كوثر",
+      "name_en": "katie",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "العمود B فيه مجرمين أكثر من أي عمود آخر",
+      "hint_en": "Column B has more criminals than any other column"
+    },
+    {
+      "name": "لؤي",
+      "name_en": "logan",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "غسان واحد من اثنين أو أكثر من الأبرياء المجاورين لـشيرين",
+      "hint_en": "Gabe is one of two or more innocents neighboring Cheryl"
+    },
+    {
+      "name": "ملك",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "بالضبط 1 حارس لديه مجرم تحته مباشرة",
+      "hint_en": "Exactly 1 #PROF:guard has a criminal directly below them"
+    },
+    {
+      "name": "عليا",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "بالضبط 2 من جيران بولس الـ5 الأبرياء هم أيضاً جيران روز",
+      "hint_en": "Exactly 2 of Paul's 5 innocent neighbors also neighbor Rose"
+    },
+    {
+      "name": "بولس",
+      "name_en": "paul",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "روز وبهية لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Rose and Barb have an equal number of criminal neighbors"
+    },
+    {
+      "name": "روز",
+      "name_en": "rose",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "طارق",
+      "name_en": "terry",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وائل",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينب",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 7,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

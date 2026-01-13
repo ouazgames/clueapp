@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-009",
+  "level_number": 9,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Анна",
+      "name_en": "anna",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "There are 7 criminals in total",
+      "hint_en": "There are 7 criminals in total"
+    },
+    {
+      "name": "Бэлла",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "There are more innocents in row 4 than row 5",
+      "hint_en": "There are more innocents in row 4 than row 5"
+    },
+    {
+      "name": "Карина",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "Both innocents in row 5 are Полина's neighbors",
+      "hint_en": "Both innocents in row 5 are Pam's neighbors"
+    },
+    {
+      "name": "Дарья",
+      "name_en": "debra",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "У Фёдор и Зара одинаковое число соседей-преступников",
+      "hint_en": "Frank and Zara have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Эрик",
+      "name_en": "eric",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "All innocents between Бэлла and Тимофей are connected",
+      "hint_en": "All innocents between Bonnie and Terry are connected"
+    },
+    {
+      "name": "Фёдор",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Николай is one of 4 innocents in column C",
+      "hint_en": "Nick is one of 4 innocents in column C"
+    },
+    {
+      "name": "Гавриил",
+      "name_en": "gabe",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "An odd number of innocents between Елена and Зара neighbor Кайл",
+      "hint_en": "An odd number of innocents between Helen and Zara neighbor Kyle"
+    },
+    {
+      "name": "Елена",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "All innocents between Фёдор and Тимофей are connected",
+      "hint_en": "All innocents between Frank and Terry are connected"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "There's an odd number of innocents between Семён and Виктория",
+      "hint_en": "There's an odd number of innocents between Sam and Vicky"
+    },
+    {
+      "name": "Ясон",
+      "name_en": "jason",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "Кайл and Виктория have 2 innocent neighbors in common",
+      "hint_en": "Kyle and Vicky have 2 innocent neighbors in common"
+    },
+    {
+      "name": "Кайл",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "There are more criminals among #PROFS:judge than any other profession",
+      "hint_en": "There are more criminals among #PROFS:judge than any other profession"
+    },
+    {
+      "name": "Лаура",
+      "name_en": "laura",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "Виктория is one of Полина's 2 criminal neighbors",
+      "hint_en": "Vicky is one of Pam's 2 criminal neighbors"
+    },
+    {
+      "name": "Мартин",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Николай",
+      "name_en": "nick",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Полина",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Руфь",
+      "name_en": "ruth",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Семён",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Тимофей",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктория",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зара",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 7,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

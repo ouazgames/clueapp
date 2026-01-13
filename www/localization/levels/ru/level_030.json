@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-030",
+  "level_number": 30,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Алексей",
+      "name_en": "alex",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Both criminals between Фёдор and Виктория are connected",
+      "hint_en": "Both criminals between Frank and Vicky are connected"
+    },
+    {
+      "name": "Бэлла",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "Column D has more innocents than any other column",
+      "hint_en": "Column D has more innocents than any other column"
+    },
+    {
+      "name": "Кирилл",
+      "name_en": "chris",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)",
+      "hint_en": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)"
+    },
+    {
+      "name": "Елена",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "Exactly 1 #PROF:guard has a criminal directly below them",
+      "hint_en": "Exactly 1 #PROF:guard has a criminal directly below them"
+    },
+    {
+      "name": "Фёдор",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "У Кирилл больше соседей-преступников, чем у Паулина",
+      "hint_en": "Chris has more criminal neighbors than Paula"
+    },
+    {
+      "name": "Елена",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Exactly 1 innocent between Алексей and Виктория is neighboring Марина",
+      "hint_en": "Exactly 1 innocent between Alex and Vicky is neighboring Megan"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "All innocents between Виктория and Зара are connected",
+      "hint_en": "All innocents between Vicky and Zara are connected"
+    },
+    {
+      "name": "Юлия",
+      "name_en": "julie",
+      "criminal": true,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "Exactly 2 of the 3 criminals neighboring Марина are between Алексей and Паулина",
+      "hint_en": "Exactly 2 of the 3 criminals neighboring Megan are between Alex and Paula"
+    },
+    {
+      "name": "Константин",
+      "name_en": "keith",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "Тимофей is one of two or more innocents on the edges",
+      "hint_en": "Terry is one of two or more innocents on the edges"
+    },
+    {
+      "name": "Марина",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "There's an odd number of criminals between Паулина and Роман",
+      "hint_en": "There's an odd number of criminals between Paula and Ryan"
+    },
+    {
+      "name": "Надежда",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "There are more criminals than innocents in row 1",
+      "hint_en": "There are more criminals than innocents in row 1"
+    },
+    {
+      "name": "Олег",
+      "name_en": "olof",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "The only criminal between Олег and Зара is Тимофей's neighbor",
+      "hint_en": "The only criminal between Olof and Zara is Terry's neighbor"
+    },
+    {
+      "name": "Паулина",
+      "name_en": "paula",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "There is only one innocent between Алексей and Фёдор",
+      "hint_en": "There is only one innocent between Alex and Frank"
+    },
+    {
+      "name": "Роман",
+      "name_en": "ryan",
+      "criminal": false,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "Both criminals between Елена and Тимофей are Исаак's neighbors",
+      "hint_en": "Both criminals between Ellie and Terry are Isaac's neighbors"
+    },
+    {
+      "name": "София",
+      "name_en": "sofia",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Ксавье is one of 4 innocents between Кирилл and Ксавье",
+      "hint_en": "Xavi is one of 4 innocents between Chris and Xavi"
+    },
+    {
+      "name": "Тимофей",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "An odd number of innocents between Алексей and Елена neighbor Елена",
+      "hint_en": "An odd number of innocents between Alex and Ellie neighbor Helen"
+    },
+    {
+      "name": "Виктория",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "There are as many criminal #PROFS:farmer as there are criminal #PROFS:guard",
+      "hint_en": "There are as many criminal #PROFS:farmer as there are criminal #PROFS:guard"
+    },
+    {
+      "name": "Вальтер",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "У Ксавье больше невиновных соседей, чем у Исаак",
+      "hint_en": "Xavi has more innocent neighbors than Isaac"
+    },
+    {
+      "name": "Ксавье",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зара",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 9,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

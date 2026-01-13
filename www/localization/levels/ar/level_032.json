@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-032",
+  "level_number": 32,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "أمينة",
+      "name_en": "amy",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(teacher,criminal,-1,0,1)"
+    },
+    {
+      "name": "براء",
+      "name_en": "bruce",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "بالضبط 1 معلم لديه مجرم على يساره مباشرة",
+      "hint_en": "Exactly 1 #PROF:teacher has a criminal directly to the left of them"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "كل المجرمين بين داود وزيد متصلون",
+      "hint_en": "All criminals between David and Zed are connected"
+    },
+    {
+      "name": "داود",
+      "name_en": "david",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "أمينة ووفاء لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Amy and Vicky have an equal number of innocent neighbors"
+    },
+    {
+      "name": "حواء",
+      "name_en": "eve",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "كلا الأبرياء في العمود D هم جيران إسحاق",
+      "hint_en": "Both innocents in column D are Isaac's neighbors"
+    },
+    {
+      "name": "فؤاد",
+      "name_en": "floyd",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "كلا المجرمين بين بولا وثور متصلان",
+      "hint_en": "Both criminals between Paula and Thor are connected"
+    },
+    {
+      "name": "غازي",
+      "name_en": "gus",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "كريمة لديه جيران مجرمين أكثر من الأبرياء",
+      "hint_en": "Carol has more criminal than innocent neighbors"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "غازي لديه جيران مجرمين أكثر من زياد",
+      "hint_en": "Gus has more criminal neighbors than Xavi"
+    },
+    {
+      "name": "كوثر",
+      "name_en": "katie",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "حواء وفؤاد يتشاركان عدداً فردياً من الجيران الأبرياء",
+      "hint_en": "Eve and Floyd share an odd number of innocent neighbors"
+    },
+    {
+      "name": "لؤي",
+      "name_en": "logan",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "براء واحد من اثنين أو أكثر من المجرمين في الصف 1",
+      "hint_en": "Bruce is one of two or more criminals in row 1"
+    },
+    {
+      "name": "مروان",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "فؤاد واحد من 2 أبرياء بين فؤاد وإسحاق",
+      "hint_en": "Floyd is one of 2 innocents between Floyd and Isaac"
+    },
+    {
+      "name": "أولغا",
+      "name_en": "olivia",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "يوجد بريء واحد فقط بين مروان وصوفيا",
+      "hint_en": "There is only one innocent between Martin and Sofia"
+    },
+    {
+      "name": "بولا",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد عدد فردي من الأبرياء بين حواء وإسحاق",
+      "hint_en": "There's an odd number of innocents between Eve and Isaac"
+    },
+    {
+      "name": "رباب",
+      "name_en": "ruby",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "واحد فقط من الـ3 مجرمين بين وفاء وزيد هو جار بولا",
+      "hint_en": "Only 1 of the 3 criminals between Vicky and Zed is Paula's neighbor"
+    },
+    {
+      "name": "صوفيا",
+      "name_en": "sofia",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "الـطيار البريء الوحيد هو جار حواء",
+      "hint_en": "The only innocent #PROF:pilot is Eve's neighbor"
+    },
+    {
+      "name": "ثور",
+      "name_en": "thor",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وردة",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زيد",
+      "name_en": "zed",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 12,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-003",
+  "level_number": 3,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Анна",
+      "name_en": "anna",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "У Клайд больше соседей-преступников, чем у Роза",
+      "hint_en": "Clyde has more criminal neighbors than Rose"
+    },
+    {
+      "name": "Бэлла",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Exactly 4 of the 10 innocents on the edges are Флора's neighbors",
+      "hint_en": "Exactly 4 of the 10 innocents on the edges are Flora's neighbors"
+    },
+    {
+      "name": "Клайд",
+      "name_en": "clyde",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "All criminals between Донна and Степан are connected",
+      "hint_en": "All criminals between Donna and Steve are connected"
+    },
+    {
+      "name": "Донна",
+      "name_en": "donna",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "У Олег больше невиновных соседей, чем у Николай",
+      "hint_en": "Ollie has more innocent neighbors than Nick"
+    },
+    {
+      "name": "Ева",
+      "name_en": "eve",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "У Исаак и Тимофей одинаковое число соседей-преступников",
+      "hint_en": "Isaac and Terry have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Флора",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Both criminals between Донна and Степан are between Исаак and Зоя",
+      "hint_en": "Both criminals between Donna and Steve are between Isaac and Zoe"
+    },
+    {
+      "name": "Хильда",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Пётр and Тимофей have only one innocent neighbor in common",
+      "hint_en": "Peter and Terry have only one innocent neighbor in common"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Only 1 of the 5 innocents neighboring Марк is in row 3",
+      "hint_en": "Only 1 of the 5 innocents neighboring Mark is in row 3"
+    },
+    {
+      "name": "Ясон",
+      "name_en": "jason",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "Марк and Николай have 3 innocent neighbors in common",
+      "hint_en": "Mark and Nick have 3 innocent neighbors in common"
+    },
+    {
+      "name": "Люся",
+      "name_en": "lucy",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "There's an odd number of criminals neighboring Николай",
+      "hint_en": "There's an odd number of criminals neighboring Nick"
+    },
+    {
+      "name": "Марк",
+      "name_en": "mark",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "There are more innocents than criminals between Донна and Зоя",
+      "hint_en": "There are more innocents than criminals between Donna and Zoe"
+    },
+    {
+      "name": "Николай",
+      "name_en": "nick",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "У Ева больше соседей-преступников, чем у Николай",
+      "hint_en": "Eve has more criminal neighbors than Nick"
+    },
+    {
+      "name": "Олег",
+      "name_en": "ollie",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "There's an equal number of innocents in columns C and E",
+      "hint_en": "There's an equal number of innocents in columns C and E"
+    },
+    {
+      "name": "Пётр",
+      "name_en": "peter",
+      "criminal": false,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "n_professions_have_trait_in_dir(doctor,innocent,0,1,2)",
+      "hint_en": "n_professions_have_trait_in_dir(doctor,innocent,0,1,2)"
+    },
+    {
+      "name": "Роза",
+      "name_en": "rose",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "2 #PROFS:doctor have an innocent directly below them",
+      "hint_en": "2 #PROFS:doctor have an innocent directly below them"
+    },
+    {
+      "name": "Степан",
+      "name_en": "steve",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Тимофей",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Вальтер",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зоя",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 5,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

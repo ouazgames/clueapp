@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-026",
+  "level_number": 26,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Алиса",
+      "name_en": "alice",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "There are 4 innocents in total",
+      "hint_en": "There are 4 innocents in total"
+    },
+    {
+      "name": "Борис",
+      "name_en": "bobby",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Column B has more criminals than any other column",
+      "hint_en": "Column B has more criminals than any other column"
+    },
+    {
+      "name": "Карл",
+      "name_en": "carl",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "Мария has only one innocent neighbor",
+      "hint_en": "Maria has only one innocent neighbor"
+    },
+    {
+      "name": "Елена",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Карина has the most criminal neighbors",
+      "hint_en": "Karen has the most criminal neighbors"
+    },
+    {
+      "name": "Фёдор",
+      "name_en": "frank",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "Мария is one of Пётр's 6 criminal neighbors",
+      "hint_en": "Maria is one of Peter's 6 criminal neighbors"
+    },
+    {
+      "name": "Гавриил",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "Exactly 4 of Ольга's 7 criminal neighbors also neighbor Карина",
+      "hint_en": "Exactly 4 of Olive's 7 criminal neighbors also neighbor Karen"
+    },
+    {
+      "name": "Хильда",
+      "name_en": "hilda",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "There are as many criminal #PROFS:pilot as there are criminal #PROFS:sleuth",
+      "hint_en": "There are as many criminal #PROFS:pilot as there are criminal #PROFS:sleuth"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "У Мария больше невиновных соседей, чем у Виктория",
+      "hint_en": "Maria has more innocent neighbors than Vicky"
+    },
+    {
+      "name": "Иосиф",
+      "name_en": "jose",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "There are more criminals than innocents in column E",
+      "hint_en": "There are more criminals than innocents in column E"
+    },
+    {
+      "name": "Карина",
+      "name_en": "karen",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "У Виктория больше соседей-преступников, чем у Алиса",
+      "hint_en": "Vicky has more criminal neighbors than Alice"
+    },
+    {
+      "name": "Ларри",
+      "name_en": "larry",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Ольга and Пётр share an odd number of innocent neighbors",
+      "hint_en": "Olive and Peter share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Мария",
+      "name_en": "maria",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Ларри has more criminal than innocent neighbors",
+      "hint_en": "Larry has more criminal than innocent neighbors"
+    },
+    {
+      "name": "Надежда",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "Only 1 of the 4 criminals in column D is on the edges",
+      "hint_en": "Only 1 of the 4 criminals in column D is on the edges"
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "Both criminals between Исаак and Зара are connected",
+      "hint_en": "Both criminals between Isaac and Zara are connected"
+    },
+    {
+      "name": "Пётр",
+      "name_en": "peter",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Том",
+      "name_en": "tom",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктория",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ванда",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксавье",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зара",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 16,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

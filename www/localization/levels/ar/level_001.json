@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-001",
+  "level_number": 1,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "عائشة",
+      "name_en": "alice",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "وليد وكريم لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Vince and Carl have an equal number of innocent neighbors"
+    },
+    {
+      "name": "بهية",
+      "name_en": "barb",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "نور وبهية لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Nancy and Barb have an equal number of innocent neighbors"
+    },
+    {
+      "name": "كريم",
+      "name_en": "carl",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "إسحاق واحد من اثنين أو أكثر من المجرمين بين إسحاق وطارق",
+      "hint_en": "Isaac is one of two or more criminals between Isaac and Terry"
+    },
+    {
+      "name": "دنيا",
+      "name_en": "donna",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "يوجد عدد فردي من الأبرياء المجاورين لـكريم",
+      "hint_en": "There's an odd number of innocents neighboring Carl"
+    },
+    {
+      "name": "عروة",
+      "name_en": "erwin",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "وليد وجمال لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Vince and Gary have an equal number of criminal neighbors"
+    },
+    {
+      "name": "فريدة",
+      "name_en": "freya",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "كل المجرمين بين عروة وطارق متصلون",
+      "hint_en": "All criminals between Erwin and Terry are connected"
+    },
+    {
+      "name": "جمال",
+      "name_en": "gary",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "ليزا لديه بالضبط 4 جيران أبرياء",
+      "hint_en": "Lisa has exactly 4 innocent neighbors"
+    },
+    {
+      "name": "هشام",
+      "name_en": "henry",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "جمال وليزا يتشاركان عدداً فردياً من الجيران الأبرياء",
+      "hint_en": "Gary and Lisa share an odd number of innocent neighbors"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "واحد فقط من الـ2 مجرمين بين وليد وزكريا هو جار زياد",
+      "hint_en": "Only 1 of the 2 criminals between Vince and Zach is Xavi's neighbor"
+    },
+    {
+      "name": "ياسين",
+      "name_en": "jason",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "صوفيا وطارق لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Sofia and Terry have an equal number of innocent neighbors"
+    },
+    {
+      "name": "ليزا",
+      "name_en": "lisa",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "واحد فقط من الـ3 مجرمين المجاورين لـزياد هو جار زكريا",
+      "hint_en": "Only 1 of the 3 criminals neighboring Xavi is Zach's neighbor"
+    },
+    {
+      "name": "مريم",
+      "name_en": "maria",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "ليزا وبولا يتشاركان عدداً فردياً من الجيران الأبرياء",
+      "hint_en": "Lisa and Paula share an odd number of innocent neighbors"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "زياد واحد من 2 مجرمين بين طارق وزكريا",
+      "hint_en": "Xavi is one of 2 criminals between Terry and Zach"
+    },
+    {
+      "name": "عليا",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "كلا الأبرياء بين دنيا وزكريا متصلان",
+      "hint_en": "Both innocents between Donna and Zach are connected"
+    },
+    {
+      "name": "بولا",
+      "name_en": "paula",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "صوفيا",
+      "name_en": "sofia",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "طارق",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زكريا",
+      "name_en": "zach",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 12,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

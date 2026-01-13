@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-036",
+  "level_number": 36,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "علي",
+      "name_en": "alex",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "لا أحد من الـ2 مجرمين المجاورين لـملك موجود بين لؤي وزياد",
+      "hint_en": "Neither of the 2 criminals neighboring Megan are between Logan and Xavi"
+    },
+    {
+      "name": "بتول",
+      "name_en": "betty",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "يوجد بريء واحد فقط بين هند وإسحاق",
+      "hint_en": "There is only one innocent between Helen and Isaac"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "يوجد بالضبط 2 أبرياء بين عروة وإسحاق",
+      "hint_en": "There are exactly 2 innocents between Erwin and Isaac"
+    },
+    {
+      "name": "دانيال",
+      "name_en": "daniel",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "واحد فقط من الـ3 مجرمين المجاورين لـكريمة في الصف1",
+      "hint_en": "Only 1 of the 3 criminals neighboring Carol is in row 1"
+    },
+    {
+      "name": "عروة",
+      "name_en": "erwin",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد أبرياء في الصف 1 أكثر من الصف 2",
+      "hint_en": "There are more innocents in row 1 than row 2"
+    },
+    {
+      "name": "فؤاد",
+      "name_en": "floyd",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "دانيال لديه بالضبط 2 جيران أبرياء",
+      "hint_en": "Daniel has exactly 2 innocent neighbors"
+    },
+    {
+      "name": "هند",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(builder,criminal,-1,0,1)"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "بالضبط 1 بناء لديه مجرم على يساره مباشرة",
+      "hint_en": "Exactly 1 #PROF:builder has a criminal directly to the left of them"
+    },
+    {
+      "name": "ياسين",
+      "name_en": "jason",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "طارق ودانيال لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Terry and Daniel have an equal number of innocent neighbors"
+    },
+    {
+      "name": "كوثر",
+      "name_en": "kay",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "دانيال وزينب لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Daniel and Zoe have an equal number of criminal neighbors"
+    },
+    {
+      "name": "لؤي",
+      "name_en": "logan",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "يوجد عدد متساوٍ من الأبرياء في الصفين 2 و4",
+      "hint_en": "There's an equal number of innocents in rows 2 and 4"
+    },
+    {
+      "name": "ملك",
+      "name_en": "megan",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "زياد لديه جيران مجرمين أكثر من دانيال",
+      "hint_en": "Xavi has more criminal neighbors than Daniel"
+    },
+    {
+      "name": "نادية",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "كل المجرمين بين عروة وإسحاق متصلون",
+      "hint_en": "All criminals between Erwin and Isaac are connected"
+    },
+    {
+      "name": "عليا",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "بالضبط 2 من الـ5 أبرياء المجاورين لـلؤي موجودين بين فؤاد ووردة",
+      "hint_en": "Exactly 2 of the 5 innocents neighboring Logan are between Floyd and Wanda"
+    },
+    {
+      "name": "رائد",
+      "name_en": "ronald",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "وردة لديه جيران مجرمين أكثر من دانيال",
+      "hint_en": "Wanda has more criminal neighbors than Daniel"
+    },
+    {
+      "name": "سوسن",
+      "name_en": "susan",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "طارق",
+      "name_en": "terry",
+      "criminal": true,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وردة",
+      "name_en": "wanda",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينب",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 8,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

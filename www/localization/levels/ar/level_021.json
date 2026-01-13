@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-021",
+  "level_number": 21,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Easy",
+  "cards": [
+    {
+      "name": "آدم",
+      "name_en": "adam",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد عدد فردي من الأبرياء المجاورين لـزياد",
+      "hint_en": "There's an odd number of innocents neighboring Xavi"
+    },
+    {
+      "name": "بشرى",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "يوجد بريء واحد فقط بين بشرى ودين",
+      "hint_en": "There is only one innocent between Bonnie and Denis"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد أبرياء في الصف 1 أكثر من الصف 5",
+      "hint_en": "There are more innocents in row 1 than row 5"
+    },
+    {
+      "name": "دين",
+      "name_en": "denis",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "أميرة وفاطمة يتشاركان عدداً فردياً من الجيران الأبرياء",
+      "hint_en": "Emily and Flora share an odd number of innocent neighbors"
+    },
+    {
+      "name": "أميرة",
+      "name_en": "emily",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "كل المجرمين بين بشرى ووفاء متصلون",
+      "hint_en": "All criminals between Bonnie and Vicky are connected"
+    },
+    {
+      "name": "فاطمة",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "البريء الوحيد بين هند وصالح هو جار ليلى's",
+      "hint_en": "The only innocent between Helen and Scott is Linda's neighbor"
+    },
+    {
+      "name": "غسان",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "أميرة ووفاء لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Emily and Vicky have an equal number of innocent neighbors"
+    },
+    {
+      "name": "هند",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "بشرى واحد من 2 مجرمين بين آدم ودين",
+      "hint_en": "Bonnie is one of 2 criminals between Adam and Denis"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "كلا الأبرياء في الصف 1 هم جيران فاطمة",
+      "hint_en": "Both innocents in row 1 are Flora's neighbors"
+    },
+    {
+      "name": "جميلة",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(guard,criminal,0,-1,2)"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "karen",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "2 حارس لديهم مجرم فوقهم مباشرة",
+      "hint_en": "2 #PROFS:guard have a criminal directly above them"
+    },
+    {
+      "name": "ليلى",
+      "name_en": "linda",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "كريمة واحد من اثنين أو أكثر من المجرمين بين كريمة ووائل",
+      "hint_en": "Karen is one of two or more criminals between Karen and Wally"
+    },
+    {
+      "name": "مريم",
+      "name_en": "mary",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "تامر ووائل ليس لديهم جيران أبرياء مشتركون",
+      "hint_en": "Tyler and Wally have no innocent neighbors in common"
+    },
+    {
+      "name": "نبيل",
+      "name_en": "nick",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "جميلة has the most criminal neighbors",
+      "hint_en": "Jane has the most criminal neighbors"
+    },
+    {
+      "name": "عمر",
+      "name_en": "olof",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد مجرمين أكثر من الأبرياء في الصف 4",
+      "hint_en": "There are more criminals than innocents in row 4"
+    },
+    {
+      "name": "صالح",
+      "name_en": "scott",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "بالضبط 3 من جيران ليلى الـ4 المجرمين هم أيضاً جيران كريمة",
+      "hint_en": "Exactly 3 of Linda's 4 criminal neighbors also neighbor Karen"
+    },
+    {
+      "name": "تامر",
+      "name_en": "tyler",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وائل",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 16,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

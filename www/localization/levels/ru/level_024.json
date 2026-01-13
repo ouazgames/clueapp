@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-024",
+  "level_number": 24,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Борис",
+      "name_en": "bruce",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Both criminals between Борис and Фрея are connected",
+      "hint_en": "Both criminals between Bruce and Freya are connected"
+    },
+    {
+      "name": "Карл",
+      "name_en": "carl",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "Борис's only innocent neighbor is on the edges",
+      "hint_en": "Bruce's only innocent neighbor is on the edges"
+    },
+    {
+      "name": "Итан",
+      "name_en": "ethan",
+      "criminal": true,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "An odd number of innocents on the edges neighbor Хильда",
+      "hint_en": "An odd number of innocents on the edges neighbor Hilda"
+    },
+    {
+      "name": "Фрея",
+      "name_en": "freya",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Both innocents between Фрея and Тимур are connected",
+      "hint_en": "Both innocents between Freya and Tyler are connected"
+    },
+    {
+      "name": "Григорий",
+      "name_en": "gary",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "Борис and Иосиф have an equal number of innocent neighbors",
+      "hint_en": "Bruce and Jose have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Хильда",
+      "name_en": "hilda",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "Исаак is one of Итан's 3 criminal neighbors",
+      "hint_en": "Isaac is one of Ethan's 3 criminal neighbors"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "У Степан ровно 3 невиновных соседей",
+      "hint_en": "Steve has exactly 3 innocent neighbors"
+    },
+    {
+      "name": "Иосиф",
+      "name_en": "jose",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "All criminals between Виктория and Зара are connected",
+      "hint_en": "All criminals between Vicky and Zara are connected"
+    },
+    {
+      "name": "Карина",
+      "name_en": "karen",
+      "criminal": false,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "There are 13 criminals in total",
+      "hint_en": "There are 13 criminals in total"
+    },
+    {
+      "name": "Лаура",
+      "name_en": "laura",
+      "criminal": false,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "There's an odd number of innocents between Карина and Виктория",
+      "hint_en": "There's an odd number of innocents between Karen and Vicky"
+    },
+    {
+      "name": "Мария",
+      "name_en": "mary",
+      "criminal": true,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "Итан and Павел have an equal number of innocent neighbors",
+      "hint_en": "Ethan and Paul have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Надежда",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Тимур and Борис have an equal number of innocent neighbors",
+      "hint_en": "Tyler and Bruce have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "There's an odd number of innocents between Надежда and Зара",
+      "hint_en": "There's an odd number of innocents between Nancy and Zara"
+    },
+    {
+      "name": "Павел",
+      "name_en": "paul",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Степан",
+      "name_en": "steve",
+      "criminal": true,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Тимур",
+      "name_en": "tyler",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктория",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Вальтер",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xia",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зара",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 13,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

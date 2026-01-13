@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-038",
+  "level_number": 38,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Aaron",
+      "name_en": "aaron",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Charles is one of Hélène's 6 criminal neighbors",
+      "hint_en": "Keith is one of Helen's 6 criminal neighbors"
+    },
+    {
+      "name": "Bruno",
+      "name_en": "brian",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "There are more criminals than innocents between Bruno and Flore",
+      "hint_en": "There are more criminals than innocents between Brian and Flora"
+    },
+    {
+      "name": "Caroline",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "Nicole's only innocent neighbor is Martin's neighbor",
+      "hint_en": "Nicole's only innocent neighbor is Martin's neighbor"
+    },
+    {
+      "name": "Flore",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "There's an odd number of innocents neighboring Thomas",
+      "hint_en": "There's an odd number of innocents neighboring Tyler"
+    },
+    {
+      "name": "Gabriel",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "Tous les criminels entre Gabriel et Joséphine sont connectés",
+      "hint_en": "All criminals between Gabe and Joyce are connected"
+    },
+    {
+      "name": "Hélène",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "There is only one innocent between Bruno and Vincent",
+      "hint_en": "There is only one innocent between Brian and Vince"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "Both innocents in row 4 are Vincent's neighbors",
+      "hint_en": "Both innocents in row 4 are Vince's neighbors"
+    },
+    {
+      "name": "Joséphine",
+      "name_en": "joyce",
+      "criminal": true,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "There are as many innocent #PROFS:guard as there are innocent #PROFS:pilot",
+      "hint_en": "There are as many innocent #PROFS:guard as there are innocent #PROFS:pilot"
+    },
+    {
+      "name": "Charles",
+      "name_en": "keith",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "Hélène is one of two or more criminals between Hélène and Joséphine",
+      "hint_en": "Helen is one of two or more criminals between Helen and Joyce"
+    },
+    {
+      "name": "Laurent",
+      "name_en": "logan",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "Exactly 1 innocent in column B is neighboring Paule",
+      "hint_en": "Exactly 1 innocent in column B is neighboring Paula"
+    },
+    {
+      "name": "Martin",
+      "name_en": "martin",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "Both criminals between Aaron and Olivia are connected",
+      "hint_en": "Both criminals between Aaron and Olivia are connected"
+    },
+    {
+      "name": "Nicole",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "There are 15 criminals in total",
+      "hint_en": "There are 15 criminals in total"
+    },
+    {
+      "name": "Olivia",
+      "name_en": "olivia",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Only 1 of the 2 criminals between Olivia and Sarah is Thomas's neighbor",
+      "hint_en": "Only 1 of the 2 criminals between Olivia and Sarah is Tyler's neighbor"
+    },
+    {
+      "name": "Paule",
+      "name_en": "paula",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "An odd number of innocents on the edges neighbor Paule",
+      "hint_en": "An odd number of innocents on the edges neighbor Paula"
+    },
+    {
+      "name": "Rubis",
+      "name_en": "ruby",
+      "criminal": false,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "n_professions_have_trait_in_dir(guard,innocent,1,0,1)",
+      "hint_en": "n_professions_have_trait_in_dir(guard,innocent,1,0,1)"
+    },
+    {
+      "name": "Sarah",
+      "name_en": "sarah",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "Exactly 1 #PROF:guard has an innocent directly to the right of them",
+      "hint_en": "Exactly 1 #PROF:guard has an innocent directly to the right of them"
+    },
+    {
+      "name": "Thomas",
+      "name_en": "tyler",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "Xia a plus de voisins innocents que Olivia",
+      "hint_en": "Xia has more innocent neighbors than Olivia"
+    },
+    {
+      "name": "Vincent",
+      "name_en": "vince",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Walter",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xia",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

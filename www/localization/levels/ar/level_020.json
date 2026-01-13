@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-020",
+  "level_number": 20,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "هارون",
+      "name_en": "aaron",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "None of the 7 criminals on the edges is a رسام",
+      "hint_en": "None of the 7 criminals on the edges is a #PROF:painter"
+    },
+    {
+      "name": "بشرى",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "الجار المجرم الوحيد لـدنيا هو جار بشرى",
+      "hint_en": "Donna's only criminal neighbor is Bonnie's neighbor"
+    },
+    {
+      "name": "شيرين",
+      "name_en": "cheryl",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "عدد فردي من الأبرياء بين بشرى ووفاء يجاورون مريم",
+      "hint_en": "An odd number of innocents between Bonnie and Vicky neighbor Mary"
+    },
+    {
+      "name": "دنيا",
+      "name_en": "donna",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "نوح وحواء لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Noah and Eve have an equal number of innocent neighbors"
+    },
+    {
+      "name": "حواء",
+      "name_en": "eve",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "كلا الأبرياء بين هارون ودنيا متصلان",
+      "hint_en": "Both innocents between Aaron and Donna are connected"
+    },
+    {
+      "name": "هاني",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "كلا الأبرياء بين دنيا وسعيد موجودان بين يوسف وزينب",
+      "hint_en": "Both innocents between Donna and Steve are between Jose and Zoe"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد مجرمين أكثر من الأبرياء بين نوح وزينب",
+      "hint_en": "There are more criminals than innocents between Noah and Zoe"
+    },
+    {
+      "name": "يوسف",
+      "name_en": "jose",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "يوجد أبرياء بين رسام أكثر من أي مهنة أخرى",
+      "hint_en": "There are more innocents among #PROFS:painter than any other profession"
+    },
+    {
+      "name": "كوثر",
+      "name_en": "kay",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "كل المجرمين بين ثور وزينب متصلون",
+      "hint_en": "All criminals between Thor and Zoe are connected"
+    },
+    {
+      "name": "لؤي",
+      "name_en": "logan",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "كوثر واحد من جيران بولا الـ3 المجرمين",
+      "hint_en": "Kay is one of Paula's 3 criminal neighbors"
+    },
+    {
+      "name": "مريم",
+      "name_en": "mary",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "حواء and هاني have 2 innocent neighbors in common",
+      "hint_en": "Eve and Hank have 2 innocent neighbors in common"
+    },
+    {
+      "name": "نوح",
+      "name_en": "noah",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "مريم واحد من اثنين أو أكثر من الأبرياء في الصف 3",
+      "hint_en": "Mary is one of two or more innocents in row 3"
+    },
+    {
+      "name": "أولغا",
+      "name_en": "olivia",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "زياد لديه بالضبط 3 جيران أبرياء",
+      "hint_en": "Xavi has exactly 3 innocent neighbors"
+    },
+    {
+      "name": "بولا",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "يوجد عدد فردي من المجرمين بين كوثر وأولغا",
+      "hint_en": "There's an odd number of criminals between Kay and Olivia"
+    },
+    {
+      "name": "رباح",
+      "name_en": "rob",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "سعيد",
+      "name_en": "steve",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "ثور",
+      "name_en": "thor",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينب",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 9,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-023",
+  "level_number": 23,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Алексей",
+      "name_en": "alex",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "Both innocents in column D are Лидия's neighbors",
+      "hint_en": "Both innocents in column D are Linda's neighbors"
+    },
+    {
+      "name": "Борис",
+      "name_en": "bobby",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "n_professions_have_trait_in_dir(mech,innocent,-1,0,1)",
+      "hint_en": "n_professions_have_trait_in_dir(mech,innocent,-1,0,1)"
+    },
+    {
+      "name": "Карина",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "Exactly 1 #PROF:mech has an innocent directly to the left of them",
+      "hint_en": "Exactly 1 #PROF:mech has an innocent directly to the left of them"
+    },
+    {
+      "name": "Дональд",
+      "name_en": "donald",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "All criminals between Ева and Елена are connected",
+      "hint_en": "All criminals between Eve and Helen are connected"
+    },
+    {
+      "name": "Ева",
+      "name_en": "eve",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "There are as many criminal #PROFS:coder as there are criminal #PROFS:farmer",
+      "hint_en": "There are as many criminal #PROFS:coder as there are criminal #PROFS:farmer"
+    },
+    {
+      "name": "Флора",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "The only innocent between Ева and Мария is Исаак's neighbor",
+      "hint_en": "The only innocent between Eve and Maria is Isaac's neighbor"
+    },
+    {
+      "name": "Гавриил",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "Exactly 3 of the 6 criminals neighboring Гавриил are between Алексей and Дональд",
+      "hint_en": "Exactly 3 of the 6 criminals neighboring Gabe are between Alex and Donald"
+    },
+    {
+      "name": "Елена",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "There are more innocents than criminals between Николай and Рональд",
+      "hint_en": "There are more innocents than criminals between Nick and Ronald"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "An odd number of innocents between Борис and Вильям neighbor Исаак",
+      "hint_en": "An odd number of innocents between Bobby and Will neighbor Isaac"
+    },
+    {
+      "name": "Юлия",
+      "name_en": "joyce",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Елена is one of 11 criminals on the edges",
+      "hint_en": "Helen is one of 11 criminals on the edges"
+    },
+    {
+      "name": "Кайл",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "There are as many criminals as innocents between Рональд and Зоя",
+      "hint_en": "There are as many criminals as innocents between Ronald and Zoe"
+    },
+    {
+      "name": "Лидия",
+      "name_en": "linda",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "Both criminals between Юлия and Вильям are connected",
+      "hint_en": "Both criminals between Joyce and Will are connected"
+    },
+    {
+      "name": "Мария",
+      "name_en": "maria",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "Лидия and Том have 4 innocent neighbors in total",
+      "hint_en": "Linda and Tom have 4 innocent neighbors in total"
+    },
+    {
+      "name": "Николай",
+      "name_en": "nick",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Паулина",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Рональд",
+      "name_en": "ronald",
+      "criminal": false,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Том",
+      "name_en": "tom",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Вильям",
+      "name_en": "will",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xia",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зоя",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 14,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

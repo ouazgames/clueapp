@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-018",
+  "level_number": 18,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Augustin",
+      "name_en": "austin",
+      "criminal": false,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "Éléonore et Samuel ont le même nombre de voisins criminels",
+      "hint_en": "Ellie and Sam have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Béatrice",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "Éléonore is one of Charles's 5 criminal neighbors",
+      "hint_en": "Ellie is one of Keith's 5 criminal neighbors"
+    },
+    {
+      "name": "Christine",
+      "name_en": "cheryl",
+      "criminal": true,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Isaac et Zacharie ont le même nombre de voisins innocents",
+      "hint_en": "Isaac and Zach have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Diane",
+      "name_en": "diane",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Tous les criminels entre Christine et Rubis sont connectés",
+      "hint_en": "All criminals between Cheryl and Ruby are connected"
+    },
+    {
+      "name": "Éléonore",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "Gustave and Henri share an odd number of innocent neighbors",
+      "hint_en": "Gus and Hank share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Flore",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "Tous les criminels entre Béatrice et Walter sont connectés",
+      "hint_en": "All criminals between Bonnie and Wally are connected"
+    },
+    {
+      "name": "Gustave",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "Henri a plus de voisins criminels que Augustin",
+      "hint_en": "Hank has more criminal neighbors than Austin"
+    },
+    {
+      "name": "Henri",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "There is only one innocent between Béatrice and Flore",
+      "hint_en": "There is only one innocent between Bonnie and Flora"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "Neither of the 2 innocents neighboring Éléonore are between Isaac and Laure",
+      "hint_en": "Neither of the 2 innocents neighboring Ellie are between Isaac and Laura"
+    },
+    {
+      "name": "Charles",
+      "name_en": "keith",
+      "criminal": true,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "The only innocent between Laure and Xavier is Zacharie's neighbor",
+      "hint_en": "The only innocent between Laura and Xavi is Zach's neighbor"
+    },
+    {
+      "name": "Laure",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Gustave a plus de voisins innocents que Zacharie",
+      "hint_en": "Gus has more innocent neighbors than Zach"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "There are as many innocent #PROFS:cop as there are innocent #PROFS:guard",
+      "hint_en": "There are as many innocent #PROFS:cop as there are innocent #PROFS:guard"
+    },
+    {
+      "name": "Olive",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "There are 9 innocents in total",
+      "hint_en": "There are 9 innocents in total"
+    },
+    {
+      "name": "Pierre",
+      "name_en": "peter",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Olive a plus de voisins innocents que Béatrice",
+      "hint_en": "Olive has more innocent neighbors than Bonnie"
+    },
+    {
+      "name": "Rubis",
+      "name_en": "ruby",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "There's an odd number of innocent #PROFS:guard",
+      "hint_en": "There's an odd number of innocent #PROFS:guard"
+    },
+    {
+      "name": "Samuel",
+      "name_en": "sam",
+      "criminal": false,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Victoire",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Walter",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zacharie",
+      "name_en": "zach",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 11,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

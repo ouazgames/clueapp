@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-026",
+  "level_number": 26,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "عائشة",
+      "name_en": "alice",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "يوجد 4 أبرياء إجمالاً",
+      "hint_en": "There are 4 innocents in total"
+    },
+    {
+      "name": "بدر",
+      "name_en": "bobby",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "العمود B فيه مجرمين أكثر من أي عمود آخر",
+      "hint_en": "Column B has more criminals than any other column"
+    },
+    {
+      "name": "كريم",
+      "name_en": "carl",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "مريم لديه جار بريء واحد فقط",
+      "hint_en": "Maria has only one innocent neighbor"
+    },
+    {
+      "name": "إيمان",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "كريمة has the most criminal neighbors",
+      "hint_en": "Karen has the most criminal neighbors"
+    },
+    {
+      "name": "فارس",
+      "name_en": "frank",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "مريم واحد من جيران بطرس الـ6 المجرمين",
+      "hint_en": "Maria is one of Peter's 6 criminal neighbors"
+    },
+    {
+      "name": "غسان",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "بالضبط 4 من جيران عليا الـ7 المجرمين هم أيضاً جيران كريمة",
+      "hint_en": "Exactly 4 of Olive's 7 criminal neighbors also neighbor Karen"
+    },
+    {
+      "name": "حبيبة",
+      "name_en": "hilda",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد عدد متساوٍ من طيار المجرمين ومحقق المجرمين",
+      "hint_en": "There are as many criminal #PROFS:pilot as there are criminal #PROFS:sleuth"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "مريم لديه جيران أبرياء أكثر من وفاء",
+      "hint_en": "Maria has more innocent neighbors than Vicky"
+    },
+    {
+      "name": "يوسف",
+      "name_en": "jose",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "يوجد مجرمين أكثر من الأبرياء في العمود E",
+      "hint_en": "There are more criminals than innocents in column E"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "karen",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "وفاء لديه جيران مجرمين أكثر من عائشة",
+      "hint_en": "Vicky has more criminal neighbors than Alice"
+    },
+    {
+      "name": "لؤي",
+      "name_en": "larry",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "عليا وبطرس يتشاركان عدداً فردياً من الجيران الأبرياء",
+      "hint_en": "Olive and Peter share an odd number of innocent neighbors"
+    },
+    {
+      "name": "مريم",
+      "name_en": "maria",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "لؤي لديه جيران مجرمين أكثر من الأبرياء",
+      "hint_en": "Larry has more criminal than innocent neighbors"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "واحد فقط من الـ4 مجرمين في العمود D على الحواف",
+      "hint_en": "Only 1 of the 4 criminals in column D is on the edges"
+    },
+    {
+      "name": "عليا",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "كلا المجرمين بين إسحاق وزهراء متصلان",
+      "hint_en": "Both criminals between Isaac and Zara are connected"
+    },
+    {
+      "name": "بطرس",
+      "name_en": "peter",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "تامر",
+      "name_en": "tom",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وردة",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زهراء",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 16,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

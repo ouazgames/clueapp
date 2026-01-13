@@ -1,6 +1,6 @@
 {
-  "appId": "com.cluesbysam.test2",
-  "appName": "Clues V2 Test",
+  "appId": "com.ouazgames.cluesgames.cluegame",
+  "appName": "Clue Game",
   "webDir": "www",
   "server": {
     "androidScheme": "https"
@@ -19,13 +19,16 @@
     },
     "AdMob": {
       "appIdAndroid": "ca-app-pub-3940256099942544~3347511713",
-      "appIdIos": "ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX"
+      "appIdIos": "ca-app-pub-9762641206922107~4187210251"
     }
   },
   "android": {
     "allowMixedContent": true
   },
   "ios": {
-    "contentInset": "automatic"
+    "contentInset": "automatic",
+    "preferredContentMode": "mobile",
+    "scrollEnabled": true,
+    "limitsNavigationsToAppBoundDomains": false
   }
 }

@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-013",
+  "level_number": 13,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Анна",
+      "name_en": "anna",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "Между Мария и Зоя ровно 2 невиновных",
+      "hint_en": "There are exactly 2 innocents between Mary and Zoe"
+    },
+    {
+      "name": "Бенджамин",
+      "name_en": "ben",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "There is only one innocent between Руслана and Зоя",
+      "hint_en": "There is only one innocent between Ruby and Zoe"
+    },
+    {
+      "name": "Чад",
+      "name_en": "chad",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "Only 1 of the 4 criminals neighboring Григорий is in column D",
+      "hint_en": "Only 1 of the 4 criminals neighboring Gary is in column D"
+    },
+    {
+      "name": "Донна",
+      "name_en": "donna",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "Григорий has the most criminal neighbors",
+      "hint_en": "Gary has the most criminal neighbors"
+    },
+    {
+      "name": "Елена",
+      "name_en": "ellie",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "There's an equal number of innocents in columns B and E",
+      "hint_en": "There's an equal number of innocents in columns B and E"
+    },
+    {
+      "name": "Григорий",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "An odd number of innocents between Григорий and Виктор neighbor Ной",
+      "hint_en": "An odd number of innocents between Gary and Vince neighbor Noah"
+    },
+    {
+      "name": "Харитон",
+      "name_en": "hal",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "Григорий is one of Кевин's 5 innocent neighbors",
+      "hint_en": "Gary is one of Kevin's 5 innocent neighbors"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "Григорий and Виктор have an equal number of innocent neighbors",
+      "hint_en": "Gary and Vince have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Ясон",
+      "name_en": "jason",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Павел is one of 2 criminals between Харитон and Ксения",
+      "hint_en": "Paul is one of 2 criminals between Hal and Xena"
+    },
+    {
+      "name": "Кевин",
+      "name_en": "kevin",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "У Ксения больше невиновных соседей, чем у Донна",
+      "hint_en": "Xena has more innocent neighbors than Donna"
+    },
+    {
+      "name": "Люся",
+      "name_en": "lucy",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Both criminals between Чад and Павел are Кевин's neighbors",
+      "hint_en": "Both criminals between Chad and Paul are Kevin's neighbors"
+    },
+    {
+      "name": "Мария",
+      "name_en": "mary",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "All innocents between Чад and Павел are connected",
+      "hint_en": "All innocents between Chad and Paul are connected"
+    },
+    {
+      "name": "Ной",
+      "name_en": "noah",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "У Донна и Анна одинаковое число соседей-преступников",
+      "hint_en": "Donna and Anna have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olivia",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Павел",
+      "name_en": "paul",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Руслана",
+      "name_en": "ruby",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Сара",
+      "name_en": "sarah",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктор",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xena",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зоя",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 7,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

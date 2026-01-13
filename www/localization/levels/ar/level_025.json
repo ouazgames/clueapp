@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-025",
+  "level_number": 25,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "علي",
+      "name_en": "alex",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "كريمة وعمر يتشاركان عدداً فردياً من الجيران الأبرياء",
+      "hint_en": "Karen and Olof share an odd number of innocent neighbors"
+    },
+    {
+      "name": "بتول",
+      "name_en": "betty",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "عمر لديه 4 جيران أبرياء على الحواف",
+      "hint_en": "Olof has 4 innocent neighbors on the edges"
+    },
+    {
+      "name": "دين",
+      "name_en": "denis",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "سوسن لديه جيران أبرياء أكثر من جميلة",
+      "hint_en": "Susan has more innocent neighbors than Jane"
+    },
+    {
+      "name": "إيمان",
+      "name_en": "ellie",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "واحد فقط من الـ2 مجرمين المجاورين لـنبيل بين بتول ووردة",
+      "hint_en": "Only 1 of the 2 criminals neighboring Nick is between Betty and Wanda"
+    },
+    {
+      "name": "فريدة",
+      "name_en": "freya",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد عدد متساوٍ من بناء الأبرياء وقاضي الأبرياء",
+      "hint_en": "There are as many innocent #PROFS:builder as there are innocent #PROFS:judge"
+    },
+    {
+      "name": "جمال",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد عدد فردي من المجرمين المجاورين لـجمال",
+      "hint_en": "There's an odd number of criminals neighboring Gary"
+    },
+    {
+      "name": "هند",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "شيماء وهند لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Xia and Helen have an equal number of criminal neighbors"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "واحد فقط من الـ2 مجرمين بين علي وجميلة هو جار فريدة",
+      "hint_en": "Only 1 of the 2 criminals between Alex and Jane is Freya's neighbor"
+    },
+    {
+      "name": "جميلة",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "يوجد بريء واحد فقط بين كريمة ولؤي",
+      "hint_en": "There is only one innocent between Karen and Larry"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "karen",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "واحد فقط من الـ2 مجرمين المجاورين لـفريدة بين جمال وعمر",
+      "hint_en": "Only 1 of the 2 criminals neighboring Freya is between Gary and Olof"
+    },
+    {
+      "name": "لؤي",
+      "name_en": "larry",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "عمر واحد من جيران كريمة الـ6 الأبرياء",
+      "hint_en": "Olof is one of Karen's 6 innocent neighbors"
+    },
+    {
+      "name": "مروان",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد عدد فردي من المجرمين بين مروان وزينب",
+      "hint_en": "There's an odd number of criminals between Martin and Zoe"
+    },
+    {
+      "name": "نبيل",
+      "name_en": "nick",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "يوجد عدد فردي من الأبرياء بين إسحاق وزينب",
+      "hint_en": "There's an odd number of innocents between Isaac and Zoe"
+    },
+    {
+      "name": "عمر",
+      "name_en": "olof",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "يوجد أبرياء أكثر من المجرمين بين جميلة ووليد",
+      "hint_en": "There are more innocents than criminals between Jane and Vince"
+    },
+    {
+      "name": "رياض",
+      "name_en": "ryan",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "يوجد عدد فردي من الأبرياء بين علي ووليد",
+      "hint_en": "There's an odd number of innocents between Alex and Vince"
+    },
+    {
+      "name": "سوسن",
+      "name_en": "susan",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وردة",
+      "name_en": "wanda",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "شيماء",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينب",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 4,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

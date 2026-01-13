@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-012",
+  "level_number": 12,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "عائشة",
+      "name_en": "alice",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "زياد لديه بالضبط 4 جيران أبرياء",
+      "hint_en": "Xavi has exactly 4 innocent neighbors"
+    },
+    {
+      "name": "بشرى",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "بالضبط 2 من الـ5 أبرياء المجاورين لـعلي موجودين بين كريمة وزياد",
+      "hint_en": "Exactly 2 of the 5 innocents neighboring Ollie are between Karen and Xavi"
+    },
+    {
+      "name": "شيرين",
+      "name_en": "cheryl",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد عدد فردي من المجرمين في الصف 1",
+      "hint_en": "There's an odd number of criminals in row 1"
+    },
+    {
+      "name": "ديانا",
+      "name_en": "diane",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "كل الأبرياء بين عائشة وديانا متصلون",
+      "hint_en": "All innocents between Alice and Diane are connected"
+    },
+    {
+      "name": "إيثان",
+      "name_en": "ethan",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "كلا الأبرياء بين عائشة ومراد متصلان",
+      "hint_en": "Both innocents between Alice and Mark are connected"
+    },
+    {
+      "name": "فارس",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "يوجد عدد متساوٍ من طباخ الأبرياء وشرطي الأبرياء",
+      "hint_en": "There are as many innocent #PROFS:cook as there are innocent #PROFS:cop"
+    },
+    {
+      "name": "غسان",
+      "name_en": "gabe",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد 15 أبرياء إجمالاً",
+      "hint_en": "There are 15 innocents in total"
+    },
+    {
+      "name": "حبيبة",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "يوجد عدد فردي من الأبرياء بين تامر وزهراء",
+      "hint_en": "There's an odd number of innocents between Tom and Zara"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "مراد لديه جيران أبرياء أكثر من المجرمين",
+      "hint_en": "Mark has more innocent than criminal neighbors"
+    },
+    {
+      "name": "جنات",
+      "name_en": "janet",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "حبيبة واحد من 10 أبرياء على الحواف",
+      "hint_en": "Hilda is one of 10 innocents on the edges"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "karen",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد أبرياء أكثر من المجرمين بين عائشة وتامر",
+      "hint_en": "There are more innocents than criminals between Alice and Tom"
+    },
+    {
+      "name": "لورا",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "بالضبط 1 بريء في الصف 1 يجاور إيثان",
+      "hint_en": "Exactly 1 innocent in row 1 is neighboring Ethan"
+    },
+    {
+      "name": "مراد",
+      "name_en": "mark",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "حبيبة وزياد لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Hilda and Xavi have an equal number of innocent neighbors"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "علي واحد من اثنين أو أكثر من الأبرياء بين علي وزياد",
+      "hint_en": "Ollie is one of two or more innocents between Ollie and Xavi"
+    },
+    {
+      "name": "علي",
+      "name_en": "ollie",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد أبرياء أكثر من المجرمين بين عائشة وشيرين",
+      "hint_en": "There are more innocents than criminals between Alice and Cheryl"
+    },
+    {
+      "name": "بولس",
+      "name_en": "paul",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "تامر",
+      "name_en": "tom",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "vince",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زهراء",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 5,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

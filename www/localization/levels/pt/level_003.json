@@ -1,0 +1,202 @@
+{
+  "id": "level-pt-003",
+  "level_number": 3,
+  "language": "pt",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Ana",
+      "name_en": "anna",
+      "criminal": false,
+      "profession": "Mecânico",
+      "profession_en": "mech",
+      "hint": "Cláudio tem mais vizinhos criminosos que Rosa",
+      "hint_en": "Clyde has more criminal neighbors than Rose"
+    },
+    {
+      "name": "Beatriz",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Cozinheiro",
+      "profession_en": "cook",
+      "hint": "Exactly 4 of the 10 innocents on the edges are Flora's neighbors",
+      "hint_en": "Exactly 4 of the 10 innocents on the edges are Flora's neighbors"
+    },
+    {
+      "name": "Cláudio",
+      "name_en": "clyde",
+      "criminal": false,
+      "profession": "Mecânico",
+      "profession_en": "mech",
+      "hint": "All criminals between Dona and Estêvão are connected",
+      "hint_en": "All criminals between Donna and Steve are connected"
+    },
+    {
+      "name": "Dona",
+      "name_en": "donna",
+      "criminal": false,
+      "profession": "Médico",
+      "profession_en": "doctor",
+      "hint": "Olavo tem mais vizinhos inocentes que Nicolau",
+      "hint_en": "Ollie has more innocent neighbors than Nick"
+    },
+    {
+      "name": "Eva",
+      "name_en": "eve",
+      "criminal": false,
+      "profession": "Funcionário",
+      "profession_en": "clerk",
+      "hint": "Isaac e Teodoro têm o mesmo número de vizinhos criminosos",
+      "hint_en": "Isaac and Terry have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Flora",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Guarda",
+      "profession_en": "guard",
+      "hint": "Both criminals between Dona and Estêvão are between Isaac and Zoe",
+      "hint_en": "Both criminals between Donna and Steve are between Isaac and Zoe"
+    },
+    {
+      "name": "Hilda",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "Guarda",
+      "profession_en": "guard",
+      "hint": "Pedro and Teodoro have only one innocent neighbor in common",
+      "hint_en": "Peter and Terry have only one innocent neighbor in common"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Cozinheiro",
+      "profession_en": "cook",
+      "hint": "Only 1 of the 5 innocents neighboring Marcos is in row 3",
+      "hint_en": "Only 1 of the 5 innocents neighboring Mark is in row 3"
+    },
+    {
+      "name": "Jasão",
+      "name_en": "jason",
+      "criminal": false,
+      "profession": "Funcionário",
+      "profession_en": "clerk",
+      "hint": "Marcos and Nicolau have 3 innocent neighbors in common",
+      "hint_en": "Mark and Nick have 3 innocent neighbors in common"
+    },
+    {
+      "name": "Lúcia",
+      "name_en": "lucy",
+      "criminal": false,
+      "profession": "Médico",
+      "profession_en": "doctor",
+      "hint": "There's an odd number of criminals neighboring Nicolau",
+      "hint_en": "There's an odd number of criminals neighboring Nick"
+    },
+    {
+      "name": "Marcos",
+      "name_en": "mark",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "There are more innocents than criminals between Dona and Zoe",
+      "hint_en": "There are more innocents than criminals between Donna and Zoe"
+    },
+    {
+      "name": "Nicolau",
+      "name_en": "nick",
+      "criminal": true,
+      "profession": "Médico",
+      "profession_en": "doctor",
+      "hint": "Eva tem mais vizinhos criminosos que Nicolau",
+      "hint_en": "Eve has more criminal neighbors than Nick"
+    },
+    {
+      "name": "Olavo",
+      "name_en": "ollie",
+      "criminal": true,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "There's an equal number of innocents in columns C and E",
+      "hint_en": "There's an equal number of innocents in columns C and E"
+    },
+    {
+      "name": "Pedro",
+      "name_en": "peter",
+      "criminal": false,
+      "profession": "Cantor",
+      "profession_en": "singer",
+      "hint": "n_professions_have_trait_in_dir(doctor,innocent,0,1,2)",
+      "hint_en": "n_professions_have_trait_in_dir(doctor,innocent,0,1,2)"
+    },
+    {
+      "name": "Rosa",
+      "name_en": "rose",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "2 #PROFS:doctor have an innocent directly below them",
+      "hint_en": "2 #PROFS:doctor have an innocent directly below them"
+    },
+    {
+      "name": "Estêvão",
+      "name_en": "steve",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Teodoro",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Valter",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "Cantor",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xia",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "Mecânico",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zoe",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "Cozinheiro",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 5,
+  "ui": {
+    "level": "Nível",
+    "criminal_status": "Criminoso",
+    "innocent_status": "Inocente",
+    "hint": "Dica",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Próximo Nível",
+    "congratulations": "Parabéns!",
+    "total_criminals": "Total de Criminosos"
+  }
+}

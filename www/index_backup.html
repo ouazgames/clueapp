@@ -1,0 +1,4206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="167x167" href="/images/favicon-167x167.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png" />
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64x64.png" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="common.css" />
+
+  <meta property="og:title" content="Clues by Sam" />
+  <meta property="og:image" content="https://cluesbysam.com/images/74029611514d.jpg" />
+  <meta property="og:description" content="A logic puzzle where you deduce who is a criminal!" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://cluesbysam.com/images/74029611514d.jpg" />
+  <meta name="color-scheme" content="light only" />
+  <meta name="supported-color-schemes" content="light" />
+  <meta name="robots" content="max-image-preview:large" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <title>Clues By Sam</title>
+  <style>
+    :root {
+      --safe-area-inset-top: env(safe-area-inset-top);
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      --safe-area-inset-left: env(safe-area-inset-left);
+      --safe-area-inset-right: env(safe-area-inset-right);
+      /* Casual Colorful Palette */
+      --bg-main: #c8f4ff;
+      --bg-light: #e8fbff;
+      --card-pink: #ffb6c1;
+      --card-blue: #87ceeb;
+      --card-green: #90ee90;
+      --card-innocent: #7fffb2;
+      --card-criminal: #ff7f7f;
+      --text-dark: #2d3748;
+      --text-light: #fff;
+      --accent-blue: #4facfe;
+      --shadow-soft: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html,
+    body {
+      height: 100%;
+      overflow-x: hidden;
+      overscroll-behavior: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(180deg, #c8f4ff 0%, #e0f7ff 50%, #d4f5ff 100%);
+      background-attachment: fixed;
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      min-height: -webkit-fill-available;
+      font-family: 'Nunito', sans-serif;
+      position: relative;
+      background-color: var(--bg-main);
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+    }
+
+    #root {
+      flex: 1 1 auto !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      overflow: hidden !important;
+    }
+
+    .bottom {
+      flex: 0 0 auto !important;
+      margin-top: auto !important;
+      padding-bottom: env(safe-area-inset-bottom) !important;
+      width: 100% !important;
+      z-index: 100 !important;
+    }
+
+    /* No particles for clean minimalist look */
+    body::before {
+      display: none;
+    }
+
+    /* ==========================================
+       SPLASH SCREEN - PREMIUM
+       ========================================== */
+    #splash-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      overflow: hidden;
+    }
+
+    #splash-screen::before {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(102, 126, 234, 0.4) 0%, transparent 70%);
+      animation: pulseGlow 2s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 0.5;
+      }
+
+      50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+      }
+    }
+
+    #splash-screen.hidden {
+      opacity: 0;
+      transform: scale(1.1);
+      pointer-events: none;
+    }
+
+    .splash-logo {
+      font-family: 'Ribeye', cursive;
+      font-size: 56px;
+      color: #fff;
+      text-shadow: 0 0 20px rgba(102, 126, 234, 0.8), 0 0 40px rgba(102, 126, 234, 0.4), 3px 3px 0 #667eea;
+      text-align: center;
+      margin-bottom: 20px;
+      animation: floatLogo 3s ease-in-out infinite;
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes floatLogo {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .splash-icon {
+      font-size: 100px;
+      margin-bottom: 30px;
+      animation: bounceIcon 2s ease-in-out infinite;
+      filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes bounceIcon {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    .splash-text {
+      font-family: 'Nunito', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 25px;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .splash-progress {
+      width: 240px;
+      height: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(102, 126, 234, 0.3);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    .splash-progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      border-radius: 6px;
+      transition: width 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .splash-progress-bar::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      animation: shimmer 1.5s infinite;
+    }
+
+    @keyframes shimmer {
+      100% {
+        left: 100%;
+      }
+    }
+
+    /* ==========================================
+       HEADER - COMPACT SINGLE LINE (max 56px)
+       ========================================== */
+    div.game-header,
+    .game-header {
+      background: linear-gradient(180deg, #6B4EAD 0%, #5A3D9A 100%) !important;
+      padding: 8px 12px !important;
+      border-radius: 0 !important;
+      box-shadow: 0 2px 8px rgba(90, 61, 154, 0.2) !important;
+      position: relative !important;
+      z-index: 10 !important;
+      margin: 0 !important;
+      width: 100% !important;
+      height: 48px !important;
+      max-height: 56px !important;
+      min-height: 40px !important;
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      box-sizing: border-box !important;
+      gap: 8px !important;
+    }
+
+    .game-header::before {
+      display: none !important;
+    }
+
+    .header-top {
+      display: none !important;
+    }
+
+    .settings-btn {
+      width: 32px;
+      height: 32px;
+      background: rgba(255, 255, 255, 0.15);
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #ffffff;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .settings-btn:active {
+      transform: scale(0.9);
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .level-title {
+      font-family: 'Fredoka One', 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #ffffff;
+      margin: 0;
+      letter-spacing: 0.5px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      flex-shrink: 0;
+    }
+
+    .coins-display {
+      display: none !important;
+    }
+
+    .coins-display:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(252, 182, 159, 0.6);
+    }
+
+    .coins-display:active {
+      transform: scale(0.95);
+    }
+
+    .coins-plus {
+      position: absolute;
+      right: -4px;
+      bottom: -4px;
+      width: 18px;
+      height: 18px;
+      background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: bold;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(56, 239, 125, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      animation: pulsePlus 2s ease infinite;
+    }
+
+    @keyframes pulsePlus {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    .coins-icon {
+      font-size: 16px;
+      filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+    }
+
+    .coins-amount {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 14px;
+      color: #2d3436;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    }
+
+    .header-bottom {
+      display: none !important;
+    }
+
+    .progress-container {
+      position: relative;
+      flex: 1;
+      max-width: 180px;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 0 12px;
+    }
+
+    .progress-fill {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background: linear-gradient(90deg, #4CD964 0%, #5AC8FA 100%);
+      border-radius: 4px;
+      transition: width 0.4s ease;
+    }
+
+    .progress-fill::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, transparent 100%);
+      border-radius: 16px 0 0 0;
+    }
+
+    .progress-text {
+      display: none !important;
+    }
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 380px) {
+      .progress-container {
+        max-width: 180px;
+        height: 28px;
+      }
+
+      .progress-text {
+        font-size: 14px;
+      }
+    }
+
+    /* ==========================================
+       SHOP POPUP
+       ========================================== */
+    #shop-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 60000;
+    }
+
+    #shop-popup.show {
+      display: flex;
+      animation: fadeInPopup 0.3s ease;
+    }
+
+    .shop-content {
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%);
+      backdrop-filter: blur(20px);
+      border-radius: 28px;
+      padding: 28px 24px;
+      max-width: 360px;
+      width: 92%;
+      max-height: 80vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      position: relative;
+    }
+
+    .shop-close {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      font-size: 22px;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .shop-close:active {
+      transform: scale(0.9);
+    }
+
+    .shop-header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .shop-coins-display {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      padding: 10px 20px;
+      border-radius: 25px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 15px rgba(252, 182, 159, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .shop-coins-display .coins-amount {
+      font-size: 20px;
+      font-weight: 900;
+      color: #2d3436;
+    }
+
+    .shop-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 30px;
+      color: #fff;
+      margin: 12px 0;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      letter-spacing: 1px;
+    }
+
+    .shop-items {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .shop-item {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 18px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      transition: all 0.3s ease;
+    }
+
+    .shop-item:active {
+      transform: scale(0.98);
+    }
+
+    .shop-item-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .shop-item-icon {
+      font-size: 32px;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    .shop-item-amount {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 24px;
+      color: #fff;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .shop-item-btn {
+      padding: 12px 22px;
+      border-radius: 25px;
+      border: none;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .shop-item-btn:active {
+      transform: scale(0.95);
+    }
+
+    .shop-item-btn.free {
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      color: #2d3436;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .shop-item-btn.buy {
+      background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* ==========================================
+       NOT ENOUGH COINS POPUP
+       ========================================== */
+    #coins-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 65000;
+    }
+
+    #coins-popup.show {
+      display: flex;
+    }
+
+    .coins-popup-content {
+      background: linear-gradient(180deg, #E74C3C 0%, #C0392B 100%);
+      border-radius: 25px;
+      padding: 30px;
+      text-align: center;
+      max-width: 300px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      border: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .coins-popup-icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .coins-popup-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .coins-popup-message {
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 20px;
+    }
+
+    .coins-popup-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .coins-popup-btn {
+      padding: 12px 24px;
+      border-radius: 20px;
+      border: none;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .coins-popup-btn.watch {
+      background: linear-gradient(180deg, #F4D03F 0%, #D4AC0D 100%);
+      color: #2C3E50;
+    }
+
+    .coins-popup-btn.shop {
+      background: linear-gradient(180deg, #27AE60 0%, #1E8449 100%);
+      color: #fff;
+    }
+
+    .coins-popup-btn.close {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    /* ==========================================
+       BANNER AD SPACE - HIDDEN
+       ========================================== */
+    .banner-ad-space {
+      display: none !important;
+    }
+
+    .progress-bar-wrapper {
+      width: 180px;
+      height: 28px;
+      background: linear-gradient(180deg, #34495E 0%, #2C3E50 100%);
+      border-radius: 14px;
+      padding: 4px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3), inset 0 2px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(180deg, #F4D03F 0%, #F39C12 100%);
+      border-radius: 10px;
+      width: 0%;
+      transition: width 0.3s ease;
+      box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+    }
+
+    .progress-text {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      width: 180px;
+      text-align: center;
+      line-height: 28px;
+    }
+
+    .progress-bar-inner {
+      position: relative;
+    }
+
+    /* ==========================================
+       GAME CONTAINER - PREMIUM (VERTICAL SCROLL ONLY)
+       ========================================== */
+    #root {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 5px 2px;
+      padding-bottom: 20px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 100vw;
+    }
+
+    /* ==========================================
+       CARD STYLING - CASUAL COLORFUL
+       ========================================== */
+    .card-grid {
+      background-color: transparent !important;
+      gap: 6px !important;
+      height: 62vh !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      grid-template-rows: repeat(5, 1fr) !important;
+      width: 96vw !important;
+      max-width: 420px !important;
+      padding: 4px !important;
+      margin: 4px auto !important;
+    }
+
+    .card {
+      border-radius: 6px !important;
+      background: linear-gradient(180deg, #87ceeb 0%, #a8d8ea 100%) !important;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+      border: none !important;
+      overflow: hidden !important;
+      transition: transform 0.1s ease-out !important;
+      width: 100% !important;
+      height: 100% !important;
+      will-change: transform;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+
+    .card:active {
+      transform: scale(0.94) !important;
+    }
+
+    .card.innocent {
+      background: linear-gradient(180deg, #7fffb2 0%, #5ee89c 100%) !important;
+      box-shadow: 0 4px 15px rgba(94, 232, 156, 0.3) !important;
+    }
+
+    .card.criminal {
+      background: linear-gradient(180deg, #ff8a8a 0%, #ff6b6b 100%) !important;
+      box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3) !important;
+    }
+
+    .card-container {
+      position: relative;
+    }
+
+    /* Card text - GAMING FONT, BLACK, BOLD */
+    .card .name,
+    .card .title,
+    .card h3,
+    .card h4,
+    .card span,
+    .card p,
+    .card div {
+      font-family: 'Fredoka One', 'Nunito', sans-serif !important;
+      color: #000000 !important;
+      font-weight: 900 !important;
+      text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) !important;
+      letter-spacing: 0.5px !important;
+    }
+
+    /* Card name label at bottom */
+    .card .label,
+    .card .card-label,
+    .card-label {
+      font-family: 'Fredoka One', 'Nunito', sans-serif !important;
+      background: #2d3748 !important;
+      color: #ffffff !important;
+      font-weight: 900 !important;
+      font-size: 14px !important;
+      padding: 5px 10px !important;
+      border-radius: 8px !important;
+      text-shadow: none !important;
+    }
+
+    /* Profession/job text */
+    .card .job,
+    .card .profession,
+    .card .subtitle {
+      font-family: 'Fredoka One', 'Nunito', sans-serif !important;
+      color: #1a202c !important;
+      font-weight: 900 !important;
+      font-size: 12px !important;
+    }
+
+    /* When card has hint, make name and profession smaller */
+    .card.has-hint .name,
+    .card.has-hint h3 {
+      font-size: 11px !important;
+      line-height: 1.1 !important;
+    }
+
+    .card.has-hint .job,
+    .card.has-hint .profession,
+    .card.has-hint .subtitle {
+      font-size: 9px !important;
+      line-height: 1 !important;
+    }
+
+    /* Card position labels (A1, B1, etc) - VISIBLE */
+    .card .coord {
+      font-family: 'Fredoka One', 'Nunito', sans-serif !important;
+      font-size: 14px !important;
+      font-weight: 900 !important;
+      color: #ffffff !important;
+      background: rgba(0, 0, 0, 0.6) !important;
+      padding: 2px 6px !important;
+      border-radius: 6px !important;
+      position: absolute !important;
+      left: 4px !important;
+      top: 4px !important;
+      z-index: 5 !important;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
+    }
+
+    /* Make card emojis BIGGER - but smaller when there's a hint */
+    .card .emoji,
+    .card .face,
+    .card .avatar,
+    .card .character {
+      font-size: 48px !important;
+      line-height: 1.2 !important;
+    }
+
+    /* When card has a hint, make emoji smaller to leave room */
+    .card.has-hint .emoji,
+    .card.has-hint .face,
+    .card.has-hint .avatar,
+    .card.has-hint .character {
+      font-size: 30px !important;
+      line-height: 1 !important;
+    }
+
+    /* Fix card text overflow - keep text inside card */
+    .card {
+      overflow: hidden !important;
+    }
+
+    .card .hint,
+    .card .clue,
+    .card .speech,
+    .card .message,
+    .card .text-content {
+      font-size: 10px !important;
+      line-height: 1.15 !important;
+      overflow: hidden !important;
+      max-height: 80px !important;
+      padding: 2px 4px !important;
+      word-wrap: break-word !important;
+      text-align: center !important;
+    }
+
+    /* Hide unwanted buttons - keep only Inspect and Show Hint */
+    /* Show Row 1 but hide Clear tags (first button) */
+    .bottom .row:nth-child(1) {
+      display: flex !important;
+    }
+
+    /* Hide Clear tags button specifically */
+    .bottom .row:nth-child(1)>button:disabled,
+    .bottom .row:nth-child(1)>button:first-child:not(.inspect-button):not([data-translated]) {
+      display: none !important;
+    }
+
+    /* Hide entire Row 2 (Settings, Restart, Share) */
+    .bottom .row:nth-child(2) {
+      display: none !important;
+    }
+
+    .bottom label,
+    .bottom input[type="checkbox"],
+    .bottom input[type="checkbox"]+label,
+    label:has(input[type="checkbox"]) {
+      display: none !important;
+    }
+
+    /* ==========================================
+       ACTION BUTTONS - CASUAL COLORFUL
+       ========================================== */
+    .bottom {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+      padding: 0 10px;
+    }
+
+    .bottom button,
+    .bottom input {
+      background: linear-gradient(180deg, #4facfe 0%, #00c6fb 100%);
+      color: #fff;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 25px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(79, 172, 254, 0.25);
+      transition: transform 0.1s ease-out;
+      touch-action: manipulation;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      white-space: nowrap;
+      min-width: fit-content;
+      will-change: transform;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .bottom button::before,
+    .bottom input::before {
+      display: none;
+    }
+
+    .bottom button:active,
+    .bottom input:active {
+      transform: scale(0.92);
+    }
+
+    .bottom button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* ==========================================
+       WIN POPUP - PREMIUM CELEBRATION
+       ========================================== */
+    #win-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(10px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 50000;
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
+
+    #win-popup.show {
+      display: flex;
+      animation: fadeInPopup 0.4s ease;
+    }
+
+    @keyframes fadeInPopup {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .win-content {
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 240, 240, 0.95) 100%);
+      backdrop-filter: blur(20px);
+      border-radius: 28px;
+      padding: 30px 35px;
+      text-align: center;
+      max-width: 320px;
+      width: 88%;
+      box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .win-content::before {
+      content: '🎉';
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      font-size: 80px;
+      opacity: 0.1;
+      transform: rotate(-15deg);
+    }
+
+    .win-level-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 26px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 0 0 8px 0;
+    }
+
+    .win-difficulty {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: #95a5a6;
+      margin: 0 0 20px 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .win-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .win-grid-row {
+      display: flex;
+      gap: 6px;
+    }
+
+    .win-grid-cell {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      animation: popIn 0.3s ease backwards;
+    }
+
+    .win-grid-cell:nth-child(1) {
+      animation-delay: 0.05s;
+    }
+
+    .win-grid-cell:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    .win-grid-cell:nth-child(3) {
+      animation-delay: 0.15s;
+    }
+
+    .win-grid-cell:nth-child(4) {
+      animation-delay: 0.2s;
+    }
+
+    @keyframes popIn {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .win-grid-cell.green {
+      background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+      box-shadow: 0 4px 15px rgba(56, 239, 125, 0.4);
+    }
+
+    .win-grid-cell.yellow {
+      background: linear-gradient(135deg, #f5af19 0%, #f12711 100%);
+      box-shadow: 0 4px 15px rgba(245, 175, 25, 0.4);
+    }
+
+    .win-grid-cell.orange {
+      background: linear-gradient(135deg, #fc4a1a 0%, #f7b733 100%);
+      box-shadow: 0 4px 15px rgba(252, 74, 26, 0.4);
+    }
+
+    .win-message {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 17px;
+      color: #2d3436;
+      margin: 0 0 25px 0;
+    }
+
+    .win-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .win-button-next {
+      background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 18px;
+      padding: 16px 35px;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(56, 239, 125, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      letter-spacing: 0.5px;
+    }
+
+    .win-button-next:active {
+      transform: scale(0.95);
+      box-shadow: 0 4px 15px rgba(56, 239, 125, 0.3);
+    }
+
+    .win-button-secondary {
+      background: transparent;
+      color: #667eea;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 14px 28px;
+      border: 2px solid #667eea;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .win-button-secondary:active {
+      transform: scale(0.95);
+      background: rgba(102, 126, 234, 0.1);
+    }
+
+    .win-button-close {
+      background: transparent;
+      color: #95a5a6;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 22px;
+      border: 1px solid #dfe6e9;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .win-button-close:active {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    /* ==========================================
+       LOSE POPUP
+       ========================================== */
+    #lose-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 50000;
+    }
+
+    #lose-popup.show {
+      display: flex;
+    }
+
+    .lose-content {
+      background: linear-gradient(180deg, #E74C3C 0%, #C0392B 100%);
+      border-radius: 30px;
+      padding: 30px 40px;
+      text-align: center;
+      max-width: 320px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      border: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .lose-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      color: #fff;
+      margin: 0 0 20px 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .lose-button {
+      background: linear-gradient(180deg, #95A5A6 0%, #7F8C8D 100%);
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .lose-button:active {
+      transform: scale(0.95);
+    }
+
+    /* ==========================================
+       BANNER MESSAGES
+       ========================================== */
+    .game-banner {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(180deg, #3498DB 0%, #2980B9 100%);
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 24px;
+      padding: 20px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      z-index: 5000;
+      display: none;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .game-banner.show {
+      display: block;
+      animation: bannerPop 0.3s ease;
+    }
+
+    @keyframes bannerPop {
+      0% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* ==========================================
+       NAVIGATION (HIDDEN)
+       ========================================== */
+    .nav-container {
+      display: none;
+    }
+
+    /* ==========================================
+       RESPONSIVE ADJUSTMENTS
+       ========================================== */
+    @media (max-width: 380px) {
+      .level-title {
+        font-size: 26px;
+      }
+
+      .progress-bar-wrapper {
+        width: 150px;
+        height: 24px;
+      }
+
+      .progress-text {
+        font-size: 16px;
+        width: 150px;
+        line-height: 24px;
+      }
+
+    }
+
+    @media (min-width: 768px) {
+      .level-title {
+        font-size: 40px;
+      }
+
+      .progress-bar-wrapper {
+        width: 250px;
+        height: 35px;
+      }
+
+      .progress-text {
+        font-size: 24px;
+        width: 250px;
+        line-height: 35px;
+      }
+    }
+
+    /* Hide old level display */
+    #level-display {
+      display: none !important;
+    }
+
+    /* ==========================================
+       RTL SUPPORT (ARABIC)
+       ========================================== */
+    [dir="rtl"] .header-top {
+      flex-direction: row-reverse;
+    }
+
+    [dir="rtl"] .coins-display {
+      flex-direction: row-reverse;
+    }
+
+    [dir="rtl"] .coins-plus {
+      right: auto;
+      left: -8px;
+    }
+
+    [dir="rtl"] .shop-close {
+      left: auto;
+      right: 15px;
+    }
+
+    [dir="rtl"] .shop-item {
+      flex-direction: row-reverse;
+    }
+
+    [dir="rtl"] .shop-item-left {
+      flex-direction: row-reverse;
+    }
+
+    [dir="rtl"] .coins-popup-buttons {
+      flex-direction: row-reverse;
+    }
+
+    [dir="rtl"] .win-buttons {
+      direction: rtl;
+    }
+
+    /* ==========================================
+       LANGUAGE SELECTOR POPUP
+       ========================================== */
+    #language-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 70000;
+    }
+
+    #language-popup.show {
+      display: flex;
+    }
+
+    .language-popup-content {
+      background: linear-gradient(180deg, #3498DB 0%, #2980B9 100%);
+      border-radius: 25px;
+      padding: 25px 20px;
+      max-width: 320px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      border: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .language-popup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .language-popup-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      margin: 0;
+    }
+
+    .language-popup-close {
+      width: 36px;
+      height: 36px;
+      background: #E74C3C;
+      border: none;
+      border-radius: 50%;
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 3px 10px rgba(231, 76, 60, 0.4);
+    }
+
+    .language-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .language-btn {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px 20px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .language-btn:hover,
+    .language-btn.active {
+      background: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .language-btn.active {
+      border-color: #27AE60;
+      box-shadow: 0 0 15px rgba(39, 174, 96, 0.4);
+    }
+
+    .language-flag {
+      font-size: 32px;
+    }
+
+    .language-name {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .language-check {
+      margin-left: auto;
+      font-size: 20px;
+      color: #27AE60;
+      display: none;
+    }
+
+    .language-btn.active .language-check {
+      display: block;
+    }
+
+    /* ==========================================
+       HINT CARD OVERRIDES - MUST BE LAST FOR MAXIMUM SPECIFICITY
+       ========================================== */
+    .card.has-hint .face,
+    .card.has-hint p.face,
+    .has-hint .face,
+    .has-hint p.face {
+      font-size: 28px !important;
+      line-height: 28px !important;
+      margin-bottom: 0 !important;
+    }
+
+    .card.has-hint h3,
+    .card.has-hint .name,
+    .has-hint h3,
+    .has-hint .name {
+      font-size: 10px !important;
+      line-height: 10px !important;
+      padding: 2px 0 !important;
+    }
+
+    .card.has-hint .profession,
+    .card.has-hint .job,
+    .has-hint .profession,
+    .has-hint .job {
+      font-size: 8px !important;
+      line-height: 8px !important;
+    }
+
+    .card.has-hint .hint,
+    .card.has-hint p.hint,
+    .has-hint .hint,
+    .has-hint p.hint {
+      font-size: 9px !important;
+      line-height: 10px !important;
+      max-height: none !important;
+      overflow: visible !important;
+      padding: 1px 3px !important;
+    }
+
+    .card.has-hint div.name,
+    .has-hint div.name {
+      padding: 1px 0 !important;
+      background: transparent !important;
+    }
+
+    .card.has-hint h3,
+    .card.has-hint .name,
+    .has-hint h3,
+    .has-hint .name,
+    .card.has-hint .profession,
+    .card.has-hint .job,
+    .has-hint .profession,
+    .has-hint .job {
+      color: #1a1a2e !important;
+      text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7) !important;
+      background: transparent !important;
+    }
+
+    /* Hide theme selector */
+    .select-wrapper,
+    #theme-select {
+      display: none !important;
+    }
+
+    /* Hide Next Level from card modal - only show in win popup */
+    .next-level-injected {
+      display: none !important;
+    }
+
+    #win-popup .next-level-injected,
+    .win-popup .next-level-injected {
+      display: block !important;
+    }
+  </style>
+  <script>
+    // ==========================================
+    // MULTI-LANGUAGE TRANSLATION SYSTEM
+    // Supports: English, Arabic, Spanish, Italian, Russian
+    // ==========================================
+    const TRANSLATIONS = {
+      en: {
+        lang: 'English',
+        flag: '🇬🇧',
+        rtl: false,
+        // Splash screen
+        splashText: 'Preparing clues for you, please wait...',
+        // Header
+        level: 'Level',
+        // Shop
+        shop: 'SHOP',
+        free: 'FREE',
+        // Get more coins popup (was 'Not enough coins')
+        getMoreCoins: 'Get more coins',
+        needMoreCoins: 'You need more coins to use this hint.',
+        watchAd: 'Watch Ad',
+        close: 'Close',
+        // Win popup
+        easy: 'Easy',
+        medium: 'Medium',
+        hard: 'Hard',
+        solvedIn: 'Solved in less than {min} minutes!',
+        nextLevel: 'Next Level →',
+        playAgain: '↻ Play again',
+        // Lose popup
+        tryAgain: 'Try Again!',
+        dontWorry: "Don't worry, you can retry this level.",
+        retry: 'Retry',
+        // Game buttons (from original game)
+        showHint: 'Show Hint',
+        showMore: 'Show More',
+        seeResults: 'See results',
+        // Settings
+        selectLanguage: 'Select Language',
+        // Alerts
+        earnedCoins: 'You earned {coins} coins!',
+        adNotReady: 'Ad not ready yet. Please try again in a moment.',
+        purchasedCoins: 'You purchased {coins} coins!',
+        storeNotReady: 'Store not ready. Please try again.',
+        purchaseFailed: 'Purchase failed. Please try again.',
+        allLevelsComplete: 'All levels complete!',
+        expert: 'Expert'
+      },
+      ar: {
+        lang: 'العربية',
+        flag: '🇸🇦',
+        rtl: true,
+        splashText: 'جاري تحضير الأدلة، يرجى الانتظار...',
+        level: 'المستوى',
+        shop: 'المتجر',
+        free: 'مجاني',
+        notEnoughCoins: 'لا توجد عملات كافية!',
+        needMoreCoins: 'تحتاج إلى المزيد من العملات لاستخدام هذا التلميح.',
+        watchAd: 'شاهد إعلان',
+        close: 'إغلاق',
+        easy: 'سهل',
+        medium: 'متوسط',
+        hard: 'صعب',
+        solvedIn: 'تم الحل في أقل من {min} دقيقة!',
+        nextLevel: '← المستوى التالي',
+        playAgain: '↻ إعادة اللعب',
+        tryAgain: 'حاول مرة أخرى!',
+        dontWorry: 'لا تقلق، يمكنك إعادة هذا المستوى.',
+        retry: 'إعادة المحاولة',
+        showHint: 'إظهار تلميح',
+        showMore: 'إظهار المزيد',
+        seeResults: 'عرض النتائج',
+        selectLanguage: 'اختر اللغة',
+        earnedCoins: 'لقد ربحت {coins} عملة!',
+        adNotReady: 'الإعلان غير جاهز بعد. يرجى المحاولة بعد قليل.',
+        purchasedCoins: 'لقد اشتريت {coins} عملة!',
+        storeNotReady: 'المتجر غير جاهز. يرجى المحاولة مرة أخرى.',
+        purchaseFailed: 'فشلت عملية الشراء. يرجى المحاولة مرة أخرى.',
+        allLevelsComplete: 'تم إكمال جميع المستويات!',
+        expert: 'خبير'
+      },
+      es: {
+        lang: 'Español',
+        flag: '🇪🇸',
+        rtl: false,
+        splashText: 'Preparando pistas para ti, por favor espera...',
+        level: 'Nivel',
+        shop: 'TIENDA',
+        free: 'GRATIS',
+        notEnoughCoins: '¡No hay suficientes monedas!',
+        needMoreCoins: 'Necesitas más monedas para usar esta pista.',
+        watchAd: 'Ver anuncio',
+        close: 'Cerrar',
+        easy: 'Fácil',
+        medium: 'Medio',
+        hard: 'Difícil',
+        solvedIn: '¡Resuelto en menos de {min} minutos!',
+        nextLevel: 'Siguiente Nivel →',
+        playAgain: '↻ Jugar de nuevo',
+        tryAgain: '¡Inténtalo de nuevo!',
+        dontWorry: 'No te preocupes, puedes reintentar este nivel.',
+        retry: 'Reintentar',
+        showHint: 'Mostrar pista',
+        showMore: 'Mostrar más',
+        seeResults: 'Ver resultados',
+        selectLanguage: 'Seleccionar idioma',
+        earnedCoins: '¡Ganaste {coins} monedas!',
+        adNotReady: 'El anuncio no está listo. Por favor, inténtalo en un momento.',
+        purchasedCoins: '¡Compraste {coins} monedas!',
+        storeNotReady: 'La tienda no está lista. Por favor, inténtalo de nuevo.',
+        purchaseFailed: 'La compra falló. Por favor, inténtalo de nuevo.',
+        allLevelsComplete: '¡Todos los niveles completados!',
+        expert: 'Experto'
+      },
+      it: {
+        lang: 'Italiano',
+        flag: '🇮🇹',
+        rtl: false,
+        splashText: 'Preparando gli indizi per te, attendere prego...',
+        level: 'Livello',
+        shop: 'NEGOZIO',
+        free: 'GRATIS',
+        notEnoughCoins: 'Monete insufficienti!',
+        needMoreCoins: 'Hai bisogno di più monete per usare questo suggerimento.',
+        watchAd: 'Guarda annuncio',
+        close: 'Chiudi',
+        easy: 'Facile',
+        medium: 'Medio',
+        hard: 'Difficile',
+        solvedIn: 'Risolto in meno di {min} minuti!',
+        nextLevel: 'Livello Successivo →',
+        playAgain: '↻ Gioca ancora',
+        tryAgain: 'Riprova!',
+        dontWorry: 'Non preoccuparti, puoi riprovare questo livello.',
+        retry: 'Riprova',
+        showHint: 'Mostra suggerimento',
+        showMore: 'Mostra altro',
+        seeResults: 'Vedi risultati',
+        selectLanguage: 'Seleziona lingua',
+        earnedCoins: 'Hai guadagnato {coins} monete!',
+        adNotReady: "L'annuncio non è ancora pronto. Riprova tra un momento.",
+        purchasedCoins: 'Hai acquistato {coins} monete!',
+        storeNotReady: 'Il negozio non è pronto. Riprova.',
+        purchaseFailed: "L'acquisto non è riuscito. Riprova.",
+        allLevelsComplete: 'Tutti i livelli completati!',
+        expert: 'Esperto'
+      },
+      ru: {
+        lang: 'Русский',
+        flag: '🇷🇺',
+        rtl: false,
+        splashText: 'Подготовка подсказок, пожалуйста подождите...',
+        level: 'Уровень',
+        shop: 'МАГАЗИН',
+        free: 'БЕСПЛАТНО',
+        notEnoughCoins: 'Недостаточно монет!',
+        needMoreCoins: 'Вам нужно больше монет, чтобы использовать эту подсказку.',
+        watchAd: 'Смотреть рекламу',
+        close: 'Закрыть',
+        easy: 'Легко',
+        medium: 'Средне',
+        hard: 'Сложно',
+        solvedIn: 'Решено менее чем за {min} минут!',
+        nextLevel: 'Следующий уровень →',
+        playAgain: '↻ Играть снова',
+        tryAgain: 'Попробуйте снова!',
+        dontWorry: 'Не волнуйтесь, вы можете повторить этот уровень.',
+        retry: 'Повторить',
+        showHint: 'Показать подсказку',
+        showMore: 'Показать ещё',
+        seeResults: 'Посмотреть результаты',
+        selectLanguage: 'Выбрать язык',
+        earnedCoins: 'Вы заработали {coins} монет!',
+        adNotReady: 'Реклама ещё не готова. Попробуйте через мгновение.',
+        purchasedCoins: 'Вы купили {coins} монет!',
+        storeNotReady: 'Магазин не готов. Попробуйте ещё раз.',
+        purchaseFailed: 'Покупка не удалась. Попробуйте ещё раз.',
+        allLevelsComplete: 'Все уровни пройдены!',
+        expert: 'Эксперт'
+      }
+    };
+
+    // ==========================================
+    // UNIVERSAL TRANSLATIONS LOADER
+    // Uses language_data.json for all names and professions
+    // ==========================================
+    let languageData = null;
+    let translationsLoaded = false;
+
+    async function loadLanguageData() {
+      const lang = getCurrentLanguage();
+      if (lang === 'en') {
+        languageData = null;
+        translationsLoaded = false;
+        return null;
+      }
+
+      try {
+        const response = await fetch('./localization/levels/language_data.json');
+        if (response.ok) {
+          languageData = await response.json();
+          translationsLoaded = true;
+          console.log(`Loaded language data for ${lang}`);
+          return languageData;
+        }
+      } catch (e) {
+        console.log('Language data not available:', e);
+      }
+      languageData = null;
+      return null;
+    }
+
+    // Arabic hint translation patterns
+    const ARABIC_HINT_PATTERNS = [
+      // Both innocents/criminals in row/column
+      [/Both innocents in row\s?(\d+) are (.+?)'s neighbors/gi, 'كلا الأبرياء في الصف $1 هم جيران $2'],
+      [/Both criminals in row\s?(\d+) are (.+?)'s neighbors/gi, 'كلا المجرمين في الصف $1 هم جيران $2'],
+      [/Both innocents in column\s?([A-E]) are (.+?)'s neighbors/gi, 'كلا الأبرياء في العمود $1 هم جيران $2'],
+      [/Both criminals in column\s?([A-E]) are (.+?)'s neighbors/gi, 'كلا المجرمين في العمود $1 هم جيران $2'],
+
+      // is one of N
+      [/(.+?) is one of (\d+) innocents in column\s?([A-E])/gi, '$1 واحد من $2 أبرياء في العمود $3'],
+      [/(.+?) is one of (\d+) criminals in column\s?([A-E])/gi, '$1 واحد من $2 مجرمين في العمود $3'],
+      [/(.+?) is one of (\d+) innocents in row\s?(\d+)/gi, '$1 واحد من $2 أبرياء في الصف $3'],
+      [/(.+?) is one of two or more innocents/gi, '$1 واحد من اثنين أو أكثر من الأبرياء'],
+      [/(.+?) is one of two or more criminals/gi, '$1 واحد من اثنين أو أكثر من المجرمين'],
+
+      // has more/exactly neighbors
+      [/(.+?) has more criminal neighbors than (.+)/gi, '$1 لديه جيران مجرمين أكثر من $2'],
+      [/(.+?) has more innocent neighbors than (.+)/gi, '$1 لديه جيران أبرياء أكثر من $2'],
+      [/(.+?) has exactly (\d+) innocent neighbors/gi, '$1 لديه بالضبط $2 جيران أبرياء'],
+      [/(.+?) has exactly (\d+) criminal neighbors/gi, '$1 لديه بالضبط $2 جيران مجرمين'],
+
+      // and have equal number
+      [/(.+?) and (.+?) have an equal number of criminal neighbors/gi, '$1 و$2 لديهم نفس عدد الجيران المجرمين'],
+      [/(.+?) and (.+?) have an equal number of innocent neighbors/gi, '$1 و$2 لديهم نفس عدد الجيران الأبرياء'],
+
+      // There are exactly
+      [/There are exactly (\d+) innocents between (.+?) and (.+)/gi, 'يوجد بالضبط $1 أبرياء بين $2 و$3'],
+      [/There are exactly (\d+) criminals between (.+?) and (.+)/gi, 'يوجد بالضبط $1 مجرمين بين $2 و$3'],
+      [/There are exactly (\d+) innocents in column\s?([A-E])/gi, 'يوجد بالضبط $1 أبرياء في العمود $2'],
+      [/There are exactly (\d+) criminals in column\s?([A-E])/gi, 'يوجد بالضبط $1 مجرمين في العمود $2'],
+      [/There are exactly (\d+) innocents in row\s?(\d+)/gi, 'يوجد بالضبط $1 أبرياء في الصف $2'],
+      [/There are exactly (\d+) criminals in row\s?(\d+)/gi, 'يوجد بالضبط $1 مجرمين في الصف $2'],
+
+      // There's an odd number
+      [/There's an odd number of innocents between (.+?) and (.+)/gi, 'يوجد عدد فردي من الأبرياء بين $1 و$2'],
+      [/There's an odd number of criminals between (.+?) and (.+)/gi, 'يوجد عدد فردي من المجرمين بين $1 و$2'],
+      [/There's an odd number of innocents in row\s?(\d+)/gi, 'يوجد عدد فردي من الأبرياء في الصف $1'],
+      [/There's an odd number of criminals in row\s?(\d+)/gi, 'يوجد عدد فردي من المجرمين في الصف $1'],
+      [/There's an odd number of innocents in column\s?([A-E])/gi, 'يوجد عدد فردي من الأبرياء في العمود $1'],
+      [/There's an odd number of criminals in column\s?([A-E])/gi, 'يوجد عدد فردي من المجرمين في العمود $1'],
+
+      // There are more
+      [/There are more criminals than innocents in row\s?(\d+)/gi, 'يوجد مجرمين أكثر من الأبرياء في الصف $1'],
+      [/There are more innocents than criminals in row\s?(\d+)/gi, 'يوجد أبرياء أكثر من المجرمين في الصف $1'],
+      [/There are more innocents in row\s?(\d+) than row\s?(\d+)/gi, 'يوجد أبرياء في الصف $1 أكثر من الصف $2'],
+      [/There are more criminals in row\s?(\d+) than row\s?(\d+)/gi, 'يوجد مجرمين في الصف $1 أكثر من الصف $2'],
+
+      // Exactly N of the N
+      [/Exactly (\d+) of (.+?)'s (\d+) innocent neighbors also neighbor (.+)/gi, 'بالضبط $1 من جيران $2 الـ$3 الأبرياء هم أيضاً جيران $4'],
+      [/Exactly (\d+) of (.+?)'s (\d+) criminal neighbors also neighbor (.+)/gi, 'بالضبط $1 من جيران $2 الـ$3 المجرمين هم أيضاً جيران $4'],
+      [/Exactly 1 innocent between (.+?) and (.+?) is neighboring (.+)/gi, 'بالضبط 1 بريء بين $1 و$2 يجاور $3'],
+      [/Exactly 1 innocent in row\s?(\d+) is neighboring (.+)/gi, 'بالضبط 1 بريء في الصف $1 يجاور $2'],
+      [/Exactly 1 innocent in column\s?([A-E]) is neighboring (.+)/gi, 'بالضبط 1 بريء في العمود $1 يجاور $2'],
+
+      // Neither of the N
+      [/Neither of the (\d+) criminals neighboring (.+?) are between (.+?) and (.+)/gi, 'لا أحد من الـ$1 مجرمين المجاورين لـ$2 موجود بين $3 و$4'],
+      [/Neither of the (\d+) innocents neighboring (.+?) are between (.+?) and (.+)/gi, 'لا أحد من الـ$1 أبرياء المجاورين لـ$2 موجود بين $3 و$4'],
+
+      // Only 1 of the N
+      [/Only 1 of the (\d+) innocents neighboring (.+?) is in row\s?(\d+)/gi, 'واحد فقط من الـ$1 أبرياء المجاورين لـ$2 في الصف $3'],
+      [/Only 1 of the (\d+) criminals neighboring (.+?) is in row\s?(\d+)/gi, 'واحد فقط من الـ$1 مجرمين المجاورين لـ$2 في الصف $3'],
+      [/Only 1 of the (\d+) innocents in row\s?(\d+) is (.+?)'s neighbor/gi, 'واحد فقط من الـ$1 أبرياء في الصف $2 هو جار $3'],
+
+      // Row/Column has more
+      [/Row\s?(\d+) has exactly (\d+) innocents/gi, 'الصف $1 فيه بالضبط $2 أبرياء'],
+      [/Row\s?(\d+) has exactly (\d+) criminals/gi, 'الصف $1 فيه بالضبط $2 مجرمين'],
+      [/Column\s?([A-E]) has exactly (\d+) innocents/gi, 'العمود $1 فيه بالضبط $2 أبرياء'],
+      [/Column\s?([A-E]) has exactly (\d+) criminals/gi, 'العمود $1 فيه بالضبط $2 مجرمين'],
+      [/Column\s?([A-E]) has more innocents than any other column/gi, 'العمود $1 فيه أبرياء أكثر من أي عمود آخر'],
+      [/Column\s?([A-E]) has more criminals than any other column/gi, 'العمود $1 فيه مجرمين أكثر من أي عمود آخر'],
+      [/Row\s?(\d+) has more innocents than any other row/gi, 'الصف $1 فيه أبرياء أكثر من أي صف آخر'],
+      [/Row\s?(\d+) has more criminals than any other row/gi, 'الصف $1 فيه مجرمين أكثر من أي صف آخر'],
+
+      // Between and connected
+      [/All criminals between (.+?) and (.+?) are connected/gi, 'كل المجرمين بين $1 و$2 متصلون'],
+      [/All innocents between (.+?) and (.+?) are connected/gi, 'كل الأبرياء بين $1 و$2 متصلون'],
+      [/Both criminals between (.+?) and (.+?) are connected/gi, 'كلا المجرمين بين $1 و$2 متصلان'],
+      [/Both innocents between (.+?) and (.+?) are connected/gi, 'كلا الأبرياء بين $1 و$2 متصلان'],
+      [/Both innocents between (.+?) and (.+?) are (.+?)'s neighbors/gi, 'كلا الأبرياء بين $1 و$2 هم جيران $3'],
+      [/Both criminals between (.+?) and (.+?) are (.+?)'s neighbors/gi, 'كلا المجرمين بين $1 و$2 هم جيران $3'],
+
+      // Below me patterns
+      [/(.+?) is one of two or more criminals below me/gi, '$1 واحد من اثنين أو أكثر من المجرمين تحتي'],
+      [/(.+?) is one of two or more innocents below me/gi, '$1 واحد من اثنين أو أكثر من الأبرياء تحتي'],
+      [/(.+?) is one of two or more criminals above me/gi, '$1 واحد من اثنين أو أكثر من المجرمين فوقي'],
+      [/(.+?) is one of two or more innocents above me/gi, '$1 واحد من اثنين أو أكثر من الأبرياء فوقي'],
+      [/below me/gi, 'تحتي'],
+      [/above me/gi, 'فوقي'],
+
+      // All are connected patterns
+      [/All criminals neighboring (.+?) are connected/gi, 'كل المجرمين المجاورين لـ$1 متصلون'],
+      [/All innocents neighboring (.+?) are connected/gi, 'كل الأبرياء المجاورين لـ$1 متصلون'],
+      [/All (.+?)'s criminal neighbors are connected/gi, 'كل جيران $1 المجرمين متصلون'],
+      [/All (.+?)'s innocent neighbors are connected/gi, 'كل جيران $1 الأبرياء متصلون'],
+      [/\bare connected\b/gi, 'متصلون'],
+      [/\bAll\b/gi, 'كل'],
+
+      // Only 1 of the N - more patterns
+      [/Only 1 of the (\\d+) criminals between (.+?) and (.+?) is (.+?)'s neighbor/gi, 'واحد فقط من الـ$1 مجرمين بين $2 و$3 هو جار $4'],
+      [/Only 1 of the (\\d+) innocents between (.+?) and (.+?) is (.+?)'s neighbor/gi, 'واحد فقط من الـ$1 أبرياء بين $2 و$3 هو جار $4'],
+      [/Only 1 of the (\\d+) criminals neighboring (.+?) is (.+?)'s neighbor/gi, 'واحد فقط من الـ$1 مجرمين المجاورين لـ$2 هو جار $3'],
+      [/Only 1 of the (\\d+) innocents neighboring (.+?) is (.+?)'s neighbor/gi, 'واحد فقط من الـ$1 أبرياء المجاورين لـ$2 هو جار $3'],
+      [/Only (\\d+) of the (\\d+)/gi, 'واحد فقط من الـ$2'],
+      [/Only 1 of the/gi, 'واحد فقط من الـ'],
+
+      // is right/left of
+      [/is right of/gi, 'على يمين'],
+      [/is left of/gi, 'على يسار'],
+      [/to the right of/gi, 'على يمين'],
+      [/to the left of/gi, 'على يسار'],
+
+      // below/above patterns
+      [/\bbelow\b/gi, 'تحت'],
+      [/\babove\b/gi, 'فوق'],
+      [/\bis\b/gi, 'هو'],
+      [/\b's\b/gi, ''],
+
+      // On the edges/corners patterns
+      [/(.+?) is one of (\d+) innocents on the edges/gi, '$1 واحد من $2 أبرياء على الحواف'],
+      [/(.+?) is one of (\d+) criminals on the edges/gi, '$1 واحد من $2 مجرمين على الحواف'],
+      [/(.+?) is one of (\d+) innocents in the corners/gi, '$1 واحد من $2 أبرياء في الزوايا'],
+      [/(.+?) is one of (\d+) criminals in the corners/gi, '$1 واحد من $2 مجرمين في الزوايا'],
+      [/(.+?) is one of two or more innocents on the edges/gi, '$1 واحد من اثنين أو أكثر من الأبرياء على الحواف'],
+      [/(.+?) is one of two or more criminals on the edges/gi, '$1 واحد من اثنين أو أكثر من المجرمين على الحواف'],
+      [/(.+?) is one of two or more innocents in a corner/gi, '$1 واحد من اثنين أو أكثر من الأبرياء في زاوية'],
+      [/(.+?) is one of two or more criminals in a corner/gi, '$1 واحد من اثنين أو أكثر من المجرمين في زاوية'],
+      [/on the edges/gi, 'على الحواف'],
+      [/in the corners/gi, 'في الزوايا'],
+      [/in a corner/gi, 'في زاوية'],
+
+      // Have X neighbors in common patterns
+      [/(.+?) and (.+?) have (\d+) innocent neighbors in common/gi, '$1 و$2 لديهم $3 جيران أبرياء مشتركين'],
+      [/(.+?) and (.+?) have (\d+) criminal neighbors in common/gi, '$1 و$2 لديهم $3 جيران مجرمين مشتركين'],
+      [/(.+?) and (.+?) have no innocent neighbors in common/gi, '$1 و$2 ليس لديهم جيران أبرياء مشتركين'],
+      [/(.+?) and (.+?) have no criminal neighbors in common/gi, '$1 و$2 ليس لديهم جيران مجرمين مشتركين'],
+      [/(.+?) and (.+?) have only one innocent neighbor in common/gi, '$1 و$2 لديهم جار بريء واحد مشترك فقط'],
+      [/(.+?) and (.+?) have only one criminal neighbor in common/gi, '$1 و$2 لديهم جار مجرم واحد مشترك فقط'],
+      [/(.+?) and (.+?) have (\d+) innocent neighbors in total/gi, '$1 و$2 لديهم $3 جيران أبرياء إجمالاً'],
+      [/(.+?) and (.+?) have (\d+) criminal neighbors in total/gi, '$1 و$2 لديهم $3 جيران مجرمين إجمالاً'],
+      [/in common/gi, 'مشتركين'],
+      [/in total/gi, 'إجمالاً'],
+
+      // Share an odd number patterns
+      [/(.+?) and (.+?) share an odd number of innocent neighbors/gi, '$1 و$2 يتشاركان عدداً فردياً من الجيران الأبرياء'],
+      [/(.+?) and (.+?) share an odd number of criminal neighbors/gi, '$1 و$2 يتشاركان عدداً فردياً من الجيران المجرمين'],
+      [/share an odd number/gi, 'يتشاركان عدداً فردياً'],
+
+      // Directly above/below/right/left patterns
+      [/directly above them/gi, 'فوقهم مباشرة'],
+      [/directly below them/gi, 'تحتهم مباشرة'],
+      [/directly to the right of them/gi, 'على يمينهم مباشرة'],
+      [/directly to the left of them/gi, 'على يسارهم مباشرة'],
+      [/directly above/gi, 'فوق مباشرة'],
+      [/directly below/gi, 'تحت مباشرة'],
+      [/directly/gi, 'مباشرة'],
+
+      // Only one neighbor patterns
+      [/(.+?) has only one innocent neighbor/gi, '$1 لديه جار بريء واحد فقط'],
+      [/(.+?) has only one criminal neighbor/gi, '$1 لديه جار مجرم واحد فقط'],
+      [/(.+?)'s only innocent neighbor is (.+)/gi, 'جار $1 البريء الوحيد هو $2'],
+      [/(.+?)'s only criminal neighbor is (.+)/gi, 'جار $1 المجرم الوحيد هو $2'],
+      [/only one/gi, 'واحد فقط'],
+
+      // Has more than patterns
+      [/(.+?) has more criminal than innocent neighbors/gi, '$1 لديه جيران مجرمين أكثر من الأبرياء'],
+      [/(.+?) has more innocent than criminal neighbors/gi, '$1 لديه جيران أبرياء أكثر من المجرمين'],
+      [/(.+?) has the most criminal neighbors/gi, '$1 لديه أكثر عدد من الجيران المجرمين'],
+      [/(.+?) has the most innocent neighbors/gi, '$1 لديه أكثر عدد من الجيران الأبرياء'],
+      [/the most/gi, 'أكثر عدد من'],
+
+      // Is one of patterns
+      [/(.+?) is one of (.+?)'s (\d+) innocent neighbors/gi, '$1 واحد من جيران $2 الـ$3 الأبرياء'],
+      [/(.+?) is one of (.+?)'s (\d+) criminal neighbors/gi, '$1 واحد من جيران $2 الـ$3 المجرمين'],
+      [/is one of/gi, 'واحد من'],
+
+      // An odd number patterns
+      [/An odd number of innocents (.+?) are (.+?)'s neighbors/gi, 'عدد فردي من الأبرياء $1 هم جيران $2'],
+      [/An odd number of criminals (.+?) are (.+?)'s neighbors/gi, 'عدد فردي من المجرمين $1 هم جيران $2'],
+      [/An odd number of innocents on the edges neighbor (.+)/gi, 'عدد فردي من الأبرياء على الحواف يجاورون $1'],
+      [/An odd number of/gi, 'عدد فردي من'],
+
+      // Profession patterns
+      [/(\d+) #PROFS?:(\w+) have a criminal directly above them/gi, '$1 $2 لديهم مجرم فوقهم مباشرة'],
+      [/(\d+) #PROFS?:(\w+) have an innocent directly below them/gi, '$1 $2 لديهم بريء تحتهم مباشرة'],
+      [/(\d+) #PROFS?:(\w+) have a criminal directly to the right of them/gi, '$1 $2 لديهم مجرم على يمينهم مباشرة'],
+      [/have a criminal/gi, 'لديهم مجرم'],
+      [/have an innocent/gi, 'لديهم بريء'],
+
+      // Simple words
+      [/\binnocent\b/gi, 'بريء'],
+      [/\bcriminal\b/gi, 'مجرم'],
+      [/\binnocents\b/gi, 'أبرياء'],
+      [/\bcriminals\b/gi, 'مجرمين'],
+      [/\bneighbors\b/gi, 'جيران'],
+      [/\bneighbor\b/gi, 'جار'],
+      [/\brow\b/gi, 'الصف'],
+      [/\bcolumn\b/gi, 'العمود'],
+      [/\bof\b/gi, 'من'],
+      [/\bthe\b/gi, ''],
+      [/\band\b/gi, 'و'],
+      [/\bare\b/gi, 'هم'],
+      [/\bin\b/gi, 'في'],
+      [/\bthan\b/gi, 'من'],
+      [/\bhas\b/gi, 'لديه'],
+      [/\bhave\b/gi, 'لديهم'],
+      [/\bmore\b/gi, 'أكثر'],
+      [/\bexactly\b/gi, 'بالضبط'],
+      [/\bboth\b/gi, 'كلا'],
+      [/\bneighboring\b/gi, 'المجاورين لـ'],
+      [/\bbetween\b/gi, 'بين'],
+    ];
+
+    // Spanish hint translation patterns (full set)
+    const SPANISH_HINT_PATTERNS = [
+      // Both innocents/criminals in row/column
+      [/Both innocents in row\s?(\d+) are (.+?)'s neighbors/gi, 'Ambos inocentes en la fila $1 son vecinos de $2'],
+      [/Both criminals in row\s?(\d+) are (.+?)'s neighbors/gi, 'Ambos criminales en la fila $1 son vecinos de $2'],
+      [/Both innocents in column\s?([A-E]) are (.+?)'s neighbors/gi, 'Ambos inocentes en la columna $1 son vecinos de $2'],
+      [/Both criminals in column\s?([A-E]) are (.+?)'s neighbors/gi, 'Ambos criminales en la columna $1 son vecinos de $2'],
+
+      // is one of N
+      [/(.+?) is one of (\d+) innocents in column\s?([A-E])/gi, '$1 es uno de $2 inocentes en la columna $3'],
+      [/(.+?) is one of (\d+) criminals in column\s?([A-E])/gi, '$1 es uno de $2 criminales en la columna $3'],
+      [/(.+?) is one of (\d+) innocents in row\s?(\d+)/gi, '$1 es uno de $2 inocentes en la fila $3'],
+      [/(.+?) is one of two or more innocents/gi, '$1 es uno de dos o más inocentes'],
+      [/(.+?) is one of two or more criminals/gi, '$1 es uno de dos o más criminales'],
+
+      // has more/exactly neighbors
+      [/(.+?) has more criminal neighbors than (.+)/gi, '$1 tiene más vecinos criminales que $2'],
+      [/(.+?) has more innocent neighbors than (.+)/gi, '$1 tiene más vecinos inocentes que $2'],
+      [/(.+?) has exactly (\d+) innocent neighbors/gi, '$1 tiene exactamente $2 vecinos inocentes'],
+      [/(.+?) has exactly (\d+) criminal neighbors/gi, '$1 tiene exactamente $2 vecinos criminales'],
+
+      // and have equal number
+      [/(.+?) and (.+?) have an equal number of criminal neighbors/gi, '$1 y $2 tienen el mismo número de vecinos criminales'],
+      [/(.+?) and (.+?) have an equal number of innocent neighbors/gi, '$1 y $2 tienen el mismo número de vecinos inocentes'],
+
+      // There are exactly
+      [/There are exactly (\d+) innocents between (.+?) and (.+)/gi, 'Hay exactamente $1 inocentes entre $2 y $3'],
+      [/There are exactly (\d+) criminals between (.+?) and (.+)/gi, 'Hay exactamente $1 criminales entre $2 y $3'],
+      [/There are exactly (\d+) innocents in column\s?([A-E])/gi, 'Hay exactamente $1 inocentes en la columna $2'],
+      [/There are exactly (\d+) criminals in column\s?([A-E])/gi, 'Hay exactamente $1 criminales en la columna $2'],
+      [/There are exactly (\d+) innocents in row\s?(\d+)/gi, 'Hay exactamente $1 inocentes en la fila $2'],
+      [/There are exactly (\d+) criminals in row\s?(\d+)/gi, 'Hay exactamente $1 criminales en la fila $2'],
+
+      // There's an odd number
+      [/There's an odd number of innocents between (.+?) and (.+)/gi, 'Hay un número impar de inocentes entre $1 y $2'],
+      [/There's an odd number of criminals between (.+?) and (.+)/gi, 'Hay un número impar de criminales entre $1 y $2'],
+      [/There's an odd number of innocents in row\s?(\d+)/gi, 'Hay un número impar de inocentes en la fila $1'],
+      [/There's an odd number of criminals in row\s?(\d+)/gi, 'Hay un número impar de criminales en la fila $1'],
+      [/There's an odd number of innocents in column\s?([A-E])/gi, 'Hay un número impar de inocentes en la columna $1'],
+      [/There's an odd number of criminals in column\s?([A-E])/gi, 'Hay un número impar de criminales en la columna $1'],
+
+      // There are more
+      [/There are more criminals than innocents in row\s?(\d+)/gi, 'Hay más criminales que inocentes en la fila $1'],
+      [/There are more innocents than criminals in row\s?(\d+)/gi, 'Hay más inocentes que criminales en la fila $1'],
+      [/There are more innocents in row\s?(\d+) than row\s?(\d+)/gi, 'Hay más inocentes en la fila $1 que en la fila $2'],
+      [/There are more criminals in row\s?(\d+) than row\s?(\d+)/gi, 'Hay más criminales en la fila $1 que en la fila $2'],
+
+      // Exactly N of the N
+      [/Exactly (\d+) of (.+?)'s (\d+) innocent neighbors also neighbor (.+)/gi, 'Exactamente $1 de los $3 vecinos inocentes de $2 también son vecinos de $4'],
+      [/Exactly (\d+) of (.+?)'s (\d+) criminal neighbors also neighbor (.+)/gi, 'Exactamente $1 de los $3 vecinos criminales de $2 también son vecinos de $4'],
+      [/Exactly 1 innocent between (.+?) and (.+?) is neighboring (.+)/gi, 'Exactamente 1 inocente entre $1 y $2 es vecino de $3'],
+      [/Exactly 1 innocent in row\s?(\d+) is neighboring (.+)/gi, 'Exactamente 1 inocente en la fila $1 es vecino de $2'],
+      [/Exactly 1 innocent in column\s?([A-E]) is neighboring (.+)/gi, 'Exactamente 1 inocente en la columna $1 es vecino de $2'],
+
+      // Neither of the N
+      [/Neither of the (\d+) criminals neighboring (.+?) are between (.+?) and (.+)/gi, 'Ninguno de los $1 criminales vecinos de $2 está entre $3 y $4'],
+      [/Neither of the (\d+) innocents neighboring (.+?) are between (.+?) and (.+)/gi, 'Ninguno de los $1 inocentes vecinos de $2 está entre $3 y $4'],
+
+      // Only 1 of the N
+      [/Only 1 of the (\d+) innocents neighboring (.+?) is in row\s?(\d+)/gi, 'Solo 1 de los $1 inocentes vecinos de $2 está en la fila $3'],
+      [/Only 1 of the (\d+) criminals neighboring (.+?) is in row\s?(\d+)/gi, 'Solo 1 de los $1 criminales vecinos de $2 está en la fila $3'],
+      [/Only 1 of the (\d+) innocents in row\s?(\d+) is (.+?)'s neighbor/gi, 'Solo 1 de los $1 inocentes en la fila $2 es vecino de $3'],
+
+      // Row/Column has more
+      [/Row\s?(\d+) has exactly (\d+) innocents/gi, 'La fila $1 tiene exactamente $2 inocentes'],
+      [/Row\s?(\d+) has exactly (\d+) criminals/gi, 'La fila $1 tiene exactamente $2 criminales'],
+      [/Column\s?([A-E]) has exactly (\d+) innocents/gi, 'La columna $1 tiene exactamente $2 inocentes'],
+      [/Column\s?([A-E]) has exactly (\d+) criminals/gi, 'La columna $1 tiene exactamente $2 criminales'],
+      [/Column\s?([A-E]) has more innocents than any other column/gi, 'La columna $1 tiene más inocentes que cualquier otra columna'],
+      [/Column\s?([A-E]) has more criminals than any other column/gi, 'La columna $1 tiene más criminales que cualquier otra columna'],
+      [/Row\s?(\d+) has more innocents than any other row/gi, 'La fila $1 tiene más inocentes que cualquier otra fila'],
+      [/Row\s?(\d+) has more criminals than any other row/gi, 'La fila $1 tiene más criminales que cualquier otra fila'],
+
+      // Between and connected
+      [/All criminals between (.+?) and (.+?) are connected/gi, 'Todos los criminales entre $1 y $2 están conectados'],
+      [/All innocents between (.+?) and (.+?) are connected/gi, 'Todos los inocentes entre $1 y $2 están conectados'],
+      [/Both criminals between (.+?) and (.+?) are connected/gi, 'Ambos criminales entre $1 y $2 están conectados'],
+      [/Both innocents between (.+?) and (.+?) are connected/gi, 'Ambos inocentes entre $1 y $2 están conectados'],
+      [/Both innocents between (.+?) and (.+?) are (.+?)'s neighbors/gi, 'Ambos inocentes entre $1 y $2 son vecinos de $3'],
+      [/Both criminals between (.+?) and (.+?) are (.+?)'s neighbors/gi, 'Ambos criminales entre $1 y $2 son vecinos de $3'],
+
+      // Simple words - at the end for fallback
+      [/\binnocent\b/gi, 'inocente'],
+      [/\bcriminal\b/gi, 'criminal'],
+      [/\binnocents\b/gi, 'inocentes'],
+      [/\bcriminals\b/gi, 'criminales'],
+      [/\bneighbors\b/gi, 'vecinos'],
+      [/\bneighbor\b/gi, 'vecino'],
+      [/\brow\b/gi, 'fila'],
+      [/\bcolumn\b/gi, 'columna'],
+    ];
+
+    // French hint translation patterns (full set)
+    const FRENCH_HINT_PATTERNS = [
+      // Both innocents/criminals in row/column
+      [/Both innocents in row\s?(\d+) are (.+?)'s neighbors/gi, 'Les deux innocents de la rangée $1 sont voisins de $2'],
+      [/Both criminals in row\s?(\d+) are (.+?)'s neighbors/gi, 'Les deux criminels de la rangée $1 sont voisins de $2'],
+      [/Both innocents in column\s?([A-E]) are (.+?)'s neighbors/gi, 'Les deux innocents de la colonne $1 sont voisins de $2'],
+      [/Both criminals in column\s?([A-E]) are (.+?)'s neighbors/gi, 'Les deux criminels de la colonne $1 sont voisins de $2'],
+
+      // is one of N
+      [/(.+?) is one of (\d+) innocents in column\s?([A-E])/gi, '$1 est l\'un des $2 innocents de la colonne $3'],
+      [/(.+?) is one of (\d+) criminals in column\s?([A-E])/gi, '$1 est l\'un des $2 criminels de la colonne $3'],
+      [/(.+?) is one of (\d+) innocents in row\s?(\d+)/gi, '$1 est l\'un des $2 innocents de la rangée $3'],
+      [/(.+?) is one of two or more innocents/gi, '$1 est l\'un de deux innocents ou plus'],
+      [/(.+?) is one of two or more criminals/gi, '$1 est l\'un de deux criminels ou plus'],
+
+      // has more/exactly neighbors
+      [/(.+?) has more criminal neighbors than (.+)/gi, '$1 a plus de voisins criminels que $2'],
+      [/(.+?) has more innocent neighbors than (.+)/gi, '$1 a plus de voisins innocents que $2'],
+      [/(.+?) has exactly (\d+) innocent neighbors/gi, '$1 a exactement $2 voisins innocents'],
+      [/(.+?) has exactly (\d+) criminal neighbors/gi, '$1 a exactement $2 voisins criminels'],
+
+      // and have equal number
+      [/(.+?) and (.+?) have an equal number of criminal neighbors/gi, '$1 et $2 ont le même nombre de voisins criminels'],
+      [/(.+?) and (.+?) have an equal number of innocent neighbors/gi, '$1 et $2 ont le même nombre de voisins innocents'],
+
+      // There are exactly
+      [/There are exactly (\d+) innocents between (.+?) and (.+)/gi, 'Il y a exactement $1 innocents entre $2 et $3'],
+      [/There are exactly (\d+) criminals between (.+?) and (.+)/gi, 'Il y a exactement $1 criminels entre $2 et $3'],
+      [/There are exactly (\d+) innocents in column\s?([A-E])/gi, 'Il y a exactement $1 innocents dans la colonne $2'],
+      [/There are exactly (\d+) criminals in column\s?([A-E])/gi, 'Il y a exactement $1 criminels dans la colonne $2'],
+      [/There are exactly (\d+) innocents in row\s?(\d+)/gi, 'Il y a exactement $1 innocents dans la rangée $2'],
+      [/There are exactly (\d+) criminals in row\s?(\d+)/gi, 'Il y a exactement $1 criminels dans la rangée $2'],
+
+      // There's an odd number
+      [/There's an odd number of innocents between (.+?) and (.+)/gi, "Il y a un nombre impair d'innocents entre $1 et $2"],
+      [/There's an odd number of criminals between (.+?) and (.+)/gi, 'Il y a un nombre impair de criminels entre $1 et $2'],
+      [/There's an odd number of innocents in row\s?(\d+)/gi, "Il y a un nombre impair d'innocents dans la rangée $1"],
+      [/There's an odd number of criminals in row\s?(\d+)/gi, 'Il y a un nombre impair de criminels dans la rangée $1'],
+      [/There's an odd number of innocents in column\s?([A-E])/gi, "Il y a un nombre impair d'innocents dans la colonne $1"],
+      [/There's an odd number of criminals in column\s?([A-E])/gi, 'Il y a un nombre impair de criminels dans la colonne $1'],
+
+      // There are more
+      [/There are more criminals than innocents in row\s?(\d+)/gi, "Il y a plus de criminels que d'innocents dans la rangée $1"],
+      [/There are more innocents than criminals in row\s?(\d+)/gi, "Il y a plus d'innocents que de criminels dans la rangée $1"],
+      [/There are more innocents in row\s?(\d+) than row\s?(\d+)/gi, "Il y a plus d'innocents dans la rangée $1 que dans la rangée $2"],
+      [/There are more criminals in row\s?(\d+) than row\s?(\d+)/gi, 'Il y a plus de criminels dans la rangée $1 que dans la rangée $2'],
+
+      // Exactly N of the N
+      [/Exactly (\d+) of (.+?)'s (\d+) innocent neighbors also neighbor (.+)/gi, 'Exactement $1 des $3 voisins innocents de $2 sont aussi voisins de $4'],
+      [/Exactly (\d+) of (.+?)'s (\d+) criminal neighbors also neighbor (.+)/gi, 'Exactement $1 des $3 voisins criminels de $2 sont aussi voisins de $4'],
+      [/Exactly 1 innocent between (.+?) and (.+?) is neighboring (.+)/gi, 'Exactement 1 innocent entre $1 et $2 est voisin de $3'],
+      [/Exactly 1 innocent in row\s?(\d+) is neighboring (.+)/gi, 'Exactement 1 innocent dans la rangée $1 est voisin de $2'],
+      [/Exactly 1 innocent in column\s?([A-E]) is neighboring (.+)/gi, 'Exactement 1 innocent dans la colonne $1 est voisin de $2'],
+
+      // Neither of the N
+      [/Neither of the (\d+) criminals neighboring (.+?) are between (.+?) and (.+)/gi, 'Aucun des $1 criminels voisins de $2 n\'est entre $3 et $4'],
+      [/Neither of the (\d+) innocents neighboring (.+?) are between (.+?) and (.+)/gi, 'Aucun des $1 innocents voisins de $2 n\'est entre $3 et $4'],
+
+      // Only 1 of the N
+      [/Only 1 of the (\d+) innocents neighboring (.+?) is in row\s?(\d+)/gi, 'Seul 1 des $1 innocents voisins de $2 est dans la rangée $3'],
+      [/Only 1 of the (\d+) criminals neighboring (.+?) is in row\s?(\d+)/gi, 'Seul 1 des $1 criminels voisins de $2 est dans la rangée $3'],
+      [/Only 1 of the (\d+) innocents in row\s?(\d+) is (.+?)'s neighbor/gi, 'Seul 1 des $1 innocents de la rangée $2 est voisin de $3'],
+
+      // Row/Column has more
+      [/Row\s?(\d+) has exactly (\d+) innocents/gi, 'La rangée $1 a exactement $2 innocents'],
+      [/Row\s?(\d+) has exactly (\d+) criminals/gi, 'La rangée $1 a exactement $2 criminels'],
+      [/Column\s?([A-E]) has exactly (\d+) innocents/gi, 'La colonne $1 a exactement $2 innocents'],
+      [/Column\s?([A-E]) has exactly (\d+) criminals/gi, 'La colonne $1 a exactement $2 criminels'],
+      [/Column\s?([A-E]) has more innocents than any other column/gi, "La colonne $1 a plus d'innocents que toute autre colonne"],
+      [/Column\s?([A-E]) has more criminals than any other column/gi, 'La colonne $1 a plus de criminels que toute autre colonne'],
+      [/Row\s?(\d+) has more innocents than any other row/gi, "La rangée $1 a plus d'innocents que toute autre rangée"],
+      [/Row\s?(\d+) has more criminals than any other row/gi, 'La rangée $1 a plus de criminels que toute autre rangée'],
+
+      // Between and connected
+      [/All criminals between (.+?) and (.+?) are connected/gi, 'Tous les criminels entre $1 et $2 sont connectés'],
+      [/All innocents between (.+?) and (.+?) are connected/gi, 'Tous les innocents entre $1 et $2 sont connectés'],
+      [/Both criminals between (.+?) and (.+?) are connected/gi, 'Les deux criminels entre $1 et $2 sont connectés'],
+      [/Both innocents between (.+?) and (.+?) are connected/gi, 'Les deux innocents entre $1 et $2 sont connectés'],
+      [/Both innocents between (.+?) and (.+?) are (.+?)'s neighbors/gi, 'Les deux innocents entre $1 et $2 sont voisins de $3'],
+      [/Both criminals between (.+?) and (.+?) are (.+?)'s neighbors/gi, 'Les deux criminels entre $1 et $2 sont voisins de $3'],
+
+      // Simple words
+      [/\binnocent\b/gi, 'innocent'],
+      [/\bcriminal\b/gi, 'criminel'],
+      [/\binnocents\b/gi, 'innocents'],
+      [/\bcriminals\b/gi, 'criminels'],
+      [/\bneighbors\b/gi, 'voisins'],
+      [/\bneighbor\b/gi, 'voisin'],
+      [/\brow\b/gi, 'rangée'],
+      [/\bcolumn\b/gi, 'colonne'],
+    ];
+
+    // Portuguese hint translation patterns (full set)
+    const PORTUGUESE_HINT_PATTERNS = [
+      // Both innocents/criminals in row/column
+      [/Both innocents in row\s?(\d+) are (.+?)'s neighbors/gi, 'Ambos inocentes na linha $1 são vizinhos de $2'],
+      [/Both criminals in row\s?(\d+) are (.+?)'s neighbors/gi, 'Ambos criminosos na linha $1 são vizinhos de $2'],
+      [/Both innocents in column\s?([A-E]) are (.+?)'s neighbors/gi, 'Ambos inocentes na coluna $1 são vizinhos de $2'],
+      [/Both criminals in column\s?([A-E]) are (.+?)'s neighbors/gi, 'Ambos criminosos na coluna $1 são vizinhos de $2'],
+
+      // is one of N
+      [/(.+?) is one of (\d+) innocents in column\s?([A-E])/gi, '$1 é um dos $2 inocentes na coluna $3'],
+      [/(.+?) is one of (\d+) criminals in column\s?([A-E])/gi, '$1 é um dos $2 criminosos na coluna $3'],
+      [/(.+?) is one of (\d+) innocents in row\s?(\d+)/gi, '$1 é um dos $2 inocentes na linha $3'],
+      [/(.+?) is one of two or more innocents/gi, '$1 é um de dois ou mais inocentes'],
+      [/(.+?) is one of two or more criminals/gi, '$1 é um de dois ou mais criminosos'],
+
+      // has more/exactly neighbors
+      [/(.+?) has more criminal neighbors than (.+)/gi, '$1 tem mais vizinhos criminosos que $2'],
+      [/(.+?) has more innocent neighbors than (.+)/gi, '$1 tem mais vizinhos inocentes que $2'],
+      [/(.+?) has exactly (\d+) innocent neighbors/gi, '$1 tem exatamente $2 vizinhos inocentes'],
+      [/(.+?) has exactly (\d+) criminal neighbors/gi, '$1 tem exatamente $2 vizinhos criminosos'],
+
+      // and have equal number
+      [/(.+?) and (.+?) have an equal number of criminal neighbors/gi, '$1 e $2 têm o mesmo número de vizinhos criminosos'],
+      [/(.+?) and (.+?) have an equal number of innocent neighbors/gi, '$1 e $2 têm o mesmo número de vizinhos inocentes'],
+
+      // There are exactly
+      [/There are exactly (\d+) innocents between (.+?) and (.+)/gi, 'Há exatamente $1 inocentes entre $2 e $3'],
+      [/There are exactly (\d+) criminals between (.+?) and (.+)/gi, 'Há exatamente $1 criminosos entre $2 e $3'],
+      [/There are exactly (\d+) innocents in column\s?([A-E])/gi, 'Há exatamente $1 inocentes na coluna $2'],
+      [/There are exactly (\d+) criminals in column\s?([A-E])/gi, 'Há exatamente $1 criminosos na coluna $2'],
+      [/There are exactly (\d+) innocents in row\s?(\d+)/gi, 'Há exatamente $1 inocentes na linha $2'],
+      [/There are exactly (\d+) criminals in row\s?(\d+)/gi, 'Há exatamente $1 criminosos na linha $2'],
+
+      // There's an odd number
+      [/There's an odd number of innocents between (.+?) and (.+)/gi, 'Há um número ímpar de inocentes entre $1 e $2'],
+      [/There's an odd number of criminals between (.+?) and (.+)/gi, 'Há um número ímpar de criminosos entre $1 e $2'],
+      [/There's an odd number of innocents in row\s?(\d+)/gi, 'Há um número ímpar de inocentes na linha $1'],
+      [/There's an odd number of criminals in row\s?(\d+)/gi, 'Há um número ímpar de criminosos na linha $1'],
+      [/There's an odd number of innocents in column\s?([A-E])/gi, 'Há um número ímpar de inocentes na coluna $1'],
+      [/There's an odd number of criminals in column\s?([A-E])/gi, 'Há um número ímpar de criminosos na coluna $1'],
+
+      // There are more
+      [/There are more criminals than innocents in row\s?(\d+)/gi, 'Há mais criminosos que inocentes na linha $1'],
+      [/There are more innocents than criminals in row\s?(\d+)/gi, 'Há mais inocentes que criminosos na linha $1'],
+      [/There are more innocents in row\s?(\d+) than row\s?(\d+)/gi, 'Há mais inocentes na linha $1 que na linha $2'],
+      [/There are more criminals in row\s?(\d+) than row\s?(\d+)/gi, 'Há mais criminosos na linha $1 que na linha $2'],
+
+      // Exactly N of the N
+      [/Exactly (\d+) of (.+?)'s (\d+) innocent neighbors also neighbor (.+)/gi, 'Exatamente $1 dos $3 vizinhos inocentes de $2 também são vizinhos de $4'],
+      [/Exactly (\d+) of (.+?)'s (\d+) criminal neighbors also neighbor (.+)/gi, 'Exatamente $1 dos $3 vizinhos criminosos de $2 também são vizinhos de $4'],
+      [/Exactly 1 innocent between (.+?) and (.+?) is neighboring (.+)/gi, 'Exatamente 1 inocente entre $1 e $2 é vizinho de $3'],
+      [/Exactly 1 innocent in row\s?(\d+) is neighboring (.+)/gi, 'Exatamente 1 inocente na linha $1 é vizinho de $2'],
+      [/Exactly 1 innocent in column\s?([A-E]) is neighboring (.+)/gi, 'Exatamente 1 inocente na coluna $1 é vizinho de $2'],
+
+      // Neither of the N
+      [/Neither of the (\d+) criminals neighboring (.+?) are between (.+?) and (.+)/gi, 'Nenhum dos $1 criminosos vizinhos de $2 está entre $3 e $4'],
+      [/Neither of the (\d+) innocents neighboring (.+?) are between (.+?) and (.+)/gi, 'Nenhum dos $1 inocentes vizinhos de $2 está entre $3 e $4'],
+
+      // Only 1 of the N
+      [/Only 1 of the (\d+) innocents neighboring (.+?) is in row\s?(\d+)/gi, 'Apenas 1 dos $1 inocentes vizinhos de $2 está na linha $3'],
+      [/Only 1 of the (\d+) criminals neighboring (.+?) is in row\s?(\d+)/gi, 'Apenas 1 dos $1 criminosos vizinhos de $2 está na linha $3'],
+      [/Only 1 of the (\d+) innocents in row\s?(\d+) is (.+?)'s neighbor/gi, 'Apenas 1 dos $1 inocentes na linha $2 é vizinho de $3'],
+
+      // Row/Column has more
+      [/Row\s?(\d+) has exactly (\d+) innocents/gi, 'A linha $1 tem exatamente $2 inocentes'],
+      [/Row\s?(\d+) has exactly (\d+) criminals/gi, 'A linha $1 tem exatamente $2 criminosos'],
+      [/Column\s?([A-E]) has exactly (\d+) innocents/gi, 'A coluna $1 tem exatamente $2 inocentes'],
+      [/Column\s?([A-E]) has exactly (\d+) criminals/gi, 'A coluna $1 tem exatamente $2 criminosos'],
+      [/Column\s?([A-E]) has more innocents than any other column/gi, 'A coluna $1 tem mais inocentes que qualquer outra coluna'],
+      [/Column\s?([A-E]) has more criminals than any other column/gi, 'A coluna $1 tem mais criminosos que qualquer outra coluna'],
+      [/Row\s?(\d+) has more innocents than any other row/gi, 'A linha $1 tem mais inocentes que qualquer outra linha'],
+      [/Row\s?(\d+) has more criminals than any other row/gi, 'A linha $1 tem mais criminosos que qualquer outra linha'],
+
+      // Between and connected
+      [/All criminals between (.+?) and (.+?) are connected/gi, 'Todos os criminosos entre $1 e $2 estão conectados'],
+      [/All innocents between (.+?) and (.+?) are connected/gi, 'Todos os inocentes entre $1 e $2 estão conectados'],
+      [/Both criminals between (.+?) and (.+?) are connected/gi, 'Ambos criminosos entre $1 e $2 estão conectados'],
+      [/Both innocents between (.+?) and (.+?) are connected/gi, 'Ambos inocentes entre $1 e $2 estão conectados'],
+      [/Both innocents between (.+?) and (.+?) are (.+?)'s neighbors/gi, 'Ambos inocentes entre $1 e $2 são vizinhos de $3'],
+      [/Both criminals between (.+?) and (.+?) are (.+?)'s neighbors/gi, 'Ambos criminosos entre $1 e $2 são vizinhos de $3'],
+
+      // Simple words
+      [/\binnocent\b/gi, 'inocente'],
+      [/\bcriminal\b/gi, 'criminoso'],
+      [/\binnocents\b/gi, 'inocentes'],
+      [/\bcriminals\b/gi, 'criminosos'],
+      [/\bneighbors\b/gi, 'vizinhos'],
+      [/\bneighbor\b/gi, 'vizinho'],
+      [/\brow\b/gi, 'linha'],
+      [/\bcolumn\b/gi, 'coluna'],
+    ];
+
+    // Russian hint translation patterns (full set)
+    const RUSSIAN_HINT_PATTERNS = [
+      // Both innocents/criminals in row/column
+      [/Both innocents in row\s?(\d+) are (.+?)'s neighbors/gi, 'Оба невиновных в ряду $1 — соседи $2'],
+      [/Both criminals in row\s?(\d+) are (.+?)'s neighbors/gi, 'Оба преступника в ряду $1 — соседи $2'],
+      [/Both innocents in column\s?([A-E]) are (.+?)'s neighbors/gi, 'Оба невиновных в колонке $1 — соседи $2'],
+      [/Both criminals in column\s?([A-E]) are (.+?)'s neighbors/gi, 'Оба преступника в колонке $1 — соседи $2'],
+
+      // is one of N
+      [/(.+?) is one of (\d+) innocents in column\s?([A-E])/gi, '$1 — один из $2 невиновных в колонке $3'],
+      [/(.+?) is one of (\d+) criminals in column\s?([A-E])/gi, '$1 — один из $2 преступников в колонке $3'],
+      [/(.+?) is one of (\d+) innocents in row\s?(\d+)/gi, '$1 — один из $2 невиновных в ряду $3'],
+      [/(.+?) is one of two or more innocents/gi, '$1 — один из двух или более невиновных'],
+      [/(.+?) is one of two or more criminals/gi, '$1 — один из двух или более преступников'],
+
+      // has more/exactly neighbors
+      [/(.+?) has more criminal neighbors than (.+)/gi, 'У $1 больше соседей-преступников, чем у $2'],
+      [/(.+?) has more innocent neighbors than (.+)/gi, 'У $1 больше невиновных соседей, чем у $2'],
+      [/(.+?) has exactly (\d+) innocent neighbors/gi, 'У $1 ровно $2 невиновных соседей'],
+      [/(.+?) has exactly (\d+) criminal neighbors/gi, 'У $1 ровно $2 соседей-преступников'],
+
+      // and have equal number
+      [/(.+?) and (.+?) have an equal number of criminal neighbors/gi, 'У $1 и $2 одинаковое число соседей-преступников'],
+      [/(.+?) and (.+?) have an equal number of innocent neighbors/gi, 'У $1 и $2 одинаковое число невиновных соседей'],
+
+      // There are exactly
+      [/There are exactly (\d+) innocents between (.+?) and (.+)/gi, 'Между $2 и $3 ровно $1 невиновных'],
+      [/There are exactly (\d+) criminals between (.+?) and (.+)/gi, 'Между $2 и $3 ровно $1 преступников'],
+      [/There are exactly (\d+) innocents in column\s?([A-E])/gi, 'В колонке $2 ровно $1 невиновных'],
+      [/There are exactly (\d+) criminals in column\s?([A-E])/gi, 'В колонке $2 ровно $1 преступников'],
+      [/There are exactly (\d+) innocents in row\s?(\d+)/gi, 'В ряду $2 ровно $1 невиновных'],
+      [/There are exactly (\d+) criminals in row\s?(\d+)/gi, 'В ряду $2 ровно $1 преступников'],
+
+      // There's an odd number
+      [/There's an odd number of innocents between (.+?) and (.+)/gi, 'Между $1 и $2 нечётное число невиновных'],
+      [/There's an odd number of criminals between (.+?) and (.+)/gi, 'Между $1 и $2 нечётное число преступников'],
+      [/There's an odd number of innocents in row\s?(\d+)/gi, 'В ряду $1 нечётное число невиновных'],
+      [/There's an odd number of criminals in row\s?(\d+)/gi, 'В ряду $1 нечётное число преступников'],
+      [/There's an odd number of innocents in column\s?([A-E])/gi, 'В колонке $1 нечётное число невиновных'],
+      [/There's an odd number of criminals in column\s?([A-E])/gi, 'В колонке $1 нечётное число преступников'],
+
+      // There are more
+      [/There are more criminals than innocents in row\s?(\d+)/gi, 'В ряду $1 больше преступников, чем невиновных'],
+      [/There are more innocents than criminals in row\s?(\d+)/gi, 'В ряду $1 больше невиновных, чем преступников'],
+      [/There are more innocents in row\s?(\d+) than row\s?(\d+)/gi, 'В ряду $1 больше невиновных, чем в ряду $2'],
+      [/There are more criminals in row\s?(\d+) than row\s?(\d+)/gi, 'В ряду $1 больше преступников, чем в ряду $2'],
+
+      // Exactly N of the N
+      [/Exactly (\d+) of (.+?)'s (\d+) innocent neighbors also neighbor (.+)/gi, 'Ровно $1 из $3 невиновных соседей $2 также соседи $4'],
+      [/Exactly (\d+) of (.+?)'s (\d+) criminal neighbors also neighbor (.+)/gi, 'Ровно $1 из $3 соседей-преступников $2 также соседи $4'],
+      [/Exactly 1 innocent between (.+?) and (.+?) is neighboring (.+)/gi, 'Ровно 1 невиновный между $1 и $2 — сосед $3'],
+      [/Exactly 1 innocent in row\s?(\d+) is neighboring (.+)/gi, 'Ровно 1 невиновный в ряду $1 — сосед $2'],
+      [/Exactly 1 innocent in column\s?([A-E]) is neighboring (.+)/gi, 'Ровно 1 невиновный в колонке $1 — сосед $2'],
+
+      // Neither of the N
+      [/Neither of the (\d+) criminals neighboring (.+?) are between (.+?) and (.+)/gi, 'Ни один из $1 преступников, соседствующих с $2, не находится между $3 и $4'],
+      [/Neither of the (\d+) innocents neighboring (.+?) are between (.+?) and (.+)/gi, 'Ни один из $1 невиновных, соседствующих с $2, не находится между $3 и $4'],
+
+      // Only 1 of the N
+      [/Only 1 of the (\d+) innocents neighboring (.+?) is in row\s?(\d+)/gi, 'Только 1 из $1 невиновных соседей $2 находится в ряду $3'],
+      [/Only 1 of the (\d+) criminals neighboring (.+?) is in row\s?(\d+)/gi, 'Только 1 из $1 соседей-преступников $2 находится в ряду $3'],
+      [/Only 1 of the (\d+) innocents in row\s?(\d+) is (.+?)'s neighbor/gi, 'Только 1 из $1 невиновных в ряду $2 — сосед $3'],
+
+      // Row/Column has more
+      [/Row\s?(\d+) has exactly (\d+) innocents/gi, 'В ряду $1 ровно $2 невиновных'],
+      [/Row\s?(\d+) has exactly (\d+) criminals/gi, 'В ряду $1 ровно $2 преступников'],
+      [/Column\s?([A-E]) has exactly (\d+) innocents/gi, 'В колонке $1 ровно $2 невиновных'],
+      [/Column\s?([A-E]) has exactly (\d+) criminals/gi, 'В колонке $1 ровно $2 преступников'],
+      [/Column\s?([A-E]) has more innocents than any other column/gi, 'В колонке $1 больше невиновных, чем в любой другой колонке'],
+      [/Column\s?([A-E]) has more criminals than any other column/gi, 'В колонке $1 больше преступников, чем в любой другой колонке'],
+      [/Row\s?(\d+) has more innocents than any other row/gi, 'В ряду $1 больше невиновных, чем в любом другом ряду'],
+      [/Row\s?(\d+) has more criminals than any other row/gi, 'В ряду $1 больше преступников, чем в любом другом ряду'],
+
+      // Between and connected
+      [/All criminals between (.+?) and (.+?) are connected/gi, 'Все преступники между $1 и $2 связаны'],
+      [/All innocents between (.+?) and (.+?) are connected/gi, 'Все невиновные между $1 и $2 связаны'],
+      [/Both criminals between (.+?) and (.+?) are connected/gi, 'Оба преступника между $1 и $2 связаны'],
+      [/Both innocents between (.+?) and (.+?) are connected/gi, 'Оба невиновных между $1 и $2 связаны'],
+      [/Both innocents between (.+?) and (.+?) are (.+?)'s neighbors/gi, 'Оба невиновных между $1 и $2 — соседи $3'],
+      [/Both criminals between (.+?) and (.+?) are (.+?)'s neighbors/gi, 'Оба преступника между $1 и $2 — соседи $3'],
+
+      // Simple words
+      [/\binnocent\b/gi, 'невиновный'],
+      [/\bcriminal\b/gi, 'преступник'],
+      [/\binnocents\b/gi, 'невиновных'],
+      [/\bcriminals\b/gi, 'преступников'],
+      [/\bneighbors\b/gi, 'соседей'],
+      [/\bneighbor\b/gi, 'сосед'],
+      [/\brow\b/gi, 'ряд'],
+      [/\bcolumn\b/gi, 'колонка'],
+    ];
+
+    // UI text translations for game buttons and popups
+    const UI_TRANSLATIONS = {
+      ar: {
+        'View clue': 'عرض الدليل',
+        'Show Hint': 'إظهار تلميح',
+        'Show More': 'عرض المزيد',
+        'Not enough evidence': 'أدلة غير كافية',
+        'Continue': 'متابعة',
+        'Share scenario': 'مشاركة السيناريو',
+        "can't be logically identified as": 'لا يمكن تحديد',
+        'from the available info': 'منطقياً من المعلومات المتاحة',
+        'This means there exists at least one': 'هذا يعني أنه يوجد على الأقل',
+        'other logical scenario where': 'سيناريو منطقي آخر حيث',
+        'can also be': 'يمكن أن يكون أيضاً',
+        'Try sharing the scenario with others for help using the button below': 'جرب مشاركة السيناريو مع الآخرين للمساعدة باستخدام الزر أدناه',
+        'criminal': 'مجرم',
+        'innocent': 'بريء'
+      },
+      es: {
+        'View clue': 'Ver pista',
+        'Show Hint': 'Mostrar pista',
+        'Show More': 'Ver más',
+        'Not enough evidence': 'Evidencia insuficiente',
+        'Continue': 'Continuar',
+        'Share scenario': 'Compartir escenario',
+        "can't be logically identified as": 'no puede ser identificado lógicamente como',
+        'from the available info': 'con la información disponible',
+        'This means there exists at least one': 'Esto significa que existe al menos un',
+        'other logical scenario where': 'otro escenario lógico donde',
+        'can also be': 'también puede ser',
+        'Try sharing the scenario with others for help using the button below': 'Intenta compartir el escenario con otros para obtener ayuda usando el botón de abajo',
+        'criminal': 'criminal',
+        'innocent': 'inocente'
+      },
+      fr: {
+        'View clue': 'Voir indice',
+        'Show Hint': 'Afficher indice',
+        'Show More': 'Voir plus',
+        'Not enough evidence': 'Preuves insuffisantes',
+        'Continue': 'Continuer',
+        'Share scenario': 'Partager le scénario',
+        "can't be logically identified as": 'ne peut pas être identifié logiquement comme',
+        'from the available info': 'avec les informations disponibles',
+        'This means there exists at least one': 'Cela signifie qu\'il existe au moins un',
+        'other logical scenario where': 'autre scénario logique où',
+        'can also be': 'peut aussi être',
+        'Try sharing the scenario with others for help using the button below': 'Essayez de partager le scénario avec d\'autres pour obtenir de l\'aide en utilisant le bouton ci-dessous',
+        'criminal': 'criminel',
+        'innocent': 'innocent'
+      },
+      pt: {
+        'View clue': 'Ver pista',
+        'Show Hint': 'Mostrar dica',
+        'Show More': 'Ver mais',
+        'Not enough evidence': 'Evidência insuficiente',
+        'Continue': 'Continuar',
+        'Share scenario': 'Compartilhar cenário',
+        "can't be logically identified as": 'não pode ser identificado logicamente como',
+        'from the available info': 'com as informações disponíveis',
+        'This means there exists at least one': 'Isso significa que existe pelo menos um',
+        'other logical scenario where': 'outro cenário lógico onde',
+        'can also be': 'também pode ser',
+        'Try sharing the scenario with others for help using the button below': 'Tente compartilhar o cenário com outros para obter ajuda usando o botão abaixo',
+        'criminal': 'criminoso',
+        'innocent': 'inocente'
+      },
+      ru: {
+        'View clue': 'Показать улику',
+        'Show Hint': 'Показать подсказку',
+        'Show More': 'Показать ещё',
+        'Not enough evidence': 'Недостаточно доказательств',
+        'Continue': 'Продолжить',
+        'Share scenario': 'Поделиться сценарием',
+        "can't be logically identified as": 'не может быть логически определён как',
+        'from the available info': 'из имеющейся информации',
+        'This means there exists at least one': 'Это означает, что существует как минимум один',
+        'other logical scenario where': 'другой логический сценарий, где',
+        'can also be': 'также может быть',
+        'Try sharing the scenario with others for help using the button below': 'Попробуйте поделиться сценарием с другими для получения помощи, используя кнопку ниже',
+        'criminal': 'преступник',
+        'innocent': 'невиновный'
+      }
+    };
+
+    // Get patterns for current language
+    function getHintPatterns(lang) {
+      switch (lang) {
+        case 'ar': return ARABIC_HINT_PATTERNS;
+        case 'es': return SPANISH_HINT_PATTERNS;
+        case 'fr': return FRENCH_HINT_PATTERNS;
+        case 'pt': return PORTUGUESE_HINT_PATTERNS;
+        case 'ru': return RUSSIAN_HINT_PATTERNS;
+        default: return [];
+      }
+    }
+
+    function applyNameTranslations() {
+      const lang = getCurrentLanguage();
+      if (!languageData || lang === 'en') return;
+
+      const names = languageData.names?.[lang] || {};
+      const professions = languageData.professions?.[lang] || {};
+      const englishNames = languageData.names?.['en'] || {};
+      const englishProfs = languageData.professions?.['en'] || {};
+
+      // Build reverse maps (English display name -> translated)
+      const nameMap = {};
+      const profMap = {};
+
+      for (const [key, enName] of Object.entries(englishNames)) {
+        if (names[key]) {
+          nameMap[enName] = names[key];
+        }
+      }
+
+      for (const [key, enProf] of Object.entries(englishProfs)) {
+        if (professions[key]) {
+          profMap[enProf] = professions[key];
+          profMap[enProf.toLowerCase()] = professions[key];
+        }
+      }
+
+      // Replace text in DOM
+      function replaceText(element) {
+        if (element.nodeType === Node.TEXT_NODE) {
+          // SKIP hint buttons - they are handled exclusively by updateHintButtonsWithCoins
+          const parent = element.parentNode;
+          if (parent && parent.tagName === 'BUTTON') {
+            const span = parent.querySelector('span');
+            if (span && span.textContent.includes('💡')) {
+              return;
+            }
+          }
+
+          let text = element.textContent;
+          let changed = false;
+
+          // Apply hint patterns for current language
+          const patterns = getHintPatterns(lang);
+          for (const [pattern, replacement] of patterns) {
+            if (pattern.test(text)) {
+              text = text.replace(pattern, replacement);
+              changed = true;
+            }
+          }
+
+          // Apply UI translations (View clue, Show Hint, etc.)
+          const uiTrans = UI_TRANSLATIONS[lang] || {};
+          for (const [en, translated] of Object.entries(uiTrans)) {
+            if (text.includes(en)) {
+              text = text.replace(new RegExp(en, 'gi'), translated);
+              changed = true;
+            }
+          }
+
+          // Replace names
+          for (const [en, translated] of Object.entries(nameMap)) {
+            const regex = new RegExp(`\\b${en}\\b`, 'gi');
+            if (regex.test(text)) {
+              text = text.replace(regex, translated);
+              changed = true;
+            }
+          }
+
+          // Replace professions
+          for (const [en, translated] of Object.entries(profMap)) {
+            const regex = new RegExp(`\\b${en}\\b`, 'gi');
+            if (regex.test(text)) {
+              text = text.replace(regex, translated);
+              changed = true;
+            }
+          }
+
+          if (changed) {
+            element.textContent = text;
+          }
+        } else {
+          element.childNodes.forEach(child => replaceText(child));
+        }
+      }
+
+      // Apply to game container
+      const root = document.getElementById('root');
+      if (root) {
+        replaceText(root);
+
+        // Update Show Hint buttons with coin info
+        updateHintButtonsWithCoins();
+      }
+    }
+
+    function updateHintButtonsWithCoins() {
+      const lang = getCurrentLanguage();
+      const tr = TRANSLATIONS[lang];
+      const coins = getCoins();
+
+      // Find buttons that contain the lightbulb emoji (💡) - these are hint buttons
+      document.querySelectorAll('button').forEach(btn => {
+        // Check if this button has a span with 💡
+        const lightbulbSpan = btn.querySelector('span');
+        if (lightbulbSpan && lightbulbSpan.textContent.includes('💡')) {
+          // This is the hint button! Find the text node after the span
+          const childNodes = Array.from(btn.childNodes);
+          for (let i = 0; i < childNodes.length; i++) {
+            const node = childNodes[i];
+            // Text nodes have nodeType === 3
+            if (node.nodeType === 3 && node.textContent.trim().length > 0) {
+              const currentText = node.textContent.trim().toLowerCase();
+
+              // Determine what the translated text should be based on English keywords
+              let translatedText = '';
+              if (currentText.includes('hide') || currentText.includes('إخفاء') || currentText.includes('ocultar') ||
+                currentText.includes('masquer') || currentText.includes('скрыть') || currentText.includes('esconder')) {
+                translatedText = tr.hideHint || 'Hide hint';
+              } else if (currentText.includes('more') || currentText.includes('المزيد') || currentText.includes('más') ||
+                currentText.includes('plus') || currentText.includes('ещё') || currentText.includes('mais')) {
+                translatedText = tr.showMore || 'Show more';
+              } else if (currentText.includes('hint') || currentText.includes('تلميح') || currentText.includes('pista') ||
+                currentText.includes('indice') || currentText.includes('подсказку') || currentText.includes('dica')) {
+                translatedText = tr.showHint || 'Show hint';
+              } else {
+                // Already translated or unknown - keep as is but add coins
+                translatedText = node.textContent.trim().replace(/\s*\(\d+\)\s*$/, '');
+              }
+
+              // Set the translated text with coin count
+              node.textContent = ` ${translatedText} (${coins})`;
+              break;
+            }
+          }
+        }
+      });
+    }
+
+    // Watch for DOM changes and apply translations
+    function startTranslationObserver() {
+      const root = document.getElementById('root');
+      if (!root) return;
+
+      const observer = new MutationObserver(() => {
+        if (translationsLoaded) {
+          setTimeout(applyNameTranslations, 50);
+        }
+      });
+
+      observer.observe(root, {
+        childList: true,
+        subtree: true,
+        characterData: true
+      });
+    }
+
+    function getCurrentLanguage() {
+      return localStorage.getItem('cluesbysam_language') || 'en';
+    }
+
+    function setLanguage(langCode) {
+      localStorage.setItem('cluesbysam_language', langCode);
+      applyTranslations();
+      hideLanguagePopup();
+    }
+
+    function t(key, replacements = {}) {
+      const lang = getCurrentLanguage();
+      let text = TRANSLATIONS[lang][key] || TRANSLATIONS['en'][key] || key;
+      for (const [k, v] of Object.entries(replacements)) {
+        text = text.replace(`{${k}}`, v);
+      }
+      return text;
+    }
+
+    function applyTranslations() {
+      const lang = getCurrentLanguage();
+      const tr = TRANSLATIONS[lang];
+
+      // Apply RTL for Arabic
+      if (tr.rtl) {
+        document.body.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('dir', 'rtl');
+      } else {
+        document.body.removeAttribute('dir');
+        document.documentElement.removeAttribute('dir');
+      }
+
+      // Update language button with current flag
+      const langBtn = document.getElementById('lang-btn');
+      if (langBtn && tr.flag) {
+        langBtn.textContent = tr.flag;
+      }
+
+      // Splash screen
+      const splashText = document.querySelector('.splash-text');
+      if (splashText) splashText.textContent = tr.splashText;
+
+      // Level title
+      const levelTitle = document.querySelector('.level-title');
+      if (levelTitle) {
+        const totalLevel = getTotalLevel();
+        levelTitle.textContent = `${tr.level} ${totalLevel}`;
+      }
+
+      // Shop
+      const shopTitle = document.querySelector('.shop-title');
+      if (shopTitle) shopTitle.textContent = tr.shop;
+
+      const freeBtn = document.querySelector('.shop-item-btn.free');
+      if (freeBtn) freeBtn.innerHTML = `📺 ${tr.free}`;
+
+      // Not enough coins popup
+      const coinsPopupTitle = document.querySelector('.coins-popup-title');
+      if (coinsPopupTitle) coinsPopupTitle.textContent = tr.notEnoughCoins;
+
+      const coinsPopupMessage = document.querySelector('.coins-popup-message');
+      if (coinsPopupMessage) coinsPopupMessage.textContent = tr.needMoreCoins;
+
+      const watchAdBtn = document.querySelector('.coins-popup-btn.watch');
+      if (watchAdBtn) watchAdBtn.innerHTML = `📺 ${tr.watchAd}`;
+
+      const shopBtn = document.querySelector('.coins-popup-btn.shop');
+      if (shopBtn) shopBtn.innerHTML = `🛒 ${tr.shop}`;
+
+      const closeBtns = document.querySelectorAll('.coins-popup-btn.close, .win-button-close');
+      closeBtns.forEach(btn => { if (btn) btn.textContent = tr.close; });
+
+      // Win popup
+      const nextLevelBtn = document.getElementById('next-level-btn');
+      if (nextLevelBtn) nextLevelBtn.textContent = tr.nextLevel;
+
+      const playAgainBtn = document.querySelector('.win-button-secondary');
+      if (playAgainBtn) playAgainBtn.textContent = tr.playAgain;
+
+      // Lose popup
+      const loseTitle = document.querySelector('.lose-title');
+      if (loseTitle) loseTitle.textContent = tr.tryAgain;
+
+      const loseMessage = document.querySelector('#lose-popup .win-message');
+      if (loseMessage) loseMessage.textContent = tr.dontWorry;
+
+      const retryBtn = document.querySelector('.lose-button');
+      if (retryBtn) retryBtn.textContent = tr.retry;
+
+      // Language popup title
+      const langTitle = document.querySelector('.language-popup-title');
+      if (langTitle) langTitle.textContent = tr.selectLanguage;
+
+      // Translate game buttons with interval (since they load dynamically)
+      translateGameButtons();
+    }
+
+    function translateGameButtons() {
+      const lang = getCurrentLanguage();
+      const tr = TRANSLATIONS[lang];
+
+      setInterval(() => {
+        // Find and translate game buttons
+        document.querySelectorAll('button, input[type="button"]').forEach(btn => {
+          const text = btn.textContent.trim().toLowerCase();
+          const value = btn.value ? btn.value.trim().toLowerCase() : '';
+
+          // SKIP hint buttons - handled by updateHintButtonsWithCoins
+          // Hint buttons have 💡 emoji
+          if (text.includes('💡')) return;
+
+          // Show More button (NOT the hint "Show more" - that has 💡)
+          if ((text.includes('show more') || text.includes('more') ||
+            value.includes('show more') || value.includes('more')) && !text.includes('💡')) {
+            if (!btn.dataset.translated) {
+              if (btn.value) btn.value = tr.showMore;
+              else btn.textContent = tr.showMore;
+              btn.dataset.translated = lang;
+            }
+          }
+
+          // See results button
+          if (text.includes('see results') || text.includes('results') ||
+            value.includes('see results') || value.includes('results')) {
+            if (!btn.dataset.translated) {
+              if (btn.value) btn.value = tr.seeResults;
+              else btn.textContent = tr.seeResults;
+              btn.dataset.translated = lang;
+            }
+          }
+
+          // Play again (in game's built-in popup)
+          if (text.includes('play again')) {
+            if (!btn.dataset.translated) {
+              btn.textContent = tr.playAgain;
+              btn.dataset.translated = lang;
+            }
+          }
+
+          // Close button
+          if (text === 'close') {
+            if (!btn.dataset.translated) {
+              btn.textContent = tr.close;
+              btn.dataset.translated = lang;
+            }
+          }
+        });
+
+        // Translate difficulty text
+        document.querySelectorAll('*').forEach(el => {
+          if (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) {
+            const text = el.textContent.trim();
+            if (text === 'Easy' && !el.dataset.translated) {
+              el.textContent = tr.easy;
+              el.dataset.translated = lang;
+            }
+            if (text === 'Medium' && !el.dataset.translated) {
+              el.textContent = tr.medium;
+              el.dataset.translated = lang;
+            }
+            if (text === 'Hard' && !el.dataset.translated) {
+              el.textContent = tr.hard;
+              el.dataset.translated = lang;
+            }
+          }
+        });
+
+        // Translate "Solved in..." text
+        document.querySelectorAll('*').forEach(el => {
+          if (el.childNodes.length === 1 && el.childNodes[0].nodeType === 3) {
+            const text = el.textContent.trim();
+            const match = text.match(/Solved in less than (\d+) minutes!/);
+            if (match && !el.dataset.translated) {
+              el.textContent = tr.solvedIn.replace('{min}', match[1]);
+              el.dataset.translated = lang;
+            }
+          }
+        });
+      }, 500);
+    }
+
+    function showLanguagePopup() {
+      updateLanguageButtonStates();
+      const popup = document.getElementById('language-popup');
+      if (popup) popup.classList.add('show');
+    }
+
+    function hideLanguagePopup() {
+      const popup = document.getElementById('language-popup');
+      if (popup) popup.classList.remove('show');
+    }
+
+    function setupLanguageButtons() {
+      const langBtns = document.querySelectorAll('.language-btn');
+      langBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const lang = btn.dataset.lang;
+          if (lang) {
+            setLanguage(lang);
+            location.reload();
+          }
+        });
+      });
+    }
+
+    function updateLanguageButtonStates() {
+      const currentLang = getCurrentLanguage();
+      const langBtns = document.querySelectorAll('.language-btn');
+      langBtns.forEach(btn => {
+        if (btn.dataset.lang === currentLang) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    }
+
+    // ==========================================
+    // LEVEL PROGRESSION SYSTEM
+    // Total levels played tracking - continues past 39
+    // ==========================================
+    const TOTAL_PUZZLES = 39;
+
+    // Get the total level number (1, 2, 3... 39, 40, 41...)
+    function getTotalLevel() {
+      return parseInt(localStorage.getItem('cluesbysam_total_level') || '1');
+    }
+
+    function setTotalLevel(level) {
+      localStorage.setItem('cluesbysam_total_level', level.toString());
+    }
+
+    // Get which puzzle to load (1-39, cycling)
+    function getPuzzleNumber(totalLevel) {
+      return ((totalLevel - 1) % TOTAL_PUZZLES) + 1;
+    }
+
+    const PUZZLE_HASHES = {
+      1: "165362d90111", 2: "175ca6478890", 3: "23c43dbe2a37", 4: "262ff76dcd13", 5: "2f42fbfcdaf9",
+      6: "43537ae10d78", 7: "48ce3cb8cfbd", 8: "4d49ca3e2134", 9: "5096b4d921c5", 10: "51f3ecf10a81",
+      11: "5e9419f2e0fa", 12: "5ea3be3177d5", 13: "6310edfd1b2b", 14: "656f4ab5e464", 15: "684233c01fca",
+      16: "6c1a70232b95", 17: "6cbf6d256778", 18: "6e2c04ee211d", 19: "6efda75291c8", 20: "703916bb416d",
+      21: "78e820375276", 22: "83f5e2a2c9d3", 23: "8aa15091a232", 24: "92471ae08a9c", 25: "98c74c6d6e44",
+      26: "9c53c1ae5344", 27: "ab644e25dde8", 28: "b3eef6f8d2bb", 29: "b7b982ec1191", 30: "bad1fcbd0ec5",
+      31: "bb3664b02089", 32: "c629d699bf3c", 33: "d645485f7161", 34: "d9e838da8fb9", 35: "da0bb9fb2cd9",
+      36: "dae6db907d2b", 37: "de6c2fb44bd1", 38: "e8dde6ff8dc1", 39: "ed23e2304ae8"
+    };
+
+    async function loadLevel(totalLevel) {
+      // Load language data for translations
+      await loadLanguageData();
+
+      const puzzleNum = getPuzzleNumber(totalLevel);
+      const hash = PUZZLE_HASHES[puzzleNum];
+      const scriptPath = `./game/assets/${hash}.js`;
+      console.log(`Loading Level ${totalLevel}: ${scriptPath}`);
+
+      const script = document.createElement('script');
+      script.type = 'module';
+      script.crossOrigin = 'anonymous';
+      script.src = scriptPath;
+      document.head.appendChild(script);
+
+      // Start translation observer after script loads
+      script.onload = () => {
+        setTimeout(() => {
+          startTranslationObserver();
+          applyNameTranslations();
+        }, 300);
+      };
+    }
+
+    // ==========================================
+    // SPLASH SCREEN
+    // ==========================================
+    function hideSplash() {
+      const splash = document.getElementById('splash-screen');
+      if (splash) {
+        splash.classList.add('hidden');
+        setTimeout(() => {
+          splash.style.display = 'none';
+        }, 500);
+      }
+    }
+
+    function animateSplashProgress() {
+      const progressBar = document.querySelector('.splash-progress-bar');
+      if (progressBar) {
+        let progress = 0;
+        const interval = setInterval(() => {
+          progress += Math.random() * 35 + 25;
+          if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+            setTimeout(hideSplash, 100);
+          }
+          progressBar.style.width = progress + '%';
+        }, 80);
+      }
+    }
+
+    // ==========================================
+    // PROGRESS TRACKING - REFERENCE STYLE
+    // ==========================================
+    let totalCards = 0;
+    let clearedCards = 0;
+    let criminalCount = 0;
+
+    function updateProgress() {
+      const progressFill = document.getElementById('progress-fill');
+      const progressText = document.getElementById('progress-text');
+
+      if (progressText) {
+        progressText.textContent = `${clearedCards}/${totalCards}`;
+      }
+
+      if (progressFill && totalCards > 0) {
+        const percent = (clearedCards / totalCards) * 100;
+        progressFill.style.width = percent + '%';
+      }
+    }
+
+    function countCards() {
+      const cards = document.querySelectorAll('.card');
+      totalCards = cards.length;
+      clearedCards = document.querySelectorAll('.card.innocent, .card.criminal').length;
+      criminalCount = document.querySelectorAll('.card.criminal').length;
+      updateProgress();
+    }
+
+    // ==========================================
+    // COINS SYSTEM
+    // ==========================================
+    const HINT_COST = 10;
+    const MORE_HINT_COST = 15;
+    const REWARDED_AD_COINS = 10;
+
+    function getCoins() {
+      return parseInt(localStorage.getItem('cluesbysam_coins') || '20');
+    }
+
+    function setCoins(amount) {
+      localStorage.setItem('cluesbysam_coins', amount.toString());
+      updateCoinsDisplay();
+    }
+
+    function addCoins(amount) {
+      const current = getCoins();
+      setCoins(current + amount);
+    }
+
+    function spendCoins(amount) {
+      const current = getCoins();
+      if (current >= amount) {
+        setCoins(current - amount);
+        return true;
+      }
+      return false;
+    }
+
+    function updateCoinsDisplay() {
+      const coins = getCoins();
+      const displays = document.querySelectorAll('#coins-amount, #shop-coins-amount');
+      displays.forEach(d => {
+        if (d) d.textContent = coins.toLocaleString();
+      });
+    }
+
+    // ==========================================
+    // SHOP FUNCTIONS
+    // ==========================================
+    function showShop() {
+      updateCoinsDisplay();
+      const popup = document.getElementById('shop-popup');
+      if (popup) popup.classList.add('show');
+    }
+
+    function hideShop() {
+      const popup = document.getElementById('shop-popup');
+      if (popup) popup.classList.remove('show');
+    }
+
+    function showCoinsPopup() {
+      const popup = document.getElementById('coins-popup');
+      if (popup) popup.classList.add('show');
+    }
+
+    function hideCoinsPopup() {
+      const popup = document.getElementById('coins-popup');
+      if (popup) popup.classList.remove('show');
+    }
+
+    // ==========================================
+    // ADMOB INTEGRATION - WITH UX CONTROLS
+    // ==========================================
+    let admobInitialized = false;
+    let interstitialReady = false;
+    let rewardedReady = false;
+
+    // Ad Control System - Cooldowns and Limits
+    let lastInterstitialTime = 0;
+    const INTERSTITIAL_COOLDOWN = 90000; // 90 seconds between interstitials
+    let rewardedAdsShownThisSession = 0;
+    const MAX_REWARDED_PER_SESSION = 4;
+    let appOpenShownThisSession = false;
+    let isFirstAppLaunch = true;
+    let bannerVisible = false;
+    let levelsCompletedSinceLastAd = 0;
+    const LEVELS_BETWEEN_ADS = 1; // Show interstitial after each level (levels take long time)
+
+    // AdMob Ad Unit IDs - PRODUCTION
+    const AD_IDS = {
+      banner: 'ca-app-pub-9762641206922107/1401264819',
+      interstitial: 'ca-app-pub-9762641206922107/9088183143',
+      rewarded: 'ca-app-pub-9762641206922107/5964499815',
+      appOpen: 'ca-app-pub-9762641206922107/1885654005'
+    };
+
+    // AdMob Event Constants (for listener registration)
+    const InterstitialAdPluginEvents = {
+      Loaded: 'interstitialAdLoaded',
+      Dismissed: 'interstitialAdDismissed',
+      FailedToLoad: 'interstitialAdFailedToLoad',
+      FailedToShow: 'interstitialAdFailedToShow',
+      Showed: 'interstitialAdShowed'
+    };
+
+    const RewardAdPluginEvents = {
+      Loaded: 'rewardedAdLoaded',
+      Dismissed: 'rewardedAdDismissed',
+      Rewarded: 'rewardedAdRewarded',
+      FailedToLoad: 'rewardedAdFailedToLoad',
+      FailedToShow: 'rewardedAdFailedToShow',
+      Showed: 'rewardedAdShowed'
+    };
+
+    async function requestATT() {
+      // Request Tracking Authorization (iOS 14+) using Capacitor.Plugins
+      if (typeof window.Capacitor === 'undefined' || !window.Capacitor.isNativePlatform()) {
+        console.log('ATT: Not on native platform');
+        return;
+      }
+
+      if (window.Capacitor.getPlatform() !== 'ios') {
+        console.log('ATT: Not on iOS');
+        return;
+      }
+
+      try {
+        console.log('ATT: Waiting for UI to be ready...');
+        await new Promise(resolve => setTimeout(resolve, 2000)); // 2 second delay
+
+        // Use Capacitor.Plugins global object instead of ES import
+        const AppTrackingTransparency = window.Capacitor.Plugins.AppTrackingTransparency;
+        if (!AppTrackingTransparency) {
+          console.log('ATT: Plugin not available, trying AdMob fallback...');
+          // Fallback to AdMob's requestTrackingAuthorization
+          const AdMob = window.Capacitor.Plugins.AdMob;
+          if (AdMob && AdMob.requestTrackingAuthorization) {
+            await AdMob.requestTrackingAuthorization();
+            console.log('ATT: Permission requested via AdMob');
+          }
+          return;
+        }
+
+        console.log('ATT: Plugin loaded, requesting permission...');
+        const response = await AppTrackingTransparency.requestPermission();
+        console.log('ATT permission status:', response.status);
+      } catch (e) {
+        console.log('ATT permission error:', JSON.stringify(e), e.message, e.code);
+      }
+    }
+
+    async function initializeAdMob() {
+      if (typeof window.Capacitor === 'undefined' || !window.Capacitor.isNativePlatform()) {
+        console.log('AdMob: Not running on native platform');
+        return;
+      }
+
+      try {
+        // Use Capacitor.Plugins global object instead of ES import
+        const AdMob = window.Capacitor.Plugins.AdMob;
+        if (!AdMob) {
+          console.log('AdMob plugin not available');
+          return;
+        }
+
+        await AdMob.initialize({
+          initializeForTesting: false,
+          tagForChildDirectedTreatment: false,
+          tagForUnderAgeOfConsent: false
+        });
+        admobInitialized = true;
+        console.log('AdMob initialized successfully');
+
+        // Preload ads (but don't show yet - controlled by game flow)
+        setTimeout(() => prepareInterstitial(), 500);
+        setTimeout(() => prepareRewarded(), 1000);
+
+        // Check if first launch - skip app open ad if so
+        const hasLaunchedBefore = localStorage.getItem('hasLaunchedBefore');
+        if (hasLaunchedBefore) {
+          isFirstAppLaunch = false;
+          // App open ad - only once per session, not on first launch
+          setTimeout(() => showAppOpenAdSafe(), 1500);
+        } else {
+          localStorage.setItem('hasLaunchedBefore', 'true');
+          isFirstAppLaunch = true;
+        }
+        // NOTE: Banner NOT shown here - only on level selection/shop screens
+      } catch (e) {
+        console.log('AdMob init error:', JSON.stringify(e), e.message);
+      }
+    }
+
+    async function showBannerAd() {
+      if (!admobInitialized || bannerVisible) return;
+
+      try {
+        const AdMob = window.Capacitor.Plugins.AdMob;
+        const BannerAdSize = { ADAPTIVE_BANNER: 'ADAPTIVE_BANNER' };
+        const BannerAdPosition = { BOTTOM_CENTER: 'BOTTOM_CENTER' };
+        await AdMob.showBanner({
+          adId: AD_IDS.banner,
+          adSize: BannerAdSize.ADAPTIVE_BANNER,
+          position: BannerAdPosition.BOTTOM_CENTER,
+          margin: 0,
+          isTesting: true
+        });
+        bannerVisible = true;
+        console.log('Banner shown');
+      } catch (e) {
+        console.log('Banner ad error:', e);
+      }
+    }
+
+    async function hideBannerAd() {
+      if (!admobInitialized || !bannerVisible) return;
+
+      try {
+        const AdMob = window.Capacitor.Plugins.AdMob;
+        await AdMob.hideBanner();
+        bannerVisible = false;
+        console.log('Banner hidden');
+      } catch (e) {
+        console.log('Hide banner error:', e);
+      }
+    }
+
+    async function prepareInterstitial() {
+      if (!admobInitialized) return;
+
+      try {
+        const AdMob = window.Capacitor.Plugins.AdMob;
+
+        AdMob.addListener(InterstitialAdPluginEvents.Loaded, () => {
+          interstitialReady = true;
+          console.log('Interstitial ready');
+        });
+
+        AdMob.addListener(InterstitialAdPluginEvents.Dismissed, () => {
+          interstitialReady = false;
+          prepareInterstitial();
+        });
+
+        await AdMob.prepareInterstitial({
+          adId: AD_IDS.interstitial,
+          isTesting: true
+        });
+      } catch (e) {
+        console.log('Interstitial prep error:', e);
+      }
+    }
+
+    async function showInterstitialAd() {
+      if (!admobInitialized || !interstitialReady) return false;
+
+      try {
+        const AdMob = window.Capacitor.Plugins.AdMob;
+        await AdMob.showInterstitial();
+        lastInterstitialTime = Date.now();
+        return true;
+      } catch (e) {
+        console.log('Interstitial show error:', e);
+        return false;
+      }
+    }
+
+    // SAFE interstitial - respects cooldown and level count
+    async function showInterstitialAdSafe() {
+      const now = Date.now();
+
+      // Check cooldown (90 seconds)
+      if (now - lastInterstitialTime < INTERSTITIAL_COOLDOWN) {
+        console.log('Interstitial skipped: cooldown active');
+        return false;
+      }
+
+      // Check level count
+      if (levelsCompletedSinceLastAd < LEVELS_BETWEEN_ADS) {
+        console.log('Interstitial skipped: not enough levels completed');
+        return false;
+      }
+
+      // Check if ready
+      if (!interstitialReady) {
+        console.log('Interstitial skipped: not ready');
+        return false;
+      }
+
+      const result = await showInterstitialAd();
+      if (result) {
+        levelsCompletedSinceLastAd = 0;
+      }
+      return result;
+    }
+
+    async function prepareRewarded() {
+      if (!admobInitialized) return;
+
+      try {
+        const AdMob = window.Capacitor.Plugins.AdMob;
+
+        AdMob.addListener(RewardAdPluginEvents.Loaded, () => {
+          rewardedReady = true;
+          console.log('Rewarded ad ready');
+        });
+
+        AdMob.addListener(RewardAdPluginEvents.Rewarded, (reward) => {
+          console.log('User earned reward:', reward);
+          addCoins(REWARDED_AD_COINS);
+          alert(t('earnedCoins', { coins: REWARDED_AD_COINS }));
+        });
+
+        AdMob.addListener(RewardAdPluginEvents.Dismissed, () => {
+          rewardedReady = false;
+          prepareRewarded();
+        });
+
+        await AdMob.prepareRewardVideoAd({
+          adId: AD_IDS.rewarded,
+          isTesting: true
+        });
+      } catch (e) {
+        console.log('Rewarded prep error:', e);
+      }
+    }
+
+    // Check if rewarded ad can be shown (session limit)
+    function canShowRewardedAd() {
+      return rewardedAdsShownThisSession < MAX_REWARDED_PER_SESSION && rewardedReady;
+    }
+
+    async function watchRewardedAd() {
+      // Web fallback - give coins without ad
+      if (typeof window.Capacitor === 'undefined' || !window.Capacitor.isNativePlatform()) {
+        addCoins(REWARDED_AD_COINS);
+        alert(t('earnedCoins', { coins: REWARDED_AD_COINS }));
+        hideShop();
+        return true;
+      }
+
+      // Check session limit
+      if (rewardedAdsShownThisSession >= MAX_REWARDED_PER_SESSION) {
+        alert(t('adLimitReached') || 'Ad limit reached for this session. Try again later!');
+        return false;
+      }
+
+      if (!rewardedReady) {
+        alert(t('adNotReady') || 'Ad not ready yet. Please try again in a moment.');
+        return false;
+      }
+
+      try {
+        const AdMob = window.Capacitor.Plugins.AdMob;
+        await AdMob.showRewardVideoAd();
+        rewardedAdsShownThisSession++;
+        hideShop();
+        return true;
+      } catch (e) {
+        console.log('Rewarded show error:', e);
+        return false;
+      }
+    }
+
+    async function showAppOpenAd() {
+      if (!admobInitialized) return;
+
+      try {
+        const AdMob = window.Capacitor.Plugins.AdMob;
+        await AdMob.prepareAppOpenAd({
+          adId: AD_IDS.appOpen,
+          isTesting: true
+        });
+        await AdMob.showAppOpenAd();
+      } catch (e) {
+        console.log('App open ad error:', e);
+      }
+    }
+
+    // SAFE app open - only once per session, not on first launch
+    async function showAppOpenAdSafe() {
+      if (isFirstAppLaunch || appOpenShownThisSession) {
+        console.log('App open ad skipped: first launch or already shown');
+        return;
+      }
+      appOpenShownThisSession = true;
+      await showAppOpenAd();
+    }
+
+    // Call this when user completes a level (for interstitial tracking)
+    function onLevelCompleted() {
+      levelsCompletedSinceLastAd++;
+    }
+
+    // ==========================================
+    // REVENUECAT IN-APP PURCHASES
+    // ==========================================
+    let revenueCatInitialized = false;
+
+    const COIN_PRODUCTS = {
+      'coins_150': 150,
+      'coins_450': 450,
+      'coins_1500': 1500,
+      'coins_4000': 4000,
+      'coins_7500': 7500,
+      'coins_15000': 15000
+    };
+
+    async function initializeRevenueCat() {
+      if (typeof window.Capacitor === 'undefined' || !window.Capacitor.isNativePlatform()) {
+        console.log('RevenueCat: Not running on native platform');
+        return;
+      }
+
+      const REVENUECAT_API_KEY = 'YOUR_REVENUECAT_API_KEY';
+      if (REVENUECAT_API_KEY === 'YOUR_REVENUECAT_API_KEY') {
+        console.log('RevenueCat: API key not configured');
+        return;
+      }
+
+      try {
+        const { Purchases, LOG_LEVEL } = await import('@revenuecat/purchases-capacitor');
+
+        await Purchases.setLogLevel({ level: LOG_LEVEL.DEBUG });
+        await Purchases.configure({
+          apiKey: REVENUECAT_API_KEY
+        });
+
+        revenueCatInitialized = true;
+        console.log('RevenueCat initialized');
+      } catch (e) {
+        console.log('RevenueCat init error:', e);
+      }
+    }
+
+    async function purchaseCoins(productId) {
+      if (typeof window.Capacitor === 'undefined') {
+        const coins = COIN_PRODUCTS[productId] || 0;
+        addCoins(coins);
+        alert(t('purchasedCoins', { coins: coins }));
+        updateCoinsDisplay();
+        return;
+      }
+
+      if (!revenueCatInitialized) {
+        alert(t('storeNotReady'));
+        return;
+      }
+
+      try {
+        const { Purchases } = await import('@revenuecat/purchases-capacitor');
+
+        const offerings = await Purchases.getOfferings();
+        console.log('Offerings:', offerings);
+
+        const result = await Purchases.purchaseStoreProduct({
+          product: { identifier: productId }
+        });
+
+        if (result.customerInfo) {
+          const coins = COIN_PRODUCTS[productId] || 0;
+          addCoins(coins);
+          alert(t('purchasedCoins', { coins: coins }));
+          updateCoinsDisplay();
+        }
+      } catch (e) {
+        if (e.code !== 'PURCHASE_CANCELLED') {
+          console.log('Purchase error:', e);
+          alert(t('purchaseFailed'));
+        }
+      }
+    }
+
+
+    // ==========================================
+    // HINT SYSTEM WITH COINS (WITH CLICK LOCK)
+    // ==========================================
+    const SHOW_HINT_COST = 10;
+    const SHOW_MORE_COST = 15;
+    let hintClickLock = false;
+    let lastHintClickTime = 0;
+
+    function setupHintCostLogic() {
+      const allButtons = document.querySelectorAll('button, input[type="button"], .btn');
+
+      allButtons.forEach(btn => {
+        // 1. Identify Hint Buttons
+        const originalText = (btn.textContent || btn.value || '').toLowerCase();
+        // Check both English and translated terms if possible, or rely on specific classes if available.
+        // Since originalText includes children textContent, the "20 -> 10" might be in it.
+        // We need to be careful not to recursivly match.
+        // But we can check if it has the dataset or matches keywords.
+
+        const isHintBtn = originalText.includes('hint') || originalText.includes('تلميح') || originalText.includes('pista') || originalText.includes('indice') || originalText.includes('подсказку');
+        const isShowBtn = (originalText.includes('show') || originalText.includes('عرض') || originalText.includes('mostrar') || originalText.includes('afficher') || originalText.includes('показать')) && !originalText.includes('🪙') && !originalText.includes('shop');
+
+        if (isHintBtn || isShowBtn) {
+
+          // 2. Attach Click Listener (ONCE)
+          if (btn.dataset.listenerAttached !== 'true') {
+            btn.dataset.listenerAttached = 'true';
+
+            let cost = SHOW_HINT_COST;
+            if (originalText.includes('more') || originalText.includes('المزيد') || originalText.includes('más') || originalText.includes('plus') || originalText.includes('ещё')) {
+              cost = SHOW_MORE_COST;
+            }
+            btn.dataset.hintCost = cost;
+
+            function handleHintClick(e) {
+              const now = Date.now();
+              if (hintClickLock || (now - lastHintClickTime) < 1000) {
+                e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation(); return false;
+              }
+              const btnCost = parseInt(btn.dataset.hintCost) || SHOW_HINT_COST;
+              const currentCoins = getCoins();
+              if (currentCoins < btnCost) {
+                e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation();
+                showCoinsPopup();
+                return false;
+              }
+              hintClickLock = true;
+              lastHintClickTime = now;
+              spendCoins(btnCost);
+              setTimeout(() => { hintClickLock = false; }, 1000);
+            }
+            btn.addEventListener('click', handleHintClick, false);
+          }
+
+          // 3. Update Visuals - REMOVED (Handled by updateHintButtonsWithCoins)
+          // The visual part (20 -> 10) was causing layout issues and is now obsolete.
+        }
+      });
+    }
+
+    function interceptHintButton() {
+      setupHintCostLogic();
+      // Run frequently to combat overwrites
+      setInterval(setupHintCostLogic, 500);
+    }
+
+
+
+    // ==========================================
+    // WIN/LOSE POPUPS
+    // ==========================================
+    const TOTAL_LEVELS = 50;
+    let levelStartTime = Date.now();
+
+    function showWinPopup() {
+      const popup = document.getElementById('win-popup');
+      if (!popup) return;
+
+      const tr = TRANSLATIONS[getCurrentLanguage()];
+      const currentLevel = getTotalLevel();
+      const elapsedMs = Date.now() - levelStartTime;
+      const elapsedMins = Math.ceil(elapsedMs / 60000);
+
+      const levelTitle = document.getElementById('win-level-title');
+      if (levelTitle) levelTitle.textContent = `${tr.level} ${currentLevel}`;
+
+      const difficulty = document.getElementById('win-difficulty');
+      if (difficulty) {
+        if (currentLevel <= 10) difficulty.textContent = tr.easy;
+        else if (currentLevel <= 25) difficulty.textContent = tr.medium;
+        else if (currentLevel <= 40) difficulty.textContent = tr.hard;
+        else difficulty.textContent = tr.expert;
+      }
+
+      const timeMsg = document.getElementById('win-time-message');
+      if (timeMsg) {
+        timeMsg.textContent = tr.solvedIn.replace('{min}', elapsedMins);
+      }
+
+      generateWinGrid();
+
+      const nextBtn = document.getElementById('next-level-btn');
+      if (nextBtn) {
+        if (currentLevel >= TOTAL_LEVELS) {
+          nextBtn.textContent = tr.allLevelsComplete;
+          nextBtn.disabled = true;
+          nextBtn.style.opacity = '0.5';
+        } else {
+          nextBtn.textContent = tr.nextLevel;
+          nextBtn.disabled = false;
+          nextBtn.style.opacity = '1';
+        }
+      }
+
+      popup.classList.add('show');
+    }
+
+    function generateWinGrid() {
+      const grid = document.getElementById('win-grid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      const colors = ['green', 'yellow', 'orange'];
+      for (let row = 0; row < 4; row++) {
+        const rowDiv = document.createElement('div');
+        rowDiv.className = 'win-grid-row';
+        for (let col = 0; col < 4; col++) {
+          const cell = document.createElement('div');
+          cell.className = 'win-grid-cell ' + colors[Math.floor(Math.random() * 3)];
+          rowDiv.appendChild(cell);
+        }
+        grid.appendChild(rowDiv);
+      }
+    }
+
+    function goToNextLevelFromPopup() {
+      const popup = document.getElementById('win-popup');
+      if (popup) popup.classList.remove('show');
+
+      const currentLevel = getTotalLevel();
+      if (currentLevel < TOTAL_LEVELS) {
+        onLevelCompleted(); // Track level completion
+        showInterstitialAdSafe(); // Use safe version with cooldown
+        setTotalLevel(currentLevel + 1);
+        levelStartTime = Date.now();
+        location.reload();
+      }
+    }
+
+    function playAgain() {
+      const popup = document.getElementById('win-popup');
+      if (popup) popup.classList.remove('show');
+      levelStartTime = Date.now();
+      location.reload();
+    }
+
+    function closeWinPopup() {
+      const popup = document.getElementById('win-popup');
+      if (popup) popup.classList.remove('show');
+    }
+
+    function hideWinPopup() {
+      const popup = document.getElementById('win-popup');
+      if (popup) popup.classList.remove('show');
+    }
+
+    function showLosePopup() {
+      const popup = document.getElementById('lose-popup');
+      if (popup) popup.classList.add('show');
+    }
+
+    function hideLosePopup() {
+      const popup = document.getElementById('lose-popup');
+      if (popup) popup.classList.remove('show');
+    }
+
+    // ==========================================
+    // ENHANCED SOCIAL SHARE
+    // ==========================================
+    const APP_STORE_LINK = 'https://apps.apple.com/app/clue-game/id6740097983';
+
+    const SHARE_MESSAGES = {
+      en: {
+        challenge: "🧩 Think you're smart? Help me solve this puzzle!",
+        solved: "🎉 I solved this puzzle! Can you beat my time?",
+        download: "Download the game:"
+      },
+      ar: {
+        challenge: "🧩 تفتكر روحك ذكي؟ عاوني نحل هاد اللغز!",
+        solved: "🎉 حليت هاد اللغز! واش تقدر تغلبني؟",
+        download: "حمل اللعبة:"
+      },
+      es: {
+        challenge: "🧩 ¿Crees que eres inteligente? ¡Ayúdame a resolver este puzzle!",
+        solved: "🎉 ¡Resolví este puzzle! ¿Puedes superar mi tiempo?",
+        download: "Descarga el juego:"
+      },
+      fr: {
+        challenge: "🧩 Tu penses être intelligent? Aide-moi à résoudre ce puzzle!",
+        solved: "🎉 J'ai résolu ce puzzle! Peux-tu battre mon temps?",
+        download: "Télécharge le jeu:"
+      },
+      ru: {
+        challenge: "🧩 Считаешь себя умным? Помоги мне решить эту головоломку!",
+        solved: "🎉 Я решил эту головоломку! Сможешь побить моё время?",
+        download: "Скачай игру:"
+      },
+      pt: {
+        challenge: "🧩 Acha que é inteligente? Me ajude a resolver esse puzzle!",
+        solved: "🎉 Resolvi esse puzzle! Consegue superar meu tempo?",
+        download: "Baixe o jogo:"
+      }
+    };
+
+    function callShare(isSolved = false) {
+      console.log('callShare called, isSolved:', isSolved);
+
+      // Visual confirmation that function is called
+      // alert('Share function called!'); // Uncomment to debug
+
+      try {
+        const lang = getCurrentLanguage();
+        const msgs = SHARE_MESSAGES[lang] || SHARE_MESSAGES.en;
+        const level = getTotalLevel();
+        const message = isSolved ? msgs.solved : msgs.challenge;
+        // Construct the full text including the link
+        const shareText = `${message}\n\n🎮 Level ${level}\n\n${msgs.download}\n${APP_STORE_LINK}`;
+
+        console.log('Share text:', shareText);
+
+        // Priority 1: Capacitor Share Plugin (Native)
+        if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.Share) {
+          console.log('Using Capacitor Share');
+          // Using Promises since function is not async
+          window.Capacitor.Plugins.Share.share({ text: shareText }).catch(() => forceWebShare(shareText));
+          return;
+        }
+
+        // Priority 2: Web Share API
+        forceWebShare(shareText);
+
+        function forceWebShare(txt) {
+          if (navigator.share) {
+            // Pass ONLY text to avoid iOS "Link Share" restrictions
+            navigator.share({ text: txt }).catch(err => {
+              console.log('Web Share failed/cancelled:', err);
+              if (err.name !== 'AbortError') copyToClipboard(txt);
+            });
+          } else {
+            copyToClipboard(txt);
+          }
+        }
+      } catch (err) {
+        console.error('callShare error:', err);
+        alert('Share error: ' + err.message);
+      }
+    }
+
+    // Make callShare globally available
+    window.callShare = callShare;
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('Copied to clipboard! 📋');
+      }).catch(err => {
+        console.error('Clipboard failed:', err);
+        // Ultimate fallback: show in alert
+        prompt('Copy this text:', text);
+      });
+    }
+
+    function showToast(message) {
+      const toast = document.createElement('div');
+      toast.textContent = message;
+      toast.style.cssText = `
+        position: fixed;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0,0,0,0.8);
+        color: white;
+        padding: 12px 24px;
+        border-radius: 25px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        z-index: 99999;
+        animation: fadeInUp 0.3s ease;
+      `;
+      document.body.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+      }, 2000);
+    }
+
+    // Share to specific social media
+    function shareToWhatsApp() {
+      const lang = getCurrentLanguage();
+      const msgs = SHARE_MESSAGES[lang] || SHARE_MESSAGES.en;
+      const level = getTotalLevel();
+      const text = encodeURIComponent(`${msgs.challenge}\n\n🎮 Level ${level}\n\n${msgs.download}\n${APP_STORE_LINK}`);
+      window.open(`https://wa.me/?text=${text}`, '_blank');
+    }
+
+    function shareToFacebook() {
+      const url = encodeURIComponent(APP_STORE_LINK);
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+    }
+
+    function shareToTwitter() {
+      const lang = getCurrentLanguage();
+      const msgs = SHARE_MESSAGES[lang] || SHARE_MESSAGES.en;
+      const level = getTotalLevel();
+      const text = encodeURIComponent(`${msgs.challenge} 🎮 Level ${level}`);
+      const url = encodeURIComponent(APP_STORE_LINK);
+      window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+    }
+
+    const THEMES = ["theme-default", "theme-acc-1"];
+
+    function convert(savedTheme) {
+      if (savedTheme == "theme-default") return { theme: 0, dark: true };
+      if (savedTheme == "theme-acc-1") return { theme: 1, dark: true };
+      else return { theme: 0, dark: true };
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Load");
+
+      // Apply translations first
+      applyTranslations();
+
+      // Start splash animation
+      animateSplashProgress();
+
+      // Initialize coins display
+      updateCoinsDisplay();
+
+      // Initialize monetization systems
+      requestATT(); // Request ATT first (runs independently)
+      initializeAdMob();
+      initializeRevenueCat();
+
+      // Start hint button interception
+      interceptHintButton();
+
+      const themePreference = convert(localStorage.getItem("theme"));
+      document.body.className = `${THEMES[themePreference.theme]} ${themePreference.dark ? "light" : "light"}`;
+
+      // Update level display with translation
+      const totalLevel = getTotalLevel();
+      const tr = TRANSLATIONS[getCurrentLanguage()];
+      const levelTitle = document.querySelector('.level-title');
+      if (levelTitle) {
+        levelTitle.textContent = `${tr.level} ${totalLevel}`;
+      }
+
+      // Monitor for card changes to update progress
+      setInterval(() => {
+        countCards();
+      }, 500);
+
+      // Replace "Puzzle #X" text in the game with actual level number
+      replacePuzzleText(totalLevel);
+
+      // Watch for game's built-in popup and inject Next Level button
+      injectNextLevelButton();
+
+      // Setup language selector buttons
+      setupLanguageButtons();
+
+      // Keep updating hint buttons with coin info
+      setInterval(() => {
+        updateHintButtonsWithCoins();
+      }, 300);
+
+      // Override window.share with our enhanced version
+      window.share = function (includeState = false, customText = null) {
+        callShare(false); // Use our enhanced share
+      };
+
+      // Keep fixing modal translations
+      setInterval(() => {
+        fixModalTranslations();
+      }, 500);
+
+      // Keep overriding window.share in case React resets it
+      setInterval(() => {
+        window.share = function (includeState = false, customText = null) {
+          console.log('window.share called via override');
+          callShare(false);
+        };
+      }, 200);
+    });
+
+    // Fix hardcoded English text in modals - TEXT NODE ONLY (safe for React)
+    function fixModalTranslations() {
+      const lang = getCurrentLanguage();
+      if (lang === 'en') return;
+
+      // Regex-based translations that catch ALL variations
+      const regexTranslations = {
+        ar: [
+          // Modal title
+          [/⚠️\s*Not enough evidence!?/gi, "⚠️ أدلة غير كافية!"],
+          // First paragraph - capture with flexible spacing/punctuation
+          [/can'?t be logically identified as/gi, "لا يمكن تحديده منطقياً كـ"],
+          [/from\s*(the\s*)?available\s*info\.?/gi, "من المعلومات المتاحة."],
+          // Second paragraph  
+          [/This means there exists at least one\s*(other\s*)?logical scenario where/gi, "هذا يعني أنه يوجد على الأقل سيناريو منطقي آخر حيث"],
+          [/can also be/gi, "يمكن أن يكون أيضاً"],
+          // Third paragraph - sharing help
+          [/Try sharing\s*(the\s*)?scenario with others for help using\s*(the\s*)?button\s*(below)?!?/gi, "جرب مشاركة السيناريو مع الآخرين للمساعدة!"],
+          // Buttons text only
+          [/^Share scenario$/gi, "مشاركة السيناريو"],
+          [/^Continue$/gi, "متابعة"],
+          // Trait words
+          [/^criminal$/gi, "مجرم"],
+          [/^innocent$/gi, "بريء"],
+          // Card hint positional phrases
+          [/below me/gi, "تحتي"],
+          [/above me/gi, "فوقي"],
+          [/to the left of me/gi, "على يساري"],
+          [/to the right of me/gi, "على يميني"],
+          [/neighboring me/gi, "مجاور لي"],
+          [/in between/gi, "بين"],
+          [/in row/gi, "في الصف"],
+          [/in column/gi, "في العمود"]
+        ],
+        es: [
+          [/⚠️\s*Not enough evidence!?/gi, "⚠️ ¡Pruebas insuficientes!"],
+          [/can'?t be logically identified as/gi, "no puede ser identificado lógicamente como"],
+          [/from\s*(the\s*)?available\s*info\.?/gi, "con la información disponible."],
+          [/This means there exists at least one\s*(other\s*)?logical scenario where/gi, "Esto significa que existe al menos otro escenario lógico donde"],
+          [/can also be/gi, "también puede ser"],
+          [/Try sharing\s*(the\s*)?scenario with others for help using\s*(the\s*)?button\s*(below)?!?/gi, "¡Intenta compartir el escenario con otros para obtener ayuda!"],
+          [/^Share scenario$/gi, "Compartir escenario"],
+          [/^Continue$/gi, "Continuar"],
+          [/^criminal$/gi, "criminal"],
+          [/^innocent$/gi, "inocente"],
+          // Card hint positional phrases
+          [/below me/gi, "debajo de mí"],
+          [/above me/gi, "encima de mí"],
+          [/to the left of me/gi, "a mi izquierda"],
+          [/to the right of me/gi, "a mi derecha"],
+          [/neighboring me/gi, "vecino a mí"],
+          [/in between/gi, "entre"],
+          [/in row/gi, "en la fila"],
+          [/in column/gi, "en la columna"]
+        ],
+        fr: [
+          [/⚠️\s*Not enough evidence!?/gi, "⚠️ Preuves insuffisantes !"],
+          [/can'?t be logically identified as/gi, "ne peut pas être identifié logiquement comme"],
+          [/from\s*(the\s*)?available\s*info\.?/gi, "avec les informations disponibles."],
+          [/This means there exists at least one\s*(other\s*)?logical scenario where/gi, "Cela signifie qu'il existe au moins un autre scénario logique où"],
+          [/can also be/gi, "peut aussi être"],
+          [/Try sharing\s*(the\s*)?scenario with others for help using\s*(the\s*)?button\s*(below)?!?/gi, "Essayez de partager le scénario avec d'autres pour obtenir de l'aide !"],
+          [/^Share scenario$/gi, "Partager le scénario"],
+          [/^Continue$/gi, "Continuer"],
+          [/^criminal$/gi, "criminel"],
+          [/^innocent$/gi, "innocent"],
+          // Card hint positional phrases
+          [/below me/gi, "en dessous de moi"],
+          [/above me/gi, "au-dessus de moi"],
+          [/to the left of me/gi, "à ma gauche"],
+          [/to the right of me/gi, "à ma droite"],
+          [/neighboring me/gi, "voisin de moi"],
+          [/in between/gi, "entre"],
+          [/in row/gi, "dans la rangée"],
+          [/in column/gi, "dans la colonne"]
+        ],
+        ru: [
+          [/⚠️\s*Not enough evidence!?/gi, "⚠️ Недостаточно доказательств!"],
+          [/can'?t be logically identified as/gi, "не может быть логически определён как"],
+          [/from\s*(the\s*)?available\s*info\.?/gi, "из имеющейся информации."],
+          [/This means there exists at least one\s*(other\s*)?logical scenario where/gi, "Это означает, что существует как минимум один другой логический сценарий, где"],
+          [/can also be/gi, "также может быть"],
+          [/Try sharing\s*(the\s*)?scenario with others for help using\s*(the\s*)?button\s*(below)?!?/gi, "Попробуйте поделиться сценарием с другими для помощи!"],
+          [/^Share scenario$/gi, "Поделиться сценарием"],
+          [/^Continue$/gi, "Продолжить"],
+          [/^criminal$/gi, "преступник"],
+          [/^innocent$/gi, "невиновный"],
+          // Card hint positional phrases
+          [/below me/gi, "подо мной"],
+          [/above me/gi, "надо мной"],
+          [/to the left of me/gi, "слева от меня"],
+          [/to the right of me/gi, "справа от меня"],
+          [/neighboring me/gi, "соседствующий со мной"],
+          [/in between/gi, "между"],
+          [/in row/gi, "в строке"],
+          [/in column/gi, "в столбце"]
+        ]
+      };
+
+      const patterns = regexTranslations[lang];
+      if (!patterns) return;
+
+      // SAFE: Only modify TEXT NODES, never innerHTML (preserves React event handlers)
+      const walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+      );
+
+      let node;
+      while (node = walker.nextNode()) {
+        let text = node.textContent;
+        let changed = false;
+
+        for (const [regex, replacement] of patterns) {
+          if (regex.test(text)) {
+            text = text.replace(regex, replacement);
+            changed = true;
+          }
+        }
+
+        if (changed) {
+          node.textContent = text;
+        }
+      }
+
+      // Apply button styling (Innocent=Green, Criminal=Red) - only adds CSS classes, doesn't break functionality
+      document.querySelectorAll('button').forEach(btn => {
+        const btnText = btn.textContent.toLowerCase().trim();
+        if (['innocent', 'بريء', 'inocente', 'невиновный'].some(w => btnText.includes(w))) {
+          btn.classList.add('btn-innocent');
+        }
+        if (['criminal', 'مجرم', 'criminel', 'преступник'].some(w => btnText.includes(w))) {
+          btn.classList.add('btn-criminal');
+        }
+      });
+    }
+
+    // Replace "Puzzle #X" text in the game
+    function replacePuzzleText(totalLevel) {
+      setInterval(() => {
+        const tr = TRANSLATIONS[getCurrentLanguage()];
+        // Find all text nodes and elements containing "Puzzle #"
+        const walker = document.createTreeWalker(
+          document.body,
+          NodeFilter.SHOW_TEXT,
+          null,
+          false
+        );
+
+        let node;
+        while (node = walker.nextNode()) {
+          if (node.nodeValue && node.nodeValue.match(/Puzzle #\d+/)) {
+            node.nodeValue = node.nodeValue.replace(/Puzzle #\d+/, `${tr.level} ${totalLevel}`);
+          }
+        }
+      }, 500);
+    }
+
+    // ==========================================
+    // INJECT NEXT LEVEL BUTTON INTO GAME'S POPUP
+    // ==========================================
+    function injectNextLevelButton() {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          mutation.addedNodes.forEach((node) => {
+            if (node.nodeType === 1) {
+              checkAndInjectButton(node);
+            }
+          });
+        });
+      });
+
+      observer.observe(document.body, { childList: true, subtree: true });
+
+      setInterval(() => {
+        const popups = document.querySelectorAll('[class*="modal"], [class*="popup"], [class*="dialog"], [role="dialog"]');
+        popups.forEach(popup => checkAndInjectButton(popup));
+
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(btn => {
+          const text = btn.textContent.toLowerCase();
+          // Check for various translations and original text
+          if ((text.includes('play again') || text.includes('close') ||
+            text.includes('إعادة') || text.includes('cerrar') || text.includes('fermer') ||
+            text.includes('закрыть') || text.includes('повторить')) &&
+            !btn.parentElement.querySelector('.next-level-injected')) {
+            injectButtonNear(btn);
+          }
+        });
+      }, 500);
+    }
+
+    function checkAndInjectButton(element) {
+      const text = element.textContent || '';
+      if (text.includes('Solved in') || text.includes('Play again')) {
+        const buttons = element.querySelectorAll('button');
+        buttons.forEach(btn => {
+          if ((btn.textContent.includes('Play again') || btn.textContent.includes('Close')) &&
+            !btn.parentElement.querySelector('.next-level-injected')) {
+            injectButtonNear(btn);
+          }
+        });
+      }
+    }
+
+    function injectButtonNear(existingButton) {
+      if (existingButton.parentElement.querySelector('.next-level-injected')) return;
+
+      const lang = getCurrentLanguage();
+      const tr = TRANSLATIONS[lang];
+
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'next-level-injected';
+      nextBtn.textContent = tr.nextLevel || 'Next Level →';
+      nextBtn.style.cssText = `
+        display: block;
+        width: 100%;
+        background: linear-gradient(180deg, #27AE60 0%, #1E8449 100%);
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+      `;
+
+      nextBtn.onclick = function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        const current = getTotalLevel();
+        if (current < 50) {
+          onLevelCompleted(); // Track level completion
+          showInterstitialAdSafe(); // Use safe version with cooldown
+          setTotalLevel(current + 1);
+          location.reload();
+        }
+      };
+
+      const parent = existingButton.parentElement;
+      parent.insertBefore(nextBtn, parent.firstChild);
+    }
+
+    // ==========================================
+    // LEVEL NAVIGATION
+    // ==========================================
+    function goToNextLevel() {
+      const current = getTotalLevel();
+      setTotalLevel(current + 1);
+      location.reload();
+    }
+
+    function goToPrevLevel() {
+      const current = getTotalLevel();
+      if (current > 1) {
+        setTotalLevel(current - 1);
+        location.reload();
+      }
+    }
+
+    // Load the current level's script
+    loadLevel(getTotalLevel());
+  </script>
+  <link rel="stylesheet" crossorigin href="./assets/index-D2FHoZgt.css">
+</head>
+
+<body class="theme-default">
+  <!-- SPLASH SCREEN -->
+  <div id="splash-screen">
+    <div class="splash-icon">🔍</div>
+    <div class="splash-logo">Clues<br>by Sam</div>
+    <div class="splash-text">Preparing clues for you, please wait...</div>
+    <div class="splash-progress">
+      <div class="splash-progress-bar"></div>
+    </div>
+  </div>
+
+  <div id="fontPreload" style="position: absolute; top: -9999px; font-family: 'Ribeye'">Loading...</div>
+  <div id="fontPreload" style="position: absolute; top: -9999px; font-family: 'Comic Neue'">Loading...</div>
+  <div id="fontPreload" style="position: absolute; top: -9999px; font-family: 'Nunito'">Loading...</div>
+
+  <!-- COMPACT SINGLE-LINE HEADER -->
+  <div class="game-header">
+    <button class="settings-btn" id="lang-btn" onclick="showLanguagePopup()">🇬🇧</button>
+    <div class="progress-container">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <h1 class="level-title">Level 1</h1>
+  </div>
+
+  <!-- OLD LEVEL DISPLAY (HIDDEN) -->
+  <div id="level-display"><b>Level 1</b></div>
+
+  <!-- GAME CONTAINER -->
+  <div id="root"></div>
+
+
+  <!-- WIN POPUP -->
+  <div id="win-popup">
+    <div class="win-content">
+      <h2 class="win-level-title" id="win-level-title">Level 1</h2>
+      <p class="win-difficulty" id="win-difficulty">Easy</p>
+      <div class="win-grid" id="win-grid"></div>
+      <p class="win-message" id="win-time-message">Solved in less than 70 minutes!</p>
+      <div class="win-buttons">
+        <button class="win-button-next" id="next-level-btn" onclick="goToNextLevelFromPopup()">Next Level →</button>
+        <button class="win-button-secondary" onclick="playAgain()">↻ Play again</button>
+        <button class="win-button-close" onclick="closeWinPopup()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOSE POPUP -->
+  <div id="lose-popup">
+    <div class="lose-content">
+      <div class="win-icon">😢</div>
+      <h2 class="lose-title">Try Again!</h2>
+      <p class="win-message">Don't worry, you can retry this level.</p>
+      <button class="lose-button" onclick="hideLosePopup()">Retry</button>
+    </div>
+  </div>
+
+  <!-- SHOP POPUP -->
+  <div id="shop-popup">
+    <div class="shop-content">
+      <button class="shop-close" onclick="hideShop()">✕</button>
+      <div class="shop-header">
+        <div class="shop-coins-display">
+          <span class="coins-icon">🪙</span>
+          <span class="coins-amount" id="shop-coins-amount">0</span>
+        </div>
+        <h2 class="shop-title">SHOP</h2>
+      </div>
+      <div class="shop-items">
+        <div class="shop-item">
+          <div class="shop-item-left">
+            <span class="shop-item-icon">🪙</span>
+            <span class="shop-item-amount">10</span>
+          </div>
+          <button class="shop-item-btn free" onclick="watchRewardedAd()">📺 FREE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOT ENOUGH COINS POPUP -->
+  <div id="coins-popup">
+    <div class="coins-popup-content">
+      <div class="coins-popup-icon">💰</div>
+      <div class="coins-popup-title">Get more coins</div>
+      <div class="coins-popup-message">You need more coins to use this hint.</div>
+      <div class="coins-popup-buttons">
+        <button class="coins-popup-btn watch" onclick="hideCoinsPopup(); watchRewardedAd();">📺 Watch Ad</button>
+        <button class="coins-popup-btn shop" onclick="hideCoinsPopup(); showShop();">🛒 Shop</button>
+        <button class="coins-popup-btn close" onclick="hideCoinsPopup()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LANGUAGE SELECTOR POPUP -->
+  <div id="language-popup">
+    <div class="language-popup-content">
+      <div class="language-popup-header">
+        <h2 class="language-popup-title">Select Language</h2>
+        <button class="language-popup-close" onclick="hideLanguagePopup()">✕</button>
+      </div>
+      <div class="language-list">
+        <button class="language-btn active" data-lang="en">
+          <span class="language-flag">🇬🇧</span>
+          <span class="language-name">English</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="ar">
+          <span class="language-flag">🇸🇦</span>
+          <span class="language-name">العربية</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="es">
+          <span class="language-flag">🇪🇸</span>
+          <span class="language-name">Español</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="it">
+          <span class="language-flag">🇮🇹</span>
+          <span class="language-name">Italiano</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="ru">
+          <span class="language-flag">🇷🇺</span>
+          <span class="language-name">Русский</span>
+          <span class="language-check">✓</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BANNER AD SPACE -->
+  <div class="banner-ad-space" id="banner-ad-space"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
+        var App = window.Capacitor.Plugins.App;
+        App.addListener('backButton', function (data) {
+          if (data.canGoBack) {
+            window.history.back();
+          } else {
+            App.exitApp();
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

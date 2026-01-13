@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-017",
+  "level_number": 17,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Hard",
+  "cards": [
+    {
+      "name": "Амелия",
+      "name_en": "amy",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "None of the 5 innocents neighboring Григорий is between Флора and Паулина",
+      "hint_en": "None of the 5 innocents neighboring Gary is between Flora and Paula"
+    },
+    {
+      "name": "Богдан",
+      "name_en": "brian",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "There are more innocents than criminals between Богдан and Донна",
+      "hint_en": "There are more innocents than criminals between Brian and Donna"
+    },
+    {
+      "name": "Кирилл",
+      "name_en": "chris",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "Кирилл and Ксения have an equal number of innocent neighbors",
+      "hint_en": "Chris and Xia have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Донна",
+      "name_en": "donna",
+      "criminal": false,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "There are 9 criminals in total",
+      "hint_en": "There are 9 criminals in total"
+    },
+    {
+      "name": "Эрик",
+      "name_en": "eric",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "There are more innocent #PROFS:clerk than innocent #PROFS:cook",
+      "hint_en": "There are more innocent #PROFS:clerk than innocent #PROFS:cook"
+    },
+    {
+      "name": "Флора",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "There are more criminals among #PROFS:pilot than any other profession",
+      "hint_en": "There are more criminals among #PROFS:pilot than any other profession"
+    },
+    {
+      "name": "Григорий",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "There's an equal number of innocents in rows 1 and 3",
+      "hint_en": "There's an equal number of innocents in rows 1 and 3"
+    },
+    {
+      "name": "Хильда",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "Роберт is one of two or more innocents between Кирилл and Ксения",
+      "hint_en": "Rob is one of two or more innocents between Chris and Xia"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "All innocents between Донна and Зоя are connected",
+      "hint_en": "All innocents between Donna and Zoe are connected"
+    },
+    {
+      "name": "Жанна",
+      "name_en": "janet",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "An odd number of innocents on the edges neighbor Ксения",
+      "hint_en": "An odd number of innocents on the edges neighbor Xia"
+    },
+    {
+      "name": "Кайл",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "Ксения and Флора have an equal number of innocent neighbors",
+      "hint_en": "Xia and Flora have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Лиза",
+      "name_en": "lisa",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Ксения is one of Роберт's 5 innocent neighbors",
+      "hint_en": "Xia is one of Rob's 5 innocent neighbors"
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olivia",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "У Виктор больше соседей-преступников, чем у Лиза",
+      "hint_en": "Vince has more criminal neighbors than Lisa"
+    },
+    {
+      "name": "Паулина",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "Both criminals in row 1 are Флора's neighbors",
+      "hint_en": "Both criminals in row 1 are Flora's neighbors"
+    },
+    {
+      "name": "Роберт",
+      "name_en": "rob",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "All criminals between Амелия and Донна are connected",
+      "hint_en": "All criminals between Amy and Donna are connected"
+    },
+    {
+      "name": "Семён",
+      "name_en": "sam",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктор",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Вильям",
+      "name_en": "will",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зоя",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 9,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

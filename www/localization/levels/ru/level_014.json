@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-014",
+  "level_number": 14,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Анна",
+      "name_en": "anna",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Анна has only one innocent neighbor",
+      "hint_en": "Anna has only one innocent neighbor"
+    },
+    {
+      "name": "Барбара",
+      "name_en": "barb",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "There is only one innocent in row 2",
+      "hint_en": "There is only one innocent in row 2"
+    },
+    {
+      "name": "Карина",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "Only 1 of the 3 innocents neighboring Барбара is between Карина and Лаура",
+      "hint_en": "Only 1 of the 3 innocents neighboring Barb is between Carol and Laura"
+    },
+    {
+      "name": "Давид",
+      "name_en": "david",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "There are more criminals than innocents between Исаак and Семён",
+      "hint_en": "There are more criminals than innocents between Isaac and Sam"
+    },
+    {
+      "name": "Ева",
+      "name_en": "eve",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "Катя shares neither of her 2 innocent neighbors with Лаура",
+      "hint_en": "Katie shares neither of her 2 innocent neighbors with Laura"
+    },
+    {
+      "name": "Фрея",
+      "name_en": "freya",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "У Иосиф больше невиновных соседей, чем у Давид",
+      "hint_en": "Jose has more innocent neighbors than David"
+    },
+    {
+      "name": "Генрих",
+      "name_en": "henry",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Барбара and Катя share an odd number of innocent neighbors",
+      "hint_en": "Barb and Katie share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "All criminals between Ева and Исаак are connected",
+      "hint_en": "All criminals between Eve and Isaac are connected"
+    },
+    {
+      "name": "Иосиф",
+      "name_en": "jose",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "Между Анна и Виктория ровно 3 невиновных",
+      "hint_en": "There are exactly 3 innocents between Anna and Vicky"
+    },
+    {
+      "name": "Катя",
+      "name_en": "katie",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "Давид is one of Генрих's 6 criminal neighbors",
+      "hint_en": "David is one of Henry's 6 criminal neighbors"
+    },
+    {
+      "name": "Лаура",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "У Фрея больше невиновных соседей, чем у Ксения",
+      "hint_en": "Freya has more innocent neighbors than Xena"
+    },
+    {
+      "name": "Мария",
+      "name_en": "mary",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "Only 1 of the 2 innocents neighboring Пётр is between Оскар and Семён",
+      "hint_en": "Only 1 of the 2 innocents neighboring Peter is between Oscar and Sam"
+    },
+    {
+      "name": "Оскар",
+      "name_en": "oscar",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "There are more innocents among #PROFS:judge than any other profession",
+      "hint_en": "There are more innocents among #PROFS:judge than any other profession"
+    },
+    {
+      "name": "Пётр",
+      "name_en": "peter",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "У Исаак больше невиновных соседей, чем у Ксения",
+      "hint_en": "Isaac has more innocent neighbors than Xena"
+    },
+    {
+      "name": "Роберт",
+      "name_en": "rob",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "There are 5 innocents in total",
+      "hint_en": "There are 5 innocents in total"
+    },
+    {
+      "name": "Семён",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктория",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Вальтер",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xena",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зед",
+      "name_en": "zed",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

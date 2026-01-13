@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-005",
+  "level_number": 5,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "أسامة",
+      "name_en": "austin",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "خالد واحد من اثنين أو أكثر من الأبرياء المجاورين لـعلي",
+      "hint_en": "Kyle is one of two or more innocents neighboring Ollie"
+    },
+    {
+      "name": "بدر",
+      "name_en": "bobby",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "يوجد عدد متساوٍ من قاضي الأبرياء ومحقق الأبرياء",
+      "hint_en": "There are as many innocent #PROFS:judge as there are innocent #PROFS:sleuth"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "يوجد عدد فردي من المجرمين بين بدر وديانا",
+      "hint_en": "There's an odd number of criminals between Bobby and Diane"
+    },
+    {
+      "name": "ديانا",
+      "name_en": "diane",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "واحد فقط من الـ2 مجرمين المجاورين لـعلي بين نادية وسعيد",
+      "hint_en": "Only 1 of the 2 criminals neighboring Ollie is between Nicole and Steve"
+    },
+    {
+      "name": "إيفا",
+      "name_en": "evie",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد أبرياء أكثر من المجرمين بين بدر ويوسف",
+      "hint_en": "There are more innocents than criminals between Bobby and Jose"
+    },
+    {
+      "name": "فاطمة",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد عدد فردي من الأبرياء المجاورين لـليلى",
+      "hint_en": "There's an odd number of innocents neighboring Linda"
+    },
+    {
+      "name": "جمال",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(teacher,criminal,0,-1,1)"
+    },
+    {
+      "name": "هشام",
+      "name_en": "henry",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "بالضبط 1 معلم لديه مجرم فوقه مباشرة",
+      "hint_en": "Exactly 1 #PROF:teacher has a criminal directly above them"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد بريء واحد فقط بين أسامة وإسحاق",
+      "hint_en": "There is only one innocent between Austin and Isaac"
+    },
+    {
+      "name": "يوسف",
+      "name_en": "jose",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "بالضبط 1 بريء بين نادية وسعيد هو جار إسحاق",
+      "hint_en": "Exactly 1 innocent between Nicole and Steve is neighboring Isaac"
+    },
+    {
+      "name": "خالد",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "المجرم الوحيد بين نادية وسعيد هو جار وردة's",
+      "hint_en": "The only criminal between Nicole and Steve is Wanda's neighbor"
+    },
+    {
+      "name": "ليلى",
+      "name_en": "linda",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "كل الأبرياء بين إسحاق وليلى متصلون",
+      "hint_en": "All innocents between Isaac and Linda are connected"
+    },
+    {
+      "name": "نادية",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "عدد فردي من الأبرياء بين كريمة ورياض يجاورون يوسف",
+      "hint_en": "An odd number of innocents between Carol and Ryan neighbor Jose"
+    },
+    {
+      "name": "علي",
+      "name_en": "ollie",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "بالضبط 2 من الـ3 أبرياء في الصف 3 هم جيران علي",
+      "hint_en": "Exactly 2 of the 3 innocents in row 3 are Ollie's neighbors"
+    },
+    {
+      "name": "رياض",
+      "name_en": "ryan",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "وردة واحد من جيران وفاء الـ2 الأبرياء",
+      "hint_en": "Wanda is one of Vicky's 2 innocent neighbors"
+    },
+    {
+      "name": "سعيد",
+      "name_en": "steve",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "الصف 5 فيه أبرياء أكثر من أي صف آخر",
+      "hint_en": "Row 5 has more innocents than any other row"
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "أسامة لديه جيران مجرمين أكثر من وردة",
+      "hint_en": "Austin has more criminal neighbors than Wanda"
+    },
+    {
+      "name": "وردة",
+      "name_en": "wanda",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "كلا الأبرياء المجاورين لـبدر هم جيران فاطمة",
+      "hint_en": "Both innocents neighboring Bobby are Flora's neighbors"
+    },
+    {
+      "name": "زينة",
+      "name_en": "xena",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينب",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 5,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

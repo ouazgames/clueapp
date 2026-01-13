@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-036",
+  "level_number": 36,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Алексей",
+      "name_en": "alex",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "Neither of the 2 criminals neighboring Марина are between Леонид and Ксавье",
+      "hint_en": "Neither of the 2 criminals neighboring Megan are between Logan and Xavi"
+    },
+    {
+      "name": "Бетти",
+      "name_en": "betty",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "There is only one innocent between Елена and Исаак",
+      "hint_en": "There is only one innocent between Helen and Isaac"
+    },
+    {
+      "name": "Карина",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "Между Эрвин и Исаак ровно 2 невиновных",
+      "hint_en": "There are exactly 2 innocents between Erwin and Isaac"
+    },
+    {
+      "name": "Даниил",
+      "name_en": "daniel",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "Only 1 of the 3 criminals neighboring Карина is in row 1",
+      "hint_en": "Only 1 of the 3 criminals neighboring Carol is in row 1"
+    },
+    {
+      "name": "Эрвин",
+      "name_en": "erwin",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "There are more innocents in row 1 than row 2",
+      "hint_en": "There are more innocents in row 1 than row 2"
+    },
+    {
+      "name": "Флойд",
+      "name_en": "floyd",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "У Даниил ровно 2 невиновных соседей",
+      "hint_en": "Daniel has exactly 2 innocent neighbors"
+    },
+    {
+      "name": "Елена",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "n_professions_have_trait_in_dir(builder,criminal,-1,0,1)",
+      "hint_en": "n_professions_have_trait_in_dir(builder,criminal,-1,0,1)"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "Exactly 1 #PROF:builder has a criminal directly to the left of them",
+      "hint_en": "Exactly 1 #PROF:builder has a criminal directly to the left of them"
+    },
+    {
+      "name": "Ясон",
+      "name_en": "jason",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "Тимофей and Даниил have an equal number of innocent neighbors",
+      "hint_en": "Terry and Daniel have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Кай",
+      "name_en": "kay",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "У Даниил и Зоя одинаковое число соседей-преступников",
+      "hint_en": "Daniel and Zoe have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Леонид",
+      "name_en": "logan",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "There's an equal number of innocents in rows 2 and 4",
+      "hint_en": "There's an equal number of innocents in rows 2 and 4"
+    },
+    {
+      "name": "Марина",
+      "name_en": "megan",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "У Ксавье больше соседей-преступников, чем у Даниил",
+      "hint_en": "Xavi has more criminal neighbors than Daniel"
+    },
+    {
+      "name": "Наталья",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "All criminals between Эрвин and Исаак are connected",
+      "hint_en": "All criminals between Erwin and Isaac are connected"
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Exactly 2 of the 5 innocents neighboring Леонид are between Флойд and Ванда",
+      "hint_en": "Exactly 2 of the 5 innocents neighboring Logan are between Floyd and Wanda"
+    },
+    {
+      "name": "Рональд",
+      "name_en": "ronald",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "У Ванда больше соседей-преступников, чем у Даниил",
+      "hint_en": "Wanda has more criminal neighbors than Daniel"
+    },
+    {
+      "name": "Сюзанна",
+      "name_en": "susan",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Тимофей",
+      "name_en": "terry",
+      "criminal": true,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ванда",
+      "name_en": "wanda",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксавье",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зоя",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 8,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

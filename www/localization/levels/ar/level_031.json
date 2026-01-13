@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-031",
+  "level_number": 31,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "عائشة",
+      "name_en": "alice",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "إسحاق وسامي لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Isaac and Sam have an equal number of innocent neighbors"
+    },
+    {
+      "name": "بشرى",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "كل المجرمين بين جوليا ومروان متصلون",
+      "hint_en": "All criminals between Julie and Martin are connected"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "كلا الأبرياء بين داود وزهراء متصلان",
+      "hint_en": "Both innocents between David and Zara are connected"
+    },
+    {
+      "name": "داود",
+      "name_en": "david",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "عدد فردي من الأبرياء في العمود B هم جيران غسان",
+      "hint_en": "An odd number of innocents in column B are Gabe's neighbors"
+    },
+    {
+      "name": "عروة",
+      "name_en": "erwin",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "تامر وعروة لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Tyler and Erwin have an equal number of criminal neighbors"
+    },
+    {
+      "name": "غسان",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "كل المجرمين بين عائشة وداود متصلون",
+      "hint_en": "All criminals between Alice and David are connected"
+    },
+    {
+      "name": "هند",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "الجار البريء الوحيد لـتامر بين عائشة وسامي",
+      "hint_en": "Tyler's only innocent neighbor is between Alice and Sam"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "الجار البريء الوحيد لـإسحاق بين داود ومروان",
+      "hint_en": "Isaac's only innocent neighbor is between David and Martin"
+    },
+    {
+      "name": "جوليا",
+      "name_en": "julie",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "كلا المجرمين بين نادية ورباح متصلان",
+      "hint_en": "Both criminals between Nicole and Rob are connected"
+    },
+    {
+      "name": "كريم",
+      "name_en": "kevin",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "هند وتامر لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Helen and Tyler have an equal number of innocent neighbors"
+    },
+    {
+      "name": "لؤي",
+      "name_en": "logan",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "عدد فردي من الأبرياء بين داود ورباح يجاورون هند",
+      "hint_en": "An odd number of innocents between David and Rob neighbor Helen"
+    },
+    {
+      "name": "مروان",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "عدد فردي من الأبرياء على الحواف يجاورون كريم",
+      "hint_en": "An odd number of innocents on the edges neighbor Kevin"
+    },
+    {
+      "name": "نادية",
+      "name_en": "nicole",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "أولغا",
+      "name_en": "olivia",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "بسمة",
+      "name_en": "pam",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "رباح",
+      "name_en": "rob",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "سامي",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "تامر",
+      "name_en": "tyler",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زهراء",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 16,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

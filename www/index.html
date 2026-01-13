@@ -1515,7 +1515,7 @@
     // ==========================================
     // MULTI-LANGUAGE TRANSLATION SYSTEM
     // Supports: English, Arabic, Spanish, Italian, Russian
-    // ==========================================
+    // ================ ==========================
     const TRANSLATIONS = {
       en: {
         lang: 'English',
@@ -2521,6 +2521,31 @@
       else return { theme: 0, dark: true };
     }
 
+    // ==========================================
+    // ATT (App Tracking Transparency) - iOS 14+
+    // ==========================================
+    async function requestTrackingAuthorization() {
+      if (typeof window.Capacitor === 'undefined') return;
+
+      try {
+        const { AppTrackingTransparency } = await import('@capacitor-community/app-tracking-transparency');
+        const status = await AppTrackingTransparency.requestPermission();
+        console.log('ATT permission status:', status.status);
+
+        if (status.status === 'authorized') {
+          console.log('ATT authorized, initializing AdMob...');
+          initializeAdMob();
+        } else {
+          console.log('ATT denied/restricted, initializing AdMob anyway...');
+          initializeAdMob();
+        }
+      } catch (e) {
+        console.log('ATT error:', e);
+        // Fallback to init AdMob if ATT fails
+        initializeAdMob();
+      }
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
       console.log("Load");
 
@@ -2534,7 +2559,9 @@
       updateCoinsDisplay();
 
       // Initialize monetization systems
-      initializeAdMob();
+      // Request ATT first, then init AdMob
+      setTimeout(requestTrackingAuthorization, 1000);
+
       initializeRevenueCat();
 
       // Start hint button interception
@@ -2683,6 +2710,114 @@
         location.reload();
       }
     }
+
+    // ==========================================
+    // SAFE TRANSLATION LOGIC (View Clue Fix)
+    // ==========================================
+    function translateHint(text) {
+      if (!text) return text;
+      const lang = getCurrentLanguage();
+      if (lang === 'en') return text;
+
+      let result = text;
+
+      // REGEX PATTERNS FOR ROBUST TRANSLATION
+      const regexTranslations = {
+        ar: [
+          [/⚠️\s*Not enough evidence!?/gi, "⚠️ أدلة غير كافية!"],
+          [/can't be logically identified as/gi, "لا يمكن تحديده منطقياً كـ"],
+          [/from\s*(the\s*)?available\s*info\.?/gi, "من المعلومات المتاحة."],
+          [/This means there exists at least one\s*(other\s*)?logical scenario where/gi, "هذا يعني أنه يوجد على الأقل سيناريو منطقي آخر حيث"],
+          [/can also be/gi, "يمكن أن يكون أيضاً"],
+          [/Try sharing\s*(the\s*)?scenario with others for help using\s*(the\s*)?button\s*(below)?!?/gi, "جرب مشاركة السيناريو مع الآخرين للمساعدة!"],
+        ],
+        es: [
+          [/⚠️\s*Not enough evidence!?/gi, "⚠️ ¡Pruebas insuficientes!"],
+          [/can't be logically identified as/gi, "no puede ser identificado lógicamente como"],
+          [/from\s*(the\s*)?available\s*info\.?/gi, "con la información disponible."],
+          [/This means there exists at least one\s*(other\s*)?logical scenario where/gi, "Esto significa que existe al menos otro escenario lógico donde"],
+          [/can also be/gi, "también puede ser"],
+          [/Try sharing\s*(the\s*)?scenario with others for help using\s*(the\s*)?button\s*(below)?!?/gi, "¡Intenta compartir el escenario con otros para obtener ayuda!"],
+        ],
+        fr: [
+          [/⚠️\s*Not enough evidence!?/gi, "⚠️ Preuves insuffisantes !"],
+          [/can't be logically identified as/gi, "ne peut pas être identifié logiquement comme"],
+          [/from\s*(the\s*)?available\s*info\.?/gi, "avec les informations disponibles."],
+          [/This means there exists at least one\s*(other\s*)?logical scenario where/gi, "Cela signifie qu\'il existe au moins un autre scénario logique où"],
+          [/can also be/gi, "peut aussi être"],
+          [/Try sharing\s*(the\s*)?scenario with others for help using\s*(the\s*)?button\s*(below)?!?/gi, "Essayez de partager le scénario avec d\'autres pour obtenir de l\'aide !"],
+        ],
+        ru: [
+          [/⚠️\s*Not enough evidence!?/gi, "⚠️ Недостаточно доказательств!"],
+          [/can't be logically identified as/gi, "не может быть логически определён как"],
+          [/from\s*(the\s*)?available\s*info\.?/gi, "из имеющейся информации."],
+          [/This means there exists at least one\s*(other\s*)?logical scenario where/gi, "Это означает, что существует как минимум один другой логический сценарий, где"],
+          [/can also be/gi, "также может быть"],
+          [/Try sharing\s*(the\s*)?scenario with others for help using\s*(the\s*)?button\s*(below)?!?/gi, "Попробуйте поделиться сценарием с другими для помощи!"],
+        ]
+      };
+
+      const patterns = regexTranslations[lang];
+      if (patterns) {
+        for (const [regex, replacement] of patterns) {
+          if (regex.test(result)) {
+            result = result.replace(regex, replacement);
+          }
+        }
+      }
+
+      // Basic keywords map
+      const keywords = {
+        ar: { 'below me': 'تحتي', 'above me': 'فوقي', 'neighbors': 'جيران', ' criminals': ' مجرمين', ' innocents': ' أبرياء' },
+        es: { 'below me': 'debajo de mí', 'above me': 'encima de mí', 'neighbors': 'vecinos' },
+        ru: { 'below me': 'подо мной', 'above me': 'надо мной', 'neighbors': 'соседи' },
+        it: { 'below me': 'sotto di me', 'above me': 'sopra di me', 'neighbors': 'vicini' }
+      };
+
+      const langKeywords = keywords[lang];
+      if (langKeywords) {
+        for (const [key, val] of Object.entries(langKeywords)) {
+          result = result.replace(new RegExp(key, 'gi'), val);
+        }
+      }
+
+      return result;
+    }
+
+    function startSafeObserver() {
+      // Only watch for specific modal/popup additions
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          mutation.addedNodes.forEach(node => {
+            if (node.nodeType === 1) {
+              // Check if it looks like a hint modal or popup (using common class names)
+              const isModal = node.className.includes && (
+                node.className.includes('modal') ||
+                node.className.includes('popup') ||
+                node.className.includes('dialog')
+              );
+
+              if (isModal) {
+                // Try to translate paragraph text inside
+                const paragraphs = node.querySelectorAll('p, .content, .message, h3, h4');
+                paragraphs.forEach(p => {
+                  if (p.innerText && p.innerText.includes('evidence')) {
+                    p.innerText = translateHint(p.innerText);
+                  }
+                });
+              }
+            }
+          });
+        });
+      });
+
+      if (document.body) {
+        observer.observe(document.body, { childList: true, subtree: true });
+      }
+    }
+
+    // Start the safe observer with a delay
+    setTimeout(startSafeObserver, 2000);
 
     // Load the current level's script
     loadLevel(getTotalLevel());
@@ -2879,7 +3014,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
+      if (window.Capacitor && window.Capacitor.Pwindow.Capacitor.Plugins.App) {
         var App = window.Capacitor.Plugins.App;
         App.addListener('backButton', function (data) {
           if (data.canGoBack) {

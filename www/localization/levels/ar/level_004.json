@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-004",
+  "level_number": 4,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "بشرى",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "عدد فردي من الأبرياء بين داود وشيماء يجاورون بطرس",
+      "hint_en": "An odd number of innocents between David and Xia neighbor Peter"
+    },
+    {
+      "name": "شادي",
+      "name_en": "chad",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "يوجد بالضبط 2 أبرياء بين بشرى ووفاء",
+      "hint_en": "There are exactly 2 innocents between Bonnie and Vicky"
+    },
+    {
+      "name": "داود",
+      "name_en": "david",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "نور لديه جيران مجرمين أكثر من وفاء",
+      "hint_en": "Nancy has more criminal neighbors than Vicky"
+    },
+    {
+      "name": "إيثان",
+      "name_en": "ethan",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "يوجد عدد فردي من الأبرياء بين إيثان وتامر",
+      "hint_en": "There's an odd number of innocents between Ethan and Tom"
+    },
+    {
+      "name": "فاطمة",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "يوسف وبشرى لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "John and Bonnie have an equal number of criminal neighbors"
+    },
+    {
+      "name": "جمال",
+      "name_en": "gary",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "شادي لديه جيران مجرمين أكثر من الأبرياء",
+      "hint_en": "Chad has more criminal than innocent neighbors"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(guard,innocent,0,1,1)"
+    },
+    {
+      "name": "يوسف",
+      "name_en": "john",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "بالضبط 1 حارس لديه بريء تحته مباشرة",
+      "hint_en": "Exactly 1 #PROF:guard has an innocent directly below them"
+    },
+    {
+      "name": "كوثر",
+      "name_en": "katie",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "واحد فقط من الـ2 مجرمين في الصف 4 هو جار نور",
+      "hint_en": "Only 1 of the 2 criminals in row 4 is Nancy's neighbor"
+    },
+    {
+      "name": "لورا",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "الجار البريء الوحيد لـزيد بين عليا وتامر",
+      "hint_en": "Zed's only innocent neighbor is between Olive and Tom"
+    },
+    {
+      "name": "مريم",
+      "name_en": "mary",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "كلا المجرمين في الصف 1 هم جيران جمال",
+      "hint_en": "Both criminals in row 1 are Gary's neighbors"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "كل المجرمين بين وفاء وزيد متصلون",
+      "hint_en": "All criminals between Vicky and Zed are connected"
+    },
+    {
+      "name": "عليا",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "وليد واحد من جيران شيماء الـ4 المجرمين",
+      "hint_en": "Will is one of Xia's 4 criminal neighbors"
+    },
+    {
+      "name": "بطرس",
+      "name_en": "peter",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "كلا المجرمين بين بشرى وعليا متصلان",
+      "hint_en": "Both criminals between Bonnie and Olive are connected"
+    },
+    {
+      "name": "صوفيا",
+      "name_en": "sofia",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد أبرياء بين مبرمج أكثر من أي مهنة أخرى",
+      "hint_en": "There are more innocents among #PROFS:coder than any other profession"
+    },
+    {
+      "name": "تامر",
+      "name_en": "tom",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "will",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "شيماء",
+      "name_en": "xia",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زيد",
+      "name_en": "zed",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

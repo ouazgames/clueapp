@@ -1,0 +1,202 @@
+{
+  "id": "level-pt-020",
+  "level_number": 20,
+  "language": "pt",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Arão",
+      "name_en": "aaron",
+      "criminal": true,
+      "profession": "Policial",
+      "profession_en": "cop",
+      "hint": "None of the 7 criminals on the edges is a #PROF:painter",
+      "hint_en": "None of the 7 criminals on the edges is a #PROF:painter"
+    },
+    {
+      "name": "Beatriz",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "Dona's only criminal neighbor is Beatriz's neighbor",
+      "hint_en": "Donna's only criminal neighbor is Bonnie's neighbor"
+    },
+    {
+      "name": "Cristina",
+      "name_en": "cheryl",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "An odd number of innocents between Beatriz and Vitória neighbor Maria",
+      "hint_en": "An odd number of innocents between Bonnie and Vicky neighbor Mary"
+    },
+    {
+      "name": "Dona",
+      "name_en": "donna",
+      "criminal": true,
+      "profession": "Construtor",
+      "profession_en": "builder",
+      "hint": "Noé and Eva have an equal number of innocent neighbors",
+      "hint_en": "Noah and Eve have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Eva",
+      "name_en": "eve",
+      "criminal": true,
+      "profession": "Policial",
+      "profession_en": "cop",
+      "hint": "Both innocents between Arão and Dona are connected",
+      "hint_en": "Both innocents between Aaron and Donna are connected"
+    },
+    {
+      "name": "Henrique",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "Both innocents between Dona and Estêvão are between José and Zoe",
+      "hint_en": "Both innocents between Donna and Steve are between Jose and Zoe"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "There are more criminals than innocents between Noé and Zoe",
+      "hint_en": "There are more criminals than innocents between Noah and Zoe"
+    },
+    {
+      "name": "José",
+      "name_en": "jose",
+      "criminal": false,
+      "profession": "Construtor",
+      "profession_en": "builder",
+      "hint": "There are more innocents among #PROFS:painter than any other profession",
+      "hint_en": "There are more innocents among #PROFS:painter than any other profession"
+    },
+    {
+      "name": "Kay",
+      "name_en": "kay",
+      "criminal": true,
+      "profession": "Juiz",
+      "profession_en": "judge",
+      "hint": "All criminals between Thor and Zoe are connected",
+      "hint_en": "All criminals between Thor and Zoe are connected"
+    },
+    {
+      "name": "Lourenço",
+      "name_en": "logan",
+      "criminal": false,
+      "profession": "Juiz",
+      "profession_en": "judge",
+      "hint": "Kay is one of Paula's 3 criminal neighbors",
+      "hint_en": "Kay is one of Paula's 3 criminal neighbors"
+    },
+    {
+      "name": "Maria",
+      "name_en": "mary",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "Eva and Henrique have 2 innocent neighbors in common",
+      "hint_en": "Eve and Hank have 2 innocent neighbors in common"
+    },
+    {
+      "name": "Noé",
+      "name_en": "noah",
+      "criminal": true,
+      "profession": "Juiz",
+      "profession_en": "judge",
+      "hint": "Maria is one of two or more innocents in row 3",
+      "hint_en": "Mary is one of two or more innocents in row 3"
+    },
+    {
+      "name": "Olívia",
+      "name_en": "olivia",
+      "criminal": false,
+      "profession": "Policial",
+      "profession_en": "cop",
+      "hint": "Xavier tem exatamente 3 vizinhos inocentes",
+      "hint_en": "Xavi has exactly 3 innocent neighbors"
+    },
+    {
+      "name": "Paula",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "Professor",
+      "profession_en": "teacher",
+      "hint": "There's an odd number of criminals between Kay and Olívia",
+      "hint_en": "There's an odd number of criminals between Kay and Olivia"
+    },
+    {
+      "name": "Roberto",
+      "name_en": "rob",
+      "criminal": true,
+      "profession": "Detetive",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Estêvão",
+      "name_en": "steve",
+      "criminal": false,
+      "profession": "Detetive",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Thor",
+      "name_en": "thor",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Vitória",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "Professor",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "Detetive",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zoe",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "Construtor",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 9,
+  "ui": {
+    "level": "Nível",
+    "criminal_status": "Criminoso",
+    "innocent_status": "Inocente",
+    "hint": "Dica",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Próximo Nível",
+    "congratulations": "Parabéns!",
+    "total_criminals": "Total de Criminosos"
+  }
+}

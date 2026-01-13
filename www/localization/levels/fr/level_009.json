@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-009",
+  "level_number": 9,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Anne",
+      "name_en": "anna",
+      "criminal": true,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "There are 7 criminals in total",
+      "hint_en": "There are 7 criminals in total"
+    },
+    {
+      "name": "Béatrice",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "There are more innocents in row 4 than row 5",
+      "hint_en": "There are more innocents in row 4 than row 5"
+    },
+    {
+      "name": "Caroline",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "Both innocents in row 5 are Pauline's neighbors",
+      "hint_en": "Both innocents in row 5 are Pam's neighbors"
+    },
+    {
+      "name": "Déborah",
+      "name_en": "debra",
+      "criminal": true,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "François et Zara ont le même nombre de voisins criminels",
+      "hint_en": "Frank and Zara have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Éric",
+      "name_en": "eric",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "All innocents between Béatrice and Thierry are connected",
+      "hint_en": "All innocents between Bonnie and Terry are connected"
+    },
+    {
+      "name": "François",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "Nicolas is one of 4 innocents in column C",
+      "hint_en": "Nick is one of 4 innocents in column C"
+    },
+    {
+      "name": "Gabriel",
+      "name_en": "gabe",
+      "criminal": false,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "An odd number of innocents between Hélène and Zara neighbor Kyle",
+      "hint_en": "An odd number of innocents between Helen and Zara neighbor Kyle"
+    },
+    {
+      "name": "Hélène",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "All innocents between François and Thierry are connected",
+      "hint_en": "All innocents between Frank and Terry are connected"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Il y a un nombre impair d'innocents entre Samuel et Victoire",
+      "hint_en": "There's an odd number of innocents between Sam and Vicky"
+    },
+    {
+      "name": "Jason",
+      "name_en": "jason",
+      "criminal": false,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "Kyle and Victoire have 2 innocent neighbors in common",
+      "hint_en": "Kyle and Vicky have 2 innocent neighbors in common"
+    },
+    {
+      "name": "Kyle",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "There are more criminals among #PROFS:judge than any other profession",
+      "hint_en": "There are more criminals among #PROFS:judge than any other profession"
+    },
+    {
+      "name": "Laure",
+      "name_en": "laura",
+      "criminal": false,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "Victoire is one of Pauline's 2 criminal neighbors",
+      "hint_en": "Vicky is one of Pam's 2 criminal neighbors"
+    },
+    {
+      "name": "Martin",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Nicolas",
+      "name_en": "nick",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Pauline",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ruth",
+      "name_en": "ruth",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Samuel",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Thierry",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Victoire",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zara",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 7,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-006",
+  "level_number": 6,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Barbara",
+      "name_en": "barb",
+      "criminal": true,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "All innocents between Daniel and Paul are connected",
+      "hint_en": "All innocents between Daniel and Paul are connected"
+    },
+    {
+      "name": "Christine",
+      "name_en": "cheryl",
+      "criminal": true,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "Only 1 of the 2 criminals neighboring Nancy is between Christine and Walter",
+      "hint_en": "Only 1 of the 2 criminals neighboring Nancy is between Cheryl and Wally"
+    },
+    {
+      "name": "Daniel",
+      "name_en": "daniel",
+      "criminal": false,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "Only 1 of the 3 criminals neighboring Olive is between Barbara and Thierry",
+      "hint_en": "Only 1 of the 3 criminals neighboring Olive is between Barb and Terry"
+    },
+    {
+      "name": "Émilie",
+      "name_en": "emily",
+      "criminal": false,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "There's an odd number of criminals between Isaac and Zoé",
+      "hint_en": "There's an odd number of criminals between Isaac and Zoe"
+    },
+    {
+      "name": "Florent",
+      "name_en": "floyd",
+      "criminal": true,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Laurent is one of Rose's 3 innocent neighbors",
+      "hint_en": "Logan is one of Rose's 3 innocent neighbors"
+    },
+    {
+      "name": "Gabriel",
+      "name_en": "gabe",
+      "criminal": false,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "Walter et Émilie ont le même nombre de voisins innocents",
+      "hint_en": "Wally and Emily have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Henri",
+      "name_en": "hal",
+      "criminal": false,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "There are exactly 4 innocents in column E",
+      "hint_en": "There are exactly 4 innocents in column E"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "Exactly 1 innocent in row 3 is neighboring Laurent",
+      "hint_en": "Exactly 1 innocent in row 3 is neighboring Logan"
+    },
+    {
+      "name": "Julie",
+      "name_en": "julie",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "Rose est l'un des 7 innocents sur les bords",
+      "hint_en": "Rose is one of 7 innocents on the edges"
+    },
+    {
+      "name": "Catherine",
+      "name_en": "katie",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "Column B has more criminals than any other column",
+      "hint_en": "Column B has more criminals than any other column"
+    },
+    {
+      "name": "Laurent",
+      "name_en": "logan",
+      "criminal": false,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "Gabriel is one of two or more innocents neighboring Christine",
+      "hint_en": "Gabe is one of two or more innocents neighboring Cheryl"
+    },
+    {
+      "name": "Marguerite",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)",
+      "hint_en": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Exactly 1 #PROF:guard has a criminal directly below them",
+      "hint_en": "Exactly 1 #PROF:guard has a criminal directly below them"
+    },
+    {
+      "name": "Olive",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Exactly 2 of Paul's 5 innocent neighbors also neighbor Rose",
+      "hint_en": "Exactly 2 of Paul's 5 innocent neighbors also neighbor Rose"
+    },
+    {
+      "name": "Paul",
+      "name_en": "paul",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Rose et Barbara ont le même nombre de voisins criminels",
+      "hint_en": "Rose and Barb have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Rose",
+      "name_en": "rose",
+      "criminal": false,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Thierry",
+      "name_en": "terry",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Walter",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zoé",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 7,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

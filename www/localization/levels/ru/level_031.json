@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-031",
+  "level_number": 31,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Алиса",
+      "name_en": "alice",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "Исаак and Семён have an equal number of innocent neighbors",
+      "hint_en": "Isaac and Sam have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Бэлла",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "All criminals between Юлия and Мартин are connected",
+      "hint_en": "All criminals between Julie and Martin are connected"
+    },
+    {
+      "name": "Карина",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "Both innocents between Давид and Зара are connected",
+      "hint_en": "Both innocents between David and Zara are connected"
+    },
+    {
+      "name": "Давид",
+      "name_en": "david",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "An odd number of innocents in column B are Гавриил's neighbors",
+      "hint_en": "An odd number of innocents in column B are Gabe's neighbors"
+    },
+    {
+      "name": "Эрвин",
+      "name_en": "erwin",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "У Тимур и Эрвин одинаковое число соседей-преступников",
+      "hint_en": "Tyler and Erwin have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Гавриил",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "All criminals between Алиса and Давид are connected",
+      "hint_en": "All criminals between Alice and David are connected"
+    },
+    {
+      "name": "Елена",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Тимур's only innocent neighbor is between Алиса and Семён",
+      "hint_en": "Tyler's only innocent neighbor is between Alice and Sam"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "Исаак's only innocent neighbor is between Давид and Мартин",
+      "hint_en": "Isaac's only innocent neighbor is between David and Martin"
+    },
+    {
+      "name": "Юлия",
+      "name_en": "julie",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "Both criminals between Наталья and Роберт are connected",
+      "hint_en": "Both criminals between Nicole and Rob are connected"
+    },
+    {
+      "name": "Кевин",
+      "name_en": "kevin",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "Елена and Тимур have an equal number of innocent neighbors",
+      "hint_en": "Helen and Tyler have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Леонид",
+      "name_en": "logan",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "An odd number of innocents between Давид and Роберт neighbor Елена",
+      "hint_en": "An odd number of innocents between David and Rob neighbor Helen"
+    },
+    {
+      "name": "Мартин",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "An odd number of innocents on the edges neighbor Кевин",
+      "hint_en": "An odd number of innocents on the edges neighbor Kevin"
+    },
+    {
+      "name": "Наталья",
+      "name_en": "nicole",
+      "criminal": false,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olivia",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Полина",
+      "name_en": "pam",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Роберт",
+      "name_en": "rob",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Семён",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Тимур",
+      "name_en": "tyler",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктория",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зара",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 16,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

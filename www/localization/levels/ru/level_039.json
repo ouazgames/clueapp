@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-039",
+  "level_number": 39,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Алексей",
+      "name_en": "alex",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "У Карина и Ксения одинаковое число соседей-преступников",
+      "hint_en": "Carol and Xena have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Бэлла",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "There is only one innocent between Алексей and Том",
+      "hint_en": "There is only one innocent between Alex and Tom"
+    },
+    {
+      "name": "Карина",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "There are as many criminal #PROFS:cook as there are criminal #PROFS:sleuth",
+      "hint_en": "There are as many criminal #PROFS:cook as there are criminal #PROFS:sleuth"
+    },
+    {
+      "name": "Денис",
+      "name_en": "denis",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "There are 5 innocents in total",
+      "hint_en": "There are 5 innocents in total"
+    },
+    {
+      "name": "Флойд",
+      "name_en": "floyd",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "n_professions_have_trait_in_dir(teacher,criminal,1,0,2)",
+      "hint_en": "n_professions_have_trait_in_dir(teacher,criminal,1,0,2)"
+    },
+    {
+      "name": "Густав",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "2 #PROFS:teacher have a criminal directly to the right of them",
+      "hint_en": "2 #PROFS:teacher have a criminal directly to the right of them"
+    },
+    {
+      "name": "Генрих",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "There are exactly 2 innocents in column E",
+      "hint_en": "There are exactly 2 innocents in column E"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "Денис and Исаак have only one innocent neighbor in common",
+      "hint_en": "Denis and Isaac have only one innocent neighbor in common"
+    },
+    {
+      "name": "Яна",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "There's an odd number of innocents in row 5",
+      "hint_en": "There's an odd number of innocents in row 5"
+    },
+    {
+      "name": "Кайл",
+      "name_en": "kyle",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Exactly 2 of the 6 criminals neighboring Ольга are in column B",
+      "hint_en": "Exactly 2 of the 6 criminals neighboring Olive are in column B"
+    },
+    {
+      "name": "Лаура",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "All criminals between Наталья and Семён are connected",
+      "hint_en": "All criminals between Nicole and Sam are connected"
+    },
+    {
+      "name": "Марина",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "Руфь is one of 4 criminals in column D",
+      "hint_en": "Ruth is one of 4 criminals in column D"
+    },
+    {
+      "name": "Наталья",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "n_professions_have_trait_in_dir(cop,criminal,0,-1,2)",
+      "hint_en": "n_professions_have_trait_in_dir(cop,criminal,0,-1,2)"
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "2 #PROFS:cop have a criminal directly above them",
+      "hint_en": "2 #PROFS:cop have a criminal directly above them"
+    },
+    {
+      "name": "Руфь",
+      "name_en": "ruth",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "All criminals between Генрих and Ванда are connected",
+      "hint_en": "All criminals between Hank and Wanda are connected"
+    },
+    {
+      "name": "Семён",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Only 1 of the 2 innocents in a corner is between Денис and Ксения",
+      "hint_en": "Only 1 of the 2 innocents in a corner is between Denis and Xena"
+    },
+    {
+      "name": "Том",
+      "name_en": "tom",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктор",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ванда",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xena",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

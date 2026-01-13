@@ -1,0 +1,202 @@
+{
+  "id": "level-es-025",
+  "level_number": 25,
+  "language": "es",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Alejandro",
+      "name_en": "alex",
+      "criminal": false,
+      "profession": "Constructor",
+      "profession_en": "builder",
+      "hint": "Carmen and Óliver share an odd number of innocent neighbors",
+      "hint_en": "Karen and Olof share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Beatriz",
+      "name_en": "betty",
+      "criminal": false,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "Óliver has 4 innocent neighbors on the edges",
+      "hint_en": "Olof has 4 innocent neighbors on the edges"
+    },
+    {
+      "name": "Diego",
+      "name_en": "denis",
+      "criminal": false,
+      "profession": "Empleado",
+      "profession_en": "clerk",
+      "hint": "Susana tiene más vecinos inocentes que Juana",
+      "hint_en": "Susan has more innocent neighbors than Jane"
+    },
+    {
+      "name": "Elena",
+      "name_en": "ellie",
+      "criminal": false,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "Only 1 of the 2 criminals neighboring Nicolás is between Beatriz and Wanda",
+      "hint_en": "Only 1 of the 2 criminals neighboring Nick is between Betty and Wanda"
+    },
+    {
+      "name": "Freya",
+      "name_en": "freya",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "There are as many innocent #PROFS:builder as there are innocent #PROFS:judge",
+      "hint_en": "There are as many innocent #PROFS:builder as there are innocent #PROFS:judge"
+    },
+    {
+      "name": "Gerardo",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "Juez",
+      "profession_en": "judge",
+      "hint": "There's an odd number of criminals neighboring Gerardo",
+      "hint_en": "There's an odd number of criminals neighboring Gary"
+    },
+    {
+      "name": "Helena",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "Empleado",
+      "profession_en": "clerk",
+      "hint": "Ximena y Helena tienen el mismo número de vecinos criminales",
+      "hint_en": "Xia and Helen have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "Only 1 of the 2 criminals between Alejandro and Juana is Freya's neighbor",
+      "hint_en": "Only 1 of the 2 criminals between Alex and Jane is Freya's neighbor"
+    },
+    {
+      "name": "Juana",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "There is only one innocent between Carmen and Lorenzo",
+      "hint_en": "There is only one innocent between Karen and Larry"
+    },
+    {
+      "name": "Carmen",
+      "name_en": "karen",
+      "criminal": true,
+      "profession": "Maestro",
+      "profession_en": "teacher",
+      "hint": "Only 1 of the 2 criminals neighboring Freya is between Gerardo and Óliver",
+      "hint_en": "Only 1 of the 2 criminals neighboring Freya is between Gary and Olof"
+    },
+    {
+      "name": "Lorenzo",
+      "name_en": "larry",
+      "criminal": false,
+      "profession": "Empleado",
+      "profession_en": "clerk",
+      "hint": "Óliver is one of Carmen's 6 innocent neighbors",
+      "hint_en": "Olof is one of Karen's 6 innocent neighbors"
+    },
+    {
+      "name": "Martín",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "Juez",
+      "profession_en": "judge",
+      "hint": "Hay un número impar de criminales entre Martín y Zoé",
+      "hint_en": "There's an odd number of criminals between Martin and Zoe"
+    },
+    {
+      "name": "Nicolás",
+      "name_en": "nick",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "Hay un número impar de inocentes entre Isaac y Zoé",
+      "hint_en": "There's an odd number of innocents between Isaac and Zoe"
+    },
+    {
+      "name": "Óliver",
+      "name_en": "olof",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "There are more innocents than criminals between Juana and Vicente",
+      "hint_en": "There are more innocents than criminals between Jane and Vince"
+    },
+    {
+      "name": "Raúl",
+      "name_en": "ryan",
+      "criminal": false,
+      "profession": "Maestro",
+      "profession_en": "teacher",
+      "hint": "Hay un número impar de inocentes entre Alejandro y Vicente",
+      "hint_en": "There's an odd number of innocents between Alex and Vince"
+    },
+    {
+      "name": "Susana",
+      "name_en": "susan",
+      "criminal": true,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Vicente",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Wanda",
+      "name_en": "wanda",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ximena",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "Maestro",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zoé",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "Constructor",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 4,
+  "ui": {
+    "level": "Nivel",
+    "criminal_status": "Criminal",
+    "innocent_status": "Inocente",
+    "hint": "Pista",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Siguiente Nivel",
+    "congratulations": "¡Felicitaciones!",
+    "total_criminals": "Total de Criminales"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-037",
+  "level_number": 37,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Амелия",
+      "name_en": "amy",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "There's an odd number of innocents between Донна and Мартин",
+      "hint_en": "There's an odd number of innocents between Donna and Martin"
+    },
+    {
+      "name": "Бэлла",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "Олег is one of two or more innocents between Эрик and Олег",
+      "hint_en": "Ollie is one of two or more innocents between Eric and Ollie"
+    },
+    {
+      "name": "Карина",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "There are more criminals among #PROFS:mech than any other profession",
+      "hint_en": "There are more criminals among #PROFS:mech than any other profession"
+    },
+    {
+      "name": "Донна",
+      "name_en": "donna",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "There are more criminal #PROFS:builder than criminal #PROFS:clerk",
+      "hint_en": "There are more criminal #PROFS:builder than criminal #PROFS:clerk"
+    },
+    {
+      "name": "Эрик",
+      "name_en": "eric",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "The only criminal in a corner is between Том and Зед",
+      "hint_en": "The only criminal in a corner is between Tom and Zed"
+    },
+    {
+      "name": "Фёдор",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "Exactly 1 innocent between Бэлла and Полина is neighboring Руфь",
+      "hint_en": "Exactly 1 innocent between Bonnie and Pam is neighboring Ruth"
+    },
+    {
+      "name": "Густав",
+      "name_en": "gus",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "Only 1 of the 4 innocents neighboring Бэлла is between Амелия and Том",
+      "hint_en": "Only 1 of the 4 innocents neighboring Bonnie is between Amy and Tom"
+    },
+    {
+      "name": "Елена",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "All innocents between Эрик and Том are connected",
+      "hint_en": "All innocents between Eric and Tom are connected"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "There are more innocents than criminals between Густав and Руфь",
+      "hint_en": "There are more innocents than criminals between Gus and Ruth"
+    },
+    {
+      "name": "Яна",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Лиза and Ксения share an odd number of innocent neighbors",
+      "hint_en": "Lisa and Xia share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Лиза",
+      "name_en": "lisa",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Полина and Карина have an equal number of innocent neighbors",
+      "hint_en": "Pam and Carol have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Мартин",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "There are 16 innocents in total",
+      "hint_en": "There are 16 innocents in total"
+    },
+    {
+      "name": "Олег",
+      "name_en": "ollie",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Полина",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Руфь",
+      "name_en": "ruth",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Семён",
+      "name_en": "sam",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Том",
+      "name_en": "tom",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктор",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зед",
+      "name_en": "zed",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 4,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

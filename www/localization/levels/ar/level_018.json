@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-018",
+  "level_number": 18,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "أسامة",
+      "name_en": "austin",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "إيمان وسامي لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Ellie and Sam have an equal number of criminal neighbors"
+    },
+    {
+      "name": "بشرى",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "إيمان واحد من جيران كمال الـ5 المجرمين",
+      "hint_en": "Ellie is one of Keith's 5 criminal neighbors"
+    },
+    {
+      "name": "شيرين",
+      "name_en": "cheryl",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "إسحاق وزكريا لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Isaac and Zach have an equal number of innocent neighbors"
+    },
+    {
+      "name": "ديانا",
+      "name_en": "diane",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "كل المجرمين بين شيرين ورباب متصلون",
+      "hint_en": "All criminals between Cheryl and Ruby are connected"
+    },
+    {
+      "name": "إيمان",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "غازي وهاني يتشاركان عدداً فردياً من الجيران الأبرياء",
+      "hint_en": "Gus and Hank share an odd number of innocent neighbors"
+    },
+    {
+      "name": "فاطمة",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "كل المجرمين بين بشرى ووائل متصلون",
+      "hint_en": "All criminals between Bonnie and Wally are connected"
+    },
+    {
+      "name": "غازي",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "هاني لديه جيران مجرمين أكثر من أسامة",
+      "hint_en": "Hank has more criminal neighbors than Austin"
+    },
+    {
+      "name": "هاني",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "يوجد بريء واحد فقط بين بشرى وفاطمة",
+      "hint_en": "There is only one innocent between Bonnie and Flora"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "لا أحد من الـ2 أبرياء المجاورين لـإيمان موجود بين إسحاق ولورا",
+      "hint_en": "Neither of the 2 innocents neighboring Ellie are between Isaac and Laura"
+    },
+    {
+      "name": "كمال",
+      "name_en": "keith",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "البريء الوحيد بين لورا وزياد هو جار زكريا's",
+      "hint_en": "The only innocent between Laura and Xavi is Zach's neighbor"
+    },
+    {
+      "name": "لورا",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "غازي لديه جيران أبرياء أكثر من زكريا",
+      "hint_en": "Gus has more innocent neighbors than Zach"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "يوجد عدد متساوٍ من شرطي الأبرياء وحارس الأبرياء",
+      "hint_en": "There are as many innocent #PROFS:cop as there are innocent #PROFS:guard"
+    },
+    {
+      "name": "عليا",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "يوجد 9 أبرياء إجمالاً",
+      "hint_en": "There are 9 innocents in total"
+    },
+    {
+      "name": "بطرس",
+      "name_en": "peter",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "عليا لديه جيران أبرياء أكثر من بشرى",
+      "hint_en": "Olive has more innocent neighbors than Bonnie"
+    },
+    {
+      "name": "رباب",
+      "name_en": "ruby",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "يوجد عدد فردي من حارس الأبرياء",
+      "hint_en": "There's an odd number of innocent #PROFS:guard"
+    },
+    {
+      "name": "سامي",
+      "name_en": "sam",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وائل",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زكريا",
+      "name_en": "zach",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 11,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

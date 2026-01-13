@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-030",
+  "level_number": 30,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "علي",
+      "name_en": "alex",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "كلا المجرمين بين فارس ووفاء متصلان",
+      "hint_en": "Both criminals between Frank and Vicky are connected"
+    },
+    {
+      "name": "بشرى",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "العمود D فيه أبرياء أكثر من أي عمود آخر",
+      "hint_en": "Column D has more innocents than any other column"
+    },
+    {
+      "name": "خالد",
+      "name_en": "chris",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)"
+    },
+    {
+      "name": "إيمان",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "بالضبط 1 حارس لديه مجرم تحته مباشرة",
+      "hint_en": "Exactly 1 #PROF:guard has a criminal directly below them"
+    },
+    {
+      "name": "فارس",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "خالد لديه جيران مجرمين أكثر من بولا",
+      "hint_en": "Chris has more criminal neighbors than Paula"
+    },
+    {
+      "name": "هند",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "بالضبط 1 بريء بين علي ووفاء هو جار ملك",
+      "hint_en": "Exactly 1 innocent between Alex and Vicky is neighboring Megan"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "كل الأبرياء بين وفاء وزهراء متصلون",
+      "hint_en": "All innocents between Vicky and Zara are connected"
+    },
+    {
+      "name": "جوليا",
+      "name_en": "julie",
+      "criminal": true,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "بالضبط 2 من الـ3 مجرمين المجاورين لـملك موجودين بين علي وبولا",
+      "hint_en": "Exactly 2 of the 3 criminals neighboring Megan are between Alex and Paula"
+    },
+    {
+      "name": "كمال",
+      "name_en": "keith",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "طارق واحد من اثنين أو أكثر من الأبرياء على الحواف",
+      "hint_en": "Terry is one of two or more innocents on the edges"
+    },
+    {
+      "name": "ملك",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "يوجد عدد فردي من المجرمين بين بولا ورياض",
+      "hint_en": "There's an odd number of criminals between Paula and Ryan"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "يوجد مجرمين أكثر من الأبرياء في الصف 1",
+      "hint_en": "There are more criminals than innocents in row 1"
+    },
+    {
+      "name": "عمر",
+      "name_en": "olof",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "المجرم الوحيد بين عمر وزهراء هو جار طارق's",
+      "hint_en": "The only criminal between Olof and Zara is Terry's neighbor"
+    },
+    {
+      "name": "بولا",
+      "name_en": "paula",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد بريء واحد فقط بين علي وفارس",
+      "hint_en": "There is only one innocent between Alex and Frank"
+    },
+    {
+      "name": "رياض",
+      "name_en": "ryan",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "كلا المجرمين بين إيمان وطارق هم جيران إسحاق",
+      "hint_en": "Both criminals between Ellie and Terry are Isaac's neighbors"
+    },
+    {
+      "name": "صوفيا",
+      "name_en": "sofia",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "زياد واحد من 4 أبرياء بين خالد وزياد",
+      "hint_en": "Xavi is one of 4 innocents between Chris and Xavi"
+    },
+    {
+      "name": "طارق",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "عدد فردي من الأبرياء بين علي وإيمان يجاورون هند",
+      "hint_en": "An odd number of innocents between Alex and Ellie neighbor Helen"
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "يوجد عدد متساوٍ من مزارع المجرمين وحارس المجرمين",
+      "hint_en": "There are as many criminal #PROFS:farmer as there are criminal #PROFS:guard"
+    },
+    {
+      "name": "وائل",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "زياد لديه جيران أبرياء أكثر من إسحاق",
+      "hint_en": "Xavi has more innocent neighbors than Isaac"
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زهراء",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 9,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

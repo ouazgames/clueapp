@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-024",
+  "level_number": 24,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Bruno",
+      "name_en": "bruce",
+      "criminal": false,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "Both criminals between Bruno and Freya are connected",
+      "hint_en": "Both criminals between Bruce and Freya are connected"
+    },
+    {
+      "name": "Charles",
+      "name_en": "carl",
+      "criminal": false,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "Bruno's only innocent neighbor is on the edges",
+      "hint_en": "Bruce's only innocent neighbor is on the edges"
+    },
+    {
+      "name": "Ethan",
+      "name_en": "ethan",
+      "criminal": true,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "An odd number of innocents on the edges neighbor Hilde",
+      "hint_en": "An odd number of innocents on the edges neighbor Hilda"
+    },
+    {
+      "name": "Freya",
+      "name_en": "freya",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "Both innocents between Freya and Thomas are connected",
+      "hint_en": "Both innocents between Freya and Tyler are connected"
+    },
+    {
+      "name": "Gérard",
+      "name_en": "gary",
+      "criminal": true,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "Bruno et Joseph ont le même nombre de voisins innocents",
+      "hint_en": "Bruce and Jose have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Hilde",
+      "name_en": "hilda",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "Isaac is one of Ethan's 3 criminal neighbors",
+      "hint_en": "Isaac is one of Ethan's 3 criminal neighbors"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "Stéphane a exactement 3 voisins innocents",
+      "hint_en": "Steve has exactly 3 innocent neighbors"
+    },
+    {
+      "name": "Joseph",
+      "name_en": "jose",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Tous les criminels entre Victoire et Zara sont connectés",
+      "hint_en": "All criminals between Vicky and Zara are connected"
+    },
+    {
+      "name": "Karine",
+      "name_en": "karen",
+      "criminal": false,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "There are 13 criminals in total",
+      "hint_en": "There are 13 criminals in total"
+    },
+    {
+      "name": "Laure",
+      "name_en": "laura",
+      "criminal": false,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "Il y a un nombre impair d'innocents entre Karine et Victoire",
+      "hint_en": "There's an odd number of innocents between Karen and Vicky"
+    },
+    {
+      "name": "Marie",
+      "name_en": "mary",
+      "criminal": true,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "Ethan et Paul ont le même nombre de voisins innocents",
+      "hint_en": "Ethan and Paul have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "Thomas et Bruno ont le même nombre de voisins innocents",
+      "hint_en": "Tyler and Bruce have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Olive",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "Il y a un nombre impair d'innocents entre Nancy et Zara",
+      "hint_en": "There's an odd number of innocents between Nancy and Zara"
+    },
+    {
+      "name": "Paul",
+      "name_en": "paul",
+      "criminal": false,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Stéphane",
+      "name_en": "steve",
+      "criminal": true,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Thomas",
+      "name_en": "tyler",
+      "criminal": true,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Victoire",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Walter",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xia",
+      "name_en": "xia",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zara",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 13,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

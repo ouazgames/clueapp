@@ -1,0 +1,202 @@
+{
+  "id": "level-es-001",
+  "level_number": 1,
+  "language": "es",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Alicia",
+      "name_en": "alice",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "Vicente y Carlos tienen el mismo número de vecinos inocentes",
+      "hint_en": "Vince and Carl have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Bárbara",
+      "name_en": "barb",
+      "criminal": true,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "Nancy y Bárbara tienen el mismo número de vecinos inocentes",
+      "hint_en": "Nancy and Barb have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Carlos",
+      "name_en": "carl",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "Isaac is one of two or more criminals between Isaac and Teodoro",
+      "hint_en": "Isaac is one of two or more criminals between Isaac and Terry"
+    },
+    {
+      "name": "Doña",
+      "name_en": "donna",
+      "criminal": true,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "There's an odd number of innocents neighboring Carlos",
+      "hint_en": "There's an odd number of innocents neighboring Carl"
+    },
+    {
+      "name": "Erwin",
+      "name_en": "erwin",
+      "criminal": false,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "Vicente y Gerardo tienen el mismo número de vecinos criminales",
+      "hint_en": "Vince and Gary have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Freya",
+      "name_en": "freya",
+      "criminal": false,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Todos los criminales entre Erwin y Teodoro están conectados",
+      "hint_en": "All criminals between Erwin and Terry are connected"
+    },
+    {
+      "name": "Gerardo",
+      "name_en": "gary",
+      "criminal": true,
+      "profession": "Maestro",
+      "profession_en": "teacher",
+      "hint": "Lisa tiene exactamente 4 vecinos inocentes",
+      "hint_en": "Lisa has exactly 4 innocent neighbors"
+    },
+    {
+      "name": "Enrique",
+      "name_en": "henry",
+      "criminal": true,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "Gerardo and Lisa share an odd number of innocent neighbors",
+      "hint_en": "Gary and Lisa share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Only 1 of the 2 criminals between Vicente and Zacarías is Xavier's neighbor",
+      "hint_en": "Only 1 of the 2 criminals between Vince and Zach is Xavi's neighbor"
+    },
+    {
+      "name": "Jasón",
+      "name_en": "jason",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "Sofía y Teodoro tienen el mismo número de vecinos inocentes",
+      "hint_en": "Sofia and Terry have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Lisa",
+      "name_en": "lisa",
+      "criminal": true,
+      "profession": "Maestro",
+      "profession_en": "teacher",
+      "hint": "Only 1 of the 3 criminals neighboring Xavier is Zacarías's neighbor",
+      "hint_en": "Only 1 of the 3 criminals neighboring Xavi is Zach's neighbor"
+    },
+    {
+      "name": "María",
+      "name_en": "maria",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "Lisa and Paula share an odd number of innocent neighbors",
+      "hint_en": "Lisa and Paula share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "Xavier is one of 2 criminals between Teodoro and Zacarías",
+      "hint_en": "Xavi is one of 2 criminals between Terry and Zach"
+    },
+    {
+      "name": "Olivia",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "Both innocents between Doña and Zacarías are connected",
+      "hint_en": "Both innocents between Donna and Zach are connected"
+    },
+    {
+      "name": "Paula",
+      "name_en": "paula",
+      "criminal": true,
+      "profession": "Maestro",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Sofía",
+      "name_en": "sofia",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Teodoro",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Vicente",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zacarías",
+      "name_en": "zach",
+      "criminal": true,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 12,
+  "ui": {
+    "level": "Nivel",
+    "criminal_status": "Criminal",
+    "innocent_status": "Inocente",
+    "hint": "Pista",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Siguiente Nivel",
+    "congratulations": "¡Felicitaciones!",
+    "total_criminals": "Total de Criminales"
+  }
+}

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">Clues by Sam</string>
-    <string name="title_activity_main">Clues by Sam</string>
-    <string name="package_name">com.cluesbysam.app</string>
-    <string name="custom_url_scheme">com.cluesbysam.app</string>
-    <!-- AdMob App ID - Replace with your actual ID for production -->
-    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
-</resources>

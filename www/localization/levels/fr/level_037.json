@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-037",
+  "level_number": 37,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Amélie",
+      "name_en": "amy",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "Il y a un nombre impair d'innocents entre Donna et Martin",
+      "hint_en": "There's an odd number of innocents between Donna and Martin"
+    },
+    {
+      "name": "Béatrice",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "Olivier is one of two or more innocents between Éric and Olivier",
+      "hint_en": "Ollie is one of two or more innocents between Eric and Ollie"
+    },
+    {
+      "name": "Caroline",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "There are more criminals among #PROFS:mech than any other profession",
+      "hint_en": "There are more criminals among #PROFS:mech than any other profession"
+    },
+    {
+      "name": "Donna",
+      "name_en": "donna",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "There are more criminal #PROFS:builder than criminal #PROFS:clerk",
+      "hint_en": "There are more criminal #PROFS:builder than criminal #PROFS:clerk"
+    },
+    {
+      "name": "Éric",
+      "name_en": "eric",
+      "criminal": true,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "The only criminal in a corner is between Thomas and Zed",
+      "hint_en": "The only criminal in a corner is between Tom and Zed"
+    },
+    {
+      "name": "François",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Exactly 1 innocent between Béatrice and Pauline is neighboring Ruth",
+      "hint_en": "Exactly 1 innocent between Bonnie and Pam is neighboring Ruth"
+    },
+    {
+      "name": "Gustave",
+      "name_en": "gus",
+      "criminal": false,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "Only 1 of the 4 innocents neighboring Béatrice is between Amélie and Thomas",
+      "hint_en": "Only 1 of the 4 innocents neighboring Bonnie is between Amy and Tom"
+    },
+    {
+      "name": "Hélène",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "All innocents between Éric and Thomas are connected",
+      "hint_en": "All innocents between Eric and Tom are connected"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "There are more innocents than criminals between Gustave and Ruth",
+      "hint_en": "There are more innocents than criminals between Gus and Ruth"
+    },
+    {
+      "name": "Jeanne",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "Lisa and Xia share an odd number of innocent neighbors",
+      "hint_en": "Lisa and Xia share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Lisa",
+      "name_en": "lisa",
+      "criminal": true,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "Pauline et Caroline ont le même nombre de voisins innocents",
+      "hint_en": "Pam and Carol have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Martin",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "There are 16 innocents in total",
+      "hint_en": "There are 16 innocents in total"
+    },
+    {
+      "name": "Olivier",
+      "name_en": "ollie",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Pauline",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ruth",
+      "name_en": "ruth",
+      "criminal": false,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Samuel",
+      "name_en": "sam",
+      "criminal": false,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Thomas",
+      "name_en": "tom",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Vincent",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xia",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zed",
+      "name_en": "zed",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 4,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

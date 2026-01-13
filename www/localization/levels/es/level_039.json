@@ -1,0 +1,202 @@
+{
+  "id": "level-es-039",
+  "level_number": 39,
+  "language": "es",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Alejandro",
+      "name_en": "alex",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "Carolina y Ximena tienen el mismo número de vecinos criminales",
+      "hint_en": "Carol and Xena have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Beatriz",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Maestro",
+      "profession_en": "teacher",
+      "hint": "There is only one innocent between Alejandro and Tomás",
+      "hint_en": "There is only one innocent between Alex and Tom"
+    },
+    {
+      "name": "Carolina",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "There are as many criminal #PROFS:cook as there are criminal #PROFS:sleuth",
+      "hint_en": "There are as many criminal #PROFS:cook as there are criminal #PROFS:sleuth"
+    },
+    {
+      "name": "Diego",
+      "name_en": "denis",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "There are 5 innocents in total",
+      "hint_en": "There are 5 innocents in total"
+    },
+    {
+      "name": "Florentino",
+      "name_en": "floyd",
+      "criminal": true,
+      "profession": "Maestro",
+      "profession_en": "teacher",
+      "hint": "n_professions_have_trait_in_dir(teacher,criminal,1,0,2)",
+      "hint_en": "n_professions_have_trait_in_dir(teacher,criminal,1,0,2)"
+    },
+    {
+      "name": "Gustavo",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "Maestro",
+      "profession_en": "teacher",
+      "hint": "2 #PROFS:teacher have a criminal directly to the right of them",
+      "hint_en": "2 #PROFS:teacher have a criminal directly to the right of them"
+    },
+    {
+      "name": "Enrique",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "There are exactly 2 innocents in column E",
+      "hint_en": "There are exactly 2 innocents in column E"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Diego and Isaac have only one innocent neighbor in common",
+      "hint_en": "Denis and Isaac have only one innocent neighbor in common"
+    },
+    {
+      "name": "Juana",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "There's an odd number of innocents in row 5",
+      "hint_en": "There's an odd number of innocents in row 5"
+    },
+    {
+      "name": "Kyle",
+      "name_en": "kyle",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "Exactly 2 of the 6 criminals neighboring Olivia are in column B",
+      "hint_en": "Exactly 2 of the 6 criminals neighboring Olive are in column B"
+    },
+    {
+      "name": "Laura",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Todos los criminales entre Natalia y Samuel están conectados",
+      "hint_en": "All criminals between Nicole and Sam are connected"
+    },
+    {
+      "name": "Margarita",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "Ruth is one of 4 criminals in column D",
+      "hint_en": "Ruth is one of 4 criminals in column D"
+    },
+    {
+      "name": "Natalia",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "n_professions_have_trait_in_dir(cop,criminal,0,-1,2)",
+      "hint_en": "n_professions_have_trait_in_dir(cop,criminal,0,-1,2)"
+    },
+    {
+      "name": "Olivia",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "2 #PROFS:cop have a criminal directly above them",
+      "hint_en": "2 #PROFS:cop have a criminal directly above them"
+    },
+    {
+      "name": "Ruth",
+      "name_en": "ruth",
+      "criminal": true,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "Todos los criminales entre Enrique y Wanda están conectados",
+      "hint_en": "All criminals between Hank and Wanda are connected"
+    },
+    {
+      "name": "Samuel",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "Only 1 of the 2 innocents in a corner is between Diego and Ximena",
+      "hint_en": "Only 1 of the 2 innocents in a corner is between Denis and Xena"
+    },
+    {
+      "name": "Tomás",
+      "name_en": "tom",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Vicente",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Wanda",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ximena",
+      "name_en": "xena",
+      "criminal": false,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "Nivel",
+    "criminal_status": "Criminal",
+    "innocent_status": "Inocente",
+    "hint": "Pista",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Siguiente Nivel",
+    "congratulations": "¡Felicitaciones!",
+    "total_criminals": "Total de Criminales"
+  }
+}

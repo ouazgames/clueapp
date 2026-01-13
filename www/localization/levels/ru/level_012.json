@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-012",
+  "level_number": 12,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Алиса",
+      "name_en": "alice",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "У Ксавье ровно 4 невиновных соседей",
+      "hint_en": "Xavi has exactly 4 innocent neighbors"
+    },
+    {
+      "name": "Бэлла",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "Exactly 2 of the 5 innocents neighboring Олег are between Карина and Ксавье",
+      "hint_en": "Exactly 2 of the 5 innocents neighboring Ollie are between Karen and Xavi"
+    },
+    {
+      "name": "Светлана",
+      "name_en": "cheryl",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "There's an odd number of criminals in row 1",
+      "hint_en": "There's an odd number of criminals in row 1"
+    },
+    {
+      "name": "Диана",
+      "name_en": "diane",
+      "criminal": false,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "All innocents between Алиса and Диана are connected",
+      "hint_en": "All innocents between Alice and Diane are connected"
+    },
+    {
+      "name": "Итан",
+      "name_en": "ethan",
+      "criminal": false,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "Both innocents between Алиса and Марк are connected",
+      "hint_en": "Both innocents between Alice and Mark are connected"
+    },
+    {
+      "name": "Фёдор",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "There are as many innocent #PROFS:cook as there are innocent #PROFS:cop",
+      "hint_en": "There are as many innocent #PROFS:cook as there are innocent #PROFS:cop"
+    },
+    {
+      "name": "Гавриил",
+      "name_en": "gabe",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "There are 15 innocents in total",
+      "hint_en": "There are 15 innocents in total"
+    },
+    {
+      "name": "Хильда",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "There's an odd number of innocents between Том and Зара",
+      "hint_en": "There's an odd number of innocents between Tom and Zara"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Марк has more innocent than criminal neighbors",
+      "hint_en": "Mark has more innocent than criminal neighbors"
+    },
+    {
+      "name": "Жанна",
+      "name_en": "janet",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "Хильда is one of 10 innocents on the edges",
+      "hint_en": "Hilda is one of 10 innocents on the edges"
+    },
+    {
+      "name": "Карина",
+      "name_en": "karen",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "There are more innocents than criminals between Алиса and Том",
+      "hint_en": "There are more innocents than criminals between Alice and Tom"
+    },
+    {
+      "name": "Лаура",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Exactly 1 innocent in row 1 is neighboring Итан",
+      "hint_en": "Exactly 1 innocent in row 1 is neighboring Ethan"
+    },
+    {
+      "name": "Марк",
+      "name_en": "mark",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "Хильда and Ксавье have an equal number of innocent neighbors",
+      "hint_en": "Hilda and Xavi have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Надежда",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Олег is one of two or more innocents between Олег and Ксавье",
+      "hint_en": "Ollie is one of two or more innocents between Ollie and Xavi"
+    },
+    {
+      "name": "Олег",
+      "name_en": "ollie",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "There are more innocents than criminals between Алиса and Светлана",
+      "hint_en": "There are more innocents than criminals between Alice and Cheryl"
+    },
+    {
+      "name": "Павел",
+      "name_en": "paul",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Том",
+      "name_en": "tom",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктор",
+      "name_en": "vince",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксавье",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зара",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 5,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

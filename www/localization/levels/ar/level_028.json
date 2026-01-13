@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-028",
+  "level_number": 28,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "علي",
+      "name_en": "alex",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "البريء الوحيد بين إسحاق وصالح هو جار حبيبة's",
+      "hint_en": "The only innocent between Isaac and Scott is Hilda's neighbor"
+    },
+    {
+      "name": "بهية",
+      "name_en": "barb",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "كلا الأبرياء بين إيمان وإسحاق متصلان",
+      "hint_en": "Both innocents between Emma and Isaac are connected"
+    },
+    {
+      "name": "كريم",
+      "name_en": "carl",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "عدد فردي من الأبرياء بين علي ووفاء يجاورون بولا",
+      "hint_en": "An odd number of innocents between Alex and Vicky neighbor Paula"
+    },
+    {
+      "name": "دين",
+      "name_en": "denis",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "الصف 5 فيه أبرياء أكثر من أي صف آخر",
+      "hint_en": "Row 5 has more innocents than any other row"
+    },
+    {
+      "name": "إيمان",
+      "name_en": "emma",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "كلا الأبرياء بين عليا وصالح هم جيران لورا",
+      "hint_en": "Both innocents between Olive and Scott are Laura's neighbors"
+    },
+    {
+      "name": "جمال",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "زهراء واحد من اثنين أو أكثر من الأبرياء في الزاوية",
+      "hint_en": "Zara is one of two or more innocents in a corner"
+    },
+    {
+      "name": "حبيبة",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد بريء واحد فقط بين كوثر وبولا",
+      "hint_en": "There is only one innocent between Katie and Paula"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "كل المجرمين بين علي ووفاء متصلون",
+      "hint_en": "All criminals between Alex and Vicky are connected"
+    },
+    {
+      "name": "ياسين",
+      "name_en": "jason",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد 12 مجرمين إجمالاً",
+      "hint_en": "There are 12 criminals in total"
+    },
+    {
+      "name": "كوثر",
+      "name_en": "katie",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "يوجد عدد فردي من طبيب الأبرياء",
+      "hint_en": "There's an odd number of innocent #PROFS:doctor"
+    },
+    {
+      "name": "لورا",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "كريم واحد من جيران جمال الـ7 المجرمين",
+      "hint_en": "Carl is one of Gary's 7 criminal neighbors"
+    },
+    {
+      "name": "نوح",
+      "name_en": "noah",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "لا أحد من الـ2 أبرياء المجاورين لـعليا موجود بين ياسين ولورا",
+      "hint_en": "Neither of the 2 innocents neighboring Olive are between Jason and Laura"
+    },
+    {
+      "name": "عليا",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "بولا",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "رياض",
+      "name_en": "ryan",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "صالح",
+      "name_en": "scott",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وائل",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينة",
+      "name_en": "xena",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زهراء",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 12,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

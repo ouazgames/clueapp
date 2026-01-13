@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-033",
+  "level_number": 33,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "عائشة",
+      "name_en": "alice",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "إسحاق واحد من 2 مجرمين بين إسحاق وليزا",
+      "hint_en": "Isaac is one of 2 criminals between Isaac and Lisa"
+    },
+    {
+      "name": "بلال",
+      "name_en": "brian",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "كريم واحد من اثنين أو أكثر من الأبرياء المجاورين لـإيثان",
+      "hint_en": "Kevin is one of two or more innocents neighboring Ethan"
+    },
+    {
+      "name": "خالد",
+      "name_en": "chris",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "كلا المجرمين المجاورين لـإسحاق هم جيران كريم",
+      "hint_en": "Both criminals neighboring Isaac are Kevin's neighbors"
+    },
+    {
+      "name": "دنيا",
+      "name_en": "donna",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "الجار البريء الوحيد لـعائشة بين إيثان وغازي",
+      "hint_en": "Alice's only innocent neighbor is between Ethan and Gus"
+    },
+    {
+      "name": "إيثان",
+      "name_en": "ethan",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "وفاء ودنيا لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Vicky and Donna have an equal number of criminal neighbors"
+    },
+    {
+      "name": "فارس",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "يوجد 15 مجرمين إجمالاً",
+      "hint_en": "There are 15 criminals in total"
+    },
+    {
+      "name": "غازي",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد عدد متساوٍ من حارس الأبرياء ومغني الأبرياء",
+      "hint_en": "There are as many innocent #PROFS:guard as there are innocent #PROFS:singer"
+    },
+    {
+      "name": "هند",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "كل المجرمين بين عائشة ودنيا متصلون",
+      "hint_en": "All criminals between Alice and Donna are connected"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "واحد فقط من الـ5 مجرمين المجاورين لـغازي هو جار عمر",
+      "hint_en": "Only 1 of the 5 criminals neighboring Gus is Olof's neighbor"
+    },
+    {
+      "name": "كريم",
+      "name_en": "kevin",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "هند لديه جيران مجرمين أكثر من زينة",
+      "hint_en": "Helen has more criminal neighbors than Xena"
+    },
+    {
+      "name": "ليزا",
+      "name_en": "lisa",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "فارس has the most criminal neighbors",
+      "hint_en": "Frank has the most criminal neighbors"
+    },
+    {
+      "name": "مروان",
+      "name_en": "martin",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "يوجد عدد فردي من الأبرياء بين عمر ووردة",
+      "hint_en": "There's an odd number of innocents between Olof and Wanda"
+    },
+    {
+      "name": "نادية",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "يوجد مجرمين أكثر من الأبرياء بين وردة وزيد",
+      "hint_en": "There are more criminals than innocents between Wanda and Zed"
+    },
+    {
+      "name": "عمر",
+      "name_en": "olof",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(singer,innocent,-1,0,1)"
+    },
+    {
+      "name": "بسمة",
+      "name_en": "pam",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "بالضبط 1 مغني لديه بريء على يساره مباشرة",
+      "hint_en": "Exactly 1 #PROF:singer has an innocent directly to the left of them"
+    },
+    {
+      "name": "روز",
+      "name_en": "rose",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "يوجد بريء واحد فقط بين وردة وزينة",
+      "hint_en": "There is only one innocent between Wanda and Xena"
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "بالضبط 1 بريء بين نادية وبسمة هو جار زينة",
+      "hint_en": "Exactly 1 innocent between Nicole and Pam is neighboring Xena"
+    },
+    {
+      "name": "وردة",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "يوجد عدد فردي من الأبرياء المجاورين لـعمر في الصف 5",
+      "hint_en": "There's an odd number of innocents neighboring Olof in row 5"
+    },
+    {
+      "name": "زينة",
+      "name_en": "xena",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زيد",
+      "name_en": "zed",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

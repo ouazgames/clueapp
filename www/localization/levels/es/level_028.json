@@ -1,0 +1,202 @@
+{
+  "id": "level-es-028",
+  "level_number": 28,
+  "language": "es",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Alejandro",
+      "name_en": "alex",
+      "criminal": true,
+      "profession": "Juez",
+      "profession_en": "judge",
+      "hint": "The only innocent between Isaac and Santiago is Hilda's neighbor",
+      "hint_en": "The only innocent between Isaac and Scott is Hilda's neighbor"
+    },
+    {
+      "name": "Bárbara",
+      "name_en": "barb",
+      "criminal": true,
+      "profession": "Juez",
+      "profession_en": "judge",
+      "hint": "Both innocents between Emma and Isaac are connected",
+      "hint_en": "Both innocents between Emma and Isaac are connected"
+    },
+    {
+      "name": "Carlos",
+      "name_en": "carl",
+      "criminal": true,
+      "profession": "Juez",
+      "profession_en": "judge",
+      "hint": "An odd number of innocents between Alejandro and Victoria neighbor Paula",
+      "hint_en": "An odd number of innocents between Alex and Vicky neighbor Paula"
+    },
+    {
+      "name": "Diego",
+      "name_en": "denis",
+      "criminal": true,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "Row 5 has more innocents than any other row",
+      "hint_en": "Row 5 has more innocents than any other row"
+    },
+    {
+      "name": "Emma",
+      "name_en": "emma",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "Both innocents between Olivia and Santiago are Laura's neighbors",
+      "hint_en": "Both innocents between Olive and Scott are Laura's neighbors"
+    },
+    {
+      "name": "Gerardo",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "Zara is one of two or more innocents in a corner",
+      "hint_en": "Zara is one of two or more innocents in a corner"
+    },
+    {
+      "name": "Hilda",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "There is only one innocent between Catalina and Paula",
+      "hint_en": "There is only one innocent between Katie and Paula"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "Todos los criminales entre Alejandro y Victoria están conectados",
+      "hint_en": "All criminals between Alex and Vicky are connected"
+    },
+    {
+      "name": "Jasón",
+      "name_en": "jason",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "There are 12 criminals in total",
+      "hint_en": "There are 12 criminals in total"
+    },
+    {
+      "name": "Catalina",
+      "name_en": "katie",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "There's an odd number of innocent #PROFS:doctor",
+      "hint_en": "There's an odd number of innocent #PROFS:doctor"
+    },
+    {
+      "name": "Laura",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "Carlos is one of Gerardo's 7 criminal neighbors",
+      "hint_en": "Carl is one of Gary's 7 criminal neighbors"
+    },
+    {
+      "name": "Noé",
+      "name_en": "noah",
+      "criminal": false,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "Neither of the 2 innocents neighboring Olivia are between Jasón and Laura",
+      "hint_en": "Neither of the 2 innocents neighboring Olive are between Jason and Laura"
+    },
+    {
+      "name": "Olivia",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Paula",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Raúl",
+      "name_en": "ryan",
+      "criminal": false,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Santiago",
+      "name_en": "scott",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Victoria",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Walter",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ximena",
+      "name_en": "xena",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zara",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 12,
+  "ui": {
+    "level": "Nivel",
+    "criminal_status": "Criminal",
+    "innocent_status": "Inocente",
+    "hint": "Pista",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Siguiente Nivel",
+    "congratulations": "¡Felicitaciones!",
+    "total_criminals": "Total de Criminales"
+  }
+}

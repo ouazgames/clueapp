@@ -1,6 +1,6 @@
 {
   "name": "cluesbysam-mobile",
-  "version": "1.0.0",
+  "version": "5.0.0",
   "description": "Clues by Sam - Mobile App",
   "main": "server.js",
   "scripts": {
@@ -24,8 +24,10 @@
     "@capacitor/app": "^8.0.0",
     "@capacitor/core": "^8.0.0",
     "@capacitor/ios": "^8.0.0",
+    "@capacitor/share": "^8.0.0",
     "@capacitor/status-bar": "^8.0.0",
-    "@revenuecat/purchases-capacitor": "^11.3.1"
+    "@revenuecat/purchases-capacitor": "^11.3.1",
+    "capacitor-plugin-app-tracking-transparency": "^3.0.0"
   },
   "devDependencies": {
     "@capacitor/cli": "^7.4.4"

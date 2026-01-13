@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-023",
+  "level_number": 23,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "علي",
+      "name_en": "alex",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "كلا الأبرياء في العمود D هم جيران ليلى",
+      "hint_en": "Both innocents in column D are Linda's neighbors"
+    },
+    {
+      "name": "بدر",
+      "name_en": "bobby",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(mech,innocent,-1,0,1)"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "بالضبط 1 ميكانيكي لديه بريء على يساره مباشرة",
+      "hint_en": "Exactly 1 #PROF:mech has an innocent directly to the left of them"
+    },
+    {
+      "name": "ضياء",
+      "name_en": "donald",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "كل المجرمين بين حواء وهند متصلون",
+      "hint_en": "All criminals between Eve and Helen are connected"
+    },
+    {
+      "name": "حواء",
+      "name_en": "eve",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد عدد متساوٍ من مبرمج المجرمين ومزارع المجرمين",
+      "hint_en": "There are as many criminal #PROFS:coder as there are criminal #PROFS:farmer"
+    },
+    {
+      "name": "فاطمة",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "البريء الوحيد بين حواء ومريم هو جار إسحاق's",
+      "hint_en": "The only innocent between Eve and Maria is Isaac's neighbor"
+    },
+    {
+      "name": "غسان",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "بالضبط 3 من الـ6 مجرمين المجاورين لـغسان موجودين بين علي وضياء",
+      "hint_en": "Exactly 3 of the 6 criminals neighboring Gabe are between Alex and Donald"
+    },
+    {
+      "name": "هند",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "يوجد أبرياء أكثر من المجرمين بين نبيل ورائد",
+      "hint_en": "There are more innocents than criminals between Nick and Ronald"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "عدد فردي من الأبرياء بين بدر ووليد يجاورون إسحاق",
+      "hint_en": "An odd number of innocents between Bobby and Will neighbor Isaac"
+    },
+    {
+      "name": "جواهر",
+      "name_en": "joyce",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "هند واحد من 11 مجرمين على الحواف",
+      "hint_en": "Helen is one of 11 criminals on the edges"
+    },
+    {
+      "name": "خالد",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "يوجد عدد متساوٍ من المجرمين والأبرياء بين رائد وزينب",
+      "hint_en": "There are as many criminals as innocents between Ronald and Zoe"
+    },
+    {
+      "name": "ليلى",
+      "name_en": "linda",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "كلا المجرمين بين جواهر ووليد متصلان",
+      "hint_en": "Both criminals between Joyce and Will are connected"
+    },
+    {
+      "name": "مريم",
+      "name_en": "maria",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "ليلى and تامر have 4 innocent neighbors in total",
+      "hint_en": "Linda and Tom have 4 innocent neighbors in total"
+    },
+    {
+      "name": "نبيل",
+      "name_en": "nick",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "بولا",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "رائد",
+      "name_en": "ronald",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "تامر",
+      "name_en": "tom",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "will",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "شيماء",
+      "name_en": "xia",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينب",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 14,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

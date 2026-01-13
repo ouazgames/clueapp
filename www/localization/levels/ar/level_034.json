@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-034",
+  "level_number": 34,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Hard",
+  "cards": [
+    {
+      "name": "آدم",
+      "name_en": "adam",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "يوجد عدد متساوٍ من الأبرياء في العمودين B وC",
+      "hint_en": "There's an equal number of innocents in columns B and C"
+    },
+    {
+      "name": "بهية",
+      "name_en": "barb",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "إسحاق واحد من اثنين أو أكثر من المجرمين بين آدم وإسحاق",
+      "hint_en": "Isaac is one of two or more criminals between Adam and Isaac"
+    },
+    {
+      "name": "كريم",
+      "name_en": "carl",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "إسحاق واحد من 2 مجرمين بين آدم وتامر",
+      "hint_en": "Isaac is one of 2 criminals between Adam and Tom"
+    },
+    {
+      "name": "ضياء",
+      "name_en": "donald",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "وردة لديه جيران مجرمين أكثر من حبيبة",
+      "hint_en": "Wanda has more criminal neighbors than Hilda"
+    },
+    {
+      "name": "حواء",
+      "name_en": "eve",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "الصف 2 فيه أبرياء أكثر من أي صف آخر",
+      "hint_en": "Row 2 has more innocents than any other row"
+    },
+    {
+      "name": "فريدة",
+      "name_en": "freya",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "فريدة ووليد لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Freya and Vince have an equal number of criminal neighbors"
+    },
+    {
+      "name": "جمال",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "إسحاق واحد من جيران فريدة الـ3 المجرمين",
+      "hint_en": "Isaac is one of Freya's 3 criminal neighbors"
+    },
+    {
+      "name": "حبيبة",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "يوجد عدد فردي من الأبرياء المجاورين لـجمال",
+      "hint_en": "There's an odd number of innocents neighboring Gary"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد عدد فردي من الأبرياء المجاورين لـوليد في الصف 4",
+      "hint_en": "There's an odd number of innocents neighboring Vince in row 4"
+    },
+    {
+      "name": "جميلة",
+      "name_en": "jane",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "سارة واحد من 4 مجرمين بين ضياء وزكريا",
+      "hint_en": "Sarah is one of 4 criminals between Donald and Zach"
+    },
+    {
+      "name": "كوثر",
+      "name_en": "katie",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "كلا المجرمين بين كريم ورائد متصلان",
+      "hint_en": "Both criminals between Carl and Ronald are connected"
+    },
+    {
+      "name": "مريم",
+      "name_en": "mary",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "كل المجرمين بين حبيبة وزكريا متصلون",
+      "hint_en": "All criminals between Hilda and Zach are connected"
+    },
+    {
+      "name": "نبيل",
+      "name_en": "nick",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "أولغا",
+      "name_en": "olivia",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "رائد",
+      "name_en": "ronald",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "سارة",
+      "name_en": "sarah",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "تامر",
+      "name_en": "tom",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "vince",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وردة",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زكريا",
+      "name_en": "zach",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 11,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-011",
+  "level_number": 11,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Adam",
+      "name_en": "adam",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "There's an odd number of innocents neighboring Lisa",
+      "hint_en": "There's an odd number of innocents neighboring Lisa"
+    },
+    {
+      "name": "Bruno",
+      "name_en": "bruce",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "Exactly 1 innocent between Paule and Thomas is neighboring Karine",
+      "hint_en": "Exactly 1 innocent between Paula and Tom is neighboring Karen"
+    },
+    {
+      "name": "David",
+      "name_en": "david",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "Flore et Karine ont le même nombre de voisins criminels",
+      "hint_en": "Flora and Karen have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Flore",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "Victoire a plus de voisins innocents que Flore",
+      "hint_en": "Vicky has more innocent neighbors than Flora"
+    },
+    {
+      "name": "Gustave",
+      "name_en": "gus",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Il y a un nombre impair d'innocents entre Isaac et Jean",
+      "hint_en": "There's an odd number of innocents between Isaac and John"
+    },
+    {
+      "name": "Hélène",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "Flore is one of David's 3 criminal neighbors",
+      "hint_en": "Flora is one of David's 3 criminal neighbors"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "There are more criminals among #PROFS:coder than any other profession",
+      "hint_en": "There are more criminals among #PROFS:coder than any other profession"
+    },
+    {
+      "name": "Jean",
+      "name_en": "john",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "There are 12 innocents in total",
+      "hint_en": "There are 12 innocents in total"
+    },
+    {
+      "name": "Karine",
+      "name_en": "karen",
+      "criminal": false,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "Both criminals in row 4 are Lisa's neighbors",
+      "hint_en": "Both criminals in row 4 are Lisa's neighbors"
+    },
+    {
+      "name": "Lisa",
+      "name_en": "lisa",
+      "criminal": false,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "Guillaume et David ont le même nombre de voisins criminels",
+      "hint_en": "Will and David have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Marc",
+      "name_en": "mark",
+      "criminal": true,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "Hélène a plus de voisins innocents que Xavier",
+      "hint_en": "Helen has more innocent neighbors than Xavi"
+    },
+    {
+      "name": "Olive",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Bruno a plus de voisins criminels que Bruce2",
+      "hint_en": "Bruce has more criminal neighbors than Bruce2"
+    },
+    {
+      "name": "Paule",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "n_professions_have_trait_in_dir(teacher,innocent,0,1,1)",
+      "hint_en": "n_professions_have_trait_in_dir(teacher,innocent,0,1,1)"
+    },
+    {
+      "name": "Rose",
+      "name_en": "rose",
+      "criminal": true,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "Exactly 1 #PROF:teacher has an innocent directly below them",
+      "hint_en": "Exactly 1 #PROF:teacher has an innocent directly below them"
+    },
+    {
+      "name": "Suzanne",
+      "name_en": "susan",
+      "criminal": true,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "There are more innocents than criminals between Victoire and Zara",
+      "hint_en": "There are more innocents than criminals between Vicky and Zara"
+    },
+    {
+      "name": "Thomas",
+      "name_en": "tom",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Both criminals between Gustave and Jean are Marc's neighbors",
+      "hint_en": "Both criminals between Gus and John are Mark's neighbors"
+    },
+    {
+      "name": "Victoire",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Karine et Thomas ont le même nombre de voisins innocents",
+      "hint_en": "Karen and Tom have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Guillaume",
+      "name_en": "will",
+      "criminal": false,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zara",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 8,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

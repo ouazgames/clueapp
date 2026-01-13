@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-017",
+  "level_number": 17,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Hard",
+  "cards": [
+    {
+      "name": "Amélie",
+      "name_en": "amy",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "None of the 5 innocents neighboring Gérard is between Flore and Paule",
+      "hint_en": "None of the 5 innocents neighboring Gary is between Flora and Paula"
+    },
+    {
+      "name": "Bruno",
+      "name_en": "brian",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "There are more innocents than criminals between Bruno and Donna",
+      "hint_en": "There are more innocents than criminals between Brian and Donna"
+    },
+    {
+      "name": "Christophe",
+      "name_en": "chris",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Christophe et Xia ont le même nombre de voisins innocents",
+      "hint_en": "Chris and Xia have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Donna",
+      "name_en": "donna",
+      "criminal": false,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "There are 9 criminals in total",
+      "hint_en": "There are 9 criminals in total"
+    },
+    {
+      "name": "Éric",
+      "name_en": "eric",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "There are more innocent #PROFS:clerk than innocent #PROFS:cook",
+      "hint_en": "There are more innocent #PROFS:clerk than innocent #PROFS:cook"
+    },
+    {
+      "name": "Flore",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "There are more criminals among #PROFS:pilot than any other profession",
+      "hint_en": "There are more criminals among #PROFS:pilot than any other profession"
+    },
+    {
+      "name": "Gérard",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "There's an equal number of innocents in rows 1 and 3",
+      "hint_en": "There's an equal number of innocents in rows 1 and 3"
+    },
+    {
+      "name": "Hilde",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "Robert is one of two or more innocents between Christophe and Xia",
+      "hint_en": "Rob is one of two or more innocents between Chris and Xia"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "All innocents between Donna and Zoé are connected",
+      "hint_en": "All innocents between Donna and Zoe are connected"
+    },
+    {
+      "name": "Jeannette",
+      "name_en": "janet",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "An odd number of innocents on the edges neighbor Xia",
+      "hint_en": "An odd number of innocents on the edges neighbor Xia"
+    },
+    {
+      "name": "Kyle",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "Xia et Flore ont le même nombre de voisins innocents",
+      "hint_en": "Xia and Flora have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Lisa",
+      "name_en": "lisa",
+      "criminal": false,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "Xia is one of Robert's 5 innocent neighbors",
+      "hint_en": "Xia is one of Rob's 5 innocent neighbors"
+    },
+    {
+      "name": "Olivia",
+      "name_en": "olivia",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "Vincent a plus de voisins criminels que Lisa",
+      "hint_en": "Vince has more criminal neighbors than Lisa"
+    },
+    {
+      "name": "Paule",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "Chanteur",
+      "profession_en": "singer",
+      "hint": "Both criminals in row 1 are Flore's neighbors",
+      "hint_en": "Both criminals in row 1 are Flora's neighbors"
+    },
+    {
+      "name": "Robert",
+      "name_en": "rob",
+      "criminal": false,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "Tous les criminels entre Amélie et Donna sont connectés",
+      "hint_en": "All criminals between Amy and Donna are connected"
+    },
+    {
+      "name": "Samuel",
+      "name_en": "sam",
+      "criminal": false,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Vincent",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Guillaume",
+      "name_en": "will",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xia",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zoé",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 9,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

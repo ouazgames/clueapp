@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-007",
+  "level_number": 7,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "آدم",
+      "name_en": "adam",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "المجرم الوحيد بين أولغا وروث موجود بين بولس وطارق",
+      "hint_en": "The only criminal between Olivia and Ruth is between Paul and Terry"
+    },
+    {
+      "name": "بتول",
+      "name_en": "betty",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "الصف 2 فيه أبرياء أكثر من أي صف آخر",
+      "hint_en": "Row 2 has more innocents than any other row"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "يوجد 14 أبرياء إجمالاً",
+      "hint_en": "There are 14 innocents in total"
+    },
+    {
+      "name": "إياد",
+      "name_en": "eric",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "كلا المجرمين بين وفاء وزينب هم جيران بولس",
+      "hint_en": "Both criminals between Vicky and Zoe are Paul's neighbors"
+    },
+    {
+      "name": "غازي",
+      "name_en": "gus",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "هشام واحد من اثنين أو أكثر من الأبرياء بين هشام وبولس",
+      "hint_en": "Henry is one of two or more innocents between Henry and Paul"
+    },
+    {
+      "name": "هشام",
+      "name_en": "henry",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "إياد وزياد لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Eric and Xavi have an equal number of innocent neighbors"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "زياد لديه جيران مجرمين أكثر من إسحاق",
+      "hint_en": "Xavi has more criminal neighbors than Isaac"
+    },
+    {
+      "name": "ياسين",
+      "name_en": "jason",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "هشام واحد من اثنين أو أكثر من الأبرياء في العمود C",
+      "hint_en": "Henry is one of two or more innocents in column C"
+    },
+    {
+      "name": "كوثر",
+      "name_en": "katie",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "مريم وزياد يتشاركان عدداً فردياً من الجيران الأبرياء",
+      "hint_en": "Mary and Xavi share an odd number of innocent neighbors"
+    },
+    {
+      "name": "ليزا",
+      "name_en": "lisa",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "زياد واحد من جيران روث الـ5 المجرمين",
+      "hint_en": "Xavi is one of Ruth's 5 criminal neighbors"
+    },
+    {
+      "name": "مريم",
+      "name_en": "mary",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد أبرياء أكثر من المجرمين بين ياسين وطارق",
+      "hint_en": "There are more innocents than criminals between Jason and Terry"
+    },
+    {
+      "name": "نادية",
+      "name_en": "nicole",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "واحد فقط من الـ2 أبرياء بين آدم وكريمة هو جار إسحاق",
+      "hint_en": "Only 1 of the 2 innocents between Adam and Carol is Isaac's neighbor"
+    },
+    {
+      "name": "أولغا",
+      "name_en": "olivia",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "كل المجرمين بين وفاء وزينب متصلون",
+      "hint_en": "All criminals between Vicky and Zoe are connected"
+    },
+    {
+      "name": "بولس",
+      "name_en": "paul",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "يوجد عدد فردي من المجرمين بين وفاء ووائل",
+      "hint_en": "There's an odd number of criminals between Vicky and Wally"
+    },
+    {
+      "name": "روث",
+      "name_en": "ruth",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "طارق",
+      "name_en": "terry",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وائل",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينب",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 6,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

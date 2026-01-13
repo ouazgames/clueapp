@@ -1,0 +1,202 @@
+{
+  "id": "level-pt-027",
+  "level_number": 27,
+  "language": "pt",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Roberto",
+      "name_en": "bobby",
+      "criminal": true,
+      "profession": "Mecânico",
+      "profession_en": "mech",
+      "hint": "Only 1 of the 2 innocents neighboring Guilherme is between Flora and Vicente",
+      "hint_en": "Only 1 of the 2 innocents neighboring Will is between Flora and Vince"
+    },
+    {
+      "name": "Carlos",
+      "name_en": "chad",
+      "criminal": true,
+      "profession": "Construtor",
+      "profession_en": "builder",
+      "hint": "Isaac is one of two or more criminals neighboring Erico",
+      "hint_en": "Isaac is one of two or more criminals neighboring Eric"
+    },
+    {
+      "name": "Diana",
+      "name_en": "diane",
+      "criminal": true,
+      "profession": "Construtor",
+      "profession_en": "builder",
+      "hint": "Roberto is one of 3 criminals in the corners",
+      "hint_en": "Bobby is one of 3 criminals in the corners"
+    },
+    {
+      "name": "Erico",
+      "name_en": "eric",
+      "criminal": false,
+      "profession": "Construtor",
+      "profession_en": "builder",
+      "hint": "All innocents between Carlos and Guilherme are connected",
+      "hint_en": "All innocents between Chad and Will are connected"
+    },
+    {
+      "name": "Flora",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Cantor",
+      "profession_en": "singer",
+      "hint": "Row 2 has more criminals than any other row",
+      "hint_en": "Row 2 has more criminals than any other row"
+    },
+    {
+      "name": "Gustavo",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "Cantor",
+      "profession_en": "singer",
+      "hint": "The only innocent between Vicente and Zara is Pedro's neighbor",
+      "hint_en": "The only innocent between Vince and Zara is Peter's neighbor"
+    },
+    {
+      "name": "Henrique",
+      "name_en": "hank",
+      "criminal": true,
+      "profession": "Cantor",
+      "profession_en": "singer",
+      "hint": "There are more criminals than innocents between Carlos and Olívia",
+      "hint_en": "There are more criminals than innocents between Chad and Olivia"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Policial",
+      "profession_en": "cop",
+      "hint": "Exactly 1 innocent between Janete and Margarida is neighboring Ronaldo",
+      "hint_en": "Exactly 1 innocent between Janet and Megan is neighboring Ronald"
+    },
+    {
+      "name": "Janete",
+      "name_en": "janet",
+      "criminal": false,
+      "profession": "Professor",
+      "profession_en": "teacher",
+      "hint": "Both innocents between Gustavo and Guilherme are Nancy's neighbors",
+      "hint_en": "Both innocents between Gus and Will are Nancy's neighbors"
+    },
+    {
+      "name": "Kay",
+      "name_en": "kay",
+      "criminal": true,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "Both innocents between Roberto and Nancy are connected",
+      "hint_en": "Both innocents between Bobby and Nancy are connected"
+    },
+    {
+      "name": "Lisa",
+      "name_en": "lisa",
+      "criminal": false,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "Kay tem exatamente 4 vizinhos inocentes",
+      "hint_en": "Kay has exactly 4 innocent neighbors"
+    },
+    {
+      "name": "Margarida",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "Detetive",
+      "profession_en": "sleuth",
+      "hint": "There's an odd number of innocents in row 1",
+      "hint_en": "There's an odd number of innocents in row 1"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Professor",
+      "profession_en": "teacher",
+      "hint": "Roberto e Xena têm o mesmo número de vizinhos criminosos",
+      "hint_en": "Bobby and Xena have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Olívia",
+      "name_en": "olivia",
+      "criminal": false,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Pedro",
+      "name_en": "peter",
+      "criminal": true,
+      "profession": "Detetive",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ronaldo",
+      "name_en": "ronald",
+      "criminal": true,
+      "profession": "Policial",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Vicente",
+      "name_en": "vince",
+      "criminal": true,
+      "profession": "Mecânico",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Guilherme",
+      "name_en": "will",
+      "criminal": false,
+      "profession": "Policial",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xena",
+      "name_en": "xena",
+      "criminal": true,
+      "profession": "Professor",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zara",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "Mecânico",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 14,
+  "ui": {
+    "level": "Nível",
+    "criminal_status": "Criminoso",
+    "innocent_status": "Inocente",
+    "hint": "Dica",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Próximo Nível",
+    "congratulations": "Parabéns!",
+    "total_criminals": "Total de Criminosos"
+  }
+}

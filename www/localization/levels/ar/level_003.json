@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-003",
+  "level_number": 3,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "آنا",
+      "name_en": "anna",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "خليل لديه جيران مجرمين أكثر من روز",
+      "hint_en": "Clyde has more criminal neighbors than Rose"
+    },
+    {
+      "name": "بشرى",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "بالضبط 4 من الـ10 أبرياء على الحواف هم جيران فاطمة",
+      "hint_en": "Exactly 4 of the 10 innocents on the edges are Flora's neighbors"
+    },
+    {
+      "name": "خليل",
+      "name_en": "clyde",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "كل المجرمين بين دنيا وسعيد متصلون",
+      "hint_en": "All criminals between Donna and Steve are connected"
+    },
+    {
+      "name": "دنيا",
+      "name_en": "donna",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "علي لديه جيران أبرياء أكثر من نبيل",
+      "hint_en": "Ollie has more innocent neighbors than Nick"
+    },
+    {
+      "name": "حواء",
+      "name_en": "eve",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "إسحاق وطارق لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Isaac and Terry have an equal number of criminal neighbors"
+    },
+    {
+      "name": "فاطمة",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "كلا المجرمين بين دنيا وسعيد موجودان بين إسحاق وزينب",
+      "hint_en": "Both criminals between Donna and Steve are between Isaac and Zoe"
+    },
+    {
+      "name": "حبيبة",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "بطرس وطارق لديهم جار بريء واحد مشترك فقط",
+      "hint_en": "Peter and Terry have only one innocent neighbor in common"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "واحد فقط من الـ5 أبرياء المجاورين لـمراد في الصف 3",
+      "hint_en": "Only 1 of the 5 innocents neighboring Mark is in row 3"
+    },
+    {
+      "name": "ياسين",
+      "name_en": "jason",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "مراد and نبيل have 3 innocent neighbors in common",
+      "hint_en": "Mark and Nick have 3 innocent neighbors in common"
+    },
+    {
+      "name": "لمياء",
+      "name_en": "lucy",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "يوجد عدد فردي من المجرمين المجاورين لـنبيل",
+      "hint_en": "There's an odd number of criminals neighboring Nick"
+    },
+    {
+      "name": "مراد",
+      "name_en": "mark",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد أبرياء أكثر من المجرمين بين دنيا وزينب",
+      "hint_en": "There are more innocents than criminals between Donna and Zoe"
+    },
+    {
+      "name": "نبيل",
+      "name_en": "nick",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "حواء لديه جيران مجرمين أكثر من نبيل",
+      "hint_en": "Eve has more criminal neighbors than Nick"
+    },
+    {
+      "name": "علي",
+      "name_en": "ollie",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "يوجد عدد متساوٍ من الأبرياء في العمودين C وE",
+      "hint_en": "There's an equal number of innocents in columns C and E"
+    },
+    {
+      "name": "بطرس",
+      "name_en": "peter",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(doctor,innocent,0,1,2)"
+    },
+    {
+      "name": "روز",
+      "name_en": "rose",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "2 طبيب لديهم بريء تحتهم مباشرة",
+      "hint_en": "2 #PROFS:doctor have an innocent directly below them"
+    },
+    {
+      "name": "سعيد",
+      "name_en": "steve",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "طارق",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وائل",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "شيماء",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينب",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 5,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-es-018",
+  "level_number": 18,
+  "language": "es",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Agustín",
+      "name_en": "austin",
+      "criminal": false,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "Elena y Samuel tienen el mismo número de vecinos criminales",
+      "hint_en": "Ellie and Sam have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Beatriz",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "Elena is one of Carlos's 5 criminal neighbors",
+      "hint_en": "Ellie is one of Keith's 5 criminal neighbors"
+    },
+    {
+      "name": "Cristina",
+      "name_en": "cheryl",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Isaac y Zacarías tienen el mismo número de vecinos inocentes",
+      "hint_en": "Isaac and Zach have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Diana",
+      "name_en": "diane",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "Todos los criminales entre Cristina y Rubí están conectados",
+      "hint_en": "All criminals between Cheryl and Ruby are connected"
+    },
+    {
+      "name": "Elena",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "Gustavo and Enrique share an odd number of innocent neighbors",
+      "hint_en": "Gus and Hank share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Flora",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "Todos los criminales entre Beatriz y Walter están conectados",
+      "hint_en": "All criminals between Bonnie and Wally are connected"
+    },
+    {
+      "name": "Gustavo",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "Enrique tiene más vecinos criminales que Agustín",
+      "hint_en": "Hank has more criminal neighbors than Austin"
+    },
+    {
+      "name": "Enrique",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "There is only one innocent between Beatriz and Flora",
+      "hint_en": "There is only one innocent between Bonnie and Flora"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Constructor",
+      "profession_en": "builder",
+      "hint": "Neither of the 2 innocents neighboring Elena are between Isaac and Laura",
+      "hint_en": "Neither of the 2 innocents neighboring Ellie are between Isaac and Laura"
+    },
+    {
+      "name": "Carlos",
+      "name_en": "keith",
+      "criminal": true,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "The only innocent between Laura and Xavier is Zacarías's neighbor",
+      "hint_en": "The only innocent between Laura and Xavi is Zach's neighbor"
+    },
+    {
+      "name": "Laura",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "Gustavo tiene más vecinos inocentes que Zacarías",
+      "hint_en": "Gus has more innocent neighbors than Zach"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "There are as many innocent #PROFS:cop as there are innocent #PROFS:guard",
+      "hint_en": "There are as many innocent #PROFS:cop as there are innocent #PROFS:guard"
+    },
+    {
+      "name": "Olivia",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "Constructor",
+      "profession_en": "builder",
+      "hint": "There are 9 innocents in total",
+      "hint_en": "There are 9 innocents in total"
+    },
+    {
+      "name": "Pedro",
+      "name_en": "peter",
+      "criminal": false,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Olivia tiene más vecinos inocentes que Beatriz",
+      "hint_en": "Olive has more innocent neighbors than Bonnie"
+    },
+    {
+      "name": "Rubí",
+      "name_en": "ruby",
+      "criminal": false,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "There's an odd number of innocent #PROFS:guard",
+      "hint_en": "There's an odd number of innocent #PROFS:guard"
+    },
+    {
+      "name": "Samuel",
+      "name_en": "sam",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Victoria",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Walter",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zacarías",
+      "name_en": "zach",
+      "criminal": true,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 11,
+  "ui": {
+    "level": "Nivel",
+    "criminal_status": "Criminal",
+    "innocent_status": "Inocente",
+    "hint": "Pista",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Siguiente Nivel",
+    "congratulations": "¡Felicitaciones!",
+    "total_criminals": "Total de Criminales"
+  }
+}

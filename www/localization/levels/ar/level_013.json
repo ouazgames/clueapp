@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-013",
+  "level_number": 13,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "آنا",
+      "name_en": "anna",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد بالضبط 2 أبرياء بين مريم وزينب",
+      "hint_en": "There are exactly 2 innocents between Mary and Zoe"
+    },
+    {
+      "name": "بشير",
+      "name_en": "ben",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "يوجد بريء واحد فقط بين رباب وزينب",
+      "hint_en": "There is only one innocent between Ruby and Zoe"
+    },
+    {
+      "name": "شادي",
+      "name_en": "chad",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "واحد فقط من الـ4 مجرمين المجاورين لـجمال فيolumn D",
+      "hint_en": "Only 1 of the 4 criminals neighboring Gary is in column D"
+    },
+    {
+      "name": "دنيا",
+      "name_en": "donna",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "جمال has the most criminal neighbors",
+      "hint_en": "Gary has the most criminal neighbors"
+    },
+    {
+      "name": "إيمان",
+      "name_en": "ellie",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "يوجد عدد متساوٍ من الأبرياء في العمودين B وE",
+      "hint_en": "There's an equal number of innocents in columns B and E"
+    },
+    {
+      "name": "جمال",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "عدد فردي من الأبرياء بين جمال ووليد يجاورون نوح",
+      "hint_en": "An odd number of innocents between Gary and Vince neighbor Noah"
+    },
+    {
+      "name": "هلال",
+      "name_en": "hal",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "جمال واحد من جيران كريم الـ5 الأبرياء",
+      "hint_en": "Gary is one of Kevin's 5 innocent neighbors"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "جمال ووليد لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Gary and Vince have an equal number of innocent neighbors"
+    },
+    {
+      "name": "ياسين",
+      "name_en": "jason",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "بولس واحد من 2 مجرمين بين هلال وزينة",
+      "hint_en": "Paul is one of 2 criminals between Hal and Xena"
+    },
+    {
+      "name": "كريم",
+      "name_en": "kevin",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "زينة لديه جيران أبرياء أكثر من دنيا",
+      "hint_en": "Xena has more innocent neighbors than Donna"
+    },
+    {
+      "name": "لمياء",
+      "name_en": "lucy",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "كلا المجرمين بين شادي وبولس هم جيران كريم",
+      "hint_en": "Both criminals between Chad and Paul are Kevin's neighbors"
+    },
+    {
+      "name": "مريم",
+      "name_en": "mary",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "كل الأبرياء بين شادي وبولس متصلون",
+      "hint_en": "All innocents between Chad and Paul are connected"
+    },
+    {
+      "name": "نوح",
+      "name_en": "noah",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "دنيا وآنا لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Donna and Anna have an equal number of criminal neighbors"
+    },
+    {
+      "name": "أولغا",
+      "name_en": "olivia",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "بولس",
+      "name_en": "paul",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "رباب",
+      "name_en": "ruby",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "سارة",
+      "name_en": "sarah",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينة",
+      "name_en": "xena",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينب",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 7,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

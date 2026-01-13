@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-029",
+  "level_number": 29,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Аарон",
+      "name_en": "aaron",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "Тимофей and Ксения have only one innocent neighbor in common",
+      "hint_en": "Terry and Xia have only one innocent neighbor in common"
+    },
+    {
+      "name": "Бенджамин",
+      "name_en": "ben",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Both innocents between Аарон and Диана are connected",
+      "hint_en": "Both innocents between Aaron and Diane are connected"
+    },
+    {
+      "name": "Карина",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "There's an odd number of innocents between Ева and Исаак",
+      "hint_en": "There's an odd number of innocents between Evie and Isaac"
+    },
+    {
+      "name": "Диана",
+      "name_en": "diane",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Exactly 2 of the 3 criminals neighboring Бенджамин are between Аарон and Тимофей",
+      "hint_en": "Exactly 2 of the 3 criminals neighboring Ben are between Aaron and Terry"
+    },
+    {
+      "name": "Ева",
+      "name_en": "evie",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "n_professions_have_trait_in_dir(teacher,criminal,0,-1,1)",
+      "hint_en": "n_professions_have_trait_in_dir(teacher,criminal,0,-1,1)"
+    },
+    {
+      "name": "Флойд",
+      "name_en": "floyd",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "Exactly 1 #PROF:teacher has a criminal directly above them",
+      "hint_en": "Exactly 1 #PROF:teacher has a criminal directly above them"
+    },
+    {
+      "name": "Хильда",
+      "name_en": "hilda",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "There are more innocents than criminals between Кайл and Виктор",
+      "hint_en": "There are more innocents than criminals between Kyle and Vince"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "There's an odd number of innocents between Мартин and Сергей",
+      "hint_en": "There's an odd number of innocents between Martin and Scott"
+    },
+    {
+      "name": "Юлия",
+      "name_en": "julie",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "Only 1 of the 4 innocents neighboring Люся is in row 2",
+      "hint_en": "Only 1 of the 4 innocents neighboring Lucy is in row 2"
+    },
+    {
+      "name": "Кайл",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "У Надежда и Карина одинаковое число соседей-преступников",
+      "hint_en": "Nancy and Carol have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Люся",
+      "name_en": "lucy",
+      "criminal": true,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "Тимофей has more criminal than innocent neighbors",
+      "hint_en": "Terry has more criminal than innocent neighbors"
+    },
+    {
+      "name": "Мартин",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "Exactly 1 innocent between Диана and Сергей is neighboring Хильда",
+      "hint_en": "Exactly 1 innocent between Diane and Scott is neighboring Hilda"
+    },
+    {
+      "name": "Надежда",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "У Тимофей и Ева одинаковое число соседей-преступников",
+      "hint_en": "Terry and Evie have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Полина",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "There's an odd number of innocents between Мартин and Зед",
+      "hint_en": "There's an odd number of innocents between Martin and Zed"
+    },
+    {
+      "name": "Роза",
+      "name_en": "rose",
+      "criminal": true,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "All innocents between Флойд and Виктор are connected",
+      "hint_en": "All innocents between Floyd and Vince are connected"
+    },
+    {
+      "name": "Сергей",
+      "name_en": "scott",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "There are 14 criminals in total",
+      "hint_en": "There are 14 criminals in total"
+    },
+    {
+      "name": "Тимофей",
+      "name_en": "terry",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "Only 1 of the 3 innocents on the edges is Ева's neighbor",
+      "hint_en": "Only 1 of the 3 innocents on the edges is Evie's neighbor"
+    },
+    {
+      "name": "Виктор",
+      "name_en": "vince",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xia",
+      "criminal": true,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зед",
+      "name_en": "zed",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 14,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

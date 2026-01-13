@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-016",
+  "level_number": 16,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Hard",
+  "cards": [
+    {
+      "name": "Амелия",
+      "name_en": "amy",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "У Борис больше невиновных соседей, чем у Bobby2",
+      "hint_en": "Bobby has more innocent neighbors than Bobby2"
+    },
+    {
+      "name": "Борис",
+      "name_en": "bobby",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "Наталья and Вальтер have only one innocent neighbor in common",
+      "hint_en": "Nicole and Wally have only one innocent neighbor in common"
+    },
+    {
+      "name": "Карина",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "Only 1 of the 2 innocents neighboring Борис is Карина's neighbor",
+      "hint_en": "Only 1 of the 2 innocents neighboring Bobby is Carol's neighbor"
+    },
+    {
+      "name": "Диана",
+      "name_en": "diane",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "There's an odd number of innocents neighboring Вальтер",
+      "hint_en": "There's an odd number of innocents neighboring Wally"
+    },
+    {
+      "name": "Елена",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "An odd number of innocents between Борис and Тимофей neighbor Марк",
+      "hint_en": "An odd number of innocents between Bobby and Terry neighbor Mark"
+    },
+    {
+      "name": "Фрея",
+      "name_en": "freya",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "Exactly 1 innocent neighboring Вальтер is #PROF:builder",
+      "hint_en": "Exactly 1 innocent neighboring Wally is #PROF:builder"
+    },
+    {
+      "name": "Гавриил",
+      "name_en": "gabe",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "There's an equal number of innocents in rows 3 and 5",
+      "hint_en": "There's an equal number of innocents in rows 3 and 5"
+    },
+    {
+      "name": "Генрих",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "Column B has more criminals than any other column",
+      "hint_en": "Column B has more criminals than any other column"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Exactly 4 of the 11 criminals on the edges are Ольга's neighbors",
+      "hint_en": "Exactly 4 of the 11 criminals on the edges are Olivia's neighbors"
+    },
+    {
+      "name": "Жанна",
+      "name_en": "janet",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "У Марк больше невиновных соседей, чем у Амелия",
+      "hint_en": "Mark has more innocent neighbors than Amy"
+    },
+    {
+      "name": "Константин",
+      "name_en": "keith",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "There's an odd number of innocents between Сюзанна and Ксавье",
+      "hint_en": "There's an odd number of innocents between Susan and Xavi"
+    },
+    {
+      "name": "Лаура",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "There are more criminal #PROFS:painter than criminal #PROFS:pilot",
+      "hint_en": "There are more criminal #PROFS:painter than criminal #PROFS:pilot"
+    },
+    {
+      "name": "Марк",
+      "name_en": "mark",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "There are more innocent #PROFS:builder than innocent #PROFS:sleuth",
+      "hint_en": "There are more innocent #PROFS:builder than innocent #PROFS:sleuth"
+    },
+    {
+      "name": "Наталья",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "У Сюзанна и Генрих одинаковое число соседей-преступников",
+      "hint_en": "Susan and Hank have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olivia",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Рональд",
+      "name_en": "ronald",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Сюзанна",
+      "name_en": "susan",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Тимофей",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Вальтер",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксавье",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

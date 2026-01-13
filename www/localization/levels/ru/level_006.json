@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-006",
+  "level_number": 6,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Барбара",
+      "name_en": "barb",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "All innocents between Даниил and Павел are connected",
+      "hint_en": "All innocents between Daniel and Paul are connected"
+    },
+    {
+      "name": "Светлана",
+      "name_en": "cheryl",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "Only 1 of the 2 criminals neighboring Надежда is between Светлана and Вальтер",
+      "hint_en": "Only 1 of the 2 criminals neighboring Nancy is between Cheryl and Wally"
+    },
+    {
+      "name": "Даниил",
+      "name_en": "daniel",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "Only 1 of the 3 criminals neighboring Ольга is between Барбара and Тимофей",
+      "hint_en": "Only 1 of the 3 criminals neighboring Olive is between Barb and Terry"
+    },
+    {
+      "name": "Эмилия",
+      "name_en": "emily",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "There's an odd number of criminals between Исаак and Зоя",
+      "hint_en": "There's an odd number of criminals between Isaac and Zoe"
+    },
+    {
+      "name": "Флойд",
+      "name_en": "floyd",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "Леонид is one of Роза's 3 innocent neighbors",
+      "hint_en": "Logan is one of Rose's 3 innocent neighbors"
+    },
+    {
+      "name": "Гавриил",
+      "name_en": "gabe",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "Вальтер and Эмилия have an equal number of innocent neighbors",
+      "hint_en": "Wally and Emily have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Харитон",
+      "name_en": "hal",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "There are exactly 4 innocents in column E",
+      "hint_en": "There are exactly 4 innocents in column E"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Exactly 1 innocent in row 3 is neighboring Леонид",
+      "hint_en": "Exactly 1 innocent in row 3 is neighboring Logan"
+    },
+    {
+      "name": "Юлия",
+      "name_en": "julie",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "Роза is one of 7 innocents on the edges",
+      "hint_en": "Rose is one of 7 innocents on the edges"
+    },
+    {
+      "name": "Катя",
+      "name_en": "katie",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "Column B has more criminals than any other column",
+      "hint_en": "Column B has more criminals than any other column"
+    },
+    {
+      "name": "Леонид",
+      "name_en": "logan",
+      "criminal": false,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "Гавриил is one of two or more innocents neighboring Светлана",
+      "hint_en": "Gabe is one of two or more innocents neighboring Cheryl"
+    },
+    {
+      "name": "Марина",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)",
+      "hint_en": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)"
+    },
+    {
+      "name": "Надежда",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "Exactly 1 #PROF:guard has a criminal directly below them",
+      "hint_en": "Exactly 1 #PROF:guard has a criminal directly below them"
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "Exactly 2 of Павел's 5 innocent neighbors also neighbor Роза",
+      "hint_en": "Exactly 2 of Paul's 5 innocent neighbors also neighbor Rose"
+    },
+    {
+      "name": "Павел",
+      "name_en": "paul",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "У Роза и Барбара одинаковое число соседей-преступников",
+      "hint_en": "Rose and Barb have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Роза",
+      "name_en": "rose",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Тимофей",
+      "name_en": "terry",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Вальтер",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксавье",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зоя",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 7,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

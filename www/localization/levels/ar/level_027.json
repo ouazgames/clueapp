@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-027",
+  "level_number": 27,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "بدر",
+      "name_en": "bobby",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "واحد فقط من الـ2 أبرياء المجاورين لـوليد بين فاطمة ووليد",
+      "hint_en": "Only 1 of the 2 innocents neighboring Will is between Flora and Vince"
+    },
+    {
+      "name": "شادي",
+      "name_en": "chad",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "إسحاق واحد من اثنين أو أكثر من المجرمين المجاورين لـإياد",
+      "hint_en": "Isaac is one of two or more criminals neighboring Eric"
+    },
+    {
+      "name": "ديانا",
+      "name_en": "diane",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "بدر واحد من 3 مجرمين في الزوايا",
+      "hint_en": "Bobby is one of 3 criminals in the corners"
+    },
+    {
+      "name": "إياد",
+      "name_en": "eric",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "كل الأبرياء بين شادي ووليد متصلون",
+      "hint_en": "All innocents between Chad and Will are connected"
+    },
+    {
+      "name": "فاطمة",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "الصف 2 فيه مجرمين أكثر من أي صف آخر",
+      "hint_en": "Row 2 has more criminals than any other row"
+    },
+    {
+      "name": "غازي",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "البريء الوحيد بين وليد وزهراء هو جار بطرس's",
+      "hint_en": "The only innocent between Vince and Zara is Peter's neighbor"
+    },
+    {
+      "name": "هاني",
+      "name_en": "hank",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "يوجد مجرمين أكثر من الأبرياء بين شادي وأولغا",
+      "hint_en": "There are more criminals than innocents between Chad and Olivia"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "بالضبط 1 بريء بين جنات وملك هو جار رائد",
+      "hint_en": "Exactly 1 innocent between Janet and Megan is neighboring Ronald"
+    },
+    {
+      "name": "جنات",
+      "name_en": "janet",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "كلا الأبرياء بين غازي ووليد هم جيران نور",
+      "hint_en": "Both innocents between Gus and Will are Nancy's neighbors"
+    },
+    {
+      "name": "كوثر",
+      "name_en": "kay",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "كلا الأبرياء بين بدر ونور متصلان",
+      "hint_en": "Both innocents between Bobby and Nancy are connected"
+    },
+    {
+      "name": "ليزا",
+      "name_en": "lisa",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "كوثر لديه بالضبط 4 جيران أبرياء",
+      "hint_en": "Kay has exactly 4 innocent neighbors"
+    },
+    {
+      "name": "ملك",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد عدد فردي من الأبرياء في الصف 1",
+      "hint_en": "There's an odd number of innocents in row 1"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "بدر وزينة لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Bobby and Xena have an equal number of criminal neighbors"
+    },
+    {
+      "name": "أولغا",
+      "name_en": "olivia",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "بطرس",
+      "name_en": "peter",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "رائد",
+      "name_en": "ronald",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "vince",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "will",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينة",
+      "name_en": "xena",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زهراء",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 14,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

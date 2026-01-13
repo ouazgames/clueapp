@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-025",
+  "level_number": 25,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Алексей",
+      "name_en": "alex",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "Карина and Олег share an odd number of innocent neighbors",
+      "hint_en": "Karen and Olof share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Бетти",
+      "name_en": "betty",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "Олег has 4 innocent neighbors on the edges",
+      "hint_en": "Olof has 4 innocent neighbors on the edges"
+    },
+    {
+      "name": "Денис",
+      "name_en": "denis",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "У Сюзанна больше невиновных соседей, чем у Яна",
+      "hint_en": "Susan has more innocent neighbors than Jane"
+    },
+    {
+      "name": "Елена",
+      "name_en": "ellie",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "Only 1 of the 2 criminals neighboring Николай is between Бетти and Ванда",
+      "hint_en": "Only 1 of the 2 criminals neighboring Nick is between Betty and Wanda"
+    },
+    {
+      "name": "Фрея",
+      "name_en": "freya",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "There are as many innocent #PROFS:builder as there are innocent #PROFS:judge",
+      "hint_en": "There are as many innocent #PROFS:builder as there are innocent #PROFS:judge"
+    },
+    {
+      "name": "Григорий",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "There's an odd number of criminals neighboring Григорий",
+      "hint_en": "There's an odd number of criminals neighboring Gary"
+    },
+    {
+      "name": "Елена",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "У Ксения и Елена одинаковое число соседей-преступников",
+      "hint_en": "Xia and Helen have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Only 1 of the 2 criminals between Алексей and Яна is Фрея's neighbor",
+      "hint_en": "Only 1 of the 2 criminals between Alex and Jane is Freya's neighbor"
+    },
+    {
+      "name": "Яна",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "There is only one innocent between Карина and Ларри",
+      "hint_en": "There is only one innocent between Karen and Larry"
+    },
+    {
+      "name": "Карина",
+      "name_en": "karen",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "Only 1 of the 2 criminals neighboring Фрея is between Григорий and Олег",
+      "hint_en": "Only 1 of the 2 criminals neighboring Freya is between Gary and Olof"
+    },
+    {
+      "name": "Ларри",
+      "name_en": "larry",
+      "criminal": false,
+      "profession": "Клерк",
+      "profession_en": "clerk",
+      "hint": "Олег is one of Карина's 6 innocent neighbors",
+      "hint_en": "Olof is one of Karen's 6 innocent neighbors"
+    },
+    {
+      "name": "Мартин",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "There's an odd number of criminals between Мартин and Зоя",
+      "hint_en": "There's an odd number of criminals between Martin and Zoe"
+    },
+    {
+      "name": "Николай",
+      "name_en": "nick",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "There's an odd number of innocents between Исаак and Зоя",
+      "hint_en": "There's an odd number of innocents between Isaac and Zoe"
+    },
+    {
+      "name": "Олег",
+      "name_en": "olof",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "There are more innocents than criminals between Яна and Виктор",
+      "hint_en": "There are more innocents than criminals between Jane and Vince"
+    },
+    {
+      "name": "Роман",
+      "name_en": "ryan",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "There's an odd number of innocents between Алексей and Виктор",
+      "hint_en": "There's an odd number of innocents between Alex and Vince"
+    },
+    {
+      "name": "Сюзанна",
+      "name_en": "susan",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктор",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ванда",
+      "name_en": "wanda",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зоя",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 4,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

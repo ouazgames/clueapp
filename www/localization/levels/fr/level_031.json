@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-031",
+  "level_number": 31,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Alice",
+      "name_en": "alice",
+      "criminal": false,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "Isaac et Samuel ont le même nombre de voisins innocents",
+      "hint_en": "Isaac and Sam have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Béatrice",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "Tous les criminels entre Julie et Martin sont connectés",
+      "hint_en": "All criminals between Julie and Martin are connected"
+    },
+    {
+      "name": "Caroline",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Both innocents between David and Zara are connected",
+      "hint_en": "Both innocents between David and Zara are connected"
+    },
+    {
+      "name": "David",
+      "name_en": "david",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "An odd number of innocents in column B are Gabriel's neighbors",
+      "hint_en": "An odd number of innocents in column B are Gabe's neighbors"
+    },
+    {
+      "name": "Erwin",
+      "name_en": "erwin",
+      "criminal": true,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "Thomas et Erwin ont le même nombre de voisins criminels",
+      "hint_en": "Tyler and Erwin have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Gabriel",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "Tous les criminels entre Alice et David sont connectés",
+      "hint_en": "All criminals between Alice and David are connected"
+    },
+    {
+      "name": "Hélène",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Thomas's only innocent neighbor is between Alice and Samuel",
+      "hint_en": "Tyler's only innocent neighbor is between Alice and Sam"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "Isaac's only innocent neighbor is between David and Martin",
+      "hint_en": "Isaac's only innocent neighbor is between David and Martin"
+    },
+    {
+      "name": "Julie",
+      "name_en": "julie",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "Both criminals between Nicole and Robert are connected",
+      "hint_en": "Both criminals between Nicole and Rob are connected"
+    },
+    {
+      "name": "Kevin",
+      "name_en": "kevin",
+      "criminal": true,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "Hélène et Thomas ont le même nombre de voisins innocents",
+      "hint_en": "Helen and Tyler have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Laurent",
+      "name_en": "logan",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "An odd number of innocents between David and Robert neighbor Hélène",
+      "hint_en": "An odd number of innocents between David and Rob neighbor Helen"
+    },
+    {
+      "name": "Martin",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "An odd number of innocents on the edges neighbor Kevin",
+      "hint_en": "An odd number of innocents on the edges neighbor Kevin"
+    },
+    {
+      "name": "Nicole",
+      "name_en": "nicole",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Olivia",
+      "name_en": "olivia",
+      "criminal": true,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Pauline",
+      "name_en": "pam",
+      "criminal": true,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Robert",
+      "name_en": "rob",
+      "criminal": false,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Samuel",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Thomas",
+      "name_en": "tyler",
+      "criminal": true,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Victoire",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zara",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 16,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

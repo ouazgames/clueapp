@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-017",
+  "level_number": 17,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Hard",
+  "cards": [
+    {
+      "name": "أمينة",
+      "name_en": "amy",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "لا أحد من الـ5 أبرياء المجاورين لـجمال بين فاطمة وبولا",
+      "hint_en": "None of the 5 innocents neighboring Gary is between Flora and Paula"
+    },
+    {
+      "name": "بلال",
+      "name_en": "brian",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد أبرياء أكثر من المجرمين بين بلال ودنيا",
+      "hint_en": "There are more innocents than criminals between Brian and Donna"
+    },
+    {
+      "name": "خالد",
+      "name_en": "chris",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "خالد وشيماء لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Chris and Xia have an equal number of innocent neighbors"
+    },
+    {
+      "name": "دنيا",
+      "name_en": "donna",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "يوجد 9 مجرمين إجمالاً",
+      "hint_en": "There are 9 criminals in total"
+    },
+    {
+      "name": "إياد",
+      "name_en": "eric",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "يوجد موظف أبرياء أكثر من طباخ أبرياء",
+      "hint_en": "There are more innocent #PROFS:clerk than innocent #PROFS:cook"
+    },
+    {
+      "name": "فاطمة",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "يوجد مجرمين بين طيار أكثر من أي مهنة أخرى",
+      "hint_en": "There are more criminals among #PROFS:pilot than any other profession"
+    },
+    {
+      "name": "جمال",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "يوجد عدد متساوٍ من الأبرياء في الصفين 1 و3",
+      "hint_en": "There's an equal number of innocents in rows 1 and 3"
+    },
+    {
+      "name": "حبيبة",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "رباح واحد من اثنين أو أكثر من الأبرياء بين خالد وشيماء",
+      "hint_en": "Rob is one of two or more innocents between Chris and Xia"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "كل الأبرياء بين دنيا وزينب متصلون",
+      "hint_en": "All innocents between Donna and Zoe are connected"
+    },
+    {
+      "name": "جنات",
+      "name_en": "janet",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "عدد فردي من الأبرياء على الحواف يجاورون شيماء",
+      "hint_en": "An odd number of innocents on the edges neighbor Xia"
+    },
+    {
+      "name": "خالد",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "شيماء وفاطمة لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Xia and Flora have an equal number of innocent neighbors"
+    },
+    {
+      "name": "ليزا",
+      "name_en": "lisa",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "شيماء واحد من جيران رباح الـ5 الأبرياء",
+      "hint_en": "Xia is one of Rob's 5 innocent neighbors"
+    },
+    {
+      "name": "أولغا",
+      "name_en": "olivia",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "وليد لديه جيران مجرمين أكثر من ليزا",
+      "hint_en": "Vince has more criminal neighbors than Lisa"
+    },
+    {
+      "name": "بولا",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "كلا المجرمين في الصف 1 هم جيران فاطمة",
+      "hint_en": "Both criminals in row 1 are Flora's neighbors"
+    },
+    {
+      "name": "رباح",
+      "name_en": "rob",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "كل المجرمين بين أمينة ودنيا متصلون",
+      "hint_en": "All criminals between Amy and Donna are connected"
+    },
+    {
+      "name": "سامي",
+      "name_en": "sam",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "will",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "شيماء",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينب",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 9,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

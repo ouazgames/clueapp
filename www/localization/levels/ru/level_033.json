@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-033",
+  "level_number": 33,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Алиса",
+      "name_en": "alice",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "Исаак is one of 2 criminals between Исаак and Лиза",
+      "hint_en": "Isaac is one of 2 criminals between Isaac and Lisa"
+    },
+    {
+      "name": "Богдан",
+      "name_en": "brian",
+      "criminal": true,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "Кевин is one of two or more innocents neighboring Итан",
+      "hint_en": "Kevin is one of two or more innocents neighboring Ethan"
+    },
+    {
+      "name": "Кирилл",
+      "name_en": "chris",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "Both criminals neighboring Исаак are Кевин's neighbors",
+      "hint_en": "Both criminals neighboring Isaac are Kevin's neighbors"
+    },
+    {
+      "name": "Донна",
+      "name_en": "donna",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "Алиса's only innocent neighbor is between Итан and Густав",
+      "hint_en": "Alice's only innocent neighbor is between Ethan and Gus"
+    },
+    {
+      "name": "Итан",
+      "name_en": "ethan",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "У Виктория и Донна одинаковое число соседей-преступников",
+      "hint_en": "Vicky and Donna have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Фёдор",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "There are 15 criminals in total",
+      "hint_en": "There are 15 criminals in total"
+    },
+    {
+      "name": "Густав",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "There are as many innocent #PROFS:guard as there are innocent #PROFS:singer",
+      "hint_en": "There are as many innocent #PROFS:guard as there are innocent #PROFS:singer"
+    },
+    {
+      "name": "Елена",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "All criminals between Алиса and Донна are connected",
+      "hint_en": "All criminals between Alice and Donna are connected"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "Only 1 of the 5 criminals neighboring Густав is Олег's neighbor",
+      "hint_en": "Only 1 of the 5 criminals neighboring Gus is Olof's neighbor"
+    },
+    {
+      "name": "Кевин",
+      "name_en": "kevin",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "У Елена больше соседей-преступников, чем у Ксения",
+      "hint_en": "Helen has more criminal neighbors than Xena"
+    },
+    {
+      "name": "Лиза",
+      "name_en": "lisa",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Фёдор has the most criminal neighbors",
+      "hint_en": "Frank has the most criminal neighbors"
+    },
+    {
+      "name": "Мартин",
+      "name_en": "martin",
+      "criminal": true,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "There's an odd number of innocents between Олег and Ванда",
+      "hint_en": "There's an odd number of innocents between Olof and Wanda"
+    },
+    {
+      "name": "Наталья",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "There are more criminals than innocents between Ванда and Зед",
+      "hint_en": "There are more criminals than innocents between Wanda and Zed"
+    },
+    {
+      "name": "Олег",
+      "name_en": "olof",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "n_professions_have_trait_in_dir(singer,innocent,-1,0,1)",
+      "hint_en": "n_professions_have_trait_in_dir(singer,innocent,-1,0,1)"
+    },
+    {
+      "name": "Полина",
+      "name_en": "pam",
+      "criminal": true,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "Exactly 1 #PROF:singer has an innocent directly to the left of them",
+      "hint_en": "Exactly 1 #PROF:singer has an innocent directly to the left of them"
+    },
+    {
+      "name": "Роза",
+      "name_en": "rose",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "There is only one innocent between Ванда and Ксения",
+      "hint_en": "There is only one innocent between Wanda and Xena"
+    },
+    {
+      "name": "Виктория",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "Exactly 1 innocent between Наталья and Полина is neighboring Ксения",
+      "hint_en": "Exactly 1 innocent between Nicole and Pam is neighboring Xena"
+    },
+    {
+      "name": "Ванда",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "There's an odd number of innocents neighboring Олег in row 5",
+      "hint_en": "There's an odd number of innocents neighboring Olof in row 5"
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xena",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зед",
+      "name_en": "zed",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

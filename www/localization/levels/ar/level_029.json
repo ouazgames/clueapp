@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-029",
+  "level_number": 29,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "هارون",
+      "name_en": "aaron",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "طارق وشيماء لديهم جار بريء واحد مشترك فقط",
+      "hint_en": "Terry and Xia have only one innocent neighbor in common"
+    },
+    {
+      "name": "بشير",
+      "name_en": "ben",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "كلا الأبرياء بين هارون وديانا متصلان",
+      "hint_en": "Both innocents between Aaron and Diane are connected"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "يوجد عدد فردي من الأبرياء بين إيفا وإسحاق",
+      "hint_en": "There's an odd number of innocents between Evie and Isaac"
+    },
+    {
+      "name": "ديانا",
+      "name_en": "diane",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "بالضبط 2 من الـ3 مجرمين المجاورين لـبشير موجودين بين هارون وطارق",
+      "hint_en": "Exactly 2 of the 3 criminals neighboring Ben are between Aaron and Terry"
+    },
+    {
+      "name": "إيفا",
+      "name_en": "evie",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(teacher,criminal,0,-1,1)"
+    },
+    {
+      "name": "فؤاد",
+      "name_en": "floyd",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "بالضبط 1 معلم لديه مجرم فوقه مباشرة",
+      "hint_en": "Exactly 1 #PROF:teacher has a criminal directly above them"
+    },
+    {
+      "name": "حبيبة",
+      "name_en": "hilda",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد أبرياء أكثر من المجرمين بين خالد ووليد",
+      "hint_en": "There are more innocents than criminals between Kyle and Vince"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "يوجد عدد فردي من الأبرياء بين مروان وصالح",
+      "hint_en": "There's an odd number of innocents between Martin and Scott"
+    },
+    {
+      "name": "جوليا",
+      "name_en": "julie",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "واحد فقط من الـ4 أبرياء المجاورين لـلمياء في الصف 2",
+      "hint_en": "Only 1 of the 4 innocents neighboring Lucy is in row 2"
+    },
+    {
+      "name": "خالد",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "نور وكريمة لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Nancy and Carol have an equal number of criminal neighbors"
+    },
+    {
+      "name": "لمياء",
+      "name_en": "lucy",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "طارق لديه جيران مجرمين أكثر من الأبرياء",
+      "hint_en": "Terry has more criminal than innocent neighbors"
+    },
+    {
+      "name": "مروان",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "بالضبط 1 بريء بين ديانا وصالح هو جار حبيبة",
+      "hint_en": "Exactly 1 innocent between Diane and Scott is neighboring Hilda"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "طارق وإيفا لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Terry and Evie have an equal number of criminal neighbors"
+    },
+    {
+      "name": "بسمة",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "يوجد عدد فردي من الأبرياء بين مروان وزيد",
+      "hint_en": "There's an odd number of innocents between Martin and Zed"
+    },
+    {
+      "name": "روز",
+      "name_en": "rose",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "كل الأبرياء بين فؤاد ووليد متصلون",
+      "hint_en": "All innocents between Floyd and Vince are connected"
+    },
+    {
+      "name": "صالح",
+      "name_en": "scott",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "يوجد 14 مجرمين إجمالاً",
+      "hint_en": "There are 14 criminals in total"
+    },
+    {
+      "name": "طارق",
+      "name_en": "terry",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "واحد فقط من الـ3 أبرياء على الحواف هو جار إيفا",
+      "hint_en": "Only 1 of the 3 innocents on the edges is Evie's neighbor"
+    },
+    {
+      "name": "وليد",
+      "name_en": "vince",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "شيماء",
+      "name_en": "xia",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زيد",
+      "name_en": "zed",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 14,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

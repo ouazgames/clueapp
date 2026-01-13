@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-018",
+  "level_number": 18,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Антон",
+      "name_en": "austin",
+      "criminal": false,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "У Елена и Семён одинаковое число соседей-преступников",
+      "hint_en": "Ellie and Sam have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Бэлла",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Елена is one of Константин's 5 criminal neighbors",
+      "hint_en": "Ellie is one of Keith's 5 criminal neighbors"
+    },
+    {
+      "name": "Светлана",
+      "name_en": "cheryl",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "Исаак and Захар have an equal number of innocent neighbors",
+      "hint_en": "Isaac and Zach have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Диана",
+      "name_en": "diane",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "All criminals between Светлана and Руслана are connected",
+      "hint_en": "All criminals between Cheryl and Ruby are connected"
+    },
+    {
+      "name": "Елена",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Густав and Генрих share an odd number of innocent neighbors",
+      "hint_en": "Gus and Hank share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Флора",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "All criminals between Бэлла and Вальтер are connected",
+      "hint_en": "All criminals between Bonnie and Wally are connected"
+    },
+    {
+      "name": "Густав",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "У Генрих больше соседей-преступников, чем у Антон",
+      "hint_en": "Hank has more criminal neighbors than Austin"
+    },
+    {
+      "name": "Генрих",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "There is only one innocent between Бэлла and Флора",
+      "hint_en": "There is only one innocent between Bonnie and Flora"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "Neither of the 2 innocents neighboring Елена are between Исаак and Лаура",
+      "hint_en": "Neither of the 2 innocents neighboring Ellie are between Isaac and Laura"
+    },
+    {
+      "name": "Константин",
+      "name_en": "keith",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "The only innocent between Лаура and Ксавье is Захар's neighbor",
+      "hint_en": "The only innocent between Laura and Xavi is Zach's neighbor"
+    },
+    {
+      "name": "Лаура",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "У Густав больше невиновных соседей, чем у Захар",
+      "hint_en": "Gus has more innocent neighbors than Zach"
+    },
+    {
+      "name": "Надежда",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "There are as many innocent #PROFS:cop as there are innocent #PROFS:guard",
+      "hint_en": "There are as many innocent #PROFS:cop as there are innocent #PROFS:guard"
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "There are 9 innocents in total",
+      "hint_en": "There are 9 innocents in total"
+    },
+    {
+      "name": "Пётр",
+      "name_en": "peter",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "У Ольга больше невиновных соседей, чем у Бэлла",
+      "hint_en": "Olive has more innocent neighbors than Bonnie"
+    },
+    {
+      "name": "Руслана",
+      "name_en": "ruby",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "There's an odd number of innocent #PROFS:guard",
+      "hint_en": "There's an odd number of innocent #PROFS:guard"
+    },
+    {
+      "name": "Семён",
+      "name_en": "sam",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктория",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Вальтер",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксавье",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Захар",
+      "name_en": "zach",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 11,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-022",
+  "level_number": 22,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Augustin",
+      "name_en": "austin",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "Only 1 of the 3 criminals neighboring Pauline is in row 3",
+      "hint_en": "Only 1 of the 3 criminals neighboring Pam is in row 3"
+    },
+    {
+      "name": "Robert",
+      "name_en": "bobby",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "Zoé is one of two or more criminals on the edges",
+      "hint_en": "Zoe is one of two or more criminals on the edges"
+    },
+    {
+      "name": "Christine",
+      "name_en": "cheryl",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "There's an odd number of innocents neighboring François in row 1",
+      "hint_en": "There's an odd number of innocents neighboring Frank in row 1"
+    },
+    {
+      "name": "David",
+      "name_en": "david",
+      "criminal": false,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "There's an odd number of criminals neighboring Olive",
+      "hint_en": "There's an odd number of criminals neighboring Olive"
+    },
+    {
+      "name": "Ève",
+      "name_en": "eve",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "Column E has more criminals than any other column",
+      "hint_en": "Column E has more criminals than any other column"
+    },
+    {
+      "name": "François",
+      "name_en": "frank",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Only 1 of the 4 innocents neighboring Hilde is Rémi's neighbor",
+      "hint_en": "Only 1 of the 4 innocents neighboring Hilda is Ryan's neighbor"
+    },
+    {
+      "name": "Gérard",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Row 2 has more criminals than any other row",
+      "hint_en": "Row 2 has more criminals than any other row"
+    },
+    {
+      "name": "Hilde",
+      "name_en": "hilda",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "Il y a exactement 2 innocents entre Olive et Rémi",
+      "hint_en": "There are exactly 2 innocents between Olive and Ryan"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "Robert is one of 3 criminals in column C",
+      "hint_en": "Bobby is one of 3 criminals in column C"
+    },
+    {
+      "name": "Jean",
+      "name_en": "john",
+      "criminal": true,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "There are more innocents than criminals between Jean and Wanda",
+      "hint_en": "There are more innocents than criminals between John and Wanda"
+    },
+    {
+      "name": "Karine",
+      "name_en": "karen",
+      "criminal": false,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "Tous les criminels entre Olive et Samuel sont connectés",
+      "hint_en": "All criminals between Olive and Sam are connected"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "Wanda et Gérard ont le même nombre de voisins innocents",
+      "hint_en": "Wanda and Gary have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Olive",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "Both criminals in row 4 are Xavier's neighbors",
+      "hint_en": "Both criminals in row 4 are Xavi's neighbors"
+    },
+    {
+      "name": "Pauline",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Rémi",
+      "name_en": "ryan",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Samuel",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Victoire",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Wanda",
+      "name_en": "wanda",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zoé",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 11,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

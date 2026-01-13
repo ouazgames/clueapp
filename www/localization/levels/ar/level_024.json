@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-024",
+  "level_number": 24,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "براء",
+      "name_en": "bruce",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "كلا المجرمين بين براء وفريدة متصلان",
+      "hint_en": "Both criminals between Bruce and Freya are connected"
+    },
+    {
+      "name": "كريم",
+      "name_en": "carl",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "الجار البريء الوحيد لـبراء على الحواف",
+      "hint_en": "Bruce's only innocent neighbor is on the edges"
+    },
+    {
+      "name": "إيثان",
+      "name_en": "ethan",
+      "criminal": true,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "عدد فردي من الأبرياء على الحواف يجاورون حبيبة",
+      "hint_en": "An odd number of innocents on the edges neighbor Hilda"
+    },
+    {
+      "name": "فريدة",
+      "name_en": "freya",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "كلا الأبرياء بين فريدة وتامر متصلان",
+      "hint_en": "Both innocents between Freya and Tyler are connected"
+    },
+    {
+      "name": "جمال",
+      "name_en": "gary",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "براء ويوسف لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Bruce and Jose have an equal number of innocent neighbors"
+    },
+    {
+      "name": "حبيبة",
+      "name_en": "hilda",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "إسحاق واحد من جيران إيثان الـ3 المجرمين",
+      "hint_en": "Isaac is one of Ethan's 3 criminal neighbors"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "سعيد لديه بالضبط 3 جيران أبرياء",
+      "hint_en": "Steve has exactly 3 innocent neighbors"
+    },
+    {
+      "name": "يوسف",
+      "name_en": "jose",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "كل المجرمين بين وفاء وزهراء متصلون",
+      "hint_en": "All criminals between Vicky and Zara are connected"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "karen",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "يوجد 13 مجرمين إجمالاً",
+      "hint_en": "There are 13 criminals in total"
+    },
+    {
+      "name": "لورا",
+      "name_en": "laura",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "يوجد عدد فردي من الأبرياء بين كريمة ووفاء",
+      "hint_en": "There's an odd number of innocents between Karen and Vicky"
+    },
+    {
+      "name": "مريم",
+      "name_en": "mary",
+      "criminal": true,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "إيثان وبولس لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Ethan and Paul have an equal number of innocent neighbors"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "تامر وبراء لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Tyler and Bruce have an equal number of innocent neighbors"
+    },
+    {
+      "name": "عليا",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "يوجد عدد فردي من الأبرياء بين نور وزهراء",
+      "hint_en": "There's an odd number of innocents between Nancy and Zara"
+    },
+    {
+      "name": "بولس",
+      "name_en": "paul",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "سعيد",
+      "name_en": "steve",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "تامر",
+      "name_en": "tyler",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وائل",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "شيماء",
+      "name_en": "xia",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زهراء",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 13,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-037",
+  "level_number": 37,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "أمينة",
+      "name_en": "amy",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد عدد فردي من الأبرياء بين دنيا ومروان",
+      "hint_en": "There's an odd number of innocents between Donna and Martin"
+    },
+    {
+      "name": "بشرى",
+      "name_en": "bonnie",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "علي واحد من اثنين أو أكثر من الأبرياء بين إياد وعلي",
+      "hint_en": "Ollie is one of two or more innocents between Eric and Ollie"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد مجرمين بين ميكانيكي أكثر من أي مهنة أخرى",
+      "hint_en": "There are more criminals among #PROFS:mech than any other profession"
+    },
+    {
+      "name": "دنيا",
+      "name_en": "donna",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "يوجد بناء مجرمين أكثر من موظف مجرمين",
+      "hint_en": "There are more criminal #PROFS:builder than criminal #PROFS:clerk"
+    },
+    {
+      "name": "إياد",
+      "name_en": "eric",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "المجرم الوحيد في الزاوية بين تامر وزيد",
+      "hint_en": "The only criminal in a corner is between Tom and Zed"
+    },
+    {
+      "name": "فارس",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "بالضبط 1 بريء بين بشرى وبسمة هو جار روث",
+      "hint_en": "Exactly 1 innocent between Bonnie and Pam is neighboring Ruth"
+    },
+    {
+      "name": "غازي",
+      "name_en": "gus",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "واحد فقط من الـ4 أبرياء المجاورين لـبشرى بين أمينة وتامر",
+      "hint_en": "Only 1 of the 4 innocents neighboring Bonnie is between Amy and Tom"
+    },
+    {
+      "name": "هند",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "كل الأبرياء بين إياد وتامر متصلون",
+      "hint_en": "All innocents between Eric and Tom are connected"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "يوجد أبرياء أكثر من المجرمين بين غازي وروث",
+      "hint_en": "There are more innocents than criminals between Gus and Ruth"
+    },
+    {
+      "name": "جميلة",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "ليزا وشيماء يتشاركان عدداً فردياً من الجيران الأبرياء",
+      "hint_en": "Lisa and Xia share an odd number of innocent neighbors"
+    },
+    {
+      "name": "ليزا",
+      "name_en": "lisa",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "بسمة وكريمة لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Pam and Carol have an equal number of innocent neighbors"
+    },
+    {
+      "name": "مروان",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد 16 أبرياء إجمالاً",
+      "hint_en": "There are 16 innocents in total"
+    },
+    {
+      "name": "علي",
+      "name_en": "ollie",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "بسمة",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "روث",
+      "name_en": "ruth",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "سامي",
+      "name_en": "sam",
+      "criminal": false,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "تامر",
+      "name_en": "tom",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وليد",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "شيماء",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زيد",
+      "name_en": "zed",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 4,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-es-033",
+  "level_number": 33,
+  "language": "es",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Alicia",
+      "name_en": "alice",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "Isaac is one of 2 criminals between Isaac and Lisa",
+      "hint_en": "Isaac is one of 2 criminals between Isaac and Lisa"
+    },
+    {
+      "name": "Bruno",
+      "name_en": "brian",
+      "criminal": true,
+      "profession": "Cantante",
+      "profession_en": "singer",
+      "hint": "Kevin is one of two or more innocents neighboring Ethan",
+      "hint_en": "Kevin is one of two or more innocents neighboring Ethan"
+    },
+    {
+      "name": "Cristóbal",
+      "name_en": "chris",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "Both criminals neighboring Isaac are Kevin's neighbors",
+      "hint_en": "Both criminals neighboring Isaac are Kevin's neighbors"
+    },
+    {
+      "name": "Doña",
+      "name_en": "donna",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Alicia's only innocent neighbor is between Ethan and Gustavo",
+      "hint_en": "Alice's only innocent neighbor is between Ethan and Gus"
+    },
+    {
+      "name": "Ethan",
+      "name_en": "ethan",
+      "criminal": true,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "Victoria y Doña tienen el mismo número de vecinos criminales",
+      "hint_en": "Vicky and Donna have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Fernando",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "Maestro",
+      "profession_en": "teacher",
+      "hint": "There are 15 criminals in total",
+      "hint_en": "There are 15 criminals in total"
+    },
+    {
+      "name": "Gustavo",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "There are as many innocent #PROFS:guard as there are innocent #PROFS:singer",
+      "hint_en": "There are as many innocent #PROFS:guard as there are innocent #PROFS:singer"
+    },
+    {
+      "name": "Helena",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "Todos los criminales entre Alicia y Doña están conectados",
+      "hint_en": "All criminals between Alice and Donna are connected"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "Only 1 of the 5 criminals neighboring Gustavo is Óliver's neighbor",
+      "hint_en": "Only 1 of the 5 criminals neighboring Gus is Olof's neighbor"
+    },
+    {
+      "name": "Kevin",
+      "name_en": "kevin",
+      "criminal": false,
+      "profession": "Maestro",
+      "profession_en": "teacher",
+      "hint": "Helena tiene más vecinos criminales que Ximena",
+      "hint_en": "Helen has more criminal neighbors than Xena"
+    },
+    {
+      "name": "Lisa",
+      "name_en": "lisa",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "Fernando has the most criminal neighbors",
+      "hint_en": "Frank has the most criminal neighbors"
+    },
+    {
+      "name": "Martín",
+      "name_en": "martin",
+      "criminal": true,
+      "profession": "Cantante",
+      "profession_en": "singer",
+      "hint": "Hay un número impar de inocentes entre Óliver y Wanda",
+      "hint_en": "There's an odd number of innocents between Olof and Wanda"
+    },
+    {
+      "name": "Natalia",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "There are more criminals than innocents between Wanda and Zed",
+      "hint_en": "There are more criminals than innocents between Wanda and Zed"
+    },
+    {
+      "name": "Óliver",
+      "name_en": "olof",
+      "criminal": false,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "n_professions_have_trait_in_dir(singer,innocent,-1,0,1)",
+      "hint_en": "n_professions_have_trait_in_dir(singer,innocent,-1,0,1)"
+    },
+    {
+      "name": "Paloma",
+      "name_en": "pam",
+      "criminal": true,
+      "profession": "Cantante",
+      "profession_en": "singer",
+      "hint": "Exactly 1 #PROF:singer has an innocent directly to the left of them",
+      "hint_en": "Exactly 1 #PROF:singer has an innocent directly to the left of them"
+    },
+    {
+      "name": "Rosa",
+      "name_en": "rose",
+      "criminal": true,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "There is only one innocent between Wanda and Ximena",
+      "hint_en": "There is only one innocent between Wanda and Xena"
+    },
+    {
+      "name": "Victoria",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "Exactly 1 innocent between Natalia and Paloma is neighboring Ximena",
+      "hint_en": "Exactly 1 innocent between Nicole and Pam is neighboring Xena"
+    },
+    {
+      "name": "Wanda",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "There's an odd number of innocents neighboring Óliver in row 5",
+      "hint_en": "There's an odd number of innocents neighboring Olof in row 5"
+    },
+    {
+      "name": "Ximena",
+      "name_en": "xena",
+      "criminal": false,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zed",
+      "name_en": "zed",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "Nivel",
+    "criminal_status": "Criminal",
+    "innocent_status": "Inocente",
+    "hint": "Pista",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Siguiente Nivel",
+    "congratulations": "¡Felicitaciones!",
+    "total_criminals": "Total de Criminales"
+  }
+}

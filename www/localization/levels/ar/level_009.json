@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-009",
+  "level_number": 9,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "آنا",
+      "name_en": "anna",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد 7 مجرمين إجمالاً",
+      "hint_en": "There are 7 criminals in total"
+    },
+    {
+      "name": "بشرى",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "يوجد أبرياء في الصف 4 أكثر من الصف 5",
+      "hint_en": "There are more innocents in row 4 than row 5"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "كلا الأبرياء في الصف 5 هم جيران بسمة",
+      "hint_en": "Both innocents in row 5 are Pam's neighbors"
+    },
+    {
+      "name": "دعاء",
+      "name_en": "debra",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "فارس وزهراء لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Frank and Zara have an equal number of criminal neighbors"
+    },
+    {
+      "name": "إياد",
+      "name_en": "eric",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "كل الأبرياء بين بشرى وطارق متصلون",
+      "hint_en": "All innocents between Bonnie and Terry are connected"
+    },
+    {
+      "name": "فارس",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "نبيل واحد من 4 أبرياء في العمود C",
+      "hint_en": "Nick is one of 4 innocents in column C"
+    },
+    {
+      "name": "غسان",
+      "name_en": "gabe",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "عدد فردي من الأبرياء بين هند وزهراء يجاورون خالد",
+      "hint_en": "An odd number of innocents between Helen and Zara neighbor Kyle"
+    },
+    {
+      "name": "هند",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "كل الأبرياء بين فارس وطارق متصلون",
+      "hint_en": "All innocents between Frank and Terry are connected"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "يوجد عدد فردي من الأبرياء بين سامي ووفاء",
+      "hint_en": "There's an odd number of innocents between Sam and Vicky"
+    },
+    {
+      "name": "ياسين",
+      "name_en": "jason",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "خالد and وفاء have 2 innocent neighbors in common",
+      "hint_en": "Kyle and Vicky have 2 innocent neighbors in common"
+    },
+    {
+      "name": "خالد",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "يوجد مجرمين بين قاضي أكثر من أي مهنة أخرى",
+      "hint_en": "There are more criminals among #PROFS:judge than any other profession"
+    },
+    {
+      "name": "لورا",
+      "name_en": "laura",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "وفاء واحد من جيران بسمة الـ2 المجرمين",
+      "hint_en": "Vicky is one of Pam's 2 criminal neighbors"
+    },
+    {
+      "name": "مروان",
+      "name_en": "martin",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "نبيل",
+      "name_en": "nick",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "بسمة",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "روث",
+      "name_en": "ruth",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "سامي",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "طارق",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "موظف",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زهراء",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 7,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

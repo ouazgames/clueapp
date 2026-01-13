@@ -1,0 +1,202 @@
+{
+  "id": "level-pt-007",
+  "level_number": 7,
+  "language": "pt",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Adão",
+      "name_en": "adam",
+      "criminal": false,
+      "profession": "Médico",
+      "profession_en": "doctor",
+      "hint": "The only criminal between Olívia and Rute is between Paulo and Teodoro",
+      "hint_en": "The only criminal between Olivia and Ruth is between Paul and Terry"
+    },
+    {
+      "name": "Beatriz",
+      "name_en": "betty",
+      "criminal": false,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "Row 2 has more innocents than any other row",
+      "hint_en": "Row 2 has more innocents than any other row"
+    },
+    {
+      "name": "Carolina",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "Guarda",
+      "profession_en": "guard",
+      "hint": "There are 14 innocents in total",
+      "hint_en": "There are 14 innocents in total"
+    },
+    {
+      "name": "Erico",
+      "name_en": "eric",
+      "criminal": false,
+      "profession": "Médico",
+      "profession_en": "doctor",
+      "hint": "Both criminals between Vitória and Zoe are Paulo's neighbors",
+      "hint_en": "Both criminals between Vicky and Zoe are Paul's neighbors"
+    },
+    {
+      "name": "Gustavo",
+      "name_en": "gus",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "Henrique is one of two or more innocents between Henrique and Paulo",
+      "hint_en": "Henry is one of two or more innocents between Henry and Paul"
+    },
+    {
+      "name": "Henrique",
+      "name_en": "henry",
+      "criminal": false,
+      "profession": "Professor",
+      "profession_en": "teacher",
+      "hint": "Erico and Xavier have an equal number of innocent neighbors",
+      "hint_en": "Eric and Xavi have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Professor",
+      "profession_en": "teacher",
+      "hint": "Xavier tem mais vizinhos criminosos que Isaac",
+      "hint_en": "Xavi has more criminal neighbors than Isaac"
+    },
+    {
+      "name": "Jasão",
+      "name_en": "jason",
+      "criminal": false,
+      "profession": "Guarda",
+      "profession_en": "guard",
+      "hint": "Henrique is one of two or more innocents in column C",
+      "hint_en": "Henry is one of two or more innocents in column C"
+    },
+    {
+      "name": "Catarina",
+      "name_en": "katie",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "Maria and Xavier share an odd number of innocent neighbors",
+      "hint_en": "Mary and Xavi share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Lisa",
+      "name_en": "lisa",
+      "criminal": false,
+      "profession": "Professor",
+      "profession_en": "teacher",
+      "hint": "Xavier is one of Rute's 5 criminal neighbors",
+      "hint_en": "Xavi is one of Ruth's 5 criminal neighbors"
+    },
+    {
+      "name": "Maria",
+      "name_en": "mary",
+      "criminal": true,
+      "profession": "Policial",
+      "profession_en": "cop",
+      "hint": "There are more innocents than criminals between Jasão and Teodoro",
+      "hint_en": "There are more innocents than criminals between Jason and Terry"
+    },
+    {
+      "name": "Natália",
+      "name_en": "nicole",
+      "criminal": false,
+      "profession": "Policial",
+      "profession_en": "cop",
+      "hint": "Only 1 of the 2 innocents between Adão and Carolina is Isaac's neighbor",
+      "hint_en": "Only 1 of the 2 innocents between Adam and Carol is Isaac's neighbor"
+    },
+    {
+      "name": "Olívia",
+      "name_en": "olivia",
+      "criminal": false,
+      "profession": "Cantor",
+      "profession_en": "singer",
+      "hint": "All criminals between Vitória and Zoe are connected",
+      "hint_en": "All criminals between Vicky and Zoe are connected"
+    },
+    {
+      "name": "Paulo",
+      "name_en": "paul",
+      "criminal": true,
+      "profession": "Piloto",
+      "profession_en": "pilot",
+      "hint": "There's an odd number of criminals between Vitória and Valter",
+      "hint_en": "There's an odd number of criminals between Vicky and Wally"
+    },
+    {
+      "name": "Rute",
+      "name_en": "ruth",
+      "criminal": false,
+      "profession": "Cantor",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Teodoro",
+      "name_en": "terry",
+      "criminal": true,
+      "profession": "Cantor",
+      "profession_en": "singer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Vitória",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Valter",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "Fazendeiro",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "Fazendeiro",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zoe",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "Médico",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 6,
+  "ui": {
+    "level": "Nível",
+    "criminal_status": "Criminoso",
+    "innocent_status": "Inocente",
+    "hint": "Dica",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Próximo Nível",
+    "congratulations": "Parabéns!",
+    "total_criminals": "Total de Criminosos"
+  }
+}

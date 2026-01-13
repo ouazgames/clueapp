@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-035",
+  "level_number": 35,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Hard",
+  "cards": [
+    {
+      "name": "Анна",
+      "name_en": "anna",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "There's an odd number of criminal #PROFS:teacher",
+      "hint_en": "There's an odd number of criminal #PROFS:teacher"
+    },
+    {
+      "name": "Борис",
+      "name_en": "bobby",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "Both criminals between Борис and Пётр are connected",
+      "hint_en": "Both criminals between Bobby and Peter are connected"
+    },
+    {
+      "name": "Светлана",
+      "name_en": "cheryl",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "There are more criminals among #PROFS:pilot than any other profession",
+      "hint_en": "There are more criminals among #PROFS:pilot than any other profession"
+    },
+    {
+      "name": "Дарья",
+      "name_en": "debra",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "Row 5 has more innocents than any other row",
+      "hint_en": "Row 5 has more innocents than any other row"
+    },
+    {
+      "name": "Эмма",
+      "name_en": "emma",
+      "criminal": false,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "There's an odd number of criminals between Яна and Мартин",
+      "hint_en": "There's an odd number of criminals between Jane and Martin"
+    },
+    {
+      "name": "Гавриил",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Надежда is one of Яна's 3 criminal neighbors",
+      "hint_en": "Nancy is one of Jane's 3 criminal neighbors"
+    },
+    {
+      "name": "Харитон",
+      "name_en": "hal",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "Мартин and Надежда have an equal number of innocent neighbors",
+      "hint_en": "Martin and Nancy have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "There's an odd number of criminals in column C",
+      "hint_en": "There's an odd number of criminals in column C"
+    },
+    {
+      "name": "Яна",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "Гавриил has more criminal than innocent neighbors",
+      "hint_en": "Gabe has more criminal than innocent neighbors"
+    },
+    {
+      "name": "Кай",
+      "name_en": "kay",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "There is only one innocent between Яна and Люся",
+      "hint_en": "There is only one innocent between Jane and Lucy"
+    },
+    {
+      "name": "Люся",
+      "name_en": "lucy",
+      "criminal": false,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "There are as many innocent #PROFS:judge as there are innocent #PROFS:sleuth",
+      "hint_en": "There are as many innocent #PROFS:judge as there are innocent #PROFS:sleuth"
+    },
+    {
+      "name": "Мартин",
+      "name_en": "martin",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "Only 1 of the 2 innocents neighboring Люся is Кай's neighbor",
+      "hint_en": "Only 1 of the 2 innocents neighboring Lucy is Kay's neighbor"
+    },
+    {
+      "name": "Надежда",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "Художник",
+      "profession_en": "painter",
+      "hint": "Column E has more innocents than any other column",
+      "hint_en": "Column E has more innocents than any other column"
+    },
+    {
+      "name": "Пётр",
+      "name_en": "peter",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Рональд",
+      "name_en": "ronald",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Степан",
+      "name_en": "steve",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Тор",
+      "name_en": "thor",
+      "criminal": false,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктория",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Охранник",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Вальтер",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 11,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

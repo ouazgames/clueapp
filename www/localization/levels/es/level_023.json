@@ -1,0 +1,202 @@
+{
+  "id": "level-es-023",
+  "level_number": 23,
+  "language": "es",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Alejandro",
+      "name_en": "alex",
+      "criminal": false,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "Both innocents in column D are Linda's neighbors",
+      "hint_en": "Both innocents in column D are Linda's neighbors"
+    },
+    {
+      "name": "Roberto",
+      "name_en": "bobby",
+      "criminal": true,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "n_professions_have_trait_in_dir(mech,innocent,-1,0,1)",
+      "hint_en": "n_professions_have_trait_in_dir(mech,innocent,-1,0,1)"
+    },
+    {
+      "name": "Carolina",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "Exactly 1 #PROF:mech has an innocent directly to the left of them",
+      "hint_en": "Exactly 1 #PROF:mech has an innocent directly to the left of them"
+    },
+    {
+      "name": "Donaldo",
+      "name_en": "donald",
+      "criminal": true,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "Todos los criminales entre Eva y Helena están conectados",
+      "hint_en": "All criminals between Eve and Helen are connected"
+    },
+    {
+      "name": "Eva",
+      "name_en": "eve",
+      "criminal": true,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "There are as many criminal #PROFS:coder as there are criminal #PROFS:farmer",
+      "hint_en": "There are as many criminal #PROFS:coder as there are criminal #PROFS:farmer"
+    },
+    {
+      "name": "Flora",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "The only innocent between Eva and María is Isaac's neighbor",
+      "hint_en": "The only innocent between Eve and Maria is Isaac's neighbor"
+    },
+    {
+      "name": "Gabriel",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "Doctor",
+      "profession_en": "doctor",
+      "hint": "Exactly 3 of the 6 criminals neighboring Gabriel are between Alejandro and Donaldo",
+      "hint_en": "Exactly 3 of the 6 criminals neighboring Gabe are between Alex and Donald"
+    },
+    {
+      "name": "Helena",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "There are more innocents than criminals between Nicolás and Ronaldo",
+      "hint_en": "There are more innocents than criminals between Nick and Ronald"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "An odd number of innocents between Roberto and Guillermo neighbor Isaac",
+      "hint_en": "An odd number of innocents between Bobby and Will neighbor Isaac"
+    },
+    {
+      "name": "Josefa",
+      "name_en": "joyce",
+      "criminal": false,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "Helena is one of 11 criminals on the edges",
+      "hint_en": "Helen is one of 11 criminals on the edges"
+    },
+    {
+      "name": "Kyle",
+      "name_en": "kyle",
+      "criminal": false,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "There are as many criminals as innocents between Ronaldo and Zoé",
+      "hint_en": "There are as many criminals as innocents between Ronald and Zoe"
+    },
+    {
+      "name": "Linda",
+      "name_en": "linda",
+      "criminal": true,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "Ambos criminales entre Josefa y Guillermo están conectados",
+      "hint_en": "Both criminals between Joyce and Will are connected"
+    },
+    {
+      "name": "María",
+      "name_en": "maria",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "Linda and Tomás have 4 innocent neighbors in total",
+      "hint_en": "Linda and Tom have 4 innocent neighbors in total"
+    },
+    {
+      "name": "Nicolás",
+      "name_en": "nick",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Paula",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ronaldo",
+      "name_en": "ronald",
+      "criminal": false,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Tomás",
+      "name_en": "tom",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Guillermo",
+      "name_en": "will",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ximena",
+      "name_en": "xia",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zoé",
+      "name_en": "zoe",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 14,
+  "ui": {
+    "level": "Nivel",
+    "criminal_status": "Criminal",
+    "innocent_status": "Inocente",
+    "hint": "Pista",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Siguiente Nivel",
+    "congratulations": "¡Felicitaciones!",
+    "total_criminals": "Total de Criminales"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-026",
+  "level_number": 26,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Alice",
+      "name_en": "alice",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "There are 4 innocents in total",
+      "hint_en": "There are 4 innocents in total"
+    },
+    {
+      "name": "Robert",
+      "name_en": "bobby",
+      "criminal": false,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "Column B has more criminals than any other column",
+      "hint_en": "Column B has more criminals than any other column"
+    },
+    {
+      "name": "Charles",
+      "name_en": "carl",
+      "criminal": true,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "Marie has only one innocent neighbor",
+      "hint_en": "Maria has only one innocent neighbor"
+    },
+    {
+      "name": "Éléonore",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Karine has the most criminal neighbors",
+      "hint_en": "Karen has the most criminal neighbors"
+    },
+    {
+      "name": "François",
+      "name_en": "frank",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "Marie is one of Pierre's 6 criminal neighbors",
+      "hint_en": "Maria is one of Peter's 6 criminal neighbors"
+    },
+    {
+      "name": "Gabriel",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "Exactly 4 of Olive's 7 criminal neighbors also neighbor Karine",
+      "hint_en": "Exactly 4 of Olive's 7 criminal neighbors also neighbor Karen"
+    },
+    {
+      "name": "Hilde",
+      "name_en": "hilda",
+      "criminal": true,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "There are as many criminal #PROFS:pilot as there are criminal #PROFS:sleuth",
+      "hint_en": "There are as many criminal #PROFS:pilot as there are criminal #PROFS:sleuth"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "Marie a plus de voisins innocents que Victoire",
+      "hint_en": "Maria has more innocent neighbors than Vicky"
+    },
+    {
+      "name": "Joseph",
+      "name_en": "jose",
+      "criminal": true,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "There are more criminals than innocents in column E",
+      "hint_en": "There are more criminals than innocents in column E"
+    },
+    {
+      "name": "Karine",
+      "name_en": "karen",
+      "criminal": true,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Victoire a plus de voisins criminels que Alice",
+      "hint_en": "Vicky has more criminal neighbors than Alice"
+    },
+    {
+      "name": "Laurent",
+      "name_en": "larry",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Olive and Pierre share an odd number of innocent neighbors",
+      "hint_en": "Olive and Peter share an odd number of innocent neighbors"
+    },
+    {
+      "name": "Marie",
+      "name_en": "maria",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Laurent has more criminal than innocent neighbors",
+      "hint_en": "Larry has more criminal than innocent neighbors"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Only 1 of the 4 criminals in column D is on the edges",
+      "hint_en": "Only 1 of the 4 criminals in column D is on the edges"
+    },
+    {
+      "name": "Olive",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "Both criminals between Isaac and Zara are connected",
+      "hint_en": "Both criminals between Isaac and Zara are connected"
+    },
+    {
+      "name": "Pierre",
+      "name_en": "peter",
+      "criminal": true,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Thomas",
+      "name_en": "tom",
+      "criminal": true,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Victoire",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Wanda",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zara",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 16,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

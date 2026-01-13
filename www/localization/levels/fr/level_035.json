@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-035",
+  "level_number": 35,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Hard",
+  "cards": [
+    {
+      "name": "Anne",
+      "name_en": "anna",
+      "criminal": true,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "There's an odd number of criminal #PROFS:teacher",
+      "hint_en": "There's an odd number of criminal #PROFS:teacher"
+    },
+    {
+      "name": "Robert",
+      "name_en": "bobby",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "Both criminals between Robert and Pierre are connected",
+      "hint_en": "Both criminals between Bobby and Peter are connected"
+    },
+    {
+      "name": "Christine",
+      "name_en": "cheryl",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "There are more criminals among #PROFS:pilot than any other profession",
+      "hint_en": "There are more criminals among #PROFS:pilot than any other profession"
+    },
+    {
+      "name": "Déborah",
+      "name_en": "debra",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Row 5 has more innocents than any other row",
+      "hint_en": "Row 5 has more innocents than any other row"
+    },
+    {
+      "name": "Emma",
+      "name_en": "emma",
+      "criminal": false,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "There's an odd number of criminals between Jeanne and Martin",
+      "hint_en": "There's an odd number of criminals between Jane and Martin"
+    },
+    {
+      "name": "Gabriel",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Nancy is one of Jeanne's 3 criminal neighbors",
+      "hint_en": "Nancy is one of Jane's 3 criminal neighbors"
+    },
+    {
+      "name": "Henri",
+      "name_en": "hal",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "Martin et Nancy ont le même nombre de voisins innocents",
+      "hint_en": "Martin and Nancy have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "There's an odd number of criminals in column C",
+      "hint_en": "There's an odd number of criminals in column C"
+    },
+    {
+      "name": "Jeanne",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "Gabriel has more criminal than innocent neighbors",
+      "hint_en": "Gabe has more criminal than innocent neighbors"
+    },
+    {
+      "name": "Kay",
+      "name_en": "kay",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "There is only one innocent between Jeanne and Lucie",
+      "hint_en": "There is only one innocent between Jane and Lucy"
+    },
+    {
+      "name": "Lucie",
+      "name_en": "lucy",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "There are as many innocent #PROFS:judge as there are innocent #PROFS:sleuth",
+      "hint_en": "There are as many innocent #PROFS:judge as there are innocent #PROFS:sleuth"
+    },
+    {
+      "name": "Martin",
+      "name_en": "martin",
+      "criminal": true,
+      "profession": "Pilote",
+      "profession_en": "pilot",
+      "hint": "Only 1 of the 2 innocents neighboring Lucie is Kay's neighbor",
+      "hint_en": "Only 1 of the 2 innocents neighboring Lucy is Kay's neighbor"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "Column E has more innocents than any other column",
+      "hint_en": "Column E has more innocents than any other column"
+    },
+    {
+      "name": "Pierre",
+      "name_en": "peter",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ronald",
+      "name_en": "ronald",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Stéphane",
+      "name_en": "steve",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Thor",
+      "name_en": "thor",
+      "criminal": false,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Victoire",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Walter",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xia",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 11,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

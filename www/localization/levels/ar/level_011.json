@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-011",
+  "level_number": 11,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "آدم",
+      "name_en": "adam",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "يوجد عدد فردي من الأبرياء المجاورين لـليزا",
+      "hint_en": "There's an odd number of innocents neighboring Lisa"
+    },
+    {
+      "name": "براء",
+      "name_en": "bruce",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "بالضبط 1 بريء بين بولا وتامر هو جار كريمة",
+      "hint_en": "Exactly 1 innocent between Paula and Tom is neighboring Karen"
+    },
+    {
+      "name": "داود",
+      "name_en": "david",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "فاطمة وكريمة لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Flora and Karen have an equal number of criminal neighbors"
+    },
+    {
+      "name": "فاطمة",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "وفاء لديه جيران أبرياء أكثر من فاطمة",
+      "hint_en": "Vicky has more innocent neighbors than Flora"
+    },
+    {
+      "name": "غازي",
+      "name_en": "gus",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "يوجد عدد فردي من الأبرياء بين إسحاق ويوسف",
+      "hint_en": "There's an odd number of innocents between Isaac and John"
+    },
+    {
+      "name": "هند",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "فاطمة واحد من جيران داود الـ3 المجرمين",
+      "hint_en": "Flora is one of David's 3 criminal neighbors"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "يوجد مجرمين بين مبرمج أكثر من أي مهنة أخرى",
+      "hint_en": "There are more criminals among #PROFS:coder than any other profession"
+    },
+    {
+      "name": "يوسف",
+      "name_en": "john",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد 12 أبرياء إجمالاً",
+      "hint_en": "There are 12 innocents in total"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "karen",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "كلا المجرمين في الصف 4 هم جيران ليزا",
+      "hint_en": "Both criminals in row 4 are Lisa's neighbors"
+    },
+    {
+      "name": "ليزا",
+      "name_en": "lisa",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "وليد وداود لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Will and David have an equal number of criminal neighbors"
+    },
+    {
+      "name": "مراد",
+      "name_en": "mark",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "هند لديه جيران أبرياء أكثر من زياد",
+      "hint_en": "Helen has more innocent neighbors than Xavi"
+    },
+    {
+      "name": "عليا",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "براء لديه جيران مجرمين أكثر من Bruce2",
+      "hint_en": "Bruce has more criminal neighbors than Bruce2"
+    },
+    {
+      "name": "بولا",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(teacher,innocent,0,1,1)"
+    },
+    {
+      "name": "روز",
+      "name_en": "rose",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "بالضبط 1 معلم لديه بريء تحته مباشرة",
+      "hint_en": "Exactly 1 #PROF:teacher has an innocent directly below them"
+    },
+    {
+      "name": "سوسن",
+      "name_en": "susan",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد أبرياء أكثر من المجرمين بين وفاء وزهراء",
+      "hint_en": "There are more innocents than criminals between Vicky and Zara"
+    },
+    {
+      "name": "تامر",
+      "name_en": "tom",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "كلا المجرمين بين غازي ويوسف هم جيران مراد",
+      "hint_en": "Both criminals between Gus and John are Mark's neighbors"
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "كريمة وتامر لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Karen and Tom have an equal number of innocent neighbors"
+    },
+    {
+      "name": "وليد",
+      "name_en": "will",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زهراء",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "مزارع",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 8,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

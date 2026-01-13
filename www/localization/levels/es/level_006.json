@@ -1,0 +1,202 @@
+{
+  "id": "level-es-006",
+  "level_number": 6,
+  "language": "es",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Bárbara",
+      "name_en": "barb",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "Todos los inocentes entre Daniel y Pablo están conectados",
+      "hint_en": "All innocents between Daniel and Paul are connected"
+    },
+    {
+      "name": "Cristina",
+      "name_en": "cheryl",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "Only 1 of the 2 criminals neighboring Nancy is between Cristina and Walter",
+      "hint_en": "Only 1 of the 2 criminals neighboring Nancy is between Cheryl and Wally"
+    },
+    {
+      "name": "Daniel",
+      "name_en": "daniel",
+      "criminal": false,
+      "profession": "Empleado",
+      "profession_en": "clerk",
+      "hint": "Only 1 of the 3 criminals neighboring Olivia is between Bárbara and Teodoro",
+      "hint_en": "Only 1 of the 3 criminals neighboring Olive is between Barb and Terry"
+    },
+    {
+      "name": "Emilia",
+      "name_en": "emily",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "Hay un número impar de criminales entre Isaac y Zoé",
+      "hint_en": "There's an odd number of criminals between Isaac and Zoe"
+    },
+    {
+      "name": "Florentino",
+      "name_en": "floyd",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Lorenzo is one of Rosa's 3 innocent neighbors",
+      "hint_en": "Logan is one of Rose's 3 innocent neighbors"
+    },
+    {
+      "name": "Gabriel",
+      "name_en": "gabe",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "Walter y Emilia tienen el mismo número de vecinos inocentes",
+      "hint_en": "Wally and Emily have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Héctor",
+      "name_en": "hal",
+      "criminal": false,
+      "profession": "Programador",
+      "profession_en": "coder",
+      "hint": "There are exactly 4 innocents in column E",
+      "hint_en": "There are exactly 4 innocents in column E"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "Exactly 1 innocent in row 3 is neighboring Lorenzo",
+      "hint_en": "Exactly 1 innocent in row 3 is neighboring Logan"
+    },
+    {
+      "name": "Julia",
+      "name_en": "julie",
+      "criminal": false,
+      "profession": "Constructor",
+      "profession_en": "builder",
+      "hint": "Rosa es uno de 7 inocentes en los bordes",
+      "hint_en": "Rose is one of 7 innocents on the edges"
+    },
+    {
+      "name": "Catalina",
+      "name_en": "katie",
+      "criminal": false,
+      "profession": "Constructor",
+      "profession_en": "builder",
+      "hint": "Column B has more criminals than any other column",
+      "hint_en": "Column B has more criminals than any other column"
+    },
+    {
+      "name": "Lorenzo",
+      "name_en": "logan",
+      "criminal": false,
+      "profession": "Cantante",
+      "profession_en": "singer",
+      "hint": "Gabriel is one of two or more innocents neighboring Cristina",
+      "hint_en": "Gabe is one of two or more innocents neighboring Cheryl"
+    },
+    {
+      "name": "Margarita",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "Cantante",
+      "profession_en": "singer",
+      "hint": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)",
+      "hint_en": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Exactly 1 #PROF:guard has a criminal directly below them",
+      "hint_en": "Exactly 1 #PROF:guard has a criminal directly below them"
+    },
+    {
+      "name": "Olivia",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Exactamente 2 de los 5 vecinos inocentes de Pablo también son vecinos de Rosa",
+      "hint_en": "Exactly 2 of Paul's 5 innocent neighbors also neighbor Rose"
+    },
+    {
+      "name": "Pablo",
+      "name_en": "paul",
+      "criminal": false,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "Rosa y Bárbara tienen el mismo número de vecinos criminales",
+      "hint_en": "Rose and Barb have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Rosa",
+      "name_en": "rose",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Teodoro",
+      "name_en": "terry",
+      "criminal": true,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Walter",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "Empleado",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": true,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zoé",
+      "name_en": "zoe",
+      "criminal": false,
+      "profession": "Empleado",
+      "profession_en": "clerk",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 7,
+  "ui": {
+    "level": "Nivel",
+    "criminal_status": "Criminal",
+    "innocent_status": "Inocente",
+    "hint": "Pista",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Siguiente Nivel",
+    "congratulations": "¡Felicitaciones!",
+    "total_criminals": "Total de Criminales"
+  }
+}

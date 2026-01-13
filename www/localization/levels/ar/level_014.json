@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-014",
+  "level_number": 14,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "آنا",
+      "name_en": "anna",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "آنا لديه جار بريء واحد فقط",
+      "hint_en": "Anna has only one innocent neighbor"
+    },
+    {
+      "name": "بهية",
+      "name_en": "barb",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد بريء واحد فقط في الصف 2",
+      "hint_en": "There is only one innocent in row 2"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": false,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "واحد فقط من الـ3 أبرياء المجاورين لـبهية بين كريمة ولورا",
+      "hint_en": "Only 1 of the 3 innocents neighboring Barb is between Carol and Laura"
+    },
+    {
+      "name": "داود",
+      "name_en": "david",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "يوجد مجرمين أكثر من الأبرياء بين إسحاق وسامي",
+      "hint_en": "There are more criminals than innocents between Isaac and Sam"
+    },
+    {
+      "name": "حواء",
+      "name_en": "eve",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "كوثر لا يشارك أياً من جيرانه الـ2 الأبرياء مع لورا",
+      "hint_en": "Katie shares neither of her 2 innocent neighbors with Laura"
+    },
+    {
+      "name": "فريدة",
+      "name_en": "freya",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوسف لديه جيران أبرياء أكثر من داود",
+      "hint_en": "Jose has more innocent neighbors than David"
+    },
+    {
+      "name": "هشام",
+      "name_en": "henry",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "بهية وكوثر يتشاركان عدداً فردياً من الجيران الأبرياء",
+      "hint_en": "Barb and Katie share an odd number of innocent neighbors"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "كل المجرمين بين حواء وإسحاق متصلون",
+      "hint_en": "All criminals between Eve and Isaac are connected"
+    },
+    {
+      "name": "يوسف",
+      "name_en": "jose",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد بالضبط 3 أبرياء بين آنا ووفاء",
+      "hint_en": "There are exactly 3 innocents between Anna and Vicky"
+    },
+    {
+      "name": "كوثر",
+      "name_en": "katie",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "داود واحد من جيران هشام الـ6 المجرمين",
+      "hint_en": "David is one of Henry's 6 criminal neighbors"
+    },
+    {
+      "name": "لورا",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "فريدة لديه جيران أبرياء أكثر من زينة",
+      "hint_en": "Freya has more innocent neighbors than Xena"
+    },
+    {
+      "name": "مريم",
+      "name_en": "mary",
+      "criminal": true,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "واحد فقط من الـ2 أبرياء المجاورين لـبطرس بين أسامة وسامي",
+      "hint_en": "Only 1 of the 2 innocents neighboring Peter is between Oscar and Sam"
+    },
+    {
+      "name": "أسامة",
+      "name_en": "oscar",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد أبرياء بين قاضي أكثر من أي مهنة أخرى",
+      "hint_en": "There are more innocents among #PROFS:judge than any other profession"
+    },
+    {
+      "name": "بطرس",
+      "name_en": "peter",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "إسحاق لديه جيران أبرياء أكثر من زينة",
+      "hint_en": "Isaac has more innocent neighbors than Xena"
+    },
+    {
+      "name": "رباح",
+      "name_en": "rob",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "يوجد 5 أبرياء إجمالاً",
+      "hint_en": "There are 5 innocents in total"
+    },
+    {
+      "name": "سامي",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "ميكانيكي",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وائل",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "طبيب",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زينة",
+      "name_en": "xena",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زيد",
+      "name_en": "zed",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-038",
+  "level_number": 38,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "هارون",
+      "name_en": "aaron",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "كمال واحد من جيران هند الـ6 المجرمين",
+      "hint_en": "Keith is one of Helen's 6 criminal neighbors"
+    },
+    {
+      "name": "بلال",
+      "name_en": "brian",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد مجرمين أكثر من الأبرياء بين بلال وفاطمة",
+      "hint_en": "There are more criminals than innocents between Brian and Flora"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "الجار البريء الوحيد لـنادية هو جار مروان",
+      "hint_en": "Nicole's only innocent neighbor is Martin's neighbor"
+    },
+    {
+      "name": "فاطمة",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "يوجد عدد فردي من الأبرياء المجاورين لـتامر",
+      "hint_en": "There's an odd number of innocents neighboring Tyler"
+    },
+    {
+      "name": "غسان",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "كل المجرمين بين غسان وجواهر متصلون",
+      "hint_en": "All criminals between Gabe and Joyce are connected"
+    },
+    {
+      "name": "هند",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد بريء واحد فقط بين بلال ووليد",
+      "hint_en": "There is only one innocent between Brian and Vince"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "كلا الأبرياء في الصف 4 هم جيران وليد",
+      "hint_en": "Both innocents in row 4 are Vince's neighbors"
+    },
+    {
+      "name": "جواهر",
+      "name_en": "joyce",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "يوجد عدد متساوٍ من حارس الأبرياء وطيار الأبرياء",
+      "hint_en": "There are as many innocent #PROFS:guard as there are innocent #PROFS:pilot"
+    },
+    {
+      "name": "كمال",
+      "name_en": "keith",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "هند واحد من اثنين أو أكثر من المجرمين بين هند وجواهر",
+      "hint_en": "Helen is one of two or more criminals between Helen and Joyce"
+    },
+    {
+      "name": "لؤي",
+      "name_en": "logan",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "بالضبط 1 بريء في العمود B يجاور بولا",
+      "hint_en": "Exactly 1 innocent in column B is neighboring Paula"
+    },
+    {
+      "name": "مروان",
+      "name_en": "martin",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "كلا المجرمين بين هارون وأولغا متصلان",
+      "hint_en": "Both criminals between Aaron and Olivia are connected"
+    },
+    {
+      "name": "نادية",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "يوجد 15 مجرمين إجمالاً",
+      "hint_en": "There are 15 criminals in total"
+    },
+    {
+      "name": "أولغا",
+      "name_en": "olivia",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "واحد فقط من الـ2 مجرمين بين أولغا وسارة هو جار تامر",
+      "hint_en": "Only 1 of the 2 criminals between Olivia and Sarah is Tyler's neighbor"
+    },
+    {
+      "name": "بولا",
+      "name_en": "paula",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "عدد فردي من الأبرياء على الحواف يجاورون بولا",
+      "hint_en": "An odd number of innocents on the edges neighbor Paula"
+    },
+    {
+      "name": "رباب",
+      "name_en": "ruby",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": "n_professions_have_trait_in_dir(guard,innocent,1,0,1)"
+    },
+    {
+      "name": "سارة",
+      "name_en": "sarah",
+      "criminal": true,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "بالضبط 1 حارس لديه بريء على يمينه مباشرة",
+      "hint_en": "Exactly 1 #PROF:guard has an innocent directly to the right of them"
+    },
+    {
+      "name": "تامر",
+      "name_en": "tyler",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "شيماء لديه جيران أبرياء أكثر من أولغا",
+      "hint_en": "Xia has more innocent neighbors than Olivia"
+    },
+    {
+      "name": "وليد",
+      "name_en": "vince",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وائل",
+      "name_en": "wally",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "شيماء",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

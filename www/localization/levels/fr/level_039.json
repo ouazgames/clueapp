@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-039",
+  "level_number": 39,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Tricky",
+  "cards": [
+    {
+      "name": "Alexandre",
+      "name_en": "alex",
+      "criminal": true,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "Caroline et Xéna ont le même nombre de voisins criminels",
+      "hint_en": "Carol and Xena have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Béatrice",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "There is only one innocent between Alexandre and Thomas",
+      "hint_en": "There is only one innocent between Alex and Tom"
+    },
+    {
+      "name": "Caroline",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "There are as many criminal #PROFS:cook as there are criminal #PROFS:sleuth",
+      "hint_en": "There are as many criminal #PROFS:cook as there are criminal #PROFS:sleuth"
+    },
+    {
+      "name": "Denis",
+      "name_en": "denis",
+      "criminal": true,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "There are 5 innocents in total",
+      "hint_en": "There are 5 innocents in total"
+    },
+    {
+      "name": "Florent",
+      "name_en": "floyd",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "n_professions_have_trait_in_dir(teacher,criminal,1,0,2)",
+      "hint_en": "n_professions_have_trait_in_dir(teacher,criminal,1,0,2)"
+    },
+    {
+      "name": "Gustave",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "Professeur",
+      "profession_en": "teacher",
+      "hint": "2 #PROFS:teacher have a criminal directly to the right of them",
+      "hint_en": "2 #PROFS:teacher have a criminal directly to the right of them"
+    },
+    {
+      "name": "Henri",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "There are exactly 2 innocents in column E",
+      "hint_en": "There are exactly 2 innocents in column E"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Denis and Isaac have only one innocent neighbor in common",
+      "hint_en": "Denis and Isaac have only one innocent neighbor in common"
+    },
+    {
+      "name": "Jeanne",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "There's an odd number of innocents in row 5",
+      "hint_en": "There's an odd number of innocents in row 5"
+    },
+    {
+      "name": "Kyle",
+      "name_en": "kyle",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "Exactly 2 of the 6 criminals neighboring Olive are in column B",
+      "hint_en": "Exactly 2 of the 6 criminals neighboring Olive are in column B"
+    },
+    {
+      "name": "Laure",
+      "name_en": "laura",
+      "criminal": true,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Tous les criminels entre Nicole et Samuel sont connectés",
+      "hint_en": "All criminals between Nicole and Sam are connected"
+    },
+    {
+      "name": "Marguerite",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Ruth is one of 4 criminals in column D",
+      "hint_en": "Ruth is one of 4 criminals in column D"
+    },
+    {
+      "name": "Nicole",
+      "name_en": "nicole",
+      "criminal": true,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "n_professions_have_trait_in_dir(cop,criminal,0,-1,2)",
+      "hint_en": "n_professions_have_trait_in_dir(cop,criminal,0,-1,2)"
+    },
+    {
+      "name": "Olive",
+      "name_en": "olive",
+      "criminal": true,
+      "profession": "Médecin",
+      "profession_en": "doctor",
+      "hint": "2 #PROFS:cop have a criminal directly above them",
+      "hint_en": "2 #PROFS:cop have a criminal directly above them"
+    },
+    {
+      "name": "Ruth",
+      "name_en": "ruth",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Tous les criminels entre Henri et Wanda sont connectés",
+      "hint_en": "All criminals between Hank and Wanda are connected"
+    },
+    {
+      "name": "Samuel",
+      "name_en": "sam",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Only 1 of the 2 innocents in a corner is between Denis and Xéna",
+      "hint_en": "Only 1 of the 2 innocents in a corner is between Denis and Xena"
+    },
+    {
+      "name": "Thomas",
+      "name_en": "tom",
+      "criminal": false,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Vincent",
+      "name_en": "vince",
+      "criminal": false,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Wanda",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xéna",
+      "name_en": "xena",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 15,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

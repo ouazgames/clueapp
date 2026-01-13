@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-008",
+  "level_number": 8,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Bruno",
+      "name_en": "bruce",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Xavier and Hilde have 7 innocent neighbors in total",
+      "hint_en": "Xavi and Hilda have 7 innocent neighbors in total"
+    },
+    {
+      "name": "Déborah",
+      "name_en": "debra",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "Row 4 has more innocents than any other row",
+      "hint_en": "Row 4 has more innocents than any other row"
+    },
+    {
+      "name": "Ève",
+      "name_en": "evie",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "There are more innocents than criminals on the edges",
+      "hint_en": "There are more innocents than criminals on the edges"
+    },
+    {
+      "name": "Flore",
+      "name_en": "flora",
+      "criminal": false,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Both innocents between Jeannette and Zacharie are connected",
+      "hint_en": "Both innocents between Janet and Zach are connected"
+    },
+    {
+      "name": "Gustave",
+      "name_en": "gus",
+      "criminal": false,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "Only 1 of the 4 innocents neighboring Isaac is between Kay and Marie",
+      "hint_en": "Only 1 of the 4 innocents neighboring Isaac is between Kay and Maria"
+    },
+    {
+      "name": "Hilde",
+      "name_en": "hilda",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "Exactly 0 innocents between Déborah and Laurent are neighboring Ève",
+      "hint_en": "Exactly 0 innocents between Debra and Logan are neighboring Evie"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Constructeur",
+      "profession_en": "builder",
+      "hint": "There are 9 criminals in total",
+      "hint_en": "There are 9 criminals in total"
+    },
+    {
+      "name": "Jeannette",
+      "name_en": "janet",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "Sarah et Olivier ont le même nombre de voisins innocents",
+      "hint_en": "Sarah and Olof have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Kay",
+      "name_en": "kay",
+      "criminal": true,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "There are as many criminals as innocents between Kay and Olivier",
+      "hint_en": "There are as many criminals as innocents between Kay and Olof"
+    },
+    {
+      "name": "Laurent",
+      "name_en": "logan",
+      "criminal": false,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "Olivier and Bruno have 4 innocent neighbors in total",
+      "hint_en": "Olof and Bruce have 4 innocent neighbors in total"
+    },
+    {
+      "name": "Marie",
+      "name_en": "maria",
+      "criminal": true,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "There's an odd number of innocents neighboring Marie in row 4",
+      "hint_en": "There's an odd number of innocents neighboring Maria in row 4"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Olivier",
+      "name_en": "olof",
+      "criminal": false,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Pierre",
+      "name_en": "peter",
+      "criminal": false,
+      "profession": "Programmeur",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Robert",
+      "name_en": "rob",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Sarah",
+      "name_en": "sarah",
+      "criminal": false,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Victoire",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Juge",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Guillaume",
+      "name_en": "will",
+      "criminal": false,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zacharie",
+      "name_en": "zach",
+      "criminal": true,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 9,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

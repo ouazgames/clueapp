@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-027",
+  "level_number": 27,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Medium",
+  "cards": [
+    {
+      "name": "Борис",
+      "name_en": "bobby",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "Only 1 of the 2 innocents neighboring Вильям is between Флора and Виктор",
+      "hint_en": "Only 1 of the 2 innocents neighboring Will is between Flora and Vince"
+    },
+    {
+      "name": "Чад",
+      "name_en": "chad",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "Исаак is one of two or more criminals neighboring Эрик",
+      "hint_en": "Isaac is one of two or more criminals neighboring Eric"
+    },
+    {
+      "name": "Диана",
+      "name_en": "diane",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "Борис is one of 3 criminals in the corners",
+      "hint_en": "Bobby is one of 3 criminals in the corners"
+    },
+    {
+      "name": "Эрик",
+      "name_en": "eric",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "All innocents between Чад and Вильям are connected",
+      "hint_en": "All innocents between Chad and Will are connected"
+    },
+    {
+      "name": "Флора",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "Row 2 has more criminals than any other row",
+      "hint_en": "Row 2 has more criminals than any other row"
+    },
+    {
+      "name": "Густав",
+      "name_en": "gus",
+      "criminal": true,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "The only innocent between Виктор and Зара is Пётр's neighbor",
+      "hint_en": "The only innocent between Vince and Zara is Peter's neighbor"
+    },
+    {
+      "name": "Генрих",
+      "name_en": "hank",
+      "criminal": true,
+      "profession": "Певец",
+      "profession_en": "singer",
+      "hint": "There are more criminals than innocents between Чад and Ольга",
+      "hint_en": "There are more criminals than innocents between Chad and Olivia"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "Exactly 1 innocent between Жанна and Марина is neighboring Рональд",
+      "hint_en": "Exactly 1 innocent between Janet and Megan is neighboring Ronald"
+    },
+    {
+      "name": "Жанна",
+      "name_en": "janet",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "Both innocents between Густав and Вильям are Надежда's neighbors",
+      "hint_en": "Both innocents between Gus and Will are Nancy's neighbors"
+    },
+    {
+      "name": "Кай",
+      "name_en": "kay",
+      "criminal": true,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "Both innocents between Борис and Надежда are connected",
+      "hint_en": "Both innocents between Bobby and Nancy are connected"
+    },
+    {
+      "name": "Лиза",
+      "name_en": "lisa",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "У Кай ровно 4 невиновных соседей",
+      "hint_en": "Kay has exactly 4 innocent neighbors"
+    },
+    {
+      "name": "Марина",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "There's an odd number of innocents in row 1",
+      "hint_en": "There's an odd number of innocents in row 1"
+    },
+    {
+      "name": "Надежда",
+      "name_en": "nancy",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "У Борис и Ксения одинаковое число соседей-преступников",
+      "hint_en": "Bobby and Xena have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olivia",
+      "criminal": false,
+      "profession": "Пилот",
+      "profession_en": "pilot",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Пётр",
+      "name_en": "peter",
+      "criminal": true,
+      "profession": "Сыщик",
+      "profession_en": "sleuth",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Рональд",
+      "name_en": "ronald",
+      "criminal": true,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Виктор",
+      "name_en": "vince",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Вильям",
+      "name_en": "will",
+      "criminal": false,
+      "profession": "Полицейский",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксения",
+      "name_en": "xena",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зара",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "Механик",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 14,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

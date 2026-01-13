@@ -1,0 +1,202 @@
+{
+  "id": "level-pt-034",
+  "level_number": 34,
+  "language": "pt",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Hard",
+  "cards": [
+    {
+      "name": "Adão",
+      "name_en": "adam",
+      "criminal": true,
+      "profession": "Guarda",
+      "profession_en": "guard",
+      "hint": "There's an equal number of innocents in columns B and C",
+      "hint_en": "There's an equal number of innocents in columns B and C"
+    },
+    {
+      "name": "Bárbara",
+      "name_en": "barb",
+      "criminal": false,
+      "profession": "Cozinheiro",
+      "profession_en": "cook",
+      "hint": "Isaac is one of two or more criminals between Adão and Isaac",
+      "hint_en": "Isaac is one of two or more criminals between Adam and Isaac"
+    },
+    {
+      "name": "Carlos",
+      "name_en": "carl",
+      "criminal": false,
+      "profession": "Médico",
+      "profession_en": "doctor",
+      "hint": "Isaac is one of 2 criminals between Adão and Tomás",
+      "hint_en": "Isaac is one of 2 criminals between Adam and Tom"
+    },
+    {
+      "name": "Donaldo",
+      "name_en": "donald",
+      "criminal": true,
+      "profession": "Professor",
+      "profession_en": "teacher",
+      "hint": "Wanda tem mais vizinhos criminosos que Hilda",
+      "hint_en": "Wanda has more criminal neighbors than Hilda"
+    },
+    {
+      "name": "Eva",
+      "name_en": "eve",
+      "criminal": false,
+      "profession": "Cantor",
+      "profession_en": "singer",
+      "hint": "Row 2 has more innocents than any other row",
+      "hint_en": "Row 2 has more innocents than any other row"
+    },
+    {
+      "name": "Freya",
+      "name_en": "freya",
+      "criminal": false,
+      "profession": "Cantor",
+      "profession_en": "singer",
+      "hint": "Freya e Vicente têm o mesmo número de vizinhos criminosos",
+      "hint_en": "Freya and Vince have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Geraldo",
+      "name_en": "gary",
+      "criminal": false,
+      "profession": "Policial",
+      "profession_en": "cop",
+      "hint": "Isaac is one of Freya's 3 criminal neighbors",
+      "hint_en": "Isaac is one of Freya's 3 criminal neighbors"
+    },
+    {
+      "name": "Hilda",
+      "name_en": "hilda",
+      "criminal": false,
+      "profession": "Guarda",
+      "profession_en": "guard",
+      "hint": "There's an odd number of innocents neighboring Geraldo",
+      "hint_en": "There's an odd number of innocents neighboring Gary"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Policial",
+      "profession_en": "cop",
+      "hint": "There's an odd number of innocents neighboring Vicente in row 4",
+      "hint_en": "There's an odd number of innocents neighboring Vince in row 4"
+    },
+    {
+      "name": "Joana",
+      "name_en": "jane",
+      "criminal": false,
+      "profession": "Cantor",
+      "profession_en": "singer",
+      "hint": "Sara is one of 4 criminals between Donaldo and Zacarias",
+      "hint_en": "Sarah is one of 4 criminals between Donald and Zach"
+    },
+    {
+      "name": "Catarina",
+      "name_en": "katie",
+      "criminal": true,
+      "profession": "Fazendeiro",
+      "profession_en": "farmer",
+      "hint": "Both criminals between Carlos and Ronaldo are connected",
+      "hint_en": "Both criminals between Carl and Ronald are connected"
+    },
+    {
+      "name": "Maria",
+      "name_en": "mary",
+      "criminal": true,
+      "profession": "Professor",
+      "profession_en": "teacher",
+      "hint": "All criminals between Hilda and Zacarias are connected",
+      "hint_en": "All criminals between Hilda and Zach are connected"
+    },
+    {
+      "name": "Nicolau",
+      "name_en": "nick",
+      "criminal": false,
+      "profession": "Fazendeiro",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Olívia",
+      "name_en": "olivia",
+      "criminal": true,
+      "profession": "Fazendeiro",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ronaldo",
+      "name_en": "ronald",
+      "criminal": true,
+      "profession": "Médico",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Sara",
+      "name_en": "sarah",
+      "criminal": true,
+      "profession": "Médico",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Tomás",
+      "name_en": "tom",
+      "criminal": false,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Vicente",
+      "name_en": "vince",
+      "criminal": true,
+      "profession": "Cozinheiro",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Wanda",
+      "name_en": "wanda",
+      "criminal": true,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zacarias",
+      "name_en": "zach",
+      "criminal": true,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 11,
+  "ui": {
+    "level": "Nível",
+    "criminal_status": "Criminoso",
+    "innocent_status": "Inocente",
+    "hint": "Dica",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Próximo Nível",
+    "congratulations": "Parabéns!",
+    "total_criminals": "Total de Criminosos"
+  }
+}

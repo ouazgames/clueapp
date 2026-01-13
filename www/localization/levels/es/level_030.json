@@ -1,0 +1,202 @@
+{
+  "id": "level-es-030",
+  "level_number": 30,
+  "language": "es",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Alejandro",
+      "name_en": "alex",
+      "criminal": true,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "Ambos criminales entre Fernando y Victoria están conectados",
+      "hint_en": "Both criminals between Frank and Vicky are connected"
+    },
+    {
+      "name": "Beatriz",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "La columna D tiene más inocentes que cualquier otra columna",
+      "hint_en": "Column D has more innocents than any other column"
+    },
+    {
+      "name": "Cristóbal",
+      "name_en": "chris",
+      "criminal": false,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)",
+      "hint_en": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)"
+    },
+    {
+      "name": "Elena",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "Exactly 1 #PROF:guard has a criminal directly below them",
+      "hint_en": "Exactly 1 #PROF:guard has a criminal directly below them"
+    },
+    {
+      "name": "Fernando",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Cristóbal tiene más vecinos criminales que Paula",
+      "hint_en": "Chris has more criminal neighbors than Paula"
+    },
+    {
+      "name": "Helena",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "Cocinero",
+      "profession_en": "cook",
+      "hint": "Exactly 1 innocent between Alejandro and Victoria is neighboring Margarita",
+      "hint_en": "Exactly 1 innocent between Alex and Vicky is neighboring Megan"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "Todos los inocentes entre Victoria y Zara están conectados",
+      "hint_en": "All innocents between Vicky and Zara are connected"
+    },
+    {
+      "name": "Julia",
+      "name_en": "julie",
+      "criminal": true,
+      "profession": "Empleado",
+      "profession_en": "clerk",
+      "hint": "Exactly 2 of the 3 criminals neighboring Margarita are between Alejandro and Paula",
+      "hint_en": "Exactly 2 of the 3 criminals neighboring Megan are between Alex and Paula"
+    },
+    {
+      "name": "Carlos",
+      "name_en": "keith",
+      "criminal": true,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "Teodoro es uno de dos o más inocentes en los bordes",
+      "hint_en": "Terry is one of two or more innocents on the edges"
+    },
+    {
+      "name": "Margarita",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "Pintor",
+      "profession_en": "painter",
+      "hint": "Hay un número impar de criminales entre Paula y Raúl",
+      "hint_en": "There's an odd number of criminals between Paula and Ryan"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "There are more criminals than innocents in row 1",
+      "hint_en": "There are more criminals than innocents in row 1"
+    },
+    {
+      "name": "Óliver",
+      "name_en": "olof",
+      "criminal": false,
+      "profession": "Empleado",
+      "profession_en": "clerk",
+      "hint": "El único criminal entre Óliver y Zara es vecino de Teodoro's",
+      "hint_en": "The only criminal between Olof and Zara is Terry's neighbor"
+    },
+    {
+      "name": "Paula",
+      "name_en": "paula",
+      "criminal": true,
+      "profession": "Policía",
+      "profession_en": "cop",
+      "hint": "There is only one innocent between Alejandro and Fernando",
+      "hint_en": "There is only one innocent between Alex and Frank"
+    },
+    {
+      "name": "Raúl",
+      "name_en": "ryan",
+      "criminal": false,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "Both criminals between Elena and Teodoro are Isaac's neighbors",
+      "hint_en": "Both criminals between Ellie and Terry are Isaac's neighbors"
+    },
+    {
+      "name": "Sofía",
+      "name_en": "sofia",
+      "criminal": false,
+      "profession": "Guardia",
+      "profession_en": "guard",
+      "hint": "Xavier is one of 4 innocents between Cristóbal and Xavier",
+      "hint_en": "Xavi is one of 4 innocents between Chris and Xavi"
+    },
+    {
+      "name": "Teodoro",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "Detective",
+      "profession_en": "sleuth",
+      "hint": "An odd number of innocents between Alejandro and Elena neighbor Helena",
+      "hint_en": "An odd number of innocents between Alex and Ellie neighbor Helen"
+    },
+    {
+      "name": "Victoria",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "Granjero",
+      "profession_en": "farmer",
+      "hint": "There are as many criminal #PROFS:farmer as there are criminal #PROFS:guard",
+      "hint_en": "There are as many criminal #PROFS:farmer as there are criminal #PROFS:guard"
+    },
+    {
+      "name": "Walter",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "Xavier tiene más vecinos inocentes que Isaac",
+      "hint_en": "Xavi has more innocent neighbors than Isaac"
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zara",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "Mecánico",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 9,
+  "ui": {
+    "level": "Nivel",
+    "criminal_status": "Criminal",
+    "innocent_status": "Inocente",
+    "hint": "Pista",
+    "solve": "Resolver",
+    "reset": "Reiniciar",
+    "next_level": "Siguiente Nivel",
+    "congratulations": "¡Felicitaciones!",
+    "total_criminals": "Total de Criminales"
+  }
+}

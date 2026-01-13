@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="167x167" href="/images/favicon-167x167.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png" />
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64x64.png" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="stylesheet" href="common.css" />
+
+  <meta property="og:title" content="Clues by Sam" />
+  <meta property="og:image" content="https://cluesbysam.com/images/74029611514d.jpg" />
+  <meta property="og:description" content="A logic puzzle where you deduce who is a criminal!" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://cluesbysam.com/images/74029611514d.jpg" />
+  <meta name="color-scheme" content="light only" />
+  <meta name="supported-color-schemes" content="light" />
+  <meta name="robots" content="max-image-preview:large" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <title>Clues By Sam</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body class="theme-default">
+  <!-- SPLASH SCREEN -->
+  <div id="splash-screen">
+    <div class="splash-icon">🔍</div>
+    <div class="splash-logo">Clues<br>by Sam</div>
+    <div class="splash-text">Preparing clues for you, please wait...</div>
+    <div class="splash-progress">
+      <div class="splash-progress-bar"></div>
+    </div>
+  </div>
+
+  <div id="fontPreload" style="position: absolute; top: -9999px; font-family: 'Ribeye'">Loading...</div>
+  <div id="fontPreload" style="position: absolute; top: -9999px; font-family: 'Comic Neue'">Loading...</div>
+  <div id="fontPreload" style="position: absolute; top: -9999px; font-family: 'Nunito'">Loading...</div>
+
+  <!-- COMPACT SINGLE-LINE HEADER -->
+  <div class="game-header">
+    <button class="settings-btn" id="lang-btn" onclick="showLanguagePopup()">🇬🇧</button>
+    <div class="progress-container">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+    <h1 class="level-title">Level 1</h1>
+  </div>
+
+  <!-- OLD LEVEL DISPLAY (HIDDEN) -->
+  <div id="level-display"><b>Level 1</b></div>
+
+  <!-- GAME CONTAINER -->
+  <div id="root"></div>
+
+
+  <!-- WIN POPUP -->
+  <div id="win-popup">
+    <div class="win-content">
+      <h2 class="win-level-title" id="win-level-title">Level 1</h2>
+      <p class="win-difficulty" id="win-difficulty">Easy</p>
+      <div class="win-grid" id="win-grid"></div>
+      <p class="win-message" id="win-time-message">Solved in less than 70 minutes!</p>
+      <div class="win-buttons">
+        <button class="win-button-next" id="next-level-btn" onclick="goToNextLevelFromPopup()">Next Level →</button>
+        <button class="win-button-secondary" onclick="playAgain()">↻ Play again</button>
+        <button class="win-button-close" onclick="closeWinPopup()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOSE POPUP -->
+  <div id="lose-popup">
+    <div class="lose-content">
+      <div class="win-icon">😢</div>
+      <h2 class="lose-title">Try Again!</h2>
+      <p class="win-message">Don't worry, you can retry this level.</p>
+      <button class="lose-button" onclick="hideLosePopup()">Retry</button>
+    </div>
+  </div>
+
+  <!-- SHOP POPUP -->
+  <div id="shop-popup">
+    <div class="shop-content">
+      <button class="shop-close" onclick="hideShop()">✕</button>
+      <div class="shop-header">
+        <div class="shop-coins-display">
+          <span class="coins-icon">🪙</span>
+          <span class="coins-amount" id="shop-coins-amount">0</span>
+        </div>
+        <h2 class="shop-title">SHOP</h2>
+      </div>
+      <div class="shop-items">
+        <div class="shop-item">
+          <div class="shop-item-left">
+            <span class="shop-item-icon">🪙</span>
+            <span class="shop-item-amount">10</span>
+          </div>
+          <button class="shop-item-btn free" onclick="watchRewardedAd()">📺 FREE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOT ENOUGH COINS POPUP -->
+  <div id="coins-popup">
+    <div class="coins-popup-content">
+      <div class="coins-popup-icon">💰</div>
+      <div class="coins-popup-title">Get more coins</div>
+      <div class="coins-popup-message">You need more coins to use this hint.</div>
+      <div class="coins-popup-buttons">
+        <button class="coins-popup-btn watch" onclick="hideCoinsPopup(); watchRewardedAd();">📺 Watch Ad</button>
+        <button class="coins-popup-btn shop" onclick="hideCoinsPopup(); showShop();">🛒 Shop</button>
+        <button class="coins-popup-btn close" onclick="hideCoinsPopup()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LANGUAGE SELECTOR POPUP -->
+  <div id="language-popup">
+    <div class="language-popup-content">
+      <div class="language-popup-header">
+        <h2 class="language-popup-title">Select Language</h2>
+        <button class="language-popup-close" onclick="hideLanguagePopup()">✕</button>
+      </div>
+      <div class="language-list">
+        <button class="language-btn active" data-lang="en">
+          <span class="language-flag">🇬🇧</span>
+          <span class="language-name">English</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="ar">
+          <span class="language-flag">🇸🇦</span>
+          <span class="language-name">العربية</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="es">
+          <span class="language-flag">🇪🇸</span>
+          <span class="language-name">Español</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="it">
+          <span class="language-flag">🇮🇹</span>
+          <span class="language-name">Italiano</span>
+          <span class="language-check">✓</span>
+        </button>
+        <button class="language-btn" data-lang="ru">
+          <span class="language-flag">🇷🇺</span>
+          <span class="language-name">Русский</span>
+          <span class="language-check">✓</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BANNER AD SPACE -->
+  <div class="banner-ad-space" id="banner-ad-space"></div>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -14,12 +14,14 @@ a {
 .card-grid {
     position: relative;
     background-color: var(--bg);
-    padding-top: 2px;
+    padding: 2px 4px;
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(4px, 1vw, 12px);
     margin: 4px auto auto;
-    justify-content: center
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
@@ -75,24 +77,32 @@ a {
 .card {
     --border-color: var(--border-neutral);
     --background-color: var(--card-bg);
-    --text-color: var(--text);
+    --text-color: var(--text-dark);
     border: 1px solid var(--border-color);
-    border-width: 2px 2px 2px 2px;
+    border-width: 1px;
     background-color: var(--background-color);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     color: var(--text-color);
     box-sizing: border-box;
-    width: 87px;
-    height: 118px;
+    /* Viewport-responsive sizing: takes 23% of viewport width (for 4 cols with gaps) */
+    width: calc(23vw - 8px);
+    height: calc(31vw - 8px);
+    /* Minimum/maximum constraints for phone/large screens */
+    min-width: 75px;
+    min-height: 100px;
+    max-width: 200px;
+    max-height: 270px;
     display: flex;
     flex-direction: column;
     justify-content: top;
     align-items: center;
     cursor: pointer;
-    border-radius: 6px;
-    box-shadow: 0 1px 6px var(--shadow-color-secondary);
+    border-radius: clamp(8px, 2vw, 16px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
-    transition: transform .05s linear
+    transition: transform .1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card.consumed {
@@ -114,34 +124,37 @@ a {
 
 .card.innocent,
 .card.criminal {
-    border: 1px solid var(--border-neutral);
-    box-shadow: 0 1px 2px var(--shadow-color)
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .card.criminal {
-    border: 1px solid var(--border-criminal)
+    border-color: var(--card-criminal);
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.4), inset 0 0 10px rgba(239, 68, 68, 0.2);
 }
 
 .card.innocent {
-    border: 1px solid var(--border-innocent)
+    border-color: var(--card-innocent);
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4), inset 0 0 10px rgba(16, 185, 129, 0.2);
 }
 
 div.innocent {
-    --border-color: var(--border-innocent);
-    --background-color: var(--background-innocent);
-    --text-color: var(--text-innocent);
-    --background-consumed: var(--background-innocent-consumed);
-    --background-highlight: var(--background-highlight-innocent);
-    --background-highlight-consumed: var(--background-highlight-innocent-consumed)
+    --border-color: var(--card-innocent);
+    --background-color: var(--card-green);
+    --text-color: var(--text-dark);
+    --background-consumed: rgba(16, 185, 129, 0.1);
+    --background-highlight: rgba(16, 185, 129, 0.3);
+    --background-highlight-consumed: rgba(16, 185, 129, 0.05);
 }
 
 div.criminal {
-    --border-color: var(--border-criminal);
-    --background-color: var(--background-criminal);
-    --text-color: var(--text-criminal);
-    --background-consumed: var(--background-criminal-consumed);
-    --background-highlight: var(--background-highlight-criminal);
-    --background-highlight-consumed: var(--background-highlight-criminal-consumed)
+    --border-color: var(--card-criminal);
+    --background-color: var(--card-criminal);
+    /* Variable name reuse, careful */
+    --text-color: var(--text-dark);
+    --background-consumed: rgba(239, 68, 68, 0.1);
+    --background-highlight: rgba(239, 68, 68, 0.3);
+    --background-highlight-consumed: rgba(239, 68, 68, 0.05);
 }
 
 .card.hint-clue {
@@ -227,14 +240,15 @@ img {
 .card-back p.hint {
     font-size: 10px;
     line-height: 11px;
-    opacity: .87;
+    opacity: 1;
     margin-top: auto;
     margin-bottom: auto;
     padding: 2px 4px;
     pointer-events: none;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    text-align: center
+    text-align: center;
+    font-weight: 700
 }
 
 body.light p.face {
@@ -282,7 +296,8 @@ body.dark p.face {
 .card p.profession {
     font-size: 11px;
     line-height: 11px;
-    opacity: .7
+    opacity: 1;
+    font-weight: 600
 }
 
 .in-progress .profession-referenced p.profession {
@@ -312,7 +327,8 @@ body.light .in-progress .profession-referenced p.profession {
     font-size: 12px;
     line-height: 12px;
     margin: 0;
-    text-align: center
+    text-align: center;
+    font-weight: 700
 }
 
 .card-back h3.name {
@@ -371,14 +387,16 @@ h3.name {
 .modal {
     --border-color: var(--border-neutral);
     --background-color: var(--modal-bg);
-    --text-color: var(--text);
+    --text-color: var(--text-dark);
     width: 300px;
-    background: var(--background-color);
-    border: 4px solid var(--border-color);
+    background: rgba(30, 41, 59, 0.9);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-color);
     color: var(--text-color);
-    border-radius: 10px;
+    border-radius: 16px;
     text-align: center;
-    box-shadow: 0 6px 12px #0000001a;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     z-index: 100;
     position: relative;
     overflow: hidden;
@@ -795,12 +813,19 @@ div.bottom .row {
 
 div.bottom button,
 div.bottom select {
-    width: 110px;
+    width: auto;
+    min-width: 100px;
     height: 35px;
-    padding: 5px;
+    padding: 5px 10px;
     margin-left: 0;
     margin-right: 0;
-    background-color: var(--button-background)
+    background-color: var(--button-background);
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    white-space: nowrap;
 }
 
 div.bottom .multiline {
@@ -808,7 +833,8 @@ div.bottom .multiline {
 }
 
 div.bottom .wide-button {
-    width: 100%
+    width: 100%;
+    white-space: nowrap !important;
 }
 
 .wide-button.with-icon {
@@ -1136,4 +1162,328 @@ div.color-picker input::-moz-range-thumb {
     background: #fff;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     cursor: pointer
+}
+
+/* ========================================
+   CONTRAST & SHARE BUTTON FIXES
+   ======================================== */
+
+/* Fix low contrast text in warning modal */
+.modal.warning p,
+.modal.warning .instructions,
+.modal.warning div {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.modal.warning p.instructions {
+    color: rgba(255, 255, 255, 0.95) !important;
+    opacity: 1 !important;
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+}
+
+/* Make all paragraph text in modals readable */
+.modal p {
+    color: var(--text-light, #ffffff) !important;
+    opacity: 0.95 !important;
+}
+
+/* Bold text for names in modal */
+.modal b,
+.modal strong {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* Share scenario button styling */
+.modal button,
+.modal.warning button {
+    background: linear-gradient(180deg, #3498db 0%, #2980b9 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 12px 20px !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    margin: 5px !important;
+    min-width: 120px !important;
+}
+
+/* Continue/Warning button - yellow outline style */
+.modal.warning button.btn-warn,
+.modal button[class*="warn"] {
+    background: transparent !important;
+    border: 2px solid #f1c40f !important;
+    color: #f1c40f !important;
+}
+
+/* Share button hover effect */
+.modal button:hover {
+    opacity: 0.9 !important;
+    transform: scale(1.02);
+}
+
+/* ========================================
+   UNIFIED PALETTE & REFINED DESIGN
+   ======================================== */
+:root {
+    --primary-color: #8e44ad;
+    --main-bg: #f0f2f5;
+    --modal-base: #2d3436;
+}
+
+body {
+    background-color: var(--main-bg) !important;
+}
+
+.modal {
+    background: var(--modal-base) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5) !important;
+}
+
+.modal button {
+    text-transform: uppercase;
+    font-weight: 800 !important;
+    letter-spacing: 1px;
+    border-radius: 8px !important;
+    padding: 12px 20px !important;
+    transition: all 0.2s ease;
+}
+
+.modal button:active {
+    transform: scale(0.95);
+}
+
+/* Innocent - Green (High Specificity) */
+.modal button.btn-innocent,
+.modal-overlay button.btn-innocent,
+button.btn-innocent {
+    background: linear-gradient(135deg, #2ecc71, #27ae60) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4) !important;
+}
+
+/* Criminal - Red (High Specificity) */
+.modal button.btn-criminal,
+.modal-overlay button.btn-criminal,
+button.btn-criminal {
+    background: linear-gradient(135deg, #e74c3c, #c0392b) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4) !important;
+}
+
+/* ==========================================
+   IPAD / TABLET RESPONSIVE STYLES
+   ========================================== */
+
+/* iPad Mini, iPad (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card-grid {
+        gap: 12px;
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    .card {
+        width: 140px;
+        height: 190px;
+        border-radius: 16px;
+    }
+
+    .card .emoji {
+        font-size: 48px;
+        margin-top: 12px;
+    }
+
+    .card .name {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .card .role {
+        font-size: 11px;
+    }
+
+    .card .hint-text {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .card-label {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    /* Bottom buttons */
+    div.bottom {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    div.bottom button {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+
+    /* Header */
+    .level-header {
+        font-size: 22px;
+        padding: 12px 20px;
+    }
+
+    /* Modals */
+    .modal-content,
+    .modal-overlay .modal-content {
+        max-width: 500px;
+        padding: 30px;
+    }
+
+    .modal h2,
+    .modal-overlay h2 {
+        font-size: 24px;
+    }
+
+    .modal p,
+    .modal-overlay p {
+        font-size: 16px;
+    }
+
+    .modal button {
+        font-size: 16px;
+        padding: 14px 28px;
+    }
+}
+
+/* iPad Pro & Large Tablets (1024px+) */
+@media (min-width: 1024px) {
+    .card-grid {
+        gap: 16px;
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .card {
+        width: 170px;
+        height: 230px;
+        border-radius: 18px;
+    }
+
+    .card .emoji {
+        font-size: 56px;
+        margin-top: 16px;
+    }
+
+    .card .name {
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+
+    .card .role {
+        font-size: 13px;
+    }
+
+    .card .hint-text {
+        font-size: 11px;
+        padding: 8px;
+        line-height: 1.4;
+    }
+
+    .card-label {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    /* Bottom buttons */
+    div.bottom {
+        gap: 24px;
+        padding: 20px;
+    }
+
+    div.bottom button {
+        font-size: 18px;
+        padding: 16px 32px;
+        border-radius: 12px;
+    }
+
+    /* Header */
+    .level-header {
+        font-size: 26px;
+        padding: 16px 24px;
+    }
+
+    /* Modals for larger screens */
+    .modal-content,
+    .modal-overlay .modal-content {
+        max-width: 600px;
+        padding: 40px;
+        border-radius: 24px;
+    }
+
+    .modal h2,
+    .modal-overlay h2 {
+        font-size: 28px;
+    }
+
+    .modal p,
+    .modal-overlay p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .modal button {
+        font-size: 18px;
+        padding: 16px 32px;
+        border-radius: 12px;
+    }
+}
+
+/* Landscape mode for tablets */
+@media (min-width: 768px) and (orientation: landscape) {
+    .card-grid {
+        margin-top: 15px;
+    }
+
+    .card {
+        width: 120px;
+        height: 160px;
+    }
+
+    .card .emoji {
+        font-size: 40px;
+        margin-top: 8px;
+    }
+
+    .card .name {
+        font-size: 12px;
+    }
+
+    .card .role {
+        font-size: 10px;
+    }
+}
+
+/* Very large screens (iPad Pro 12.9" landscape, desktop) */
+@media (min-width: 1366px) {
+    .card-grid {
+        max-width: 1200px;
+        margin: 50px auto;
+    }
+
+    .card {
+        width: 190px;
+        height: 260px;
+        border-radius: 20px;
+    }
+
+    .card .emoji {
+        font-size: 64px;
+    }
+
+    .card .name {
+        font-size: 18px;
+    }
 }

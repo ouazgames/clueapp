@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-019",
+  "level_number": 19,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "آدم",
+      "name_en": "adam",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "زكريا وآدم لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Zach and Adam have an equal number of innocent neighbors"
+    },
+    {
+      "name": "بهية",
+      "name_en": "barb",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد عدد فردي من الأبرياء المجاورين لـبهية",
+      "hint_en": "There's an odd number of innocents neighboring Barb"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "carol",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "هاني لديه جيران مجرمين أكثر من وفاء",
+      "hint_en": "Hank has more criminal neighbors than Vicky"
+    },
+    {
+      "name": "دعاء",
+      "name_en": "debra",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "واحد فقط من الـ2 مجرمين المجاورين لـليلى في الصف4",
+      "hint_en": "Only 1 of the 2 criminals neighboring Linda is in row 4"
+    },
+    {
+      "name": "عروة",
+      "name_en": "erwin",
+      "criminal": false,
+      "profession": "بناء",
+      "profession_en": "builder",
+      "hint": "كل الأبرياء بين كريمة ونور متصلون",
+      "hint_en": "All innocents between Karen and Nancy are connected"
+    },
+    {
+      "name": "فؤاد",
+      "name_en": "floyd",
+      "criminal": true,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "يوجد 6 مجرمين إجمالاً",
+      "hint_en": "There are 6 criminals in total"
+    },
+    {
+      "name": "هاني",
+      "name_en": "hank",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "الجار المجرم الوحيد لـآدم بين عروة وهاني",
+      "hint_en": "Adam's only criminal neighbor is between Erwin and Hank"
+    },
+    {
+      "name": "يوسف",
+      "name_en": "john",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "يوجد بالضبط 2 أبرياء بين كريمة ومريم",
+      "hint_en": "There are exactly 2 innocents between Carol and Mary"
+    },
+    {
+      "name": "كريمة",
+      "name_en": "karen",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "العمود B فيه أبرياء أكثر من أي عمود آخر",
+      "hint_en": "Column B has more innocents than any other column"
+    },
+    {
+      "name": "ليلى",
+      "name_en": "linda",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد بالضبط 2 أبرياء بين كريمة وصالح",
+      "hint_en": "There are exactly 2 innocents between Carol and Scott"
+    },
+    {
+      "name": "مريم",
+      "name_en": "mary",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "الجار البريء الوحيد لـدعاء هو جار بهية",
+      "hint_en": "Debra's only innocent neighbor is Barb's neighbor"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "آدم وزياد لديهم نفس عدد الجيران المجرمين",
+      "hint_en": "Adam and Xavi have an equal number of criminal neighbors"
+    },
+    {
+      "name": "بسمة",
+      "name_en": "pam",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "يوجد أبرياء أكثر من المجرمين في العمود D",
+      "hint_en": "There are more innocents than criminals in column D"
+    },
+    {
+      "name": "روز",
+      "name_en": "rose",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "كريمة وليلى يتشاركان عدداً فردياً من الجيران الأبرياء",
+      "hint_en": "Karen and Linda share an odd number of innocent neighbors"
+    },
+    {
+      "name": "صالح",
+      "name_en": "scott",
+      "criminal": true,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "يوجد عدد متساوٍ من المجرمين في الصفين 1 و2",
+      "hint_en": "There's an equal number of criminals in rows 1 and 2"
+    },
+    {
+      "name": "ثور",
+      "name_en": "thor",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "بهية لديه جيران مجرمين أكثر من Barb7",
+      "hint_en": "Barb has more criminal neighbors than Barb7"
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "كل الأبرياء بين كريمة وصالح متصلون",
+      "hint_en": "All innocents between Carol and Scott are connected"
+    },
+    {
+      "name": "وليد",
+      "name_en": "will",
+      "criminal": false,
+      "profession": "مغني",
+      "profession_en": "singer",
+      "hint": "بسمة واحد من اثنين أو أكثر من الأبرياء في الصف 4",
+      "hint_en": "Pam is one of two or more innocents in row 4"
+    },
+    {
+      "name": "زياد",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "زكريا",
+      "name_en": "zach",
+      "criminal": false,
+      "profession": "مبرمج",
+      "profession_en": "coder",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 6,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}

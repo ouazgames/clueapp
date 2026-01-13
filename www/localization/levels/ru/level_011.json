@@ -1,0 +1,202 @@
+{
+  "id": "level-ru-011",
+  "level_number": 11,
+  "language": "ru",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Адам",
+      "name_en": "adam",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "There's an odd number of innocents neighboring Лиза",
+      "hint_en": "There's an odd number of innocents neighboring Lisa"
+    },
+    {
+      "name": "Борис",
+      "name_en": "bruce",
+      "criminal": false,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "Exactly 1 innocent between Паулина and Том is neighboring Карина",
+      "hint_en": "Exactly 1 innocent between Paula and Tom is neighboring Karen"
+    },
+    {
+      "name": "Давид",
+      "name_en": "david",
+      "criminal": true,
+      "profession": "Строитель",
+      "profession_en": "builder",
+      "hint": "У Флора и Карина одинаковое число соседей-преступников",
+      "hint_en": "Flora and Karen have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Флора",
+      "name_en": "flora",
+      "criminal": true,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "У Виктория больше невиновных соседей, чем у Флора",
+      "hint_en": "Vicky has more innocent neighbors than Flora"
+    },
+    {
+      "name": "Густав",
+      "name_en": "gus",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "There's an odd number of innocents between Исаак and Иван",
+      "hint_en": "There's an odd number of innocents between Isaac and John"
+    },
+    {
+      "name": "Елена",
+      "name_en": "helen",
+      "criminal": true,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "Флора is one of Давид's 3 criminal neighbors",
+      "hint_en": "Flora is one of David's 3 criminal neighbors"
+    },
+    {
+      "name": "Исаак",
+      "name_en": "isaac",
+      "criminal": true,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "There are more criminals among #PROFS:coder than any other profession",
+      "hint_en": "There are more criminals among #PROFS:coder than any other profession"
+    },
+    {
+      "name": "Иван",
+      "name_en": "john",
+      "criminal": false,
+      "profession": "Судья",
+      "profession_en": "judge",
+      "hint": "There are 12 innocents in total",
+      "hint_en": "There are 12 innocents in total"
+    },
+    {
+      "name": "Карина",
+      "name_en": "karen",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "Both criminals in row 4 are Лиза's neighbors",
+      "hint_en": "Both criminals in row 4 are Lisa's neighbors"
+    },
+    {
+      "name": "Лиза",
+      "name_en": "lisa",
+      "criminal": false,
+      "profession": "Учитель",
+      "profession_en": "teacher",
+      "hint": "У Вильям и Давид одинаковое число соседей-преступников",
+      "hint_en": "Will and David have an equal number of criminal neighbors"
+    },
+    {
+      "name": "Марк",
+      "name_en": "mark",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "У Елена больше невиновных соседей, чем у Ксавье",
+      "hint_en": "Helen has more innocent neighbors than Xavi"
+    },
+    {
+      "name": "Ольга",
+      "name_en": "olive",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "У Борис больше соседей-преступников, чем у Bruce2",
+      "hint_en": "Bruce has more criminal neighbors than Bruce2"
+    },
+    {
+      "name": "Паулина",
+      "name_en": "paula",
+      "criminal": false,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "n_professions_have_trait_in_dir(teacher,innocent,0,1,1)",
+      "hint_en": "n_professions_have_trait_in_dir(teacher,innocent,0,1,1)"
+    },
+    {
+      "name": "Роза",
+      "name_en": "rose",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "Exactly 1 #PROF:teacher has an innocent directly below them",
+      "hint_en": "Exactly 1 #PROF:teacher has an innocent directly below them"
+    },
+    {
+      "name": "Сюзанна",
+      "name_en": "susan",
+      "criminal": true,
+      "profession": "Программист",
+      "profession_en": "coder",
+      "hint": "There are more innocents than criminals between Виктория and Зара",
+      "hint_en": "There are more innocents than criminals between Vicky and Zara"
+    },
+    {
+      "name": "Том",
+      "name_en": "tom",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "Both criminals between Густав and Иван are Марк's neighbors",
+      "hint_en": "Both criminals between Gus and John are Mark's neighbors"
+    },
+    {
+      "name": "Виктория",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "Повар",
+      "profession_en": "cook",
+      "hint": "Карина and Том have an equal number of innocent neighbors",
+      "hint_en": "Karen and Tom have an equal number of innocent neighbors"
+    },
+    {
+      "name": "Вильям",
+      "name_en": "will",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Ксавье",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "Врач",
+      "profession_en": "doctor",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Зара",
+      "name_en": "zara",
+      "criminal": false,
+      "profession": "Фермер",
+      "profession_en": "farmer",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 8,
+  "ui": {
+    "level": "Уровень",
+    "criminal_status": "Преступник",
+    "innocent_status": "Невиновный",
+    "hint": "Подсказка",
+    "solve": "Решить",
+    "reset": "Сброс",
+    "next_level": "Следующий Уровень",
+    "congratulations": "Поздравляем!",
+    "total_criminals": "Всего Преступников"
+  }
+}

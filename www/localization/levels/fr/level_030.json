@@ -1,0 +1,202 @@
+{
+  "id": "level-fr-030",
+  "level_number": 30,
+  "language": "fr",
+  "width": 4,
+  "height": 5,
+  "difficulty": "",
+  "cards": [
+    {
+      "name": "Alexandre",
+      "name_en": "alex",
+      "criminal": true,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Both criminals between François and Victoire are connected",
+      "hint_en": "Both criminals between Frank and Vicky are connected"
+    },
+    {
+      "name": "Béatrice",
+      "name_en": "bonnie",
+      "criminal": true,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "Column D has more innocents than any other column",
+      "hint_en": "Column D has more innocents than any other column"
+    },
+    {
+      "name": "Christophe",
+      "name_en": "chris",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)",
+      "hint_en": "n_professions_have_trait_in_dir(guard,criminal,0,1,1)"
+    },
+    {
+      "name": "Éléonore",
+      "name_en": "ellie",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "Exactly 1 #PROF:guard has a criminal directly below them",
+      "hint_en": "Exactly 1 #PROF:guard has a criminal directly below them"
+    },
+    {
+      "name": "François",
+      "name_en": "frank",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Christophe a plus de voisins criminels que Paule",
+      "hint_en": "Chris has more criminal neighbors than Paula"
+    },
+    {
+      "name": "Hélène",
+      "name_en": "helen",
+      "criminal": false,
+      "profession": "Cuisinier",
+      "profession_en": "cook",
+      "hint": "Exactly 1 innocent between Alexandre and Victoire is neighboring Marguerite",
+      "hint_en": "Exactly 1 innocent between Alex and Vicky is neighboring Megan"
+    },
+    {
+      "name": "Isaac",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "All innocents between Victoire and Zara are connected",
+      "hint_en": "All innocents between Vicky and Zara are connected"
+    },
+    {
+      "name": "Julie",
+      "name_en": "julie",
+      "criminal": true,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "Exactly 2 of the 3 criminals neighboring Marguerite are between Alexandre and Paule",
+      "hint_en": "Exactly 2 of the 3 criminals neighboring Megan are between Alex and Paula"
+    },
+    {
+      "name": "Charles",
+      "name_en": "keith",
+      "criminal": true,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "Thierry is one of two or more innocents on the edges",
+      "hint_en": "Terry is one of two or more innocents on the edges"
+    },
+    {
+      "name": "Marguerite",
+      "name_en": "megan",
+      "criminal": true,
+      "profession": "Peintre",
+      "profession_en": "painter",
+      "hint": "There's an odd number of criminals between Paule and Rémi",
+      "hint_en": "There's an odd number of criminals between Paula and Ryan"
+    },
+    {
+      "name": "Nancy",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "There are more criminals than innocents in row 1",
+      "hint_en": "There are more criminals than innocents in row 1"
+    },
+    {
+      "name": "Olivier",
+      "name_en": "olof",
+      "criminal": false,
+      "profession": "Employé",
+      "profession_en": "clerk",
+      "hint": "The only criminal between Olivier and Zara is Thierry's neighbor",
+      "hint_en": "The only criminal between Olof and Zara is Terry's neighbor"
+    },
+    {
+      "name": "Paule",
+      "name_en": "paula",
+      "criminal": true,
+      "profession": "Policier",
+      "profession_en": "cop",
+      "hint": "There is only one innocent between Alexandre and François",
+      "hint_en": "There is only one innocent between Alex and Frank"
+    },
+    {
+      "name": "Rémi",
+      "name_en": "ryan",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "Both criminals between Éléonore and Thierry are Isaac's neighbors",
+      "hint_en": "Both criminals between Ellie and Terry are Isaac's neighbors"
+    },
+    {
+      "name": "Sophie",
+      "name_en": "sofia",
+      "criminal": false,
+      "profession": "Garde",
+      "profession_en": "guard",
+      "hint": "Xavier is one of 4 innocents between Christophe and Xavier",
+      "hint_en": "Xavi is one of 4 innocents between Chris and Xavi"
+    },
+    {
+      "name": "Thierry",
+      "name_en": "terry",
+      "criminal": false,
+      "profession": "Détective",
+      "profession_en": "sleuth",
+      "hint": "An odd number of innocents between Alexandre and Éléonore neighbor Hélène",
+      "hint_en": "An odd number of innocents between Alex and Ellie neighbor Helen"
+    },
+    {
+      "name": "Victoire",
+      "name_en": "vicky",
+      "criminal": false,
+      "profession": "Fermier",
+      "profession_en": "farmer",
+      "hint": "There are as many criminal #PROFS:farmer as there are criminal #PROFS:guard",
+      "hint_en": "There are as many criminal #PROFS:farmer as there are criminal #PROFS:guard"
+    },
+    {
+      "name": "Walter",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "Xavier a plus de voisins innocents que Isaac",
+      "hint_en": "Xavi has more innocent neighbors than Isaac"
+    },
+    {
+      "name": "Xavier",
+      "name_en": "xavi",
+      "criminal": false,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "Zara",
+      "name_en": "zara",
+      "criminal": true,
+      "profession": "Mécanicien",
+      "profession_en": "mech",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 9,
+  "ui": {
+    "level": "Niveau",
+    "criminal_status": "Criminel",
+    "innocent_status": "Innocent",
+    "hint": "Indice",
+    "solve": "Résoudre",
+    "reset": "Réinitialiser",
+    "next_level": "Niveau Suivant",
+    "congratulations": "Félicitations!",
+    "total_criminals": "Total des Criminels"
+  }
+}

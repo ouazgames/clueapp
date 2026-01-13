@@ -1,0 +1,202 @@
+{
+  "id": "level-ar-035",
+  "level_number": 35,
+  "language": "ar",
+  "width": 4,
+  "height": 5,
+  "difficulty": "Hard",
+  "cards": [
+    {
+      "name": "آنا",
+      "name_en": "anna",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "يوجد عدد فردي من معلم المجرمين",
+      "hint_en": "There's an odd number of criminal #PROFS:teacher"
+    },
+    {
+      "name": "بدر",
+      "name_en": "bobby",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "كلا المجرمين بين بدر وبطرس متصلان",
+      "hint_en": "Both criminals between Bobby and Peter are connected"
+    },
+    {
+      "name": "شيرين",
+      "name_en": "cheryl",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "يوجد مجرمين بين طيار أكثر من أي مهنة أخرى",
+      "hint_en": "There are more criminals among #PROFS:pilot than any other profession"
+    },
+    {
+      "name": "دعاء",
+      "name_en": "debra",
+      "criminal": false,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "الصف 5 فيه أبرياء أكثر من أي صف آخر",
+      "hint_en": "Row 5 has more innocents than any other row"
+    },
+    {
+      "name": "إيمان",
+      "name_en": "emma",
+      "criminal": false,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "يوجد عدد فردي من المجرمين بين جميلة ومروان",
+      "hint_en": "There's an odd number of criminals between Jane and Martin"
+    },
+    {
+      "name": "غسان",
+      "name_en": "gabe",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "نور واحد من جيران جميلة الـ3 المجرمين",
+      "hint_en": "Nancy is one of Jane's 3 criminal neighbors"
+    },
+    {
+      "name": "هلال",
+      "name_en": "hal",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "مروان ونور لديهم نفس عدد الجيران الأبرياء",
+      "hint_en": "Martin and Nancy have an equal number of innocent neighbors"
+    },
+    {
+      "name": "إسحاق",
+      "name_en": "isaac",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد عدد فردي من المجرمين في العمود C",
+      "hint_en": "There's an odd number of criminals in column C"
+    },
+    {
+      "name": "جميلة",
+      "name_en": "jane",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "غسان لديه جيران مجرمين أكثر من الأبرياء",
+      "hint_en": "Gabe has more criminal than innocent neighbors"
+    },
+    {
+      "name": "كوثر",
+      "name_en": "kay",
+      "criminal": true,
+      "profession": "طباخ",
+      "profession_en": "cook",
+      "hint": "يوجد بريء واحد فقط بين جميلة ولمياء",
+      "hint_en": "There is only one innocent between Jane and Lucy"
+    },
+    {
+      "name": "لمياء",
+      "name_en": "lucy",
+      "criminal": false,
+      "profession": "محقق",
+      "profession_en": "sleuth",
+      "hint": "يوجد عدد متساوٍ من قاضي الأبرياء ومحقق الأبرياء",
+      "hint_en": "There are as many innocent #PROFS:judge as there are innocent #PROFS:sleuth"
+    },
+    {
+      "name": "مروان",
+      "name_en": "martin",
+      "criminal": true,
+      "profession": "طيار",
+      "profession_en": "pilot",
+      "hint": "واحد فقط من الـ2 أبرياء المجاورين لـلمياء هو جار كوثر",
+      "hint_en": "Only 1 of the 2 innocents neighboring Lucy is Kay's neighbor"
+    },
+    {
+      "name": "نور",
+      "name_en": "nancy",
+      "criminal": true,
+      "profession": "رسام",
+      "profession_en": "painter",
+      "hint": "العمود E فيه أبرياء أكثر من أي عمود آخر",
+      "hint_en": "Column E has more innocents than any other column"
+    },
+    {
+      "name": "بطرس",
+      "name_en": "peter",
+      "criminal": false,
+      "profession": "قاضي",
+      "profession_en": "judge",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "رائد",
+      "name_en": "ronald",
+      "criminal": true,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "سعيد",
+      "name_en": "steve",
+      "criminal": true,
+      "profession": "شرطي",
+      "profession_en": "cop",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "ثور",
+      "name_en": "thor",
+      "criminal": false,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وفاء",
+      "name_en": "vicky",
+      "criminal": true,
+      "profession": "حارس",
+      "profession_en": "guard",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "وائل",
+      "name_en": "wally",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    },
+    {
+      "name": "شيماء",
+      "name_en": "xia",
+      "criminal": false,
+      "profession": "معلم",
+      "profession_en": "teacher",
+      "hint": "",
+      "hint_en": ""
+    }
+  ],
+  "total_criminals": 11,
+  "ui": {
+    "level": "المستوى",
+    "criminal_status": "مجرم",
+    "innocent_status": "بريء",
+    "hint": "تلميح",
+    "solve": "حل",
+    "reset": "إعادة",
+    "next_level": "المستوى التالي",
+    "congratulations": "تهانينا!",
+    "total_criminals": "إجمالي المجرمين"
+  }
+}
